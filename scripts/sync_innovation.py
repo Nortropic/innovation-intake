@@ -369,10 +369,15 @@ def resolve_fields(client: GraphQLClient, project_id: str, config: dict) -> dict
             return None
         return field
 
+    # Option names are matched case-insensitively: the live Project uses
+    # e.g. 'Inbox' where the intake model says 'INBOX'. Same option, and the
+    # Project schema is never modified to force a case match.
     status = require("status", "SINGLE_SELECT")
     if status is not None:
-        options = {o["name"]: o["id"] for o in status.get("options", [])}
-        missing = [s for s in config["expected_statuses"] if s not in options]
+        options = {_normalize_key(o["name"]): o["id"] for o in status.get("options", [])}
+        missing = [
+            s for s in config["expected_statuses"] if _normalize_key(s) not in options
+        ]
         if missing:
             problems.append(
                 f"Status field is missing expected options: {', '.join(missing)}"
@@ -380,19 +385,26 @@ def resolve_fields(client: GraphQLClient, project_id: str, config: dict) -> dict
         else:
             resolved["status"] = {
                 "field_id": status["id"],
-                "inbox_option_id": options[config["status_inbox"]],
+                "inbox_option_id": options[_normalize_key(config["status_inbox"])],
             }
 
     area = require("area", "SINGLE_SELECT")
     if area is not None:
-        options = {o["name"]: o["id"] for o in area.get("options", [])}
-        missing = [a for a in config["allowed_areas"] if a not in options]
+        options = {_normalize_key(o["name"]): o["id"] for o in area.get("options", [])}
+        missing = [
+            a for a in config["allowed_areas"] if _normalize_key(a) not in options
+        ]
         if missing:
             problems.append(
                 f"Area field is missing expected options: {', '.join(missing)}"
             )
         else:
-            resolved["area"] = {"field_id": area["id"], "options": options}
+            resolved["area"] = {
+                "field_id": area["id"],
+                "options": {
+                    a: options[_normalize_key(a)] for a in config["allowed_areas"]
+                },
+            }
 
     source = require("source_context", "TEXT")
     if source is not None:

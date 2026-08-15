@@ -174,8 +174,11 @@ def project_fields_response(drop_status_option=None):
         "node": {
             "fields": {
                 "nodes": [
+                    # The live project's Status options are Title-case
+                    # ('Inbox', not 'INBOX'); matching must tolerate that.
                     {"id": "F_status", "name": "Status", "dataType": "SINGLE_SELECT",
-                     "options": [{"id": f"OPT_S_{s}", "name": s} for s in statuses]},
+                     "options": [{"id": f"OPT_S_{s}", "name": s.capitalize()}
+                                 for s in statuses]},
                     {"id": "F_area", "name": "Area", "dataType": "SINGLE_SELECT",
                      "options": [{"id": f"OPT_A_{a}", "name": a}
                                  for a in CONFIG["allowed_areas"]]},
@@ -302,6 +305,8 @@ class TestSync(unittest.TestCase):
         self.assertEqual(client.mutations, [])
 
     def test_ambiguous_project_title_fails_closed(self):
+        cfg = dict(CONFIG, project_number=None)  # force title-based resolution
+
         class AmbiguousClient(FakeClient):
             def execute(self, query, variables):
                 if "projectsV2(first: 50)" in query:
@@ -312,7 +317,7 @@ class TestSync(unittest.TestCase):
 
         client = AmbiguousClient()
         with self.assertRaises(si.ProjectContractError):
-            si.sync_issue(client, CONFIG, ISSUE_ID, "My idea", VALID_BODY)
+            si.sync_issue(client, cfg, ISSUE_ID, "My idea", VALID_BODY)
         self.assertEqual(client.mutations, [])
 
     def test_configured_project_number_with_wrong_title_fails_closed(self):

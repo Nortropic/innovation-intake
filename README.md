@@ -116,7 +116,10 @@ field names, and the allowed option values. The synchronizer resolves the
 Project and its fields **by name on every run** and verifies they match this
 expected model, so renamed or deleted fields/options fail visibly instead of
 silently mis-filing ideas. If `project_number` is set, the Project is looked
-up by number and its title is verified.
+up by number and its title is verified. Single-select option names are
+matched case-insensitively: the live Status options are `Inbox`, `Shaping`, …
+while the intake model spells them `INBOX`, `SHAPING`, … — same options; the
+Project schema is never modified to force a case match.
 
 ## Authentication
 
