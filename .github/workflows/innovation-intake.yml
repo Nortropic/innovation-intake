@@ -1,0 +1,24 @@
+name: Innovation Intake
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions:
+  contents: read
+
+# One sync at a time per issue; a newer edit supersedes an in-flight run.
+concurrency:
+  group: innovation-intake-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync issue into Nortropic Innovation
+        env:
+          PROJECT_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+        run: python3 scripts/sync_innovation.py
