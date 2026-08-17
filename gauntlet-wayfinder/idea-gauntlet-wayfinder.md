@@ -1,8 +1,9 @@
 ---
 title: "Gauntlet quality layer inside the Nortropic trust loop"
 type: idea-brief
-status: ready-for-clarification
+status: idea   # idea → clarified → planned → building → verified; terminal: superseded
 slug: gauntlet-wayfinder
+supersedes: [gauntlet-quality-layer]   # ersätter den tidigare Drive-briefen av samma idé
 owner: Johnny (Nortropic)
 created: 2026-08-16
 source_conversation: gauntlet-wayfinder-full-chat.md
