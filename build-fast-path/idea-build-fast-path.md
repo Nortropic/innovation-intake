@@ -7,6 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-16
 source_conversation: build-fast-path-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: build-fast-path/idea-build-fast-path.md
+related: [snabba-upp-loopar, claude-design-watch]   # snabba-upp-loopar: samma tema, annat subsystem; claude-design-watch: Visual Intent i Design-steget
 ---
 
 # Idea brief: Build fast path — template repo + Content-phase split
