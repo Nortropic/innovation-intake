@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: dokumentation-repo-struktur-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: dokumentation-repo-struktur/idea-dokumentation-repo-struktur.md
-related: [workflow-orkestrering]
+related: [workflow-orkestrering, nortropic-organization-os]
 ---
 
 # Idea brief: Thin authoritative core, thick knowledge base — the nortropic-knowledge split

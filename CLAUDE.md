@@ -1,19 +1,35 @@
 # Nortropic innovation-intake — idékorpusen
 
 Detta repo är korpusen/idébanken som skillen `nortropic-intake`
-(`~/.claude/skills/nortropic-intake/`) levererar till. Varje idé är en låda med två
-papper: byggritningen (briefen) och dagboken (transkriptet). Briefen styr, dagboken
-förklarar — **vid konflikt vinner alltid briefen**.
+(`~/.claude/skills/nortropic-intake/`) levererar till. Varje idé är en låda med tre
+papper: byggritningen (briefen = VAD), designrationalen (= VARFÖR) och dagboken
+(transkriptet = RÅ BEVISNING). Briefen styr; rationalen förklarar designlogiken vid
+behov; transkriptet slås upp i riktade meddelandeintervall.
 
 ## Struktur
 
 - `<slug>/idea-<slug>.md` — briefen: beslut (inkl. förkastade vägar) med proveniens
-  `(← msg N)`, EARS-acceptanskriterier, öppna frågor. Det agenten planerar och bygger från.
-- `<slug>/<slug>-full-chat.md` — det ordagranna transkriptet, fail-closed-verifierat.
-  Läses på begäran via subagent när rationale behövs; aldrig förladdat.
-- `INDEX.md` — en rad per idé: `slug | title | status | created | links`. Upsertas vid
-  varje leverans och statusbyte. Börja där för att se vad som finns.
+  `(← msg N)`, EARS-acceptanskriterier, öppna frågor. Det agenten planerar och bygger
+  från — den enda intake-fil en byggsession laddar som standard.
+- `<slug>/<slug>-design-rationale.md` — designrationalen: resonemangskedjor, förkastanden
+  med vilket haveri de skulle skapa, avvägningar, hämtkarta (ämne → meddelandeintervall).
+  Läses på begäran när designlogik behövs; aldrig förladdad. (Idéer fångade före
+  trekontraktet saknar den — det flaggar backfill, inte fel.)
+- `<slug>/<slug>-full-chat.md` — det ordagranna transkriptet, fail-closed-verifierat och
+  orörligt efter verifierad capture. Riktade meddelandeintervall hämtas via subagent när
+  rationalen inte räcker eller exakt formulering spelar roll; aldrig förladdat.
+- `INDEX.md` — en rad per idé (aldrig per fil): `slug | title | status | created | links`.
+  Upsertas vid varje leverans och statusbyte. Börja där för att se vad som finns.
 - Idémappen ligger **direkt i repo-roten** (`<slug>/`, inte `ideas/<slug>/`).
+
+## Progressiv exponering & auktoritet
+
+Läsordning efter roll: implementerare → briefen; arkitekt/planerare/granskare → briefen,
++ rationalen när den gör materiell nytta; exakt proveniens → riktade transkriptintervall,
+inget mer. Auktoritetsordning (högst vinner): gällande kanonisk repo-auktoritet
+(konstitution, regelverk, godkänd arkitektur) → senare ägargodkänd spec/arkitektur/plan →
+brief → rationale → transkript. Inom ett intake-paket tolkas brief > rationale >
+transkript. Intake bevarar intention och proveniens — det är aldrig exekveringsauktoritet.
 
 ## Konventioner
 

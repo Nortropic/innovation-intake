@@ -7,6 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: bootstrap-closeout-rebaseline-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: bootstrap-closeout-rebaseline/idea-bootstrap-closeout-rebaseline.md
+related: [nortropic-organization-os]
 ---
 
 # Idea brief: Bootstrap closeout and rebaseline — finish narrow, observe, rebaseline, continue

@@ -1,12 +1,13 @@
 ---
 title: "Nortropic as a municipality: central governance, shared infrastructure, autonomous förvaltningar"
 type: idea-brief
-status: idea   # lifecycle: idea → clarified → planned → building → verified; terminal: superseded
+status: superseded   # lifecycle: idea → clarified → planned → building → verified; terminal: superseded
 slug: nortropic-som-kommun
 owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: nortropic-som-kommun-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: nortropic-som-kommun/idea-nortropic-som-kommun.md
+superseded_by: nortropic-organization-os   # owner-approved 2026-08-25: the Organization OS brainstorm absorbs and develops this framing
 ---
 
 # Idea brief: Nortropic as a municipality — central governance, shared infrastructure, autonomous förvaltningar
