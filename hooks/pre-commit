@@ -1,0 +1,33 @@
+#!/bin/sh
+# Nortropic innovation-intake — approved-plan contract gate.
+#
+# Refuses a commit that would put an unprovable lifecycle state into git history:
+# a brief at planned/building/verified with no valid, hash-bound approved plan.
+#
+# Install (git does not track .git/hooks, so this is a per-clone step):
+#     chmod +x hooks/pre-commit
+#     ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+#
+# Bypass is `git commit --no-verify` and is the owner's explicit choice, not a default.
+
+PC="$HOME/.claude/skills/nortropic-intake/scripts/plan_contract.py"
+CORPUS="$(git rev-parse --show-toplevel)"
+
+if [ ! -f "$PC" ]; then
+    echo "pre-commit: nortropic-intake skill not found at $PC — skipping the" >&2
+    echo "            approved-plan contract check. Install the skill to enable it." >&2
+    exit 0
+fi
+
+if ! python3 "$PC" --corpus "$CORPUS" validate; then
+    cat >&2 <<'MSG'
+
+pre-commit REFUSED: the approved-plan contract is not satisfied.
+
+`status: planned | building | verified` requires a durable, owner-approved plan that is
+bound to the brief by sha256. Fix the findings above, or move the brief back to
+`status: clarified`. Never fabricate a plan to make this pass.
+
+MSG
+    exit 1
+fi

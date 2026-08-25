@@ -1,9 +1,15 @@
 # Korpus-index — Nortropic innovation-intake
 
 En rad per idé; upsertas vid varje leverans och vid varje statusbyte/korslänkning
-(Phase 2.8/3 i skillen `nortropic-intake`). STATUS-kolumnen visar hela livscykeln:
+(Phase 2.8/3/4 i skillen `nortropic-intake`). STATUS-kolumnen visar hela livscykeln:
 `idea → clarified → planned → building → verified` (terminal: `superseded`) —
 så syns både idébanken och det pågående i en blick.
+
+`planned`, `building` och `verified` kräver en bunden godkänd plan
+(`<slug>/<slug>-approved-plan.md` + `approved_plan_sha256` i briefen) — se `CLAUDE.md`.
+Planfilen får ingen egen rad här: indexet är en idékatalog, inte en filförteckning.
+Kontrollera hela korpusen mekaniskt med
+`python3 ~/.claude/skills/nortropic-intake/scripts/plan_contract.py validate`.
 
 | slug | title | status | created | links |
 |---|---|---|---|---|
