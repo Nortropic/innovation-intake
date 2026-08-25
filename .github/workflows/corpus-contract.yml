@@ -4,12 +4,12 @@ name: corpus-contract
 # overridable with --no-verify; this runs on the server for every push and pull request.
 #
 # The validators live in the skill repo (Nortropic/nortropic-intake), so this workflow
-# checks it out alongside the corpus. For a private skill repo the default GITHUB_TOKEN
-# has no cross-repository read access — see OWNER_ACTION_REQUIRED: create a fine-grained
-# PAT with read access to nortropic-intake and store it as the secret INTAKE_SKILL_TOKEN.
+# checks it out alongside the corpus. Both repos are public, so the default GITHUB_TOKEN
+# suffices and NO credential is stored anywhere — the optional INTAKE_SKILL_TOKEN below
+# is only a fallback should the skill repo ever go private again.
 #
-# NOTE: present is not the same as REQUIRED. Until this check is added to branch
-# protection as a required status check, a PR can still be merged while it is red.
+# NOTE: present is not the same as REQUIRED. This is a required status check on
+# main — see the repository's branch protection — so a red run blocks the merge.
 
 on:
   push:
