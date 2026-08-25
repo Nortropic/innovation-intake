@@ -1,0 +1,77 @@
+name: corpus-contract
+
+# Remote enforcement for the idea corpus. The local pre-commit hook is per-clone and
+# overridable with --no-verify; this runs on the server for every push and pull request.
+#
+# The validators live in the skill repo (Nortropic/nortropic-intake), so this workflow
+# checks it out alongside the corpus. For a private skill repo the default GITHUB_TOKEN
+# has no cross-repository read access — see OWNER_ACTION_REQUIRED: create a fine-grained
+# PAT with read access to nortropic-intake and store it as the secret INTAKE_SKILL_TOKEN.
+#
+# NOTE: present is not the same as REQUIRED. Until this check is added to branch
+# protection as a required status check, a PR can still be merged while it is red.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the corpus
+        uses: actions/checkout@v4
+        with:
+          path: corpus
+          fetch-depth: 0        # the append-only clarification check reads HEAD
+
+      - name: Check out the intake skill (validators)
+        uses: actions/checkout@v4
+        with:
+          repository: Nortropic/nortropic-intake
+          path: skill
+          token: ${{ secrets.INTAKE_SKILL_TOKEN || github.token }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Approved-plan contract over every idea package
+        run: python3 skill/scripts/plan_contract.py --corpus corpus validate
+
+      - name: Context contract — manifests, clarifications, provenance integrity
+        run: python3 skill/scripts/context_contract.py --corpus corpus validate
+
+      - name: Capture-signature goldens (the corpus holds the sources)
+        run: |
+          set -e
+          for slug in gauntlet-wayfinder nortropic-organization-os; do
+            sig="skill/evals/golden/$slug.signature.json"
+            src="corpus/$slug/$slug-full-chat.md"
+            if [ -f "$sig" ] && [ -f "$src" ]; then
+              python3 skill/evals/capture_signature.py "$src" --check "$sig"
+            else
+              echo "MISSING golden or source for $slug"; exit 1
+            fi
+          done
+
+      - name: One row per idea in INDEX.md
+        run: |
+          set -e
+          missing=0
+          for dir in corpus/*/; do
+            slug=$(basename "$dir")
+            [ -f "$dir/idea-$slug.md" ] || continue
+            if ! grep -q "^| $slug |" corpus/INDEX.md; then
+              echo "INDEX.md has no row for $slug"
+              missing=1
+            fi
+          done
+          # the index is an idea catalogue, not a file inventory
+          if grep -qE '^\| .*(-approved-plan|-plan-candidate|-context-manifest|-owner-clarifications)' corpus/INDEX.md; then
+            echo "INDEX.md contains an artifact row; it must carry one row per IDEA only"
+            missing=1
+          fi
+          exit $missing

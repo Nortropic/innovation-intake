@@ -6,11 +6,21 @@ papper: byggritningen (briefen = VAD), designrationalen (= VARFÖR) och dagboken
 (transkriptet = RÅ BEVISNING). Briefen styr; rationalen förklarar designlogiken vid
 behov; transkriptet slås upp i riktade meddelandeintervall.
 
-Efter att ägaren godkänt en plan i Plan Mode läggs ett fjärde papper i lådan: den
-godkända planen (= HUR och i vilken ordning). Paketmodellen:
+Paketmodellen i sin helhet:
 
-    FÖRE PLAN    VAD (brief) / VARFÖR (rationale) / RÅ (transkript)
-    EFTER PLAN   VAD / VARFÖR / RÅ / GODKÄND PLAN (exekveringsordning)
+    RÅ              vad som faktiskt sades och bifogades      <slug>-full-chat.md
+    VARFÖR          varför designen ser ut som den gör        <slug>-design-rationale.md
+    VAD             vad som är avsett                         idea-<slug>.md
+    ÄGARDELTAN      vad ägaren klargjort efteråt              <slug>-owner-clarifications.md
+    VAR             var varje källa finns och dess identitet  <slug>-context-manifest.json
+    HUR (förslag)   det Claude föreslår — det ägaren läser    <slug>-plan-candidate.md
+    HUR (godkänt)   exakt ägargodkänd exekveringsplan         <slug>-approved-plan.md
+    VERKLIGHETEN    vad målrepona faktiskt innehåller         läses färskt, varje gång
+
+**Fullständig kontext betyder fullständigt BEVARANDE, inte fullständig förladdning.**
+Varje källa bevaras varaktigt, adresserbart och hashbundet; varje fas får sedan den
+minsta högsignalmängd som ger full täckning för just sitt jobb. Transkriptet hämtas i
+riktade intervall — det dumpas aldrig.
 
 ## Struktur
 
@@ -30,6 +40,17 @@ godkända planen (= HUR och i vilken ordning). Paketmodellen:
   skiva, precedensplåster). Skapas **aldrig** före godkännandet och aldrig ur briefen.
   Version N≥2 heter `<slug>-approved-plan-v<N>.md`. Läses tillsammans med briefen i en
   exekveringssession.
+- `<slug>/<slug>-context-manifest.json` — källkartan: varje källa som tänkandet vilar på
+  får ett stabilt `SRC-*`-id, en sha256 och en `capture_status`
+  (`captured` / `not_load_bearing` / `unavailable_owner_acknowledged` / `pending`).
+  Här står också `execution_targets` med roller. Innehåll dupliceras aldrig — kartan gör
+  källmängden **hittbar och kontrollerbar**, inte förladdad. Aldrig hemligheter.
+- `<slug>/<slug>-owner-clarifications.md` — ägardeltan: exakt fråga, exakt ägarsvar,
+  datum, vilket `Q` det löser och vilka `D`/`R`/`AC` det påverkar, med `CLAR-*`-id.
+  **Append-only** — ett registrerat svar redigeras aldrig, och transkriptet skrivs aldrig
+  om för att matcha det. Finns bara när ägaren faktiskt svarat.
+- `<slug>/<slug>-plan-candidate.md` — planförslaget: det Plan Mode producerade och det
+  ägaren faktiskt läser. Behålls orört efter godkännandet som kvitto.
 - `INDEX.md` — en rad per idé (aldrig per fil): `slug | title | status | created | links`.
   Upsertas vid varje leverans och statusbyte. Börja där för att se vad som finns.
   Planfilen får **ingen egen rad** — indexet är inte en filförteckning.
@@ -41,8 +62,9 @@ Läsordning efter roll: implementerare → briefen (+ den godkända planen när 
 finns); arkitekt/planerare/granskare → briefen, + rationalen när den gör materiell nytta;
 exakt proveniens → riktade transkriptintervall, inget mer. Auktoritetsordning (högst
 vinner): gällande kanonisk repo-auktoritet (konstitution, regelverk, godkänd arkitektur) →
-senare ägargodkänd spec/arkitektur/plan → godkänd intake-plan → brief → rationale →
-transkript. Inom ett intake-paket tolkas godkänd plan > brief > rationale > transkript.
+senare ägargodkänd spec/arkitektur/plan → godkänd intake-plan → ägarklargöranden → brief →
+rationale → transkript. Inom ett intake-paket tolkas godkänd plan > ägarklargöranden >
+brief > rationale > transkript: ett senare ägarsvar väger tyngre än den brief det rättar.
 Intake bevarar intention och proveniens — det är aldrig exekveringsauktoritet.
 
 Den godkända planen är den starkaste intake-artefakten och ändå inte auktoritet: den kör
@@ -111,6 +133,59 @@ sedan binds den. Transkriptet skrapas aldrig automatiskt, och en modellrekonstru
 godtas aldrig som plan. Finns ingen känd källa är det ärliga utfallet `status: clarified`
 och en ny planering.
 
+## Innan Plan Mode: täckningsgrinden
+
+En brainstorm kan vara månader gammal. Innan planering får börja körs:
+
+```bash
+python3 ~/.claude/skills/nortropic-intake/scripts/context_contract.py \
+    coverage --slug <slug> --target-repo <path> [--target-repo <path> …]
+```
+
+Den skriver `PLANNING_CONTEXT_COMPLETE=YES|NO` med **räknade tal, aldrig ett betyg**, och
+kräver: källtaggar på varje beslut, förkastande och acceptanskriterium; en disposition för
+varje öppen fråga (besvarad / uppskjuten / medvetet öppen — annars BLOCKING); giltiga
+klargöranden; varje bärande källa `captured` eller uttryckligen ägarkvitterad som
+otillgänglig; paketet inte ersatt; och att varje deklarerat målrepo faktiskt har
+inspekterats.
+
+Planering är `INTENTION + NULÄGE → PLAN`, aldrig `GAMMAL BRAINSTORM → PLAN`. Krockar
+gällande auktoritet med intake-intentionen lyfts konflikten till ägaren — den gamla idén
+vinner aldrig tyst. Vid `NO` börjar inte Plan Mode: fyll luckan, eller registrera ett
+uttryckligt ägarbeslut. Gissa aldrig vad den saknade källan sannolikt sa.
+
+## Ägaren godkänner exakta bytes
+
+Planen finns i två filer med flit: kandidaten som ägaren läser, och den godkända planen
+vars **kropp är kopierad byte för byte** ur kandidaten. Identiteten är sha256 över
+kroppen (allt efter frontmatter), så metadata får skilja sig men innehållet inte:
+
+```bash
+python3 …/plan_contract.py coherence --slug <slug>     # deltat ägaren läser
+python3 …/plan_contract.py approve   --slug <slug> --candidate-sha <sha> …
+```
+
+`approve` vägrar om den godkända sha:n inte är kandidaten på disk. Kandidaten muteras
+aldrig efteråt — den är kvittot på vad som stod på skärmen. Coherence-rapporten visar
+deltat (nya planbeslut, scope-utvidgningar, tappade krav, återupplivade förkastanden)
+**före** godkännandet; materiella ändringar begravs aldrig i planens brödtext.
+
+## Flera arbetsströmmar mot samma repo
+
+Pekarblock är nycklade på `workstream=<NAMN> slug=<slug>`, så Webbförvaltningen,
+Bootstrap och en orelaterad förbättring kan peka mot samma repo utan att skriva över
+varandra. En session måste lösa ut **sin** arbetsström innan den använder någon pekare;
+går det inte rapporteras `POINTER_AMBIGUOUS` och ingen används. Det finns ingen
+repo-global "nästa uppgift" — bara en nästa skiva inom en namngiven arbetsström.
+
+## `building` och `verified` är observationer
+
+De kräver evidens i briefen: `execution_repo`, `execution_commit`, `execution_slice`, och
+för `verified` dessutom `verification_evidence`. Korpuskontrollen granskar formen (skivan
+måste finnas i den godkända planen); `resume` bevisar commiten mot det verkliga repot.
+**En `verified`-etikett blir inte sann av att det finns en giltig plan.** Säger repot emot
+etiketten skrivs `EXECUTION_STATE_CONTRADICTED=YES` — repot vinner, och briefen rättas.
+
 ## Efter komprimering och i en färsk session
 
 Den varaktiga planen ligger på disk; minnet behöver bara hitta tillbaka till den.
@@ -118,12 +193,14 @@ En återupptagande session — efter `/compact`, automatisk komprimering, eller 
 kör:
 
 ```bash
-python3 ~/.claude/skills/nortropic-intake/scripts/plan_contract.py \
-    resume --slug <slug> --target-repo <repo>
+python3 ~/.claude/skills/nortropic-intake/scripts/plan_contract.py resume \
+    --slug <slug> --workstream <NAMN> --target-repo <repo> [--pointer <repo>/CLAUDE.md]
 ```
 
-och får `PLAN_IDENTITY=<sökväg>@sha256:<hash>`, `PLAN_STATUS`, brief-sökväg och
-repo-evidens. **Läs sedan om den godkända planen från disk innan du härleder framtida
+och får hela paketets identitet — brief, rationale, manifest, klargöranden, plan,
+godkännandekvitto — plus repo-evidens för varje mål och en ordnad laddningsplan
+(minst först; rationale och transkript förblir on-demand). För en lång plan ger
+`map --slug <slug>` skiv-id och radintervall, så en liten skiva inte kräver hundra sidor. **Läs sedan om den godkända planen från disk innan du härleder framtida
 arbete**, och stäm av den mot repots faktiska tillstånd. Rekonstruera aldrig en saknad
 plan ur samtalsminne, ur ett utkast eller ur transkriptet; kan planen eller dess
 registrerade identitet inte bevisas: STOPPA med `PLAN_IDENTITY_UNAVAILABLE`.

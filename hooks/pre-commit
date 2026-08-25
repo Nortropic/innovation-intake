@@ -19,14 +19,24 @@ if [ ! -f "$PC" ]; then
     exit 0
 fi
 
-if ! python3 "$PC" --corpus "$CORPUS" validate; then
+CC="$HOME/.claude/skills/nortropic-intake/scripts/context_contract.py"
+rc=0
+python3 "$PC" --corpus "$CORPUS" validate || rc=1
+echo
+python3 "$CC" --corpus "$CORPUS" validate || rc=1
+
+if [ "$rc" -ne 0 ]; then
     cat >&2 <<'MSG'
 
-pre-commit REFUSED: the approved-plan contract is not satisfied.
+pre-commit REFUSED: the intake contract is not satisfied.
 
-`status: planned | building | verified` requires a durable, owner-approved plan that is
-bound to the brief by sha256. Fix the findings above, or move the brief back to
-`status: clarified`. Never fabricate a plan to make this pass.
+`status: planned | building | verified` requires a durable, owner-approved plan bound to
+the brief by sha256; `building`/`verified` additionally require execution evidence.
+Source manifests must hash-match their sources and carry no credentials; owner
+clarifications are append-only and may not dangle.
+
+Fix the findings above, or move the brief back to `status: clarified`. Never fabricate a
+plan, a source or an owner answer to make this pass.
 
 MSG
     exit 1
