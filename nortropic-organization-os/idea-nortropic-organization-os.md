@@ -9,7 +9,7 @@ source_conversation: nortropic-organization-os-full-chat.md   # raw evidence —
 design_rationale: nortropic-organization-os-design-rationale.md   # deeper design logic — read on demand, never preloaded
 intended_repo_path: nortropic-organization-os/idea-nortropic-organization-os.md
 supersedes: [nortropic-som-kommun]
-related: [workflow-orkestrering, dokumentation-repo-struktur, bevaka-frontier-ai-engineering, bootstrap-closeout-rebaseline]
+related: [workflow-orkestrering, dokumentation-repo-struktur, bevaka-frontier-ai-engineering, bootstrap-closeout-rebaseline, claude-bootstrap-takeover-protocol, nortropic-aquarium, nortropic-evolution-foundations, nortropic-owner-plane, nortropic-planning-wall, nortropic-recompile]
 ---
 
 # Idea brief: Nortropic Organization OS — trust-based autonomy above the Autonomy Kernel

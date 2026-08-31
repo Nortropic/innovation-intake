@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: arbetsmetoder-innovation-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: arbetsmetoder-innovation/idea-arbetsmetoder-innovation.md
-related: [brainstorming-arbetsfloden]
+related: [brainstorming-arbetsfloden, gold-extraction-overlay]
 ---
 
 # Idea brief: Deep Brainstorm protocol — evidence-driven R&D mode as the standing default

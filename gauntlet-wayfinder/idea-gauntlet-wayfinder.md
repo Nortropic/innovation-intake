@@ -8,6 +8,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-16
 source_conversation: gauntlet-wayfinder-full-chat.md
 intended_repo_path: gauntlet-wayfinder/idea-gauntlet-wayfinder.md
+related: [webbforvaltningen-capability-assurance]
 ---
 
 # Idea brief: Gauntlet quality layer inside the Nortropic trust loop

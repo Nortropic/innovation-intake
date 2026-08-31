@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: innovation-inbox-idehantering-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: innovation-inbox-idehantering/idea-innovation-inbox-idehantering.md
-related: [workflow-orkestrering, openai-anthropic-workflow]
+related: [workflow-orkestrering, openai-anthropic-workflow, nortropic-planning-wall, project-corpus-intake]
 ---
 
 # Idea brief: Innovation Inbox — a Discovery Plane funnel for frictionless idea capture

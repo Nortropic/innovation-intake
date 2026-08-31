@@ -8,7 +8,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: nortropic-frontier-delta-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: nortropic-frontier-delta/idea-nortropic-frontier-delta.md
-related: [agent-harness-priorities, snabba-upp-loopar, workflow-orkestrering, brainstorma-nortropic-engineering]
+related: [agent-harness-priorities, snabba-upp-loopar, workflow-orkestrering, brainstorma-nortropic-engineering, digitalforvaltningen-webb-v2, foundation-repair-gate]
 ---
 
 # Idea brief: Nortropic Evolution Loop — autonomous frontier monitoring and self-improvement without touching trust

@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: agent-harness-priorities-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: agent-harness-priorities/idea-agent-harness-priorities.md
-related: [nortropic-frontier-delta, bevaka-frontier-ai-engineering]   # bevakningsfamiljen; frontier-delta ersatt av Observatory-briefen
+related: [nortropic-frontier-delta, bevaka-frontier-ai-engineering, autonomi-utan-sjalvcertifiering, claude-bootstrap-takeover-protocol]   # bevakningsfamiljen; frontier-delta ersatt av Observatory-briefen
 ---
 
 # Idea brief: Agent harness priorities — reviewer isolation, provenance, bounded multi-agent patterns

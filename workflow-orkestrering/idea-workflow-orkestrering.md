@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: workflow-orkestrering-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: workflow-orkestrering/idea-workflow-orkestrering.md
-related: [nortropic-frontier-delta, snabba-upp-loopar, innovation-inbox-idehantering, dokumentation-repo-struktur, brainstorming-arbetsfloden, brainstorma-nortropic-engineering, bevaka-frontier-ai-engineering, nortropic-organization-os]
+related: [nortropic-frontier-delta, snabba-upp-loopar, innovation-inbox-idehantering, dokumentation-repo-struktur, brainstorming-arbetsfloden, brainstorma-nortropic-engineering, bevaka-frontier-ai-engineering, nortropic-organization-os, nortropic-planning-wall, verkstadsgolvet-v2-cockpit]
 ---
 
 # Idea brief: Context & orchestration contract — kill copy/paste handoffs, operator portal, learning fabric

@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: openai-anthropic-workflow-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: openai-anthropic-workflow/idea-openai-anthropic-workflow.md
-related: [innovation-inbox-idehantering, brainstorming-arbetsfloden]
+related: [innovation-inbox-idehantering, brainstorming-arbetsfloden, project-corpus-intake]
 ---
 
 # Idea brief: Brainstorm extraction workflow — chat as working memory, harvest as durable artifact

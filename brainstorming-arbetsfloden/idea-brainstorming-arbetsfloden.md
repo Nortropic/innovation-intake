@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: brainstorming-arbetsfloden-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: brainstorming-arbetsfloden/idea-brainstorming-arbetsfloden.md
-related: [workflow-orkestrering, arbetsmetoder-innovation, openai-anthropic-workflow]
+related: [workflow-orkestrering, arbetsmetoder-innovation, openai-anthropic-workflow, nortropic-recompile]
 ---
 
 # Idea brief: Conversation compiler — BUILD IR, repo reconciliation and evals-before-code after intake

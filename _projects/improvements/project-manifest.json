@@ -1,0 +1,939 @@
+{
+  "project_manifest_version": 1,
+  "project": "improvements",
+  "title": "Improvements — R&D corpus sweep",
+  "platform": "chatgpt",
+  "origin": "https://chatgpt.com/g/g-p-6a86d9dcb8488191b03ee843bb19eb6c-improvements/project",
+  "created": "2026-08-31",
+  "enumeration": {
+    "method": "data-layer",
+    "verified": true,
+    "declared_inventory_sha256": "a6fff0661a944dc6178d6bc913a022f952c8e29f4aa6744b5ba8661511540051",
+    "note": "Dedicated project listing (/backend-api/gizmos/<gid>/conversations) cursor-paged to exhaustion (27); cross-checked against the account's 800 most-recently-updated conversations (exactly the same 27) and the archived listing (0 project chats); owner confirmed the 27-item list 2026-08-31. NOTE/OBSERVATION: the shipped candidate endpoint (conversations?gizmo_id=) ignores its filter — recorded as observation, not fixed mid-freeze."
+  },
+  "project_status": "COMPLETE_WITH_OPEN_REVIEW",
+  "inventory_revision": 29,
+  "inventory_sha256": "568c711d92afe08f8a1f4dd3e3bb6136e2107caf4c1a4f88db0ab6c63c47fd15",
+  "inventory_history": [
+    {
+      "revision": 1,
+      "inventory_sha256": "5399c5c1fe444ef4ba5d8b4045d40ce6f674fc8d190619320f6f6d9e47308bd5",
+      "at": "2026-08-31",
+      "note": "declare inventory (data-layer, 27 item(s))"
+    },
+    {
+      "revision": 2,
+      "inventory_sha256": "f10e5b8781a43d2fc9238dfc2b4eac3f8db29e43e5ea07ab94559acaedc03e74",
+      "at": "2026-08-31",
+      "note": "capture CONV-001 r1"
+    },
+    {
+      "revision": 3,
+      "inventory_sha256": "dd2bec7b0b3ee160089922ecd763c547a69d759cc7def96267dcce5338510318",
+      "at": "2026-08-31",
+      "note": "capture CONV-002 r1"
+    },
+    {
+      "revision": 4,
+      "inventory_sha256": "738b1b2f70a9d4d56a35b7f1843912f3e22a870e6ef7be040badc3117c85f876",
+      "at": "2026-08-31",
+      "note": "capture CONV-003 r1"
+    },
+    {
+      "revision": 5,
+      "inventory_sha256": "c2fdd2bc3d46253356fc909ba58f5f54e1a0806db88277aeede3e110edcb049f",
+      "at": "2026-08-31",
+      "note": "capture CONV-004 r1"
+    },
+    {
+      "revision": 6,
+      "inventory_sha256": "963f88d36635e237030c860d9701b67a2908a347dc224cbed75b0b51d17d438f",
+      "at": "2026-08-31",
+      "note": "capture CONV-005 r1"
+    },
+    {
+      "revision": 7,
+      "inventory_sha256": "4b6a9d72e49b0bf50ee0ebf32fac47d389f86cfa373768ddd302500e72b99966",
+      "at": "2026-08-31",
+      "note": "capture CONV-006 r1"
+    },
+    {
+      "revision": 8,
+      "inventory_sha256": "62ee6770620d92768d3786c71234f82e5f607961d81ea29d681af257368b6d16",
+      "at": "2026-08-31",
+      "note": "capture CONV-007 r1"
+    },
+    {
+      "revision": 9,
+      "inventory_sha256": "8fe8dd02407a22b289ae222852634ec0ad4c9f43e43887f26880599b55f77dbb",
+      "at": "2026-08-31",
+      "note": "capture CONV-008 r1"
+    },
+    {
+      "revision": 10,
+      "inventory_sha256": "166760fef2316785c23353e879c8a4075ab4c066e81dbc82a400c8eff2e2f218",
+      "at": "2026-08-31",
+      "note": "capture CONV-009 r1"
+    },
+    {
+      "revision": 11,
+      "inventory_sha256": "a079f0c13d8c48ce47970885b23289d1ca3382c900b2d76000c5fccce50539bc",
+      "at": "2026-08-31",
+      "note": "capture CONV-010 r1"
+    },
+    {
+      "revision": 12,
+      "inventory_sha256": "6e3b7ee011136a0e70db658c0f21a12de102617b0c75186422f7fd05a30b3f82",
+      "at": "2026-08-31",
+      "note": "capture CONV-011 r1"
+    },
+    {
+      "revision": 13,
+      "inventory_sha256": "9501a9e3abea6b0dc8f78b3a238230f67d332f579369ebe750299ede75254422",
+      "at": "2026-08-31",
+      "note": "capture CONV-012 r1"
+    },
+    {
+      "revision": 14,
+      "inventory_sha256": "4d7172f57cada595f3d9f766b27aeae6073ef4ce67a6e9d0e37d49d62c7e7b27",
+      "at": "2026-08-31",
+      "note": "capture CONV-012 r2"
+    },
+    {
+      "revision": 15,
+      "inventory_sha256": "fa0354957bf873d5902bb8a8b2c8418ccefcdcb0f4e0f7dd67d3cbcee0b8b0a2",
+      "at": "2026-08-31",
+      "note": "capture CONV-013 r1"
+    },
+    {
+      "revision": 16,
+      "inventory_sha256": "93a5dc2e232fe6ec941e9889796519d5ceedf6be9172171f672b1a2a2ad1802f",
+      "at": "2026-08-31",
+      "note": "capture CONV-014 r1"
+    },
+    {
+      "revision": 17,
+      "inventory_sha256": "3020e73c408171a060f9c9ccdcdfa4f426cf68fa31f61a6fca9cf469d53e0b5d",
+      "at": "2026-08-31",
+      "note": "capture CONV-015 r1"
+    },
+    {
+      "revision": 18,
+      "inventory_sha256": "206e3f407a27194df0ff2bbb3f5aa39cd8f8ad0415a102cf05e70a460c4306f2",
+      "at": "2026-08-31",
+      "note": "capture CONV-016 r1"
+    },
+    {
+      "revision": 19,
+      "inventory_sha256": "99fb40c95d8fbbc7c5aa1dce5533c79b9e66a98bd1ccd51eaa89a2187fcc278a",
+      "at": "2026-08-31",
+      "note": "capture CONV-017 r1"
+    },
+    {
+      "revision": 20,
+      "inventory_sha256": "ed23db14012faaf53d2c8d9e20f690a82998c8f02f76726a0c71e3b209dd0090",
+      "at": "2026-08-31",
+      "note": "capture CONV-018 r1"
+    },
+    {
+      "revision": 21,
+      "inventory_sha256": "8c26533f0f51e2e67bef32975cba1bfcbaef1b7d20f12a05343a1f6ab4aec6de",
+      "at": "2026-08-31",
+      "note": "capture CONV-019 r1"
+    },
+    {
+      "revision": 22,
+      "inventory_sha256": "50f073de4b4f4fa18b43b9a54ae366e62b7348664dd19a6199ae000b86cd7cea",
+      "at": "2026-08-31",
+      "note": "capture CONV-020 r1"
+    },
+    {
+      "revision": 23,
+      "inventory_sha256": "b53f86508c526d6cd782500aa476321606b680304cb5c2763b8dd49ef33fe73a",
+      "at": "2026-08-31",
+      "note": "capture CONV-021 r1"
+    },
+    {
+      "revision": 24,
+      "inventory_sha256": "edef10e8a8b0138d10b4637d6fcb49eca4cf8dc6108668e5e452380c170eaf8a",
+      "at": "2026-08-31",
+      "note": "capture CONV-022 r1"
+    },
+    {
+      "revision": 25,
+      "inventory_sha256": "6307ba230d4484da1f11599c45d5b92002ec44b466966d233dd308d73cbcd82c",
+      "at": "2026-08-31",
+      "note": "capture CONV-023 r1"
+    },
+    {
+      "revision": 26,
+      "inventory_sha256": "54c4bfe0c4e549ad2b59aca458d6851ae8517c0fff6a1f3b70f7d0deb9576446",
+      "at": "2026-08-31",
+      "note": "capture CONV-024 r1"
+    },
+    {
+      "revision": 27,
+      "inventory_sha256": "0953b68c471a8f2adecf7ce65e0865e36008193a76ccfb3930fa7e5297769fda",
+      "at": "2026-08-31",
+      "note": "capture CONV-025 r1"
+    },
+    {
+      "revision": 28,
+      "inventory_sha256": "83a02044e091440ed247bc022cdc961738c1bc86888039980867f07870fa5be5",
+      "at": "2026-08-31",
+      "note": "capture CONV-026 r1"
+    },
+    {
+      "revision": 29,
+      "inventory_sha256": "568c711d92afe08f8a1f4dd3e3bb6136e2107caf4c1a4f88db0ab6c63c47fd15",
+      "at": "2026-08-31",
+      "note": "capture CONV-027 r1"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "CONV-001",
+      "conversation_key": "chatgpt.com/6a92c6bc-0d8c-83eb-815e-3e4eafba0a95",
+      "url": "https://chatgpt.com/c/6a92c6bc-0d8c-83eb-815e-3e4eafba0a95",
+      "title": "Bevaka Nortropic-relevanta agentbyggen",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-001/conversation.md",
+          "sha256": "2a41db8ae8e7f9886298dc444f8ac9766fa3e23ffdd1aacbcee79299bf5e770c",
+          "captured_at": "2026-08-31",
+          "message_count": 84,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "project-corpus-intake",
+        "nortropic-recompile",
+        "gold-extraction-overlay"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-002",
+      "conversation_key": "chatgpt.com/6a8e82a1-9acc-83ed-ab47-c4055063d6ec",
+      "url": "https://chatgpt.com/c/6a8e82a1-9acc-83ed-ab47-c4055063d6ec",
+      "title": "OpenAI Codex migration and Claude Code canary",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-002/conversation.md",
+          "sha256": "7b82d794454f61b5b6fd1185469637af66b0a9e1d87b95f710232d6c349b948f",
+          "captured_at": "2026-08-31",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [],
+      "extraction_note": "0 ägarmeddelanden — schemalagda bevakningsrapporter; ev. paketering är RQ-006-fråga",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-003",
+      "conversation_key": "chatgpt.com/6a8d3c28-e464-83eb-8d9d-8545f9b683c1",
+      "url": "https://chatgpt.com/c/6a8d3c28-e464-83eb-8d9d-8545f9b683c1",
+      "title": "Nortropic frontier delta highlights four material shifts",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-003/conversation.md",
+          "sha256": "923eef122c227f070cc66fd6a6526ab9933b2e627e0c5d5bf8d43d76248afa81",
+          "captured_at": "2026-08-31",
+          "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "owner-attention-inte-owner-stop"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-004",
+      "conversation_key": "chatgpt.com/6a7971a3-0aac-83eb-991f-57ae207766e3",
+      "url": "https://chatgpt.com/c/6a7971a3-0aac-83eb-991f-57ae207766e3",
+      "title": "Nortropic agent harness priorities and experiments",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-004/conversation.md",
+          "sha256": "03981ca00367f708686d92b6a3f4cd1113346b14e351c1a4c56866174e229091",
+          "captured_at": "2026-08-31",
+          "message_count": 4,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "agent-harness-priorities"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-005",
+      "conversation_key": "chatgpt.com/6a8d28df-6df0-83ed-ad33-645de2094295",
+      "url": "https://chatgpt.com/c/6a8d28df-6df0-83ed-ad33-645de2094295",
+      "title": "Skapa kommun",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-005/conversation.md",
+          "sha256": "7547940b87200f6149475c813aea41f1ab857ef091b9aca241d4f84f5d9bffdf",
+          "captured_at": "2026-08-31",
+          "message_count": 79,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-organization-os",
+        "nortropic-aquarium"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-006",
+      "conversation_key": "chatgpt.com/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd",
+      "url": "https://chatgpt.com/c/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd",
+      "title": "Agent Control-Room Watch",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-006/conversation.md",
+          "sha256": "5f0b8d27a96f7b1f32aa761fa64e00761127fb5ce5518e80257450e85ba0d8cd",
+          "captured_at": "2026-08-31",
+          "message_count": 15,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-planning-wall"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-007",
+      "conversation_key": "chatgpt.com/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def",
+      "url": "https://chatgpt.com/c/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def",
+      "title": "Rapportera Bootstrap status",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-007/conversation.md",
+          "sha256": "b7d47ed0db70744808675ac87a01473dbeff7715e42ddb1b02bf0e9c5c9f64c9",
+          "captured_at": "2026-08-31",
+          "message_count": 96,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "claude-bootstrap-takeover-protocol"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-008",
+      "conversation_key": "chatgpt.com/6a900b9b-a3d4-83ed-82aa-602ee1e03050",
+      "url": "https://chatgpt.com/c/6a900b9b-a3d4-83ed-82aa-602ee1e03050",
+      "title": "Prompt för Claudeövertagande",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-008/conversation.md",
+          "sha256": "d34283811689fea29c5db482ab4a0f5f2461e370be9de5b5adbed5ffb94e705a",
+          "captured_at": "2026-08-31",
+          "message_count": 187,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-owner-plane"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-009",
+      "conversation_key": "chatgpt.com/6a916bf1-4358-83eb-a3a2-19df755d7a72",
+      "url": "https://chatgpt.com/c/6a916bf1-4358-83eb-a3a2-19df755d7a72",
+      "title": "Granska byggberedskap",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-009/conversation.md",
+          "sha256": "9b6488d3e74616f6fea897a1271678b2e36b9b0082af3e38569de5ca4ed8059e",
+          "captured_at": "2026-08-31",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [],
+      "extraction_note": "operativ byggberedskaps-/reboot-handoff-session; exekvering är inte brainstorm-sanning",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-010",
+      "conversation_key": "chatgpt.com/6a8feb24-5638-83ed-91ca-e4422e33d4b0",
+      "url": "https://chatgpt.com/c/6a8feb24-5638-83ed-91ca-e4422e33d4b0",
+      "title": "Strukturera chattar och planering",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-010/conversation.md",
+          "sha256": "6dcc25f55830373a6982e020a693e5425b62f1254d7ff8867bceca53f4b9e5c1",
+          "captured_at": "2026-08-31",
+          "message_count": 10,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "corpus-control-plane"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-011",
+      "conversation_key": "chatgpt.com/6a8f256f-2aec-83eb-9d75-bf1476a2c03e",
+      "url": "https://chatgpt.com/c/6a8f256f-2aec-83eb-9d75-bf1476a2c03e",
+      "title": "Bedöm backloggens aktualitet",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-011/conversation.md",
+          "sha256": "3eeb53c56ce050236315ca2b3cbf346ee24c4109a95a2659ebb252c7a4051795",
+          "captured_at": "2026-08-31",
+          "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "webbforvaltningen-capability-assurance"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-012",
+      "conversation_key": "chatgpt.com/6a8d5b27-ee50-83eb-afba-a04298552052",
+      "url": "https://chatgpt.com/c/6a8d5b27-ee50-83eb-afba-a04298552052",
+      "title": "Nortropic Evolution Radar",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-012/conversation.md",
+          "sha256": "9103d59da92b18680456fd8b98a48e7761ef4bc2e58d699aa54bfb763420aaab",
+          "captured_at": "2026-08-31",
+          "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-012/conversation-r2.md",
+          "sha256": "4fc4b833690c74594d87db46a38edd43ad699c51b793ad96c6afc9284df8bc9b",
+          "captured_at": "2026-08-31",
+          "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 2,
+      "routed_revision": 2,
+      "ideas": [
+        "nortropic-aquarium",
+        "nortropic-evolution-foundations"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-013",
+      "conversation_key": "chatgpt.com/6a854358-92f8-83ed-bc44-a44df74f99f1",
+      "url": "https://chatgpt.com/c/6a854358-92f8-83ed-bc44-a44df74f99f1",
+      "title": "Bevaka Frontier AI Engineering",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-013/conversation.md",
+          "sha256": "c615eea24a295ae673beabdc95eabdd9429a9c079b67a8f7420bd8eadb2d7764",
+          "captured_at": "2026-08-31",
+          "message_count": 227,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "bevaka-frontier-ai-engineering"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-014",
+      "conversation_key": "chatgpt.com/6a84969a-467c-83eb-a0e8-60cc5c88fc3e",
+      "url": "https://chatgpt.com/c/6a84969a-467c-83eb-a0e8-60cc5c88fc3e",
+      "title": "Claude /design Watch",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-014/conversation.md",
+          "sha256": "e77fba105105ef15a9e4ebc042e6bfac4f412024315b4a7ea568b075e611548f",
+          "captured_at": "2026-08-31",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "claude-design-watch"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-015",
+      "conversation_key": "chatgpt.com/6a804fc7-8458-83eb-9b9c-a702d8639f5e",
+      "url": "https://chatgpt.com/c/6a804fc7-8458-83eb-9b9c-a702d8639f5e",
+      "title": "Nortropic Frontier Delta",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-015/conversation.md",
+          "sha256": "208ce2eeb3cdaef5914469f2b76e955bc45b3e994d80ded616883a0cde803b88",
+          "captured_at": "2026-08-31",
+          "message_count": 336,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-frontier-delta",
+        "digitalforvaltningen-webb-v2",
+        "unattended-overnight-execution",
+        "foundation-repair-gate",
+        "verkstadsgolvet-v2-cockpit"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-016",
+      "conversation_key": "chatgpt.com/6a86dd4f-3b24-83ed-8449-a08513c01736",
+      "url": "https://chatgpt.com/c/6a86dd4f-3b24-83ed-8449-a08513c01736",
+      "title": "Pågående arbete",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-016/conversation.md",
+          "sha256": "273e2a3e723565bdd04b6416ebc256d843d881873b69ac29de9a1e44e31ea169",
+          "captured_at": "2026-08-31",
+          "message_count": 128,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "bootstrap-closeout-rebaseline",
+        "autonomi-utan-sjalvcertifiering",
+        "korpusfrysning-och-syntesmetod"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-017",
+      "conversation_key": "chatgpt.com/6a8ab602-de90-83eb-a238-c82bd35f4b10",
+      "url": "https://chatgpt.com/c/6a8ab602-de90-83eb-a238-c82bd35f4b10",
+      "title": "Brainstorma jämförelser",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-017/conversation.md",
+          "sha256": "09a2f8f853bc5ea27e48bf70c9b42bc8a38c3cdc2da7c416e454bf3b1f6ea357",
+          "captured_at": "2026-08-31",
+          "message_count": 9,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [],
+      "extraction_note": "assistant_only_content — ägarstyrning utan ägarbackade beslut; ev. paketering är RQ-fråga",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-018",
+      "conversation_key": "chatgpt.com/6a8042d8-9c50-83eb-a898-f5ca6f1196ca",
+      "url": "https://chatgpt.com/c/6a8042d8-9c50-83eb-a898-f5ca6f1196ca",
+      "title": "Snabba upp loopar effektivt",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-018/conversation.md",
+          "sha256": "e45bb1fb488014ec6de93175612d2e21ef989031c38d795947ed3dcad0be3b4d",
+          "captured_at": "2026-08-31",
+          "message_count": 5,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "snabba-upp-loopar"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-019",
+      "conversation_key": "chatgpt.com/6a8056b4-2140-83eb-8a3c-1ec9e96997c8",
+      "url": "https://chatgpt.com/c/6a8056b4-2140-83eb-8a3c-1ec9e96997c8",
+      "title": "Workflow och Orkestrering",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-019/conversation.md",
+          "sha256": "9de708a0dcaff2ba6655bf2fa6d123de24d093bae222189fb208074a725abb72",
+          "captured_at": "2026-08-31",
+          "message_count": 25,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "workflow-orkestrering"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-020",
+      "conversation_key": "chatgpt.com/6a8073e3-e12c-83ed-a2af-cc95ae5b4128",
+      "url": "https://chatgpt.com/c/6a8073e3-e12c-83ed-a2af-cc95ae5b4128",
+      "title": "Innovation Inbox och idéhantering",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-020/conversation.md",
+          "sha256": "d071ed1b7a91ce2fd291ed70d3d545eefe14ccc2afda939520f4ecadd5eb9aa4",
+          "captured_at": "2026-08-31",
+          "message_count": 117,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "innovation-inbox-idehantering"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-021",
+      "conversation_key": "chatgpt.com/6a81c766-f588-83ed-a530-10972c1df896",
+      "url": "https://chatgpt.com/c/6a81c766-f588-83ed-a530-10972c1df896",
+      "title": "Nortropic som kommun",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-021/conversation.md",
+          "sha256": "1f7c84adef03f584785328a29858ffcb1916e29c799acb2456f24efdf8054132",
+          "captured_at": "2026-08-31",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-som-kommun"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-022",
+      "conversation_key": "chatgpt.com/6a808f5c-70d4-83ed-b605-c3bd0616644f",
+      "url": "https://chatgpt.com/c/6a808f5c-70d4-83ed-b605-c3bd0616644f",
+      "title": "Dokumentation och Repo-struktur",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-022/conversation.md",
+          "sha256": "61bf6e350cfb35aab98882077377d80a97594005c2d1357f7570d900ca689d73",
+          "captured_at": "2026-08-31",
+          "message_count": 35,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "dokumentation-repo-struktur"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-023",
+      "conversation_key": "chatgpt.com/6a803ef0-a9dc-83eb-9386-26c0c773cf46",
+      "url": "https://chatgpt.com/c/6a803ef0-a9dc-83eb-9386-26c0c773cf46",
+      "title": "Gauntlet Loop Förklaring",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-023/conversation.md",
+          "sha256": "86a829325b4686b9870d63f3aa99b0d5e1f93c55beb85e7808854bf4099173bb",
+          "captured_at": "2026-08-31",
+          "message_count": 75,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "gauntlet-wayfinder"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-024",
+      "conversation_key": "chatgpt.com/6a81cb49-6b58-83eb-a5de-1c1df9c0577a",
+      "url": "https://chatgpt.com/c/6a81cb49-6b58-83eb-a5de-1c1df9c0577a",
+      "title": "OpenAI och Anthropic Workflow",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-024/conversation.md",
+          "sha256": "5adce49b87f22737237a6cf4cf098c4a4ae1947da9ba06a31f387bc5cf260adb",
+          "captured_at": "2026-08-31",
+          "message_count": 26,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "openai-anthropic-workflow"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-025",
+      "conversation_key": "chatgpt.com/6a831565-5568-83ed-a66d-e2c7a4816755",
+      "url": "https://chatgpt.com/c/6a831565-5568-83ed-a66d-e2c7a4816755",
+      "title": "Arbetsmetoder för innovation",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-025/conversation.md",
+          "sha256": "3a1ec505494ed59cc5e639ed4d6db9d60706efe07045981dcd80030e686ba00d",
+          "captured_at": "2026-08-31",
+          "message_count": 8,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "arbetsmetoder-innovation"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-026",
+      "conversation_key": "chatgpt.com/6a832792-8650-83ed-987d-1e0da0cf55e0",
+      "url": "https://chatgpt.com/c/6a832792-8650-83ed-987d-1e0da0cf55e0",
+      "title": "Brainstorming och arbetsflöden",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-026/conversation.md",
+          "sha256": "a72252c3e94d583c306669ea056e41e0833029cacf0642fc81f3c752b702a0db",
+          "captured_at": "2026-08-31",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "brainstorming-arbetsfloden"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-027",
+      "conversation_key": "chatgpt.com/6a849b05-3af0-83ed-bcdd-cf8b1fdabaf2",
+      "url": "https://chatgpt.com/c/6a849b05-3af0-83ed-bcdd-cf8b1fdabaf2",
+      "title": "Brainstorma Nortropic Engineering",
+      "discovered_at": "2026-08-31",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-027/conversation.md",
+          "sha256": "92618b61ec6b14e06a71dc8ff9742d53faeb44f8718fb4380d5d775c117168ca",
+          "captured_at": "2026-08-31",
+          "message_count": 9,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "brainstorma-nortropic-engineering"
+      ],
+      "extraction_note": "",
+      "errors": []
+    }
+  ],
+  "finalized_at": "2026-08-31"
+}

@@ -7,7 +7,7 @@ owner: Johnny (Nortropic)
 created: 2026-08-20
 source_conversation: snabba-upp-loopar-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: snabba-upp-loopar/idea-snabba-upp-loopar.md
-related: [build-fast-path, nortropic-frontier-delta, workflow-orkestrering, brainstorma-nortropic-engineering, bevaka-frontier-ai-engineering]
+related: [build-fast-path, nortropic-frontier-delta, workflow-orkestrering, brainstorma-nortropic-engineering, bevaka-frontier-ai-engineering, unattended-overnight-execution]
 ---
 
 # Idea brief: Middle-out loop compression — faster Nortropic loops without touching trust
