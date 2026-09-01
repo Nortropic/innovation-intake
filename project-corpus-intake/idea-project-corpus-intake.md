@@ -6,10 +6,11 @@ slug: project-corpus-intake
 owner: Johnny (Nortropic)
 created: 2026-08-31
 source_conversation: project-corpus-intake-full-chat.md
+source_conversation_2: project-corpus-intake-full-chat-CHAT-002.md
 design_rationale: project-corpus-intake-design-rationale.md
 intended_repo_path: project-corpus-intake/idea-project-corpus-intake.md
 context_revision: 1
-related: [openai-anthropic-workflow, innovation-inbox-idehantering, nortropic-recompile, corpus-control-plane, korpusfrysning-och-syntesmetod]
+related: [openai-anthropic-workflow, innovation-inbox-idehantering, nortropic-recompile, corpus-control-plane, korpusfrysning-och-syntesmetod, nortropic-function-intake]
 ---
 
 # Idea brief: Nortropic Intake v3 — Project Corpus Intake + proving-run iteration
@@ -177,3 +178,27 @@ Q4. What was the outcome of the ongoing sweep — the transcript ends mid-run (m
 - Source conversation: `project-corpus-intake-full-chat.md` (same folder)
 - https://code.claude.com/docs/en/best-practices
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+## Episode 2 (CHAT-002, captured 2026-09-01)
+
+`project-corpus-intake-full-chat-CHAT-002.md` is the same conversation (Improvements
+sweep CONV-001) at revision 2: 33 new messages (← CHAT-002 msg 85–117) after episode 1's
+84. What changed for this idea:
+
+- **Owner review batch closed the proving run's review queue** (← CHAT-002 msg 85–92,
+  owner selections): reversal candidates deferred to activation (no historical brief is
+  rewritten in a sweep); assistant-only material is not packaged without owner adoption
+  in-thread; distinct+related delivery stands, merges belong to activation or Recompile;
+  attachment hydration deferred with a precise pre-Recompile classification duty. These
+  owner decisions are recorded verbatim in the Improvements review queue (RQ-023–026).
+- **v3.1/v3.1.1 hardening and freeze completed, then accepted as READY** (← CHAT-002
+  msg 96–100; execution log — authoritative record lives in the skill repo).
+- **Owner-confirmed sequencing** (← CHAT-002 msg 116, owner): Intake frozen → finish
+  Trust/Autonomy Kernel → freeze Kernel v1 → **FINAL INCREMENTAL IMPROVEMENTS INTAKE**
+  (new/updated chats + relevant daily reports + load-bearing attachments) → independent
+  audit → Recompile source cut. The incremental-intake semantics (unchanged chat →
+  no-op; updated chat → new revision; new chat → capture; attachments → hydrate) are
+  defined in ← CHAT-002 msg 115.
+
+The v1 decisions and acceptance criteria above are unchanged by episode 2; episode 2
+adds later owner policy and sequencing on top of them.

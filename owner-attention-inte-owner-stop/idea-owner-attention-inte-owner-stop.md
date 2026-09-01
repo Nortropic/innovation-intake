@@ -6,6 +6,7 @@ slug: owner-attention-inte-owner-stop
 owner: Johnny (Nortropic)
 created: 2026-08-31
 source_conversation: owner-attention-inte-owner-stop-full-chat.md
+source_conversation_2: owner-attention-inte-owner-stop-full-chat-CHAT-002.md
 design_rationale: owner-attention-inte-owner-stop-design-rationale.md
 intended_repo_path: owner-attention-inte-owner-stop/idea-owner-attention-inte-owner-stop.md
 context_revision: 1
@@ -176,3 +177,23 @@ Q5. Outcome: was the msg 13 prompt run, and did the patch land? Outside this sou
 - Source conversation: `owner-attention-inte-owner-stop-full-chat.md` (same folder)
 - https://code.claude.com/docs/en/best-practices
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+## Episode 2 (CHAT-002, captured 2026-09-01)
+
+`owner-attention-inte-owner-stop-full-chat-CHAT-002.md` is the same conversation
+(Improvements sweep CONV-003) at revision 2: one new message (← CHAT-002 msg 19), an
+assistant frontier-delta report dated 1 sep 2026. EXTERNAL EVIDENCE (assistant
+synthesis — not owner decisions):
+
+- Anthropic's 2026-08-31 postmortem + partner requirements make task solvability,
+  explicit in/out-of-scope bounds and real-time scope-aware monitoring first-class —
+  strong external corroboration for this idea's core: an impossible/broken task should
+  **ROUTE or HARD_STOP for the right reason**, never "try harder" and never a generic
+  owner-approval stop (← CHAT-002 msg 19).
+- The same report recommends a REPRODUCE step: a local gap/falsification matrix for
+  *unsolvable task, ambiguous scope, manipulable grader, monitor bypass* before any
+  further autonomy lane is built — with graders/verifiers/monitors outside the
+  worker's change authority (← CHAT-002 msg 19).
+
+No decision in this brief changes; the episode strengthens the evidence base and adds
+a candidate verification idea for activation time.

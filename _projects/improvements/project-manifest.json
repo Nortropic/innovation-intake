@@ -8,12 +8,25 @@
   "enumeration": {
     "method": "data-layer",
     "verified": true,
-    "declared_inventory_sha256": "a6fff0661a944dc6178d6bc913a022f952c8e29f4aa6744b5ba8661511540051",
-    "note": "Dedicated project listing (/backend-api/gizmos/<gid>/conversations) cursor-paged to exhaustion (27); cross-checked against the account's 800 most-recently-updated conversations (exactly the same 27) and the archived listing (0 project chats); owner confirmed the 27-item list 2026-08-31. NOTE/OBSERVATION: the shipped candidate endpoint (conversations?gizmo_id=) ignores its filter — recorded as observation, not fixed mid-freeze."
+    "declared_inventory_sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
+    "note": "Incremental re-sweep 2026-09-01: fresh cursor walk (30 items; 3 new vs the 27-item 2026-08-31 inventory)",
+    "evidence": {
+      "sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
+      "source": "project-discovery-cursor",
+      "endpoint": "/backend-api/gizmos/g-p-6a86d9dcb8488191b03ee843bb19eb6c/conversations",
+      "membership_scope": "path-scoped-project-endpoint",
+      "membership_established_by": "project id in the request PATH",
+      "terminal_signal": "cursor-absent",
+      "pages_walked": 1,
+      "collected": 30,
+      "duplicates_dropped": 0,
+      "count_oracle": "absent — this endpoint sends no total; exhaustion is the proof",
+      "record": "_projects/improvements/enumeration-evidence-r30.json"
+    }
   },
   "project_status": "COMPLETE_WITH_OPEN_REVIEW",
-  "inventory_revision": 29,
-  "inventory_sha256": "568c711d92afe08f8a1f4dd3e3bb6136e2107caf4c1a4f88db0ab6c63c47fd15",
+  "inventory_revision": 38,
+  "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
   "inventory_history": [
     {
       "revision": 1,
@@ -188,6 +201,60 @@
       "inventory_sha256": "568c711d92afe08f8a1f4dd3e3bb6136e2107caf4c1a4f88db0ab6c63c47fd15",
       "at": "2026-08-31",
       "note": "capture CONV-027 r1"
+    },
+    {
+      "revision": 30,
+      "inventory_sha256": "f86d4a74f5af36845986f7f94b10148cfd5d80484c89e2cb59f40993d7a761e4",
+      "at": "2026-09-01",
+      "note": "declare inventory (data-layer, 30 item(s))"
+    },
+    {
+      "revision": 31,
+      "inventory_sha256": "f76516c4a9d9ee13bceab7a5ad415cfc0e07ab182e2573f97803b9c433ca653d",
+      "at": "2026-09-01",
+      "note": "capture CONV-028 r1"
+    },
+    {
+      "revision": 32,
+      "inventory_sha256": "a34dfe2d30ee0a1995ef4d6dab8caad07672d514a435450616270acbc68c176a",
+      "at": "2026-09-01",
+      "note": "capture CONV-029 r1"
+    },
+    {
+      "revision": 33,
+      "inventory_sha256": "01177553558f0270e604be8c86c826a4222e6b6b19db8814ff98e2a3b946d4d3",
+      "at": "2026-09-01",
+      "note": "capture CONV-030 r1"
+    },
+    {
+      "revision": 34,
+      "inventory_sha256": "86642f110362a97cf40a41668eb5cdf04b0dd0c2ecd56f9aa98f5ad48f601bb5",
+      "at": "2026-09-01",
+      "note": "capture CONV-007 r2"
+    },
+    {
+      "revision": 35,
+      "inventory_sha256": "d5cf1aa010a685ac1f7d2b0cbd933e98d48054afdc73390130d495ebd0509e1f",
+      "at": "2026-09-01",
+      "note": "capture CONV-003 r2"
+    },
+    {
+      "revision": 36,
+      "inventory_sha256": "27ace5fff60349a845d79aadac559198fcbc34eb3bba6a2f8742f6f5fa7c60c0",
+      "at": "2026-09-01",
+      "note": "capture CONV-001 r2"
+    },
+    {
+      "revision": 37,
+      "inventory_sha256": "ac8343f91e0e733a17a8f8c4f0d911d2e7c219e9e1d49dfecd00849848f53a9b",
+      "at": "2026-09-01",
+      "note": "capture CONV-006 r2"
+    },
+    {
+      "revision": 38,
+      "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
+      "at": "2026-09-01",
+      "note": "capture CONV-002 r2"
     }
   ],
   "sources": [
@@ -208,16 +275,27 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-001/conversation-r2.md",
+          "sha256": "6b1cccaa84fdb6c9393bcb8610288348b23a81d9f6eac5a574ef07a2d8e4a8cf",
+          "source_sha256": "151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+          "captured_at": "2026-09-01",
+          "message_count": 117,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
-      "routed_revision": 1,
+      "extracted_revision": 2,
+      "routed_revision": 2,
       "ideas": [
         "project-corpus-intake",
         "nortropic-recompile",
         "gold-extraction-overlay"
       ],
-      "extraction_note": "",
+      "extraction_note": "r2-delta (msg 85-117): ägargranskningsbatchen (RQ-023..026), v3.1/v3.1.1-frysning (exekveringslogg) och ägarbekräftad sekvensplan (msg 116) — levererad som CHAT-002-episod till project-corpus-intake och nortropic-recompile",
       "errors": []
     },
     {
@@ -237,12 +315,23 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-002/conversation-r2.md",
+          "sha256": "501617d6ade1c5bf3c18c5ec422cd8e8d49bed0b5b226c6a89c8f6c505978cc6",
+          "source_sha256": "2cee9d0d8d728f06bb74c179c08d69161445d3c8ae02f36f39bec450c3a27eab",
+          "captured_at": "2026-09-01",
+          "message_count": 7,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
-      "routed_revision": 1,
+      "extracted_revision": 2,
+      "routed_revision": 2,
       "ideas": [],
-      "extraction_note": "0 ägarmeddelanden — schemalagda bevakningsrapporter; ev. paketering är RQ-006-fråga",
+      "extraction_note": "bevaknings-/assistanttråd (7 assistentmeddelanden, 0 användare); r2-deltat är en Codex 0.152.0-rapport — förblir råevidens per RQ-024-policyn",
       "errors": []
     },
     {
@@ -262,14 +351,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-003/conversation-r2.md",
+          "sha256": "9c83e58017dde391c11d87c11f610c296cce390d578b3501be355f89a77bc9b3",
+          "source_sha256": "b15a981ab5f9c37f5f8d9ded4065f1c694e8c0d307ba4037271148ac8cc32f20",
+          "captured_at": "2026-09-01",
+          "message_count": 19,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
-      "routed_revision": 1,
+      "extracted_revision": 2,
+      "routed_revision": 2,
       "ideas": [
         "owner-attention-inte-owner-stop"
       ],
-      "extraction_note": "",
+      "extraction_note": "r2-delta (msg 19): frontier-delta-rapport med Anthropic-korroboration av stopptaxonomin — levererad som CHAT-002-episod",
       "errors": []
     },
     {
@@ -344,14 +444,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-006/conversation-r2.md",
+          "sha256": "a277a70bc262ceaf994427625e24fa6be5b1ac80d2f21f46a1fe6b28eebde7f4",
+          "source_sha256": "2d24a1b54efaefab37534b0c93cde13870512b3c9693177c8623ef2a41f95760",
+          "captured_at": "2026-09-01",
+          "message_count": 16,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
-      "routed_revision": 1,
+      "extracted_revision": 2,
+      "routed_revision": 2,
       "ideas": [
         "nortropic-planning-wall"
       ],
-      "extraction_note": "",
+      "extraction_note": "r2-delta (msg 16): Codex 0.152.0-reconnect-semantik → föreslagen degraded/reconcile-princip för Factory Room — levererad som CHAT-002-episod (oratificerad assistentsyntes, markerad så i briefen)",
       "errors": []
     },
     {
@@ -371,14 +482,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-007/conversation-r2.md",
+          "sha256": "9ead62d112c29acd07ef00b9b8539c4460b7356e0b875436736e35ddd8ae7c73",
+          "source_sha256": "906356f70c7a50d54c8ee9b2050c82d48ef3a97b887bc9fb6a15317659819e1d",
+          "captured_at": "2026-09-01",
+          "message_count": 117,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
-      "routed_revision": 1,
+      "extracted_revision": 2,
+      "routed_revision": 2,
       "ideas": [
         "claude-bootstrap-takeover-protocol"
       ],
-      "extraction_note": "",
+      "extraction_note": "r2-delta (msg 97-117): H035 R17→R26-exekveringslogg + två legitima ägarstopps-exemplar — kvar som råevidens; RQ-028 öppnad för relationen till owner-attention-inte-owner-stop",
       "errors": []
     },
     {
@@ -933,7 +1055,89 @@
       ],
       "extraction_note": "",
       "errors": []
+    },
+    {
+      "source_id": "CONV-028",
+      "conversation_key": "chatgpt.com/6a96d48e-dc88-83ed-af6b-ca63fa519441",
+      "url": "https://chatgpt.com/c/6a96d48e-dc88-83ed-af6b-ca63fa519441",
+      "title": "Grok Bot-delta",
+      "discovered_at": "2026-09-01",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-028/conversation.md",
+          "sha256": "8ef0f89630d2d402174c009ae244485ed94ccc4330134bd17d41a467029c009e",
+          "source_sha256": "e66616d7dae94b18a5faa0a263fa1ef39d6e923f035744f3d5d1909a01459237",
+          "captured_at": "2026-09-01",
+          "message_count": 58,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [],
+      "extraction_note": "Grok Bot-delta: assistentsyntes (fyra koncept + ADOPT/REJECT-tabell) utan explicit ägaradoption i tråden — per RQ-024-policyn paketeras den inte; ägarbeslut i tråden (strategi msg 9/11, v4-ordern msg 37) är bevarade i rå och v4 är redan exekverad; RQ-027 öppnad för koncepten",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-029",
+      "conversation_key": "chatgpt.com/6a970273-24f0-83eb-b033-ee199e96d345",
+      "url": "https://chatgpt.com/c/6a970273-24f0-83eb-b033-ee199e96d345",
+      "title": "Nortropic Market Radar",
+      "discovered_at": "2026-09-01",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-029/conversation.md",
+          "sha256": "c658de7771df0e1517dc1beb277076757387454255e024a94c146a335d8c19fe",
+          "source_sha256": "3a7058e05577e487099e1fa307706c876344cf34359fd2af0bb512b26fef48c4",
+          "captured_at": "2026-09-01",
+          "message_count": 32,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-function-intake"
+      ],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-030",
+      "conversation_key": "chatgpt.com/6a96e84f-3bd8-83eb-8e18-41455322668d",
+      "url": "https://chatgpt.com/c/6a96e84f-3bd8-83eb-8e18-41455322668d",
+      "title": "Nortropic Market Radar",
+      "discovered_at": "2026-09-01",
+      "state": "COMPLETE",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-030/conversation.md",
+          "sha256": "0632fd5a1b48a0823f49bb7a11f8e5bae001e25edc808a73a704b518f1d9cbc7",
+          "source_sha256": "f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+          "captured_at": "2026-09-01",
+          "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 1,
+      "routed_revision": 1,
+      "ideas": [
+        "nortropic-marknadsposition"
+      ],
+      "extraction_note": "",
+      "errors": []
     }
   ],
-  "finalized_at": "2026-08-31"
+  "finalized_at": "2026-09-01"
 }

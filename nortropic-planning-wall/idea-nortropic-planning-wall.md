@@ -6,6 +6,7 @@ slug: nortropic-planning-wall
 owner: Johnny (Nortropic)
 created: 2026-08-31
 source_conversation: nortropic-planning-wall-full-chat.md
+source_conversation_2: nortropic-planning-wall-full-chat-CHAT-002.md
 design_rationale: nortropic-planning-wall-design-rationale.md
 intended_repo_path: nortropic-planning-wall/idea-nortropic-planning-wall.md
 context_revision: 1
@@ -173,3 +174,26 @@ starting values — set them.
 - Source conversation: `nortropic-planning-wall-full-chat.md` (same folder)
 - https://code.claude.com/docs/en/best-practices
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+## Episode 2 (CHAT-002, captured 2026-09-01)
+
+`nortropic-planning-wall-full-chat-CHAT-002.md` is the same conversation (Improvements
+sweep CONV-006) at revision 2: one new message (← CHAT-002 msg 16), an assistant watch
+report dated 1 sep 2026. EXTERNAL EVIDENCE + PROPOSAL (assistant synthesis — the owner
+has not ratified it in-thread):
+
+- Trigger: OpenAI Codex 0.152.0 (2026-09-01) built automatic reconnection for
+  app-server sessions with a strict safety semantics — no user operation is ever
+  auto-retried; uncertain pre-drop input is quarantined; completions from a dead
+  connection generation may not trigger new actions (← CHAT-002 msg 16).
+- Proposed new Factory Room principle: **observability recovery ≠ mutation recovery**.
+  On connection loss: LIVE → DEGRADED/READ-ONLY (keep last authoritative snapshot,
+  quarantine unconfirmed commands, ignore old-generation completions, never
+  auto-replay mutations) → RECONCILE (resume authoritative thread, resolve every
+  uncertain command_id, verify connection generation) → WRITE PLANE RESTORED. Bind to
+  `command_id + issued_against_watermark + connection_generation`; an uncertain
+  command outcome presents as `UNCERTAIN`, never "failed"/"not sent", and is never
+  auto-resent (← CHAT-002 msg 16).
+
+Treat as a design-input candidate for activation: it extends §3's degraded-mode
+thinking but is not an owner decision.

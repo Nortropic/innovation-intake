@@ -8,7 +8,7 @@ created: 2026-08-20
 source_conversation: bevaka-frontier-ai-engineering-full-chat.md   # reference only — this brief takes precedence
 intended_repo_path: bevaka-frontier-ai-engineering/idea-bevaka-frontier-ai-engineering.md
 supersedes: [nortropic-frontier-delta]   # ägarbeslut 2026-08-20: Observatory ersätter Evolution Loop-briefen
-related: [agent-harness-priorities, snabba-upp-loopar, workflow-orkestrering, brainstorma-nortropic-engineering, nortropic-organization-os, digitalforvaltningen-webb-v2, nortropic-evolution-foundations, nortropic-planning-wall, owner-attention-inte-owner-stop]
+related: [agent-harness-priorities, snabba-upp-loopar, workflow-orkestrering, brainstorma-nortropic-engineering, nortropic-organization-os, digitalforvaltningen-webb-v2, nortropic-evolution-foundations, nortropic-planning-wall, owner-attention-inte-owner-stop, nortropic-marknadsposition]
 ---
 
 # Idea brief: Nortropic Frontier Observatory — an autonomous technological intelligence and evolution system
