@@ -2,7 +2,7 @@
 title: "Improvements — R&D corpus sweep — project sweep"
 type: project-summary
 project: improvements
-manifest_sha256: e9f5baab6da1f9134c54ed26e1bc8fa06b03bf9b80770d70444dd7d38ed39bff
+manifest_sha256: 51f0bfba30304f745ad613d8bb701764bfded57a46b722d5d4f2e4820ecd34fa
 generated: derived from project-manifest.json — the manifest stays canonical
 ---
 
@@ -10,18 +10,18 @@ generated: derived from project-manifest.json — the manifest stays canonical
 
 Platform: chatgpt — https://chatgpt.com/g/g-p-6a86d9dcb8488191b03ee843bb19eb6c-improvements/project
 Enumeration: data-layer (verified)
-Inventory revision: 29
-Open review items: 3 (RQ-015, RQ-016, RQ-019)
+Inventory revision: 38
+Open review items: 5 (RQ-015, RQ-016, RQ-019, RQ-027, RQ-028)
 
 | source | state | rev | conversation | ideas |
 |---|---|---|---|---|
-| CONV-001 | ROUTED | 1 | chatgpt.com/6a92c6bc-0d8c-83eb-815e-3e4eafba0a95 | project-corpus-intake, nortropic-recompile, gold-extraction-overlay |
-| CONV-002 | ROUTED | 1 | chatgpt.com/6a8e82a1-9acc-83ed-ab47-c4055063d6ec | — |
-| CONV-003 | ROUTED | 1 | chatgpt.com/6a8d3c28-e464-83eb-8d9d-8545f9b683c1 | owner-attention-inte-owner-stop |
+| CONV-001 | ROUTED | 2 | chatgpt.com/6a92c6bc-0d8c-83eb-815e-3e4eafba0a95 | project-corpus-intake, nortropic-recompile, gold-extraction-overlay |
+| CONV-002 | ROUTED | 2 | chatgpt.com/6a8e82a1-9acc-83ed-ab47-c4055063d6ec | — |
+| CONV-003 | ROUTED | 2 | chatgpt.com/6a8d3c28-e464-83eb-8d9d-8545f9b683c1 | owner-attention-inte-owner-stop |
 | CONV-004 | ROUTED | 1 | chatgpt.com/6a7971a3-0aac-83eb-991f-57ae207766e3 | agent-harness-priorities |
 | CONV-005 | ROUTED | 1 | chatgpt.com/6a8d28df-6df0-83ed-ad33-645de2094295 | nortropic-organization-os, nortropic-aquarium |
-| CONV-006 | ROUTED | 1 | chatgpt.com/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd | nortropic-planning-wall |
-| CONV-007 | ROUTED | 1 | chatgpt.com/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def | claude-bootstrap-takeover-protocol |
+| CONV-006 | ROUTED | 2 | chatgpt.com/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd | nortropic-planning-wall |
+| CONV-007 | ROUTED | 2 | chatgpt.com/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def | claude-bootstrap-takeover-protocol |
 | CONV-008 | ROUTED | 1 | chatgpt.com/6a900b9b-a3d4-83ed-82aa-602ee1e03050 | nortropic-owner-plane |
 | CONV-009 | ROUTED | 1 | chatgpt.com/6a916bf1-4358-83eb-a3a2-19df755d7a72 | — |
 | CONV-010 | ROUTED | 1 | chatgpt.com/6a8feb24-5638-83ed-91ca-e4422e33d4b0 | corpus-control-plane |
@@ -42,3 +42,6 @@ Open review items: 3 (RQ-015, RQ-016, RQ-019)
 | CONV-025 | ROUTED | 1 | chatgpt.com/6a831565-5568-83ed-a66d-e2c7a4816755 | arbetsmetoder-innovation |
 | CONV-026 | ROUTED | 1 | chatgpt.com/6a832792-8650-83ed-987d-1e0da0cf55e0 | brainstorming-arbetsfloden |
 | CONV-027 | ROUTED | 1 | chatgpt.com/6a849b05-3af0-83ed-bcdd-cf8b1fdabaf2 | brainstorma-nortropic-engineering |
+| CONV-028 | ROUTED | 1 | chatgpt.com/6a96d48e-dc88-83ed-af6b-ca63fa519441 | — |
+| CONV-029 | ROUTED | 1 | chatgpt.com/6a970273-24f0-83eb-b033-ee199e96d345 | nortropic-function-intake |
+| CONV-030 | ROUTED | 1 | chatgpt.com/6a96e84f-3bd8-83eb-8e18-41455322668d | nortropic-marknadsposition |

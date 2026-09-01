@@ -203,3 +203,33 @@ append_only: true
 - resolves: RQ-022
 - question: Grupp D — hur hanteras de tio källornas inventerade men ej infångade bilagoinnehåll?
 - owner_answer: För denna proving-run: stäng RQ-022 och defer bilagehydrering. Inventerade bilagor ska inte blockera nuvarande sweep. Inför den slutliga optimerade Improvements-intaken/Recompile source cut ska alla fortfarande tillgängliga bilagor klassificeras; lastbärande original ska fångas och verifieras före Kernel-handoff, medan uttryckligen icke-lastbärande bilagor får lämnas som inventerade referenser. Saknad lastbärande bilaga ska redovisas som known source gap, inte döljas som komplett corpus.
+
+## RQ-027
+- date: 2026-09-01
+- issue: CONV-028 r1 (Grok Bot-delta) innehåller fyra assistentsyntetiserade koncept nominerade "till Recompile" (Attention Compiler, Role Shell, Experience-to-Capability Compiler, Quiet Organization Contract) plus ADOPT/ADAPT/REJECT-tabellen. Ägaren drev tråden ("ta med oss allt guld", msg 21) men adopterade aldrig koncepten uttryckligen som Nortropic-idéer. Per den ägarratificerade policyn (RQ-024) paketeras assistentsyntes inte utan ägaradoption i tråden — därför mintades inget idépaket i det inkrementella svepet 2026-09-01.
+- affects: CONV-028
+- recommendation: låt materialet förbli råevidens för RND_COMPILE (som primitivkatalogen); om ägaren vill ha koncepten som egna idépaket är det ett explicit ägarbeslut vid aktivering eller före Recompile source cut
+- evidence: CONV-028 r1 msg 3 (koncepten), msg 18/21 (ägarens riktningsstyrning), RQ-024 (policyn)
+- owner_judgment_required: yes
+
+## RQ-028
+- date: 2026-09-01
+- issue: CONV-007 r2 (msgs 102–103, 112–115) innehåller två skarpa exemplar av legitima ägarstopp (R26-värdkörningsgodkännandet med extern irreversibel effekt; H038-arkitekturvalet om OS-exklusiv cleanup-auktoritet) inklusive resonemanget "det här är den typ av stopp vi vill behålla långsiktigt". Det korroborerar owner-attention-inte-owner-stop-paketets stopptaxonomi men är exekveringshändelser, inte brainstorm. Deltat levererades INTE som episod till det paketet i det inkrementella svepet.
+- affects: CONV-007, owner-attention-inte-owner-stop
+- recommendation: behåll som råevidens i källan (exekveringslogg; repo-verkligheten bor i repot); om taxonomi-exemplaren bedöms designbärande vid aktivering av owner-attention-inte-owner-stop kan CONV-007 r2 då levereras som episod med ägardelta
+- evidence: CONV-007 r2 msgs 102–103, 112–115; skillens regel "Implementation feedback is not brainstorm truth"
+- owner_judgment_required: yes
+
+## RQ-029
+- date: 2026-09-01
+- issue: Redovisning av det inkrementella svepets skip-policy (AUDIT-38 FIND-005): 19 källor (CONV-008..CONV-025 utom de återfångade, samt CONV-027) återfångades INTE 2026-09-01 utan bedömdes oförändrade via plattformens update_time-orakel (< 2026-08-31, föregående capture-dag; konservativ same-day-cutoff — alla poster med update_time ≥ 2026-08-31 återfångades, varav tre visade sig byte-identiska och blev no-ops). update_time är plattformsmetadata, inte byte-bevis; deras r1-bytes står orörda och hash-verifierade, men "oförändrad sedan 2026-08-31" vilar för dessa 19 på plattformens egen deklaration.
+- affects: CONV-008, CONV-009, CONV-010, CONV-011, CONV-012, CONV-013, CONV-014, CONV-015, CONV-016, CONV-017, CONV-018, CONV-019, CONV-020, CONV-021, CONV-022, CONV-023, CONV-024, CONV-025, CONV-027
+- recommendation: acceptera oraklet för inkrementella mellanrundor; inför den slutliga Recompile source cut bör samtliga källor återfångas eller byte-verifieras (i linje med den ägarbekräftade FINAL INCREMENTAL IMPROVEMENTS INTAKE-planen, CONV-001 r2 msg 115–116)
+- owner_judgment_required: no
+- owner_answer: none (mekanisk redovisning av svepets egen begränsning; ägarfrågan om slutlig återfångst hör till Recompile source cut-beslutet)
+
+## RQ-030
+- date: 2026-09-01
+- resolves: RQ-029
+- question: RQ-029 (redovisningen av det inkrementella svepets update_time-skip-policy) skrevs felformad — en issue-post utan obligatoriskt owner_judgment_required — vilket fällde validate (REVIEW_QUEUE_INCOMPLETE, AUDIT-38 FIND-007) och räknade posten som öppet ägaritem tvärtemot avsikten. Hur stängs den korrekt utan redigering?
+- owner_answer: none (mekanisk stängning per RQ-021-prejudikatet; ingen ägarfråga kvarstår). Sakinnehållet i RQ-029 verifierades korrekt av den oberoende granskningen (AUDIT-38): exakt 19 källor — CONV-008..CONV-025, CONV-027 — återfångades inte 2026-09-01 utan bedömdes oförändrade via plattformens update_time-orakel (< 2026-08-31; konservativ same-day-cutoff, komplementet exakt: alla 11 poster ≥ 2026-08-31 fångades). update_time är plattformsmetadata, inte byte-bevis; de 19:s r1-bytes är orörda och hash-verifierade. Ingen ny ägarbedömning krävs nu: fullständig återfångst/byte-verifiering före Recompile source cut ingår redan i den ägarbekräftade FINAL INCREMENTAL IMPROVEMENTS INTAKE-planen (CONV-001 r2 msg 115–116).

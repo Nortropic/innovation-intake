@@ -6,6 +6,7 @@ slug: nortropic-recompile
 owner: Johnny (Nortropic)
 created: 2026-08-31
 source_conversation: nortropic-recompile-full-chat.md
+source_conversation_2: nortropic-recompile-full-chat-CHAT-002.md
 design_rationale: nortropic-recompile-design-rationale.md
 intended_repo_path: nortropic-recompile/idea-nortropic-recompile.md
 context_revision: 1
@@ -181,3 +182,25 @@ owner-decided.
 - Source conversation: `nortropic-recompile-full-chat.md` (same folder)
 - https://code.claude.com/docs/en/best-practices
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+## Episode 2 (CHAT-002, captured 2026-09-01)
+
+`nortropic-recompile-full-chat-CHAT-002.md` is the same conversation (Improvements
+sweep CONV-001) at revision 2: 33 new messages (← CHAT-002 msg 85–117). What changed
+for this idea:
+
+- **The road to Recompile is now owner-confirmed as an explicit sequence**
+  (← CHAT-002 msg 116, owner; elaboration msg 117): Intake v3.1.1 frozen → finish
+  Trust/Autonomy Kernel → freeze Kernel v1 → final incremental Improvements intake
+  (new/updated chats, relevant daily reports, load-bearing attachments) → independent
+  audit → **Recompile source cut** (exact corpus SHA/tree + cutoff) → Nortropic
+  Recompile (current repo reality + sealed corpus + current evidence →
+  Concept/Constitution/Organization Architecture/dependency-ordered Roadmap) → Kernel
+  builds next Nortropic.
+- **Recompile's input discipline is reinforced** (← CHAT-002 msg 115, 117): unchanged
+  chats are reused by verified bytes, the source cut is sealed and reproducible, and
+  the next Nortropic is built from the recompiled synthesis — not directly from the
+  brainstorms.
+
+Episode 2 does not change this brief's decisions; it binds the idea into an
+owner-confirmed execution order.
