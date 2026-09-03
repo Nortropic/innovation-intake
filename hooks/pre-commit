@@ -1,5 +1,5 @@
 #!/bin/sh
-# Nortropic innovation-intake — approved-plan contract gate.
+# Nortropic innovation-intake — approved-plan, context and RND contract gate.
 #
 # Refuses a commit that would put an unprovable lifecycle state into git history:
 # a brief at planned/building/verified with no valid, hash-bound approved plan.
@@ -20,10 +20,27 @@ if [ ! -f "$PC" ]; then
 fi
 
 CC="$HOME/.claude/skills/nortropic-intake/scripts/context_contract.py"
+RC="$HOME/.claude/skills/nortropic-intake/scripts/rnd_contract.py"
 rc=0
 python3 "$PC" --corpus "$CORPUS" validate || rc=1
 echo
 python3 "$CC" --corpus "$CORPUS" validate || rc=1
+
+# _rnd/ is a durable corpus artifact: a committed compile must hold its contract.
+# The v4.0 CLI takes --corpus on the SUBCOMMAND, not globally like the two above, and
+# exits 1 when the corpus carries no compile at all — so gate on the directory. A skill
+# predating v4.0 has no rnd_contract.py; skip it there, the same soft-pass this hook
+# already applies when the skill is absent, rather than turning v4.0 into a new
+# installation requirement.
+if [ -f "$RC" ]; then
+    if [ -n "$(ls -d "$CORPUS"/_rnd/*/ 2>/dev/null)" ]; then
+        echo
+        python3 "$RC" validate --corpus "$CORPUS" || rc=1
+    fi
+else
+    echo "pre-commit: rnd_contract.py not found at $RC — the installed skill predates" >&2
+    echo "            Intake v4.0; skipping the RND compile contract check." >&2
+fi
 
 if [ "$rc" -ne 0 ]; then
     cat >&2 <<'MSG'
@@ -33,7 +50,8 @@ pre-commit REFUSED: the intake contract is not satisfied.
 `status: planned | building | verified` requires a durable, owner-approved plan bound to
 the brief by sha256; `building`/`verified` additionally require execution evidence.
 Source manifests must hash-match their sources and carry no credentials; owner
-clarifications are append-only and may not dangle.
+clarifications are append-only and may not dangle. A committed RND compile under
+`_rnd/` must hold its own contract — derived items stay bound to proven evidence.
 
 Fix the findings above, or move the brief back to `status: clarified`. Never fabricate a
 plan, a source or an owner answer to make this pass.

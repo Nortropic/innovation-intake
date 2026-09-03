@@ -44,6 +44,21 @@ jobs:
       - name: Context contract — manifests, clarifications, provenance integrity
         run: python3 skill/scripts/context_contract.py --corpus corpus validate
 
+      - name: RND contract — every committed compile under _rnd/
+        run: |
+          set -e
+          # _rnd/ is a durable corpus artifact, so a committed compile must hold its
+          # contract here too. Note the v4.0 CLI takes --corpus on the SUBCOMMAND, not
+          # globally like plan/context above, and exits 1 when the corpus carries no
+          # compile at all — so only invoke it once there is something to falsify.
+          if ls -d corpus/_rnd/*/ >/dev/null 2>&1; then
+            echo "committed RND compiles:"
+            ls -1 corpus/_rnd
+            python3 skill/scripts/rnd_contract.py validate --corpus corpus
+          else
+            echo "no committed RND compiles under corpus/_rnd — nothing to validate"
+          fi
+
       - name: Capture-signature goldens (the corpus holds the sources)
         run: |
           set -e
