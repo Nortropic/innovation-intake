@@ -1,0 +1,148 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-013",
+ "revision": 1,
+ "source_path": "_projects/improvements/sources/CONV-013/conversation.md",
+ "source_sha256": "76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+ "declared_count": 5,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 5 bilagor inventerade (Inklistrad text 20260825–20260826, txt-chips); innehållet ej infångat i svepet. WYSIWYG-not: meddelande 217 öppnar ett kodstaket som källan aldrig",
+ "observed_lower_bound": 7,
+ "observed_signals": {
+  "filecite_sites": 104,
+  "filecite_turns": 100,
+  "upload_phrases": 21,
+  "named_upload_identities": [
+   [
+    "Inklistrad text.txt",
+    "19:38:58"
+   ],
+   [
+    "Inklistrad text.txt",
+    "19:41:04"
+   ]
+  ],
+  "mentioned_paths": 5
+ },
+ "reconciliation": "DISAGREE",
+ "full_source_capture": "NO",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-013-001",
+   "ordinal": 1,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT: gaps at 91->92, 121->122, 162->163, 207->208 and at msg 104. All 16 inline owner pastes in the declared window are complete and self-terminating, so they are not the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "PENDING blind confirmation; mechanical gap detection flags assistant-run gaps at msgs 164, 184, 211"
+  },
+  {
+   "attachment_id": "ATT-013-002",
+   "ordinal": 2,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT: gaps at 91->92, 121->122, 162->163, 207->208 and at msg 104. All 16 inline owner pastes in the declared window are complete and self-terminating, so they are not the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "PENDING blind confirmation; mechanical gap detection flags assistant-run gaps at msgs 164, 184, 211"
+  },
+  {
+   "attachment_id": "ATT-013-003",
+   "ordinal": 3,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT: gaps at 91->92, 121->122, 162->163, 207->208 and at msg 104. All 16 inline owner pastes in the declared window are complete and self-terminating, so they are not the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "PENDING blind confirmation; mechanical gap detection flags assistant-run gaps at msgs 164, 184, 211"
+  },
+  {
+   "attachment_id": "ATT-013-004",
+   "ordinal": 4,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT: gaps at 91->92, 121->122, 162->163, 207->208 and at msg 104. All 16 inline owner pastes in the declared window are complete and self-terminating, so they are not the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "PENDING blind confirmation; mechanical gap detection flags assistant-run gaps at msgs 164, 184, 211"
+  },
+  {
+   "attachment_id": "ATT-013-005",
+   "ordinal": 5,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT: gaps at 91->92, 121->122, 162->163, 207->208 and at msg 104. All 16 inline owner pastes in the declared window are complete and self-terminating, so they are not the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "PENDING blind confirmation; mechanical gap detection flags assistant-run gaps at msgs 164, 184, 211"
+  },
+  {
+   "attachment_id": "ATT-013-006",
+   "ordinal": 6,
+   "capture_status": "CAPTURED_REFERENCE_ONLY",
+   "materiality": "MATERIAL",
+   "original_filename": "Inklistrad text.txt",
+   "platform_file_id": "file_00000000029881f6b64adaa932cbd86f",
+   "uploaded_at": "2026-08-24 19:38:58",
+   "declared_in_header": false,
+   "basis": "AMR-004. CONV-013 msg 141/149/152 name this upload with its stamp and its opening line; the header's five chips are dated 20260825-20260826 and do not contain it. Reference identity recovered from RECOVERY_MANIFEST_NORTROPIC_DIGITAL.md; bytes NOT recovered.",
+   "downstream_dependents": "RND-347/190/191",
+   "why_qualification_is_blocked": "The master plan's own propositions cannot be read. The only artifact carrying this content declares itself 'source-bound but not byte-identical', so promoting it to source would be the AMR-001 failure mode."
+  },
+  {
+   "attachment_id": "ATT-013-007",
+   "ordinal": 7,
+   "capture_status": "CAPTURED_REFERENCE_ONLY",
+   "materiality": "MATERIAL",
+   "original_filename": "Inklistrad text.txt",
+   "platform_file_id": "file_00000000824081f99f6eb3a69f4ff014",
+   "uploaded_at": "2026-08-24 19:41:04",
+   "declared_in_header": false,
+   "basis": "AMR-004, second upload; CONV-013 msg 149/152 bind it to Part 12/13.",
+   "downstream_dependents": "RND-347/190/191",
+   "why_qualification_is_blocked": "same as ATT-013-006"
+  }
+ ],
+ "owner_acknowledgement": {
+  "state": "KNOWN_UNRESOLVED",
+  "rq": "RQ-032",
+  "acknowledged": "2026-09-04",
+  "acknowledges": "The declared attachment surface of CONV-013 r1 contradicts its own message bodies: the header declares 5 chips dated 20260825-20260826, and messages 141/149/152 name two further uploads dated 2026-08-24 (19:38:58 and 19:41:04). The owner acknowledges this as a KNOWN, PERMANENT historical evidence gap.",
+  "does_not_assert": [
+   "that CONV-013 has exactly 7 attachments — the evidence establishes 5 declared and at least 7 observed, and nothing further",
+   "any exact historical attachment count",
+   "that the frozen r1 conversation may be edited",
+   "that the gap is repaired, resolved or reconciled"
+  ],
+  "evidence_gap_remains": true,
+  "distinction": "KNOWN AND ACCEPTED AS UNRESOLVED is not RESOLVED. An owner may acknowledge that a historical evidence gap must remain. An owner may not make missing historical evidence exist by decision.",
+  "consequences_that_do_not_change": [
+   "FULL_SOURCE_CAPTURE remains NO for CONV-013",
+   "the two uploads remain CAPTURED_REFERENCE_ONLY and MATERIAL",
+   "ATTACHMENT_MATERIAL_UNAVAILABLE stays live for both",
+   "ATTACHMENT_SEMANTIC_R38 remains FAIL",
+   "FINAL_IMPROVEMENTS_CORPUS_QUALIFIED remains NO"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-011",
+ "revision": 1,
+ "source_path": "_projects/improvements/sources/CONV-011/conversation.md",
+ "source_sha256": "52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+ "declared_count": 1,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (Nortropic_100_dagar_manual_v2.3_verified.pdf); innehållet ej infångat i svepet. --- ##",
+ "observed_lower_bound": 1,
+ "observed_signals": {
+  "filecite_sites": 27,
+  "filecite_turns": 26,
+  "upload_phrases": 0,
+  "named_upload_identities": [],
+  "mentioned_paths": 0
+ },
+ "reconciliation": "AGREE",
+ "full_source_capture": "NO",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-011-001",
+   "ordinal": 1,
+   "capture_status": "CAPTURED_REFERENCE_ONLY",
+   "materiality": "MATERIAL",
+   "materiality_basis": "adj-011.json: Nortropic_100_dagar_manual_v2.3_verified.pdf, all thirteen findings",
+   "declared_kind": "uploaded_document",
+   "original_filename": "Nortropic_100_dagar_manual_v2.3_verified.pdf",
+   "media_type": "application/pdf",
+   "message_binding": "owner msg 1 (\"detta var backloggen som vi skulle jobba pa\"); no owner paste exists in this source",
+   "message_binding_precision": "MESSAGE_KNOWN",
+   "declared_in_header": true,
+   "basis": "the PDF filename is preserved; its bytes are not. The transcript walks the document item by item, so its content is reproduced through the assistant rather than captured"
+  }
+ ]
+}

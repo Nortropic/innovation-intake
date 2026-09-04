@@ -1,0 +1,52 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-006",
+ "revision": 2,
+ "source_path": "_projects/improvements/sources/CONV-006/conversation-r2.md",
+ "source_sha256": "2d24a1b54efaefab37534b0c93cde13870512b3c9693177c8623ef2a41f95760",
+ "declared_count": 2,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 2 bilagor inventerade (73e0fc06-3694-4442-819e-7c3f1f9ecc39.png samt sediment-bild-/filreferenser); innehållet ej infångat i svepet. --- #",
+ "observed_lower_bound": 1,
+ "observed_signals": {
+  "filecite_sites": 43,
+  "filecite_turns": 41,
+  "upload_phrases": 0,
+  "named_upload_identities": [],
+  "mentioned_paths": 0
+ },
+ "reconciliation": "AGREE",
+ "full_source_capture": "UNKNOWN",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-006-001",
+   "ordinal": 1,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "uploaded_image",
+   "original_filename": "73e0fc06-3694-4442-819e-7c3f1f9ecc39.png",
+   "media_type": "image/png",
+   "message_binding": "1 named image + 1 sediment:// reference; owner msg 1 is the only plausible carrier (owner turns are 1/3/5, 257/65/12 chars, no pastes)",
+   "message_binding_precision": "MESSAGE_KNOWN",
+   "declared_in_header": true,
+   "basis": "named image; owner msg 1 is the only possible carrier (owner turns are msgs 1/3/5 at 257/65/12 chars, none of them a paste); no bytes captured"
+  },
+  {
+   "attachment_id": "ATT-006-002",
+   "ordinal": 2,
+   "capture_status": "DUPLICATE",
+   "materiality": "NON_MATERIAL",
+   "materiality_basis": "adj-005-006.json: the 2nd declared CONV-006 attachment",
+   "declared_kind": "sediment_pointer_duplicate",
+   "original_filename": null,
+   "media_type": "image/*",
+   "message_binding": "sediment:// reference alongside the named PNG; duplicate status INFERRED from the CONV-005 pattern, not stated for this source",
+   "message_binding_precision": "MESSAGE_KNOWN",
+   "declared_in_header": true,
+   "basis": "single sediment reference alongside a single named PNG; classified duplicate by the CONV-005 pattern (sediment pointer duplicates the multimodal part). INFERRED, not stated by the corpus for this source",
+   "duplicate_of": "ATT-005-001",
+   "duplicate_basis": "single sediment reference alongside a single named PNG; classified duplicate by the CONV-005 pattern (sediment pointer duplicates the multimodal part). INFERRED, not stated by the corpus for this source"
+  }
+ ]
+}
