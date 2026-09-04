@@ -1,0 +1,29 @@
+---
+title: "improvements-r38-c4-epistemic — compile audit"
+type: compile-audit
+compile: improvements-r38-c4-epistemic
+project: improvements
+owner: Johnny (Nortropic)
+append_only: true
+---
+
+# Compile audit: improvements-r38-c4-epistemic
+
+## AUDIT-1
+- auditor: r38 terminal closeout — epistemic-limit verification against the frozen attachment-semantic qualification and its seven rematches
+- audited_at: 2026-09-04
+- scope: ir_sha256=d60f3e27c979d126be95de144acd054664e0d097c578ae7811e839259d3ad8cc — NOT a re-review of semantic coverage. c1's AUDIT-1 remains the semantic-coverage audit and is unchanged; this audit covers only what c2, c3 and c4 added on top of it, which is epistemic status. Lineage: c1 (4a05fc361669cde154605a89604a4830f033e70082ddaabfd528e610dc86cc35) -> c2 (b340122226a57bb4953e01677f13c623cc84d68e2fbbe2edbacd92aee099f196) -> c3 (ac743f847227cd3ea685fd00ea54625c4addcb1431fa6fcf83dce0de6fe24d27) -> c4 (this). Every parent is preserved byte-identically; none was edited in place. The frozen r38 source cut is unchanged (36/36 revisions hash-verified, BODY_SOURCE_IDENTITY 994fa5b0aeff79741dcf43dee5c4039b204f96600dabe6d9509233c646da98f9), so this compile is derived from exactly the same bytes as improvements-r38 and improvements-r38-c1. Six corrections are audited, each traced to a named finding in the frozen qualification. From c2: RND-371's uncertainty asserted that the CONV-016 independent review "returned negative-rule corrections" (AMR-001) — the frozen body shows "negativ regel"/"negativa regler" occur only in msg 43, the review INSTRUMENT, while the returned review at msgs 46/48 reports exactly four remediation groups, all marked 4/4 FIXED, with the 49 primary classifications unchanged, none of which is a negative-rule family; and RND-393's uncertainty recorded the KEEP/MOVE/ARCHIVE-MOVE/UNCERTAIN classifier without noting that msg 20 proposed and owner msg 25 ratified its replacement by SAFE_TO_COPY_PENDING_OWNER_REVIEW (BR-005). From c3: RND-025 carried provenance span CONV-007 r2 42-101 at authority_class=evidence with uncertainty "low as captured events", while its five evidence_refs cite msgs 6 and 15-16 plus CONV-008/CONV-016 and none inside 42-101 — the span whose two decisive carriers, the msg-60 night log and the msg-70/71 279-case report, are attachment chips whose bytes were never captured (AMR-005 inversion). From c4: RND-173 opened on an enumeration, "nine instantiations across six conversations", whose CONV-001 provenance is msgs 40/44/48 and which omits msg 23 entirely, while CONTEXT RECEIPT, CHUNK, PRUNE, hop budget, dead-end and typed edge each occur 0 times across all 489 items (A-007 limb 1); RND-208 holds standing CURRENT_CANDIDATE with relations=[] and evidence_refs=0, carrying no signal that its seed sentence is introduced in the source by "Texten säger ungefär:" and no trace of the operating law the source derived from that same failure, "behåll idén, kasta bort auktoritetsglansen tills provenance finns", which occurred 0 times in the IR (A-006); RND-108 is kind OWNER_DECISION at authority_class=owner asserting the msg 13-62 span "is preserved as raw evidence for Recompile" with relations=[supports RND-104, relates-to RND-086] and no edge to RND-110 or RND-111, an assurance true of the transcript text and false of the span's evidential completeness, since owner msgs 13, 22 and 61 carried payloads that were entirely uncaptured attachments (B-028); and the owner_turn_ledger classified CONV-001 msg 61 as "duplicate-restatement" and msg 77 as "interface-submission" with no mention of attachments, actively steering a hydration pass away from the two attachment-bearing turns (A-014 ledger limb). Each correction adds an epistemic_limit record and, where the harm statement named a missing edge, the relation; no claim text was erased and no proposition was promoted to fact. Verified mechanically: 0 forbidden-key findings under the RND vocabulary guard, 489 items unchanged in count and identity, render deterministic at the new IR identity.
+- verdict: PASS
+
+### What this audit does NOT establish
+- It does not re-verify semantic coverage. c1's AUDIT-1 is the semantic audit; this one is scoped to epistemic status and says so.
+- It does not establish that any missing historical attachment was recovered. Two MATERIAL findings remain unresolved and are classified KNOWN_IRRECOVERABLE_IN_CURRENT_HISTORICAL_SURFACE.
+- It does not establish historical reviewer independence. ACTOR_INDEPENDENCE is recorded UNVERIFIED, which is neither VERIFIED nor FALSE, and the owner explicitly declined to certify it from authority.
+- It does not establish the connected 279-case family-name mapping. Only owner=166 is locally proven; FULL_FAMILY_NAME_TO_COUNT_MAPPING is UNVERIFIED.
+- It does not change SOURCE_CAPTURE_COMPLETENESS, which remains NO. Semantic accessibility through an external interface is not byte capture, and the two CONV-007 carriers are readable without their bytes being held.
+
+### Terminal findings carried by this compile
+- 19 of the 21 MATERIAL attachment findings are resolved; 2 are not.
+- BAF-CONV-001-A-007 / B-015 (Context Mesh image): the surviving msg-23 observation hedges the flow ("Bilden visar ett flöde ungefär:") and then asserts the mechanics beyond that hedge. Only the image could separate what the diagram LABELLED from what the assistant SUPPLIED, and it is unrecoverable. The original adjudicator invoked the semantic-redundancy escape and rejected it on exactly this ground.
+- BAF-CONV-001-A-014 / B-024 (msg-61 batch): msg 62 opens "Först en liten korrigering från din anteckning: författaren heter Jake Van Clief" while the owner turn contains no note and no names. Only the artefact could settle whether that was the owner's words or a caption in a forwarded image. Uploading is not authoring.
+- Both protect primary falsification value rather than conceptual meaning, which is why no representation closes them.
