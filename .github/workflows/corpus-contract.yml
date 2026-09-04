@@ -59,6 +59,42 @@ jobs:
             echo "no committed RND compiles under corpus/_rnd — nothing to validate"
           fi
 
+      - name: Project contract — sweep coverage and the attachment source surface
+        run: |
+          set -e
+          # THIS STEP DID NOT EXIST until the r38 attachment source-surface
+          # remediation went looking for where its new gate would actually run, and
+          # found the answer was nowhere. `project_contract.py validate` — the whole
+          # PROJECT_SWEEP contract: manifest-vs-tree, revision hashes, source
+          # immutability, idea provenance, review queue, sweep audit, false
+          # completeness — was referenced by neither this workflow nor the local
+          # pre-commit hook. The sweep was the one layer of the corpus nothing
+          # checked on the server, which is the same class of hole as a body digest
+          # standing in for a source: something looked verified because something
+          # ELSE was.
+          #
+          # It also means the attachment gate would have been decorative. A check
+          # that never runs is not a check, whatever its test suite says.
+          if ls -d corpus/_projects/*/ >/dev/null 2>&1; then
+            python3 skill/scripts/project_contract.py --corpus corpus validate
+          else
+            echo "no swept projects under corpus/_projects — nothing to validate"
+          fi
+
+      - name: Attachment source surface — declared vs observed, per bound revision
+        run: |
+          set -e
+          # Reported even when green, because the interesting number is not "0
+          # findings" but MATERIAL_WITHOUT_BYTES and the reconciliation split. A
+          # corpus whose material attachments are all unavailable is not a corpus in
+          # trouble — it is a corpus being honest — and that has to be legible
+          # without reading a failure.
+          for d in corpus/_projects/*/; do
+            [ -f "$d/project-manifest.json" ] || continue
+            python3 skill/scripts/project_contract.py --corpus corpus \
+              attachments --project "$(basename "$d")" || true
+          done
+
       - name: Capture-signature goldens (the corpus holds the sources)
         run: |
           set -e

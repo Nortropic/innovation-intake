@@ -1,0 +1,50 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-007",
+ "revision": 2,
+ "source_path": "_projects/improvements/sources/CONV-007/conversation-r2.md",
+ "source_sha256": "906356f70c7a50d54c8ee9b2050c82d48ef3a97b887bc9fb6a15317659819e1d",
+ "declared_count": 2,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 2 bilagor inventerade (Inklistrad markdown(1).md, Inklistrad markdown(2).md); innehållet ej infångat i svepet. --- #",
+ "observed_lower_bound": 1,
+ "observed_signals": {
+  "filecite_sites": 24,
+  "filecite_turns": 23,
+  "upload_phrases": 0,
+  "named_upload_identities": [],
+  "mentioned_paths": 0
+ },
+ "reconciliation": "AGREE",
+ "full_source_capture": "NO",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-007-001",
+   "ordinal": 1,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "MATERIAL",
+   "materiality_basis": "adj-007-022.json: one of the two 'Inklistrad markdown' chips",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": "Inklistrad markdown(1).md",
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT from the bound transcript: msg 60 is a 65-char owner lead-in ending in a dangling colon, and a second owner turn is missing entirely between msgs 70 and 71. The 18 inline owner relays are complete and are therefore NOT the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS, not inline pastes. msg 60 is a 70-char owner lead-in ending in a dangling colon ('...senaste:') with nothing following; msgs 61-63 then reason from a large log they call 'din paste'/'nattens logg'. A second owner turn is absent entirely between msgs 70 and 71. 18 of the source's 20 owner relays ARE inline and complete - the 2 chips are exactly the 2 that are not. Mechanism proven in-body: msg 63 attaches a ChatGPT FILE-citation marker to the sentence 'Den allra senaste statusen i din paste ar:'"
+  },
+  {
+   "attachment_id": "ATT-007-002",
+   "ordinal": 2,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "MATERIAL",
+   "materiality_basis": "adj-007-022.json: the other 'Inklistrad markdown' chip",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": "Inklistrad markdown(2).md",
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT from the bound transcript: msg 60 is a 65-char owner lead-in ending in a dangling colon, and a second owner turn is missing entirely between msgs 70 and 71. The 18 inline owner relays are complete and are therefore NOT the chips.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS, not inline pastes. msg 60 is a 70-char owner lead-in ending in a dangling colon ('...senaste:') with nothing following; msgs 61-63 then reason from a large log they call 'din paste'/'nattens logg'. A second owner turn is absent entirely between msgs 70 and 71. 18 of the source's 20 owner relays ARE inline and complete - the 2 chips are exactly the 2 that are not. Mechanism proven in-body: msg 63 attaches a ChatGPT FILE-citation marker to the sentence 'Den allra senaste statusen i din paste ar:'"
+  }
+ ]
+}

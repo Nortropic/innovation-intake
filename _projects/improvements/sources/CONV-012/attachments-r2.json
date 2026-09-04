@@ -1,0 +1,38 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-012",
+ "revision": 2,
+ "source_path": "_projects/improvements/sources/CONV-012/conversation-r2.md",
+ "source_sha256": "25b19c9bf9933a2b1673ec3813d2acfd569b8c3965c2cbfb6ee791a7517b24ee",
+ "declared_count": 1,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (Inklistrad markdown.md); innehållet ej infångat i svepet. --- ##",
+ "observed_lower_bound": 1,
+ "observed_signals": {
+  "filecite_sites": 6,
+  "filecite_turns": 6,
+  "upload_phrases": 0,
+  "named_upload_identities": [],
+  "mentioned_paths": 0
+ },
+ "reconciliation": "AGREE",
+ "full_source_capture": "YES",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-012-001",
+   "ordinal": 1,
+   "capture_status": "CAPTURED_CONTENT",
+   "materiality": "MATERIAL",
+   "materiality_basis": "the single class-A chip captured inline; adj records it as the captured one",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": "Inklistrad markdown.md",
+   "media_type": "text/markdown",
+   "message_binding": "owner msg 1, 7526 chars — the ONLY owner paste in the source; 1 chip : 1 paste",
+   "message_binding_precision": "EXACT",
+   "declared_in_header": true,
+   "basis": "the one class-A chip that IS captured. Exactly one chip and exactly one owner paste (msg 1, 7526 chars = 91.3% of all owner text); no structural gap exists anywhere in the 18 messages; dependency closure verified - every assistant back-reference to owner material resolves inside msg 1 (msg 3 'queue = 7 -> visa sju mappar' -> msg 1; msg 8's five questions -> msg 1; msg 8 'Bevaka Aquarium-inspiration ar aktiv' -> msg 1). No orphan owner premise exists",
+   "inline_binding": "CONV-012 msg 1 (7526 chars, 91.3%% of all owner text)",
+   "inline_binding_basis": "the bytes are inside the captured body, so source_sha256 already covers them; there is no separate artifact to hash"
+  }
+ ]
+}

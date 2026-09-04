@@ -1,0 +1,78 @@
+{
+ "attachment_manifest_version": 1,
+ "source_id": "CONV-016",
+ "revision": 1,
+ "source_path": "_projects/improvements/sources/CONV-016/conversation.md",
+ "source_sha256": "e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+ "declared_count": 4,
+ "declared_phrase": "ginaltexten och har bevarats ordagrant. 4 bilagor inventerade (Inklistrad text-chips); innehållet ej infångat i svepet. Inga bilagor-avvikelser. --- ##",
+ "observed_lower_bound": 1,
+ "observed_signals": {
+  "filecite_sites": 16,
+  "filecite_turns": 16,
+  "upload_phrases": 0,
+  "named_upload_identities": [],
+  "mentioned_paths": 7
+ },
+ "reconciliation": "AGREE",
+ "full_source_capture": "UNKNOWN",
+ "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+ "attachments": [
+  {
+   "attachment_id": "ATT-016-001",
+   "ordinal": 1,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT at the gaps 17/18, 37/38, 45/46, 84/85, each preceded by an assistant instruction to paste exactly that artefact. All 23 inline owner pastes are complete.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS. Four structural gaps, each an assistant turn answering a document no preceding owner turn carries, each citing it with a filecite marker, and each preceded by an assistant instruction to paste exactly that artefact: between msgs 17/18, 37/38, 45/46, 84/85. All 23 inline owner pastes are complete and verbatim (msg 23 even preserves terminal chrome), so they cannot be the chips"
+  },
+  {
+   "attachment_id": "ATT-016-002",
+   "ordinal": 2,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT at the gaps 17/18, 37/38, 45/46, 84/85, each preceded by an assistant instruction to paste exactly that artefact. All 23 inline owner pastes are complete.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS. Four structural gaps, each an assistant turn answering a document no preceding owner turn carries, each citing it with a filecite marker, and each preceded by an assistant instruction to paste exactly that artefact: between msgs 17/18, 37/38, 45/46, 84/85. All 23 inline owner pastes are complete and verbatim (msg 23 even preserves terminal chrome), so they cannot be the chips"
+  },
+  {
+   "attachment_id": "ATT-016-003",
+   "ordinal": 3,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT at the gaps 17/18, 37/38, 45/46, 84/85, each preceded by an assistant instruction to paste exactly that artefact. All 23 inline owner pastes are complete.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS. Four structural gaps, each an assistant turn answering a document no preceding owner turn carries, each citing it with a filecite marker, and each preceded by an assistant instruction to paste exactly that artefact: between msgs 17/18, 37/38, 45/46, 84/85. All 23 inline owner pastes are complete and verbatim (msg 23 even preserves terminal chrome), so they cannot be the chips"
+  },
+  {
+   "attachment_id": "ATT-016-004",
+   "ordinal": 4,
+   "capture_status": "UNAVAILABLE",
+   "materiality": "UNKNOWN",
+   "materiality_basis": "the frozen adjudication classified this cluster but never resolved the verdict to a single ordinal; pinning it here would invent a binding the evidence does not carry",
+   "declared_kind": "pasted_text_chip",
+   "original_filename": null,
+   "media_type": "text/markdown",
+   "message_binding": "SUPERSEDED. Chip-carrying owner turns are ABSENT at the gaps 17/18, 37/38, 45/46, 84/85, each preceded by an assistant instruction to paste exactly that artefact. All 23 inline owner pastes are complete.",
+   "message_binding_precision": "GAP_LOCATED",
+   "declared_in_header": true,
+   "basis": "chips are DROPPED OWNER TURNS. Four structural gaps, each an assistant turn answering a document no preceding owner turn carries, each citing it with a filecite marker, and each preceded by an assistant instruction to paste exactly that artefact: between msgs 17/18, 37/38, 45/46, 84/85. All 23 inline owner pastes are complete and verbatim (msg 23 even preserves terminal chrome), so they cannot be the chips"
+  }
+ ]
+}
