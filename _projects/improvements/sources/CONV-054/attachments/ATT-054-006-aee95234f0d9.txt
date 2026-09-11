@@ -1,0 +1,188 @@
+R38 ATTACHMENT REMATCH / RECOVERY-BINDING — FINAL REPORT
+
+1. Prestate identities (all verified before any work)
+
+┌────────────────────────┬─────────────────┬────────┐
+│                        │                 │        │
+├────────────────────────┼─────────────────┼────────┤
+│ Bridge .md             │ 0bb1f8762e788fb │ ✅ mat │
+│                        │ 5…              │ ches   │
+├────────────────────────┼─────────────────┼────────┤
+│ Bridge .json           │ ab9bf4d9ab73682 │ ✅ mat │
+│                        │ 9…              │ ches   │
+├────────────────────────┼─────────────────┼────────┤
+│ SEMANTIC_BASELINE_R38  │ ed1f6c637215368 │ ✅     │
+│                        │ 2…              │        │
+├────────────────────────┼─────────────────┼────────┤
+│ SEMANTIC_REMEDIATION_R │ 6aea0c3c890f459 │ ✅     │
+│ 38                     │ c…              │        │
+├────────────────────────┼─────────────────┼────────┤
+│ OWNER_CHECK_R38        │ 815bee143f0c026 │ ✅     │
+│                        │ 4…              │        │
+├────────────────────────┼─────────────────┼────────┤
+│                        │                 │ ✅     │
+│ ATTACHMENT_SEMANTIC_R3 │ 94da7113d702896 │ 60/60  │
+│ 8 scratch              │ 4…              │ entrie │
+│                        │                 │ s      │
+├────────────────────────┼─────────────────┼────────┤
+│ candidate rnd-ir.json  │ 4a05fc361669cde │ ✅     │
+│ (c1)                   │ 1…              │        │
+├────────────────────────┼─────────────────┼────────┤
+│ innovation-intake      │ HEAD e7c01b6f…  │ ✅     │
+│                        │ tree d62775a7…  │ clean  │
+├────────────────────────┼─────────────────┼────────┤
+│ nortropic-intake       │ HEAD c181f6ef…  │ ✅     │
+│                        │ tree 07c72e0b…  │ clean  │
+└────────────────────────┴─────────────────┴────────┘
+
+36/36 frozen revisions unmutated · _rnd holds only improvements-r38 + -c1 (no post-r38, no Recompile) · 30 sources (r38 boundary intact) · nortropic-system read-only, never in a write path.
+
+2. The 21 MATERIAL findings (from the artifact, not the prompt)
+
+MATERIAL_FINDINGS_ENUMERATED = 21 ✓ — derived as adj-001 (4) + adj-007-022 (3) + adj-011 (12, explicit list) + adj-015 (2) = 21 across 13 adjudication entries.
+
+CONV-001  4   A-007, A-006, B-028, A-014
+CONV-007  2   CONV007-A-001, CONV007-A-003
+CONV-011 12   A-002,A-003,A-004,A-005,A-010, B-002,B-003,B-005,B-006,B-007,B-009,B-015
+CONV-015  2   A-001 (msgs 243-253), A-002 (msg 135, COCKPIT)
+CONV-022  1   CONV-022-A-001  (= ATT-022-001, stamp 18:52:11)
+
+CONV-016 contributes zero of the 21 — its adjudication surface is empty. FLR-002 therefore cannot close a MATERIAL finding, whatever its quality.
+
+3. Bridge binding table
+
+Bridge: FLR-001
+CONV: CONV-015 A-001
+Verdict: AMBIGUOUS
+Findings: 1
+Decisive evidence: Source-B fingerprints (DESIGN_FREEZE,
+IMPLEMENTATION_VALIDATION, S54-rule) co-locate at msgs
+251-253 — inside the locus; CONV-015 is the sole source
+ routing to digitalforvaltningen-webb-v2. But CONV-015
+carries no filename, no timestamp, no File Library id
+(all 11 ATT-015 rows original_filename=null), and 2
+files cannot account for ≥9 filecite sites / 11
+declared attachments
+────────────────────────────────────────
+Bridge: FLR-001
+CONV: CONV-015 A-002
+Verdict: NOT_BOUND
+Findings: 1
+Decisive evidence: Different locus entirely — A-002 is
+the COCKPIT-00..07 plan at msg 135 (turn18file0); no
+COCKPIT fingerprint in either bridge source
+────────────────────────────────────────
+Bridge: FLR-002
+CONV: CONV-016
+Verdict: N/A to the 21
+Findings: 0
+Decisive evidence: No MATERIAL finding exists to bind
+────────────────────────────────────────
+Bridge: FLR-003
+CONV: CONV-011
+Verdict: AMBIGUOUS
+Findings: 12
+Decisive evidence: Shares date 2026-07-29 and baseline
+1aa1394. But transcript names …_v2.3_verified.pdf while
+ the candidate is …manual.pdf declaring
+"Programversion: 1.0"; the candidate's SHA 6ce083b3…
+occurs zero times in the frozen transcript, so no
+cryptographic cross-check exists
+────────────────────────────────────────
+Bridge: FLR-004
+CONV: CONV-007
+Verdict: NOT_BOUND
+Findings: 2
+Decisive evidence: Decisive negative: all five
+fingerprints occur 0× in CONV-007 and 17× in CONV-013.
+CONV-007's material is a 279-case gate adjudication
+(279 ×37), not an R1–R11 report
+────────────────────────────────────────
+Bridge: FLR-005
+CONV: CONV-022
+Verdict: NOT_BOUND
+Findings: 1
+Decisive evidence: Timestamp mismatch: the MATERIAL
+finding is ATT-022-001 @ 18:52:11; the candidate is
+19:39:46, which maps to ATT-022-003 (19:39:48) — not a
+MATERIAL finding. Exactly the "nearby earlier variant"
+the bridge warned about
+────────────────────────────────────────
+Bridge: FLR-006
+CONV: CONV-001
+Verdict: NOT_BOUND
+Findings: 4
+Decisive evidence: Bridge established no source; later
+synthesis may not substitute
+
+BOUND = 0 · AMBIGUOUS = 13 findings · NOT_BOUND = 8 findings. No evidence-access promotion was performed; every class is unchanged.
+
+4. Source-first semantic rematch
+
+RESOLVED_BY_SOURCE_BOUND_READABLE_EXTERNAL    0
+SOURCE_BOUND_BUT_INSUFFICIENT                 1   (CONV-015 A-001)
+MISMATCHED_SOURCE                             3   (CONV-007 ×2, CONV-022 ×1)
+STILL_UNRESOLVED                             17
+                                        total 21
+
+A-001 is SOURCE_BOUND_BUT_INSUFFICIENT even on its best reading: the bridge's recovered semantics do not include the Final Coherence Report or the "12 coherence points RESOLVED" claim its residual loss names.
+
+5. IR corrections — new candidate improvements-r38-c2-rematch
+
+sha256 b340122226a57bb4953e01677f13c623cc84d68e2fbbe2edbacd92aee099f196, derived from c1 (4a05fc36…), same frozen body-source cut, BODY_SOURCE_IDENTITY untouched. Both corrections rest on the frozen bodies alone; the bridge is recorded as CORROBORATING_ONLY — no unbound candidate carries evidentiary weight.
+
+I scanned for the same root error beyond the two named examples: RND-371 is the only item asserting the review's negative-rule output, and RND-393 the only item using the superseded vocabulary. The remediation is genuinely bounded.
+
+6. AMR-001 / RND-371 — CONFIRMED
+
+Decidable from the frozen source without the bridge: negativ regel / negativa regler occur only in msg 43, which is the review instrument. The returned review at msgs 46/48 reports exactly four groups — "bara fyra riktade korrigeringar av evidensviktning, attribution och språk" — all 4/4 FIXED, with "de 49 primärklassificeringarna oförändrade". None is a negative-rule family. The bridge agrees exactly.
+
+Old: "low — … it was executed (the review returned negative-rule corrections)" → New: medium, with the instrument/result distinction and the four actual groups named.
+
+7. BR-005 / RND-393 — CONFIRMED, with a refinement
+
+RND-393 cites msgs 14/17, and those messages genuinely use KEEP / MOVE / ARCHIVE-MOVE / UNCERTAIN. Its provenance is exact and it is not fabricated. The defect is that the vocabulary was superseded later in the same conversation — proposed at msg 20 and ratified in the owner's own words at msg 25 ("klassificeringar är rekommendationer, SAFE_TO_MOVE ersatt med SAFE_TO_COPY_PENDING_OWNER_REVIEW, ingen migrering auktoriserad"). That is stronger than my earlier framing: it is an owner-ratified supersession, not an assistant rename.
+
+8. Remaining unresolved material surface
+
+21 of 21 MATERIAL findings remain unresolved. Six ATTACHMENT_MATERIAL_UNAVAILABLE warnings remain live; RECONCILIATION_KNOWN_UNRESOLVED = 1; MATERIAL_WITHOUT_BYTES = 6.
+
+9. Contract results / non-vacuity
+
+Post-state re-run: 1/1 projects satisfy the project contract with the same two codes; rnd validate: 0 FAIL, 1 WARN; both worktrees 0 changed files; prestate re-verified OK after all work. Non-vacuity is inherited from the merged suites (65/65 attachment, 11/11 IR, 14/14 + 4/4 rules activating, mutation guard biting) — this task added no validator, so it claims no new activation.
+
+10. Result identity
+
+REMATCH_RESULT_SHA256        = e2730dbea5dce7c01983b454c29fd68fc8b0f5b1bdb93371288d6a2e3c3f0495
+new candidate (uncommitted)  = b340122226a57bb4953e01677f13c623cc84d68e2fbbe2edbacd92aee099f196
+
+Final status
+
+CORPUS_INTEGRITY                    = PASS
+SOURCE_CAPTURE_COMPLETENESS         = NO
+SEMANTIC_QUALIFICATION              = NOT_ESTABLISHED
+FULL_SOURCE_CAPTURE_CONV_013        = NO
+ATTACHMENT_SEMANTIC_R38             = FAIL
+FINAL_IMPROVEMENTS_CORPUS_QUALIFIED = NO
+POST_R38_CAPTURE_STARTED            = NO
+RECOMPILE_STARTED                   = NO
+NORTROPIC_SYSTEM_MUTATIONS          = 0
+
+FILE_LIBRARY_RECOVERY_BINDING_REQUESTS — 8 rows
+
+Full detail in rematch/FILE_LIBRARY_RECOVERY_BINDING_REQUESTS.json. The load-bearing ones:
+
+- CONV-011 — is Programversion: 1.0 the same artifact as …_v2.3_verified.pdf? 12 of the 21 findings hang on this single question. A document-internal revision marker, or the v2.3 file's own SHA, settles it.
+- CONV-015 — the ordinal within ATT-015-001..011, plus the Final Coherence Report, plus the separate msg-135 COCKPIT plan.
+- CONV-022 — the 18:52:11 chip, not the 19:39:46 one supplied.
+- CONV-007 — the two Inklistrad markdown chips and the rejected first fix; FLR-004 is not this material.
+
+One conflict this rematch surfaced. The merged corpus records the two 24-Aug uploads as CONV-013's own attachments (ATT-013-006/007, AMR-004). But frozen CONV-013 msg 139 is the owner saying he "pulled two files in" about the Webbförvaltningen plan; msgs 137-138 show the assistant searching for them; msg 141 places them in "samma Webbförvaltningen-session"; and the citations are fileciteturn264file5/6 — a search-result turn. CONV-015 is the only source routing to digitalforvaltningen-webb-v2. If those uploads belong to CONV-015, CONV-013's own surface may be exactly the 5 it declares, and the KNOWN_UNRESOLVED reconciliation rests on a locus misattribution I introduced. I did not re-bind it — ambiguity is not a licence to move a locus, and re-binding would change a merged corpus record on assistant text from a thread that had just self-corrected.
+
+Stopping here, before semantic promotion.
+
+✻ Cooked for 12m 22s · done 11:33 AM
+
+──────────────────────────────────────────────────────────
+❯
+─────────────────────────────────

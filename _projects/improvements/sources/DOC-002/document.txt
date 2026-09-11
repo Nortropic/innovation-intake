@@ -1,0 +1,25 @@
+Absolut. Om vi gör det på **nybörjarnivå** är planen framåt faktiskt ganska enkel nu. Du ska inte försöka hålla alla delar i huvudet samtidigt.
+
+Tänk så här: **vi bygger först motorn, sedan organisationen, sedan kontrollrummet ovanpå.**
+
+1. **Låt Claude göra klart Digitala förvaltningen först.** Det är det som pågår nu, och du ska inte blanda in Organization OS-prompten i den sessionen. Digitala förvaltningen blir vår första riktiga verksamhet som resten senare byggs runt. När Claude säger att arbetet är färdigt vill vi ha dess slutrapport med exakt vad som byggts, verifierats, publicerats och vad som eventuellt återstår. **Din uppgift:** låt den arbeta klart och skicka sedan slutrapporten till mig.
+
+2. **Färdigställ Full Autonomy Bootstrap.** När Digitala förvaltningen är klar går fokus tillbaka till bootstrapen. Det här är den tekniska “motorn”: task → worker → isolerad körning → resultat → verifiering → retry/remediation → säker completion/publication. Här ska vi inte börja bygga chefer, förvaltningar, möten eller gubbar ännu. **Din uppgift:** fortsätt bootstrap-arbetet enligt dess befintliga plan tills Claude kan bevisa att hela autonoma livscykeln faktiskt fungerar utan att du behöver hålla den i handen.
+
+3. **Frys det som `Autonomy Kernel v1`.** När bootstrapen är färdig ska vi sätta en tydlig checkpoint: “det här är den bevisade autonoma exekveringskärnan som Organization OS får bygga ovanpå.” Det betyder inte att den aldrig får ändras igen. Det betyder bara att vi vet exakt vad Organization OS kan lita på. **Din uppgift:** när bootstrapen verkar färdig, ge mig slutrapporten. Jag hjälper dig avgöra om den verkligen är redo att kallas `Autonomy Kernel v1`.
+
+4. **Först nu kör vi Organization OS Execution Master v3.** Det är den kortare master-prompten vi precis tog fram. Claude börjar då inte med att bygga. Den börjar med att läsa den verkliga Nortropic-koden och de två Intake-filerna: `idea-nortropic-organization-os.md` = **vad vi vill bygga**, och `nortropic-organization-os-design-rationale.md` = **varför vi kom fram till det**. Full-chatten läses bara om något behöver bevisas eller förstås djupare. Claude kontrollerar också först att Digitala förvaltningen + Bootstrap + Kernel verkligen är klara. Om inte ska den säga `NOT_READY_FOR_ORGANIZATION_OS` och stoppa.
+
+5. **Claude inventerar Nortropic innan något nytt byggs.** Här frågar den i praktiken: “Vad finns redan? Vad saknas? Vad av brainstormingen behövs verkligen?” Den ska mappa `nortropic-system`, Digitala förvaltningen, `nortropic-knowledge`, `verkstadsgolvet` och befintliga designpapper. Sedan klassificerar den våra idéer som ungefär **behåll, anpassa, bygg, vänta med eller förkasta**. Detta är skyddet mot att vi råkar bygga “kommunbyråkrati med AI-agenter”.
+
+6. **Vi fryser Organization Architecture.** Först efter inventeringen bestämmer vi den minsta riktiga arkitekturen. Då får vi svar på saker som: vilka organisatoriska objekt behöver faktiskt finnas, hur förvaltning/enhet/worker kopplas till bootstrapens task/attempt/verification, vilka chefsnivåer som behövs nu och vilka som inte behövs, hur context ska fungera, hur avvikelser och mål ska representeras, och hur Verkstadsgolvet ska läsa allt utan att bli en andra source of truth. **Här kommer Claude sannolikt tillbaka med några få riktiga ägarfrågor till dig.** Då hjälper jag dig ta dem en i taget.
+
+7. **Bygg Organization OS V0 som en mycket liten verklig slice.** Vi börjar inte med hela staden. Vi använder den redan färdiga Digitala förvaltningen och bygger exempelvis första kedjan: `Förvaltning → Enhet → Worker → Task → Attempt → Candidate → Verification → Evidence`. Första versionen är **read-first**. Den ska visa verkligheten, inte styra allt. Om information saknas ska det stå `UNKNOWN` eller `NOT INSTRUMENTED`, inte låtsas att allt är grönt.
+
+8. **Därefter utvecklar vi Verkstadsgolvet till Nortropics Digital Twin.** Först här börjar det riktigt roliga UX-arbetet med Stadshuset, förvaltningar, enheter, gubbar, Kanban, avvikelser, owner attention, model/provider-status osv. `verkstadsgolvet` blir alltså fönstret in i organisationen. Det ska inte äga sanningen; det ska visualisera sanningen från `nortropic-system`. Senare kan vi lägga till smala “typed intents”, exempelvis en riktig Approve-knapp som skickar en begäran till authority-lagret i stället för att frontend själv ändrar state.
+
+Det viktiga för dig **just nu** är alltså mycket enklare än allt vi har brainstormat:
+
+> **Gör ingenting med Organization OS ännu. Låt Claude färdigställa Digitala förvaltningen. När du får slutrapporten, skicka den till mig.**
+
+Sedan tar vi **ett steg i taget**. Du behöver inte själv avgöra när något är “Autonomy Kernel v1”, när master-prompten ska köras eller vilka öppna frågor som måste beslutas. Vi kan kontrollera varje checkpoint tillsammans innan nästa steg startar. memcite

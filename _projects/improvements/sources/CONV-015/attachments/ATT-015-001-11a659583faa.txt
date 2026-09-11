@@ -1,0 +1,167 @@
+
+ Here is Claude's plan:               ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Verkstadsgolvet v2 — Chefscockpit (executive cockpit) — plan
+
+ Context
+
+ Ägarmandat 2026-08-24: Verkstadsgolvet ska gå från "teknisk instrumentpanel som visar maskineriet"
+ till "chefscockpit för att leda en AI-nativ digital organisation". Problemet är inte polish utan
+ att all intern komplexitet exponeras på samma informationsnivå. Lösningen är tre informationsdjup:
+
+ - NIVÅ 1 CHEFSLÄGE (ny Hem-yta): fabrikshälsa, "BEHÖVER DIG", aktivt arbete per projekt,
+ nyligen klart, aggregerad styrka. Undantags-först: friskt kollapsar till lugn signal.
+ - NIVÅ 2 DRIFT: per-arbetsström i organisationsspråk (fas, mål, roller, nästa steg).
+ - NIVÅ 3 TEKNIK/FORENSIK: befintliga /loop (Fabriksrummet) — behålls intakt som botten.
+
+ UI-förenkling = representationskompression, ALDRIG försvagade trust-semantiker. Ingen påhittad
+ data (ägardirektiv 2026-08-16 "ingen låtsasdata" står fast): nya ytor visar bara (a) äkta data,
+ (b) ärliga otillgänglig-tillstånd, (c) tydligt märkta länkar in i showroomet.
+
+ Ägarval (AskUserQuestion 2026-08-24): all ny copy på SVENSKA; leads-modulen får egen
+ "Kunder"-grupp i den nya navigeringen.
+
+ Uppmätt nuläge (tre utforskare mot origin/main = 100c863)
+
+ - Appen: ~20 rutter; sidofält med 14 poster varav 2 är produkt; 8–10 paneler med permanenta
+ tomtillstånd (/, /agenter, /systemhalsa/**, /systemkarta) = semantisk dödvikt.
+ - Äkta data: leads-Supabase (6 tabeller, 4 fungerande vyer), GitHub-läsplan (/dokument),
+ onboarding-skrivväg (privata kundrepon), loop-transport (lib/loop/transport.ts → riktiga
+ loop_snapshots/loop_events, LOOP_ENABLED-grindad, ärligt tom tills nortropic-system levererar).
+ - /loop renderar 250–350 märkta värden före disclosure; SHOWROOM-faktumet upprepas 18 ggr;
+ nivåblandning (SHA/seq/grind-id på toppnivå). Nivå 1-material finns redan rent:
+ deriveAttention(), groupByState(), splitCompleted(), mainConfirmation()/ageText(),
+ activePhaseFromSnapshot().
+ - Frysta kontrakt: /loop-interiören hårt spikad (MaskinShell direktbarn + exakta props,
+ 3 data-column, DOM-ordning, LOOP_CSS bytefryst) — RÖRS EJ. Sidofältet spikat
+ (navEntries>=12, NAV_ITEM_ROW_FIT-total, ordningskrav) och startsidan spikad (måste rendera
+ ProcessGuide/PipelinePanel/MetricsPanel) i tests/loop/showroom-navigation.test.ts (+
+ room-shell.test.ts:1137-1150) → reducerad nav + ny Hem kräver kirurgisk kontraktsändring.
+ NYA RUTTER ÄR FRIA (ingen assertion räknar upp app/-rutter; frysta middleware-matchern
+ betyder bara: lägg dem under app/(app)/ = inloggat).
+ - Repovida förbud som gäller all ny kod: inga %-tecken i loop-träden (och inga procentsatser/
+ progress-bars produktbrett per ägarregel), ingen animation, ingen NEXT_PUBLIC_, inga
+ console.*, bundle-hemlighetsskanning, "—" för okänt.
+
+ Exekveringsstrategi (fabriken, inte handredigering)
+
+ Allt produktarbete går genom repots Claude Factory (arkitekt → byggare → exakta skrivscope →
+ mekaniska grindar → oföränderlig kandidat → oberoende granskare → visuell granskare → skyddad
+ Publication v2 med auto-merge), samma disciplin som PR #23–#40. Jag författar task-JSON per
+ skiva i ~/nortropic/tasks/verkstadsgolvet/, daemonen körs osandboxat, monitor per körning.
+
+ 1. AUKTORITETSDOKUMENT FÖRST (COCKPIT-00): ägarmandatet byte-kopieras verbatim till
+ docs/nortropic-verkstadsgolvet-v2-mandate.md via etablerade bytekopiemönstret (diff-grind),
+   - ledgerpost. Utan detta har granskarna ingen auktoritet att döma de nya ytorna mot, och
+ kontraktsändringarna saknar bevisgrund.
+ 2. Kontraktsändringar är egna kirurgiska skivor (SHREDDER-01C-spelboken): ändra exakt de
+ uppräknade assertions i showroom-navigation.test.ts / room-shell.test.ts med ersättande
+ assertions som bevarar intentionen (Kartongförstöraren nåbar, "Ny kund" framträdande,
+ inget gömt på mobil), aldrig försvagade grindar utan ersättning.
+ 3. Ordning byggd för att varje mellanläge är grönt och ärligt: nya ytor byggs på nya rutter
+ FÖRE nav-/hemsidesbytet; bytet är sista steget i varje etapp.
+ 4. Etablerade driftmönster: preemptiv npm ci i färska worktrees, kompakta beskrivningar,
+ reviewer-max-turns-resume, visualReview med captureStates (1440/900/390), gateordning
+ tsc → build → loop:test (+ claude:test där relevant).
+
+ Design (verifierad mot snapshot av origin/main)
+
+ Rutter (alla under app/(app)/, middleware täcker redan):
+ - / (omskriven i skiva 6) → chefsläget "Hem": FabrikensPuls (lugn hälsorad från ÄKTA
+ transport), BEHÖVER DIG (undantags-först; "Ingenting behöver dig just nu." ENDAST med
+ ansluten källa — utan källa renderas ärligt "Inte anslutet till fabriksmotorn", aldrig
+ lugn-raden), PÅGÅENDE ARBETE (in-flight-rader; kön kollapsad i stängd details),
+ NYLIGEN KLART, STYRKAN (en aggregatrad), VerkstadKort (behåller NAV-B-1:s exakta strängar
+ inline + SHOWROOM-märkt länk till /loop).
+ - /arbete → arbetsströmmar partitionerade Pågår/Behöver dig/I kö/Nyligen klart.
+ - /arbete/[taskId] → Nivå 2 i organisationsspråk (status, fas, mål, styrka, nästa steg);
+ "Teknisk metadata" som stängd details (SHA/verdikt/evidens) med ärligt märkt länk till /loop.
+ - /styrkan → styrkevy ur snapshotens builder-fält; ärligt tom.
+ - /hem → temporär stagingrutt i skiva 5; blir redirect("/") i skiva 6.
+ - /loop, /loop/mata, /dokument, /onboarding, /leads/** orörda. /agenter, /systemhalsa/**,
+ /systemkarta lämnar nav i skiva 6, raderas i skiva 7. Frontier/Kvalitet/Ask Nortropic:
+ ENDAST IA-sömmar (ingen tom skärm byggs, ingen fejk).
+
+ Datalager lib/cockpit/* (rent, server-only, en läsning per målning, ALDRIG fixture):
+ - status.ts readFactory(): isLoopEnabled → isTransportConfigured → loadSnapshot
+ (lib/loop/transport.ts), envelope-mappad; injektabla deps för test.
+ - halsa.ts deriveHealth(): unknown/calm/working/attention/stopped; ålder via
+ ageText/mainConfirmation (lib/loop/room/header.ts, ren import åt rätt håll).
+ - behover-dig.ts deriveNeedsYou(): NEEDS_SPEC+STOPPED per uppgift i organisationssvenska;
+ konstanterna NEEDS_YOU_EMPTY ≠ NEEDS_YOU_UNKNOWN testpinnas (ärlighetsdistinktionen).
+ - arbete.ts partitionWork() med totalitetstest över alla 11 tillstånd; FAS_ETIKETTER;
+ nextStep() enbart ur tillstånd; aktiv fas endast för in-flight, tidigare faser ALDRIG
+ märkta klara (inget bevis).
+ - styrkan.ts deriveWorkforce() ur builder.agent/model på in-flight; null → "—".
+ - format.ts (MISSING/orMissing-återexport + lokala shortSha/antal) och showroom.ts
+ (återexport av SHOWROOM_MODE_LINE så hemfilens @/lib/loop-importförbud överlever).
+
+ Komponenter components/cockpit/ (serverkomponenter, svenska namn): ui.ts med
+ COCKPIT_CSS prefix "ck-" (endast globals.css-variabler, noll %, noll animation; mk-hjälparna
+ dupliceras medvetet — LOOP_CSS injiceras bara av MaskinShell så mk-klasser vore ostylade),
+ HemVy, FabrikensPuls, BehoverDig, PagaendeArbete, NyligenKlart, StyrkanRad, ArbeteLista,
+ ArbeteDetalj, FasLista, TekniskMeta, StyrkanVy, CkField. Återanvänds: PageHeader, Graceful,
+ details-mönstret (alltid stängt som standard). Typografi/ytor enbart ur befintliga tokens
+ (globals.css orörd): mono-uppercase sektionsrubriker, --bg-panel + --hairline-kort, 7px
+ tonprickar (ihålig ring = okänt), färg endast uppmärksamhet/fel/aktiv/klar.
+
+ Navigering (skiva 6): Ny kund (CTA, först) · Hem · Arbete · Kunder ▸ (Insamling,
+ Kvalificering, Arbetsvy, Kalibrering) · Styrkan · Verkstad ▸ (Kartongförstöraren /loop,
+ Mata maskinen /loop/mata, Dokument) · Logga ut. Frysta mekaniker bevaras: NAV_ITEM_ROW_FIT
+ på varje post, inSection-literalen, I.kartong exakt en gång, data-nav-loop kvar.
+
+ Exakta kontraktsändringar (endast två testfiler, skiva 6):
+ - tests/loop/showroom-navigation.test.ts: NAV-A ordningsbyte ("Ny kund" < data-nav-loop
+ behålls; "Översikt"-kravet ersätts med Hem/Arbete/Styrkan/Verkstad-närvarokrav);
+ NAV-B-2 (tre döda paneler måste renderas) ersätts med HemVy-krav + förbud mot
+ panelimporterna + lie-stub; NAV-E navEntries>=12 → >=7. NAV-B-1, NAV-C/D/F/G/H/I orörda
+ och måste passera oförändrade.
+ - tests/loop/room-shell.test.ts: endast ROOM-ISOLERING-blocket (1137–1150, hemsidans
+ panelkrav) ersätts; LOOP_CSS-bytefrysen orörd (components/loop/ui.ts redigeras aldrig).
+
+ Skivsekvens (fabriksuppgifter, i ordning)
+
+ 0. COCKPIT-00 — mandatet bytekopieras till docs/nortropic-verkstadsgolvet-v2-mandate.md
+ (diff-grind) + ledgerpost. Grindar: diff + tsc + claude:test.
+ 1. COCKPIT-01 datalager — lib/cockpit/* + tests/loop/cockpit-derive.test.ts
+ (totalitet, ärlighetspinnar; fixturer tillåtna som TESTINDATA). ~500 rader.
+ 2. COCKPIT-02 ytkit — components/cockpit/ui.ts + CkField + cockpit-ui.test.ts
+ (noll %, noll animation, endast var(--…)-färger). ~250 rader.
+ 3. COCKPIT-03 Arbete — /arbete + /arbete/[taskId] + komponenter + cockpit-arbete.test.ts
+ (details stängda; faslistan utan klar-märken; /loop-länk). Nås via URL. ~450 rader.
+ visualReview: true (1440/900/390).
+ 4. COCKPIT-04 Styrkan — /styrkan + StyrkanVy + cockpit-styrkan.test.ts. ~200 rader.
+ 5. COCKPIT-05 Hem på staging — HemVy + fem sektioner + app/(app)/hem/page.tsx +
+ cockpit-home.test.ts (env osatt → deterministiskt ej-anslutet; lugn-raden FRÅNVARANDE
+ utan källa; sektionsordning). Alla frysta tester orörda → grönt. ~450 rader.
+ visualReview: true; visuellt kriterium = mandatets 10-sekunderstest.
+ 6. COCKPIT-06 kontraktsbyte (atomär, kirurgisk) — skriv om app/(app)/page.tsx (tunn:
+ HemVy + inline VerkstadKort), skriv om components/Sidebar.tsx, /hem → redirect, ändra
+ exakt de två testfilerna enligt ovan. Största risk, minsta möjliga diff. ~350 rader.
+ visualReview: true.
+ 7. COCKPIT-07 städning — radera /agenter, /systemhalsa/**, /systemkarta + föräldralösa
+ paneler (ProcessGuide, PipelinePanel, MetricsPanel, AgentPanel, DoctorPanel, RetroPanel,
+ NattmanPanel, SystemMapPanel; grep-verifiera EffektPanel/OvertimePanel först). Negativ diff.
+
+ Gateordning per skiva: tsc --noEmit → npm run build → npm run loop:test (v10-bundleskanning
+ kräver build före loop:test); claude:test endast där scripts/docs berörs. Skrivscope per
+ skiva exakt (allowedWrite = skivans träd; deniedWrite = auktoritetsdokument, lib/loop/schema,
+ fixtures, middleware, auth, components/loop/ui.ts m.fl. enligt etablerat mönster; skiva 6
+ får uttryckligen de två testfilerna i allowedWrite).
+
+ Verifiering
+
+ - Per skiva: tsc --noEmit → npm run build → npm run loop:test (+ claude:test) gröna;
+ oberoende granskare + visuell granskare utan blockerande fynd; skyddad merge med
+ tvåförälderbevis.
+ - Nya tester: tests/loop/cockpit-*.test.ts i repots node --test-stil; negativa kontroller:
+ ingen fixture-import på nya ytor utom i märkt showroom-kort; "—"-disciplin; inga %-tecken/
+ animation; ärliga tomtillstånd renderar när LOOP_ENABLED saknas.
+ - Slutvalidering per ndatet: 10-sekunderskriteriet på Hem (person som förstår Nortropic
+ konceptuellt men inte H032-interna detaljer), tomma/fulla/blockerade lägen, 1440/900/390,
+ tangentbordsnavigering, mycket långa namn.
+ - Railway-produktionsverifiering efter sista skivan (SHA-verifierad deploy = granskad merge).
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+──────────────────────
+ Claude has written up a plan and is ready to execute. Would you like to proceed?             
+ ❯ 1. Yes, a

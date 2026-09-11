@@ -1,0 +1,167 @@
+FOUNDATION GREEN ATTESTATION / STEP-0 CLOSEOUT STOP REPORT
+
+1. Authoritative base
+
+┌────────────────┬─────────────────────────────────────────────────────┐
+│                │                                                     │
+├────────────────┼─────────────────────────────────────────────────────┤
+│ Repo           │ Nortropic/nortropic-system (origin =                │
+│ (mechanically  │ git@github.com:Nortropic/nortropic-system.git)      │
+│ resolved)      │                                                     │
+├────────────────┼─────────────────────────────────────────────────────┤
+│ origin/main    │ e075de15ca2771fde60239e320d50ff6af30b018 — exact    │
+│                │ match required SHA                                  │
+├────────────────┼─────────────────────────────────────────────────────┤
+│ Tree           │ 0bc0ab40063555022995cd14b717e7b8e72f4993 — exact    │
+│                │ match required tree                                 │
+├────────────────┼─────────────────────────────────────────────────────┤
+│ Identity       │ Merge of PR #123, HÖGRISK §A6 Foundation smoke      │
+│                │ fixture cut (2 parents 96d9d733 + 13e8a903)         │
+├────────────────┼─────────────────────────────────────────────────────┤
+│                │ clean status · 0 replace refs · no grafts · not     │
+│ Hygiene        │ shallow · no alternates · no identity-changing      │
+│                │ config                                              │
+├────────────────┼─────────────────────────────────────────────────────┤
+│                │ fresh worktrees/foundation-green-closeout on        │
+│ Worktree       │ owner/foundation-green-closeout-e075, created       │
+│                │ directly from that SHA                              │
+└────────────────┴─────────────────────────────────────────────────────┘
+
+Not FOUNDATION_GREEN_ATTESTATION_BASE_MOVED. Sandbox note: SSH fetch failed under the sandbox (proxy negotiation); reran outside it — git/gh network calls in this session used dangerouslyDisableSandbox.
+
+2. Adjudicated subject unchanged
+
+No FOUNDATION_GREEN_ATTESTATION_SUBJECT_DRIFT. Base SHA and tree are byte-exact to the reviewed state; the Foundation surface is unmodified.
+
+3–6. Current Foundation state and cheap mechanical results
+
+- FOUNDATION_FIXTURE_STATUS = KLIPPT 2026-08-25 (tests/fixtures/foundation/README.md:3)
+- NY_REGIM_KLIPPT = false (workflows/nortropic-verify-suite.js:26)
+- tests/fixtures/foundation/testklient/index.html exists, sha256 c8befc62…, line 6 carries the deliberate <meta name="robots" content="noindex,nofollow">
+
+┌─────────────────────────────────────────┬─────────────────────────────┐
+│                  Check                  │           Result            │
+├─────────────────────────────────────────┼─────────────────────────────┤
+│ tests/fixtures/foundation/kontroller.sh │ exit 0 — 9/9 named verdicts │
+│                                         │  PASS                       │
+├─────────────────────────────────────────┼─────────────────────────────┤
+│ scripts/verify-vendored-integrity.mjs   │ PASS — 9/9 canonical trees  │
+│                                         │ match manifest              │
+├─────────────────────────────────────────┼─────────────────────────────┤
+│ scripts/check-invariants.mjs            │ 8 PASS, 0 FAIL, 0           │
+│                                         │ violations                  │
+├─────────────────────────────────────────┼─────────────────────────────┤
+│ workflows/*.js compile                  │ 6/6                         │
+└─────────────────────────────────────────┴─────────────────────────────┘
+
+Actual current kontroller named-check count = 9, not 10: K1, K2, K3, K4, K5a, K5b, K5c, K6, K7. The historical "kontroller 10/10" prose is left standing as recorded WARN debt and is not reproduced as fact. No browser evidence was re-run — the independent adjudication already supplied it.
+
+7–11. Write set and honesty proofs
+
+Write set is exactly one file: docs/05-beslutslogg.md — 1 file changed, 1 insertion(+), zero deletions, zero modifications. The 464-line prefix is byte-identical to base (f70a516a… both sides), so no existing row was edited; the machine-read line-start contract is intact (one RETRO-1-GENOMFÖRD token before and after, none introduced). The row is a well-formed 4-column table row, unique, no duplicate lines in the file.
+
+The appended row records: exact adjudicated MAIN/TREE · fixture already KLIPPT 2026-08-25 · a fresh independent read-only adjudication performed after publication that re-executed material evidence rather than accepting cut-session claims · FOUNDATION_REPAIR_GATE=GREEN with NO_REMEDIATION_PERFORMED=YES, FOUNDATION_SMOKE_TRUST_TRANSITION_ADJUDICATED=YES, UNIVERSAL_REGIME_REMAINS_UNCUT=YES · R1–R11 HOLD on current published bytes · axe PASS · Lighthouse FOUNDATION_LIGHTHOUSE_EXPECTED_NOINDEX_RED, never read as Gate-2 PASS · causal control PASS · no material trust-boundary defect open · WARN debt retained · NY_REGIM_KLIPPT=false · universal regime a later separate §A6 transition · repair lane closed · explicit does-NOT clause. All 20 required fact-checks verified present.
+
+Provenance is correct: the row opens as ÄGARATTESTERING av en REDAN GENOMFÖRD FRISTÅENDE OBEROENDE granskning … closeout-sessionen är inte granskaren och självcertifierar ingenting. Grep for self-attribution phrasings returns nothing.
+
+No WARN falsely repaired: the row states debt "KVARSTÅR REGISTRERAD OCH FÖRKLARAS INTE ÅTGÄRDAD" and enumerates all six classes (10/10-vs-nine prose, docs-sync debt, docs/02 stale names, legacy ~/Workflow refs, kontroller.sh not asserting testclient existence, legitimate-absence doctor WARNs). No "fixed/resolved" claim survives grep.
+
+No authority changed: specs/tasks.spec.json, workflows/**, tests/fixtures/**, scripts/**, agents/**, skills/**, vendored-skills/**, config/**, tools/**, docs/07, docs/03, CLAUDE.md, AGENTS.md, AUTOPILOT — all byte-identical to base. No file added/deleted/renamed; no FOUNDATION_GREEN.json, STEP0_COMPLETE, gate-status.json, attestation.yaml, .foundation-green, tag, or release.
+
+12–15. Candidate and independent closeout review
+
+┌──────────────┬───────────────────────────────────────────────────────┐
+│              │                                                       │
+├──────────────┼───────────────────────────────────────────────────────┤
+│ Candidate    │ b4689be49eaeffee773a0f834cbf13db4686e4e9              │
+├──────────────┼───────────────────────────────────────────────────────┤
+│ Candidate    │ 8aee6d817c2d2bdf5b6bc0d352aa27b1893e612e              │
+│ tree         │                                                       │
+├──────────────┼───────────────────────────────────────────────────────┤
+│ Lineage      │ exactly 1 parent = e075de15… — direct child, 1 commit │
+│              │  on top                                               │
+├──────────────┼───────────────────────────────────────────────────────┤
+│ Changed      │ 1 (docs/05-beslutslogg.md)                            │
+│ files        │                                                       │
+└──────────────┴───────────────────────────────────────────────────────┘
+
+Separate read-only review attacked all eleven listed vectors (wrong SHA/tree, misattributed GREEN, falsely-resolved WARN, NY_REGIM_KLIPPT change, regime falsely cut, S1 falsely started, PR #105 promoted, extra file, edited row, authority change, parallel status truth). No defect found.
+
+CLOSEOUT_RECORD_READY=YES — candidate not amended after review.
+
+16–17. PR
+
+PR #124 — https://github.com/Nortropic/nortropic-system/pull/124
+base main @ e075de15… · head b4689be4… · 1 commit · 1 changed file · +1/−0 · mergeable=MERGEABLE, mergeStateStatus=CLEAN, not draft. Pushed non-force; no amend/squash/rebase/reset/cherry-pick. Not merged — I am not authorized to merge.
+
+PR #105 untouched: still OPEN, still draft, updatedAt=2026-08-24T21:29:12Z (predates all of today's work).
+
+18–23. Status flags
+
+FOUNDATION_REPAIR_GATE=GREEN            (recorded, independently adjudicated)
+FOUNDATION_REPAIR_LANE=CLOSED
+FOUNDATION_FIXTURE_STATUS=KLIPPT 2026-08-25
+NY_REGIM_KLIPPT=false
+UNIVERSAL_REGIME_REMAINS_UNCUT=YES
+S1_STARTED=NO
+
+24–25. Next canonical bootstrap pointer
+
+NEXT_CANONICAL_BOOTSTRAP_POINTER=H036_TEST_AUTHOR_FREEZE
+
+Canonical authority. specs/tasks.spec.json carries the remaining sequence in two independent frozen fields that agree exactly:
+
+- tasks[h-034].r15_registry_v2_refreeze.required_serial_order: H035_R14_CORE_GUARDED_PUBLICATION → H037_GUARDED_PRODUCT_PUBLICATION → H034_REGISTRY_V2_REFREEZE → H034_INDEPENDENT_GATE_REVIEW → H034_GUARDED_PUBLICATION → **H036_TEST_AUTHOR_FREEZE** → H036_INDEPENDENT_GATE_REVIEW → H036_BUILDER_IMPLEMENTATION → H036_INDEPENDENT_PRODUCT_REVIEW → H036_GUARDED_PUBLICATION → H032_REFREEZE_AGAINST_PUBLISHED_H036 → H032_INDEPENDENT_REVIEW_AND_GUARDED_PUBLICATION → H031_REBIND
+- tasks[h-037].h037_verify_suite_register_rebind.serial_transitions[9] = the same H036_TEST_AUTHOR_FREEZE after H034_GUARDED_PUBLICATION.
+
+Exact identity. Task h-036 (not yet canonical), gate verify/bin/h-036-exit (h036_gate_is_owner_production=false); prospective owner-production surface controller/launch/cli, controller/launch/runtime_snapshot.py, config/python-runtime-authority-v2.json — the runtime-authority-v2 successor to the published config/python-interpreter-authority-v1.json.
+
+Why every predecessor is satisfied (mechanical, not commit wording):
+
+┌─────────────────┬────────────────────────────────────────────────────┐
+│      Step       │                      Evidence                      │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H035 R14 core   │ PR #106 MERGED 2026-08-24                          │
+│ published       │                                                    │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H037 contract + │ PR #108, PR #109 MERGED 2026-08-25;                │
+│  product        │ verify/bin/h-037-exit present                      │
+│ published       │                                                    │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H034            │ specs/owner-production-paths.v1.json is            │
+│ registry-v2     │ schema_version: 2 with all 7 paths = R15           │
+│ refreeze        │ prospective_state exactly                          │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H034 dependency │ tasks[h-034].depends_on == ["h-037"] frozen in     │
+│  refreeze to    │ published spec                                     │
+│ H-037           │                                                    │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H034 guarded    │ PR #110 MERGED 2026-08-25                          │
+│ publication     │                                                    │
+├─────────────────┼────────────────────────────────────────────────────┤
+│ H-033 already   │ PR #71 MERGED 2026-08-14; omitted from the R15     │
+│ published       │ remaining order; h-032.depends_on == ["h-033"]     │
+└─────────────────┴────────────────────────────────────────────────────┘
+
+Why H-036 is genuinely pending — the H-034 frozen target required exact-zero H-036 materialization (docs/loop/drift.md:3153-3154), and that is exactly the current published state: h-036 absent from the 23 canonical task ids · verify/bin/h-036-exit absent · runtime_snapshot.py and python-runtime-authority-v2.json absent · controller/launch/cli present and unchanged (pre-existing from H-032 R118) · no remote h-036 branch · no open PR other than #124 and draft #105.
+
+Classification. This is implementation — specifically the TEST_AUTHOR gate/contract-freeze phase that precedes builder implementation. Not a publication of an existing candidate, not supervisor resume, not the first real autonomous launch (those remain behind H031_REBIND).
+
+What must happen next. A TEST_AUTHOR freeze authoring the canonical h-036 task row into specs/tasks.spec.json and the frozen verify/bin/h-036-exit gate, with h-032 rebound to depend on published h-036 — then independent gate review, builder implementation, independent product review, guarded publication.
+
+Human hard stop: none applicable. The bounded-prerequisite delegation is canonically published — the migration SOURCE block on main hashes byte-exactly to r13.source_sha256 b3cc7d127b5fa42144021642c84b86163e5c358ad1ea711133242fef2ac3ce84, and BOUNDED_PREREQUISITE_AUTHORITY_MIGRATION=ACTIVE with OWNER_NEXT_TASK_APPROVAL_REQUIRED=NO. H-036 is named in the R14 contract as an already-authorized prerequisite (MIGRATION_ONLY_MAKES_ALREADY_AUTHORIZED_H036_PREREQUISITE_REPRESENTABLE), so it falls under bounded internal plumbing, not the 13 true human hard stops. Two standing facts worth surfacing, neither blocking this pointer: AUTOPILOT reads off, and the universal fixture regime cut remains a separate human-owned §A6 transition (NY_REGIM_KLIPPT flips only by hand).
+
+No authority conflict. The delegation doc's historical H-035 → H-034 → H-033 → H-032 → H-031 scope line omits H-037 and H-036, but that doc explicitly subordinates itself ("canonical tasks remain solely in specs/tasks.spec.json") and the spec records the amendments as dependency_change entries. Spec, frozen gate inventory, published registry state and Git history all agree — so not BLOCKED_BY_AUTHORITY_CONFLICT.
+
+Two incidental spec/gate observations outside this lane, registered not repaired: verify/bin/h-014-exit and verify/bin/h-015-exit are referenced as exit_test but absent from the tree.
+
+26.
+
+FOUNDATION_CLOSEOUT_PUBLICATION_READY=YES
+
+STOP. The next task is not started. PR #124 awaits your merge.
+
+✻ Sautéed for 14m 44s
+
+─────────────────────────────────────────────────────────────────────────────
+❯ Merge PR #124

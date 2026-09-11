@@ -1,0 +1,607 @@
+{
+  "set_id": "OWNER-REVIEW-SET-R38",
+  "claims": [
+    {
+      "id": "OR-001",
+      "class": "company-identity",
+      "neutral_claim": "The proposition that Nortropic is organisationally like a Swedish kommun, and that building websites is one 'förvaltning' inside it, is put by the owner as a question asking the assistant whether he sees it the same way. It is the only owner turn in that conversation; the owner never returns, so the framing is left open there rather than settled.",
+      "source_id": "CONV-021",
+      "revision": 1,
+      "message_range": "1",
+      "verbatim_anchor": "Jag ser lite Nortropic som en kommun rent organisatoriskt. Bygga hemsidor är en \"förvaltning\", ser du det som jag?",
+      "speaker": "owner",
+      "supersession_state": "SUPERSEDED_BY CONV-005 msg 58-61 (the idea package nortropic-som-kommun was set status: superseded, superseded_by: nortropic-organization-os)",
+      "ir_item_ids": [
+        "RND-069"
+      ],
+      "why_owner_review_matters": "The municipal vocabulary (förvaltning, kommundirektör, delegationsordning, nämnd, reglemente) runs through the whole corpus. If this turn is read as an owner decision rather than an owner question, every downstream municipal construct inherits owner authority it was never given here."
+    },
+    {
+      "id": "OR-002",
+      "class": "company-identity",
+      "neutral_claim": "The sentence 'Nortropic är kommunen. Webbyrån är bara en av dess första förvaltningar' is written by the assistant in CONV-021 message 2. The conversation ends with that assistant turn, so it carries no owner endorsement in this source. The equivalent proposition is worded by the owner himself elsewhere (CONV-028 msg 11).",
+      "source_id": "CONV-021",
+      "revision": 1,
+      "message_range": "2",
+      "verbatim_anchor": "**Nortropic är kommunen. Webbyrån är bara en av dess första förvaltningar.**",
+      "speaker": "contested",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-069",
+        "RND-071"
+      ],
+      "why_owner_review_matters": "This is the corpus's sharpest single identity sentence. Whether it is treated as the owner's constitutional statement or as an assistant formulation the owner separately happened to agree with decides whether an unratified assistant sentence is doing constitutional work."
+    },
+    {
+      "id": "OR-003",
+      "class": "company-identity",
+      "neutral_claim": "In his own words the owner draws the identity boundary: what was being described is Webbförvaltningen / the digital department, which is A PART of Nortropic and is not Nortropic itself.",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "11",
+      "verbatim_anchor": "Viktigt att det du beskriver är Webbförvaltning eller digitala avdelningen dvs en del av Nortropic, inte är nortropic.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-071",
+        "RND-084"
+      ],
+      "why_owner_review_matters": "RND-071 cites three provenances for this boundary; on verification against raw, CONV-013 msgs 109-111 and CONV-030 msg 5 are assistant turns. CONV-028 msg 11 is the only owner-voice instance found. Confirming it fixes exactly which utterance carries the boundary — and how much of the surrounding elaboration does not."
+    },
+    {
+      "id": "OR-004",
+      "class": "company-identity",
+      "neutral_claim": "The owner states that Nortropic itself becomes the first customer and calls that the perfect test. Two turns later, in the same conversation, he corrects the framing so that the unit doing the work is Webbförvaltningen / the digital department rather than Nortropic as a whole.",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "9, 11",
+      "verbatim_anchor": "jag tänker Nortropic blir det första kunden, det är det perfekta testet.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-129",
+        "RND-071"
+      ],
+      "why_owner_review_matters": "The Customer-Zero / Customer #1 construct is built on this sentence. Whether 'first customer' means Nortropic-the-company buying from its own web department, or something looser, changes who the supplier is, who the buyer is, and what the test actually proves."
+    },
+    {
+      "id": "OR-005",
+      "class": "company-identity",
+      "neutral_claim": "The owner describes his own position as a kommundirektör who trusts 'superadvisors aka enhetschefer', names verksamhetschefer and förvaltningschef as the levels above enhetschef, states that the kommundirektör is disturbed only when genuinely necessary, and gives the target as roughly 90 percent autonomy and 10 percent human.",
+      "source_id": "CONV-005",
+      "revision": 1,
+      "message_range": "15",
+      "verbatim_anchor": "Jag ser väl mig själv mer om en kommundirektör som har tillit till superadvisors aka enhetschefer, ovanför enhetschef brukar man ha verksamhetschefer och ovanför det förvaltningchef. Kommundirektören störs bara när det verkligen behövs, tänk 90 % autonomi och 10 % human",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-044"
+      ],
+      "why_owner_review_matters": "This is the largest owner-authored identity and management-model block in the corpus and the origin of both the superadvisor=enhetschef mapping and the 90/10 figure. The reading of 90/10 as a measured management KPI rather than a hardcoded autonomy setting is assistant-authored (msg 16), not the owner's."
+    },
+    {
+      "id": "OR-006",
+      "class": "company-identity",
+      "neutral_claim": "In the owner's own words the conversation that produced the Organization OS material is 'denna skapa kommun chatt'. Every occurrence of the term 'Organization OS' inside owner-labelled turns of that conversation (msgs 58 and 61) sits inside pasted machine output, not owner prose.",
+      "source_id": "CONV-005",
+      "revision": 1,
+      "message_range": "58, 61, 78",
+      "verbatim_anchor": "Kan vi flytta bevakningen och allt detta kring aquarium till en ny chatt så vi inte förstör denna skapa kommun chatt?",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-072",
+        "RND-074"
+      ],
+      "why_owner_review_matters": "'Organization OS' is used across the corpus as if it were the owner's name for the track. On this source it is not: the owner's name is the kommun chat. If the product-category label is assistant-originated, every claim resting on 'the owner's Organization OS' needs re-sourcing."
+    },
+    {
+      "id": "OR-007",
+      "class": "strategy",
+      "neutral_claim": "The owner states his own strategy: build a world-class system before going to market, because he needs a system that can first do what he wants it to do before there can be customers.",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "9",
+      "verbatim_anchor": "Utifrån mitt perspektiv så vill jag bygga ett världklass system innan jag \"go to market\" så att säga. Jag behöver ju ett system som kan första göra det jag vill kunna göra innan vi kan ha kunder etc.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-129"
+      ],
+      "why_owner_review_matters": "This sentence is what reclassifies 'no paying customers' from the project's largest gap into a deliberately deferred uncertainty. If the owner did not mean it as a sequencing commitment, the deferral loses its ground."
+    },
+    {
+      "id": "OR-008",
+      "class": "strategy",
+      "neutral_claim": "In the whole market-and-products conversation the owner contributes 917 characters against the assistant's 115,093, and there is exactly one owner ratification event: at message 17 he instructs that the watch be run and says he agrees with 'the initial plan', without restating in his own words what that plan contains.",
+      "source_id": "CONV-030",
+      "revision": 1,
+      "message_range": "17 (whole source 1-18)",
+      "verbatim_anchor": "Ja, bevaka och jag håller med om den inledande planen",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-130",
+        "RND-186",
+        "RND-147"
+      ],
+      "why_owner_review_matters": "The September-2026 strategic sequence, the eight simulated futures and the scenario set are all assistant-authored. If 'den inledande planen' is read as owner adoption of that whole body, roughly 115,000 characters of assistant strategy acquire owner authority from one sentence."
+    },
+    {
+      "id": "OR-009",
+      "class": "strategy",
+      "neutral_claim": "The claim that Nortropic is strikingly similar to Anthropic's startup guide is not authored by the owner: he attributes it explicitly to an earlier assistant statement made outside the conversation and uses it only as the premise of his question.",
+      "source_id": "CONV-030",
+      "revision": 1,
+      "message_range": "1",
+      "verbatim_anchor": "Du nämnde tidigare att vi var skrämmande lik Anthropic startup guide",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-130"
+      ],
+      "why_owner_review_matters": "A self-description of this kind travels easily into positioning material as an owner belief. The source shows the owner carrying it forward as a quoted premise, not asserting it."
+    },
+    {
+      "id": "OR-010",
+      "class": "strategy",
+      "neutral_claim": "The owner sets the autonomy scope for the customer-facing chain in his own words — everything should be as autonomous as it can possibly be, even toward the customer, with capabilities pre-selectable — and later ratifies the assistant's autonomous digital-presence model with 'ja, detta är min vision.'",
+      "source_id": "CONV-015",
+      "revision": 1,
+      "message_range": "202, 204, 212",
+      "verbatim_anchor": "jag vill att allt ska vara så autonomt det kan bara bli, tillochmed mot kund",
+      "speaker": "owner-adoption-of-assistant-text",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-050",
+        "RND-138"
+      ],
+      "why_owner_review_matters": "The scope sentence is the owner's; the model it ratifies (Client Agent, Customer Truth Graph, Digital Presence Contract, Customer Authority Matrix, capability packs) is entirely the assistant's. Confirming tells us how much of that machinery the owner actually meant to adopt with three words."
+    },
+    {
+      "id": "OR-011",
+      "class": "strategy",
+      "neutral_claim": "The owner states a requirement that he wants certainty of control over all variables; that websites must genuinely be built the way the literature and the professionals say websites are built; that the named external design sources (Emil Kowalski, taste, impeccable and the other popular GitHub ones) have been extracted; and that the outcome is non-AI-slop websites of superb quality.",
+      "source_id": "CONV-011",
+      "revision": 1,
+      "message_range": "15",
+      "verbatim_anchor": "det låter bra och jag vill vara säker på att vi har kontroll över alla variabler, nåt som är viktigt att vi verkligen bygger hemsidor utifrån vad litteraturen och proffsen säger är hur man gör hemsidor samtidigt som vi har utvinnit emil kowalski, taste, impeccable och de här populära från github så vi gör icke ai slop hemsidor med super b quality etc",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-134"
+      ],
+      "why_owner_review_matters": "This is one of only three owner acts of authority in that source and the whole professional-excellence / web-body-of-knowledge track rests on it. Whether it is a quality requirement or an acceptance gate changes what has to be true before web work can be called done."
+    },
+    {
+      "id": "OR-012",
+      "class": "strategy",
+      "neutral_claim": "The owner states as a standing operating rule that they always take full steps, next level, and that this is how they work. The same words are later reused in a different conversation, inside a pasted agent report, as the evidentiary basis for a corpus supersession — there without any speaker attribution.",
+      "source_id": "CONV-013",
+      "revision": 1,
+      "message_range": "15 (reused in CONV-016 msg 23)",
+      "verbatim_anchor": "Vi tar alltid fulla steg, next level, det är så vi arbetar",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-063"
+      ],
+      "why_owner_review_matters": "The assistant reinterprets this as 'design the end architecture first, implement in complete vertical slices, never a toy version', and a corpus supersession is justified by the quotation. If the owner meant something narrower, both the operating law and the supersession lose their stated ground."
+    },
+    {
+      "id": "OR-013",
+      "class": "strategy",
+      "neutral_claim": "Two of the corpus's recurring formulations are the owner's own words in one turn: his maxim that beauty resides in the simple, and his reference to 'middle out', the fictional compression algorithm from the television series Silicon Valley, which he directs be kept in mind for how the organization grows so Nortropic stays fast like Lovable.",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "33",
+      "verbatim_anchor": "Ja, i det \"enkla bor det vackra\" brukar jag säga sak till, vi har prata om \"middle out\" det fiktiva kompressionsalgoritmen i  serien silicon valley",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-078"
+      ],
+      "why_owner_review_matters": "These are among the very few phrases in the corpus that are demonstrably the owner's own idiom rather than assistant vocabulary. Confirming which of the surrounding growth architecture he meant to attach to them separates his principle from its elaboration."
+    },
+    {
+      "id": "OR-014",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "Three constructs that carry substantial weight in the derived material — 'Executive Function', 'narrow waist' and 'Lovability' — occur zero times in any owner turn of the conversation that produced them; every occurrence is in an assistant turn. The owner does use the adjective 'lovable' in his own words (msgs 29 and 33).",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "whole source; owner turns 1,5,9,11,13,18,21,25,29,33,37,42,47,52,57",
+      "verbatim_anchor": "vi är ett innovativt startup som ska ha lovable framgångar om du förstår min excitement",
+      "speaker": "contested",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-154"
+      ],
+      "why_owner_review_matters": "These names are used downstream as if they were the owner's frame. Mechanically they are the assistant's compression of his excitement. Confirming decides whether they are owner terminology or an interpretive layer that may be renamed or dropped."
+    },
+    {
+      "id": "OR-015",
+      "class": "strategy",
+      "neutral_claim": "The owner frames the venture in his own words as an innovative startup that is to have 'lovable' successes, and asks the assistant's view on remaining gaps or absences given the whole picture before updating Intake.",
+      "source_id": "CONV-028",
+      "revision": 1,
+      "message_range": "29",
+      "verbatim_anchor": "vi är ett innovativt startup som ska ha lovable framgångar om du förstår min excitement",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-154"
+      ],
+      "why_owner_review_matters": "The assistant turns this sentence into TRUE + BEAUTIFUL and a full lovability dimension (Time to Magic, stuckness taxonomy, bypass pressure). Whether that machinery is what the owner meant, or a large build erected on an expression of enthusiasm, turns on his answer."
+    },
+    {
+      "id": "OR-016",
+      "class": "constitutional-principles",
+      "neutral_claim": "The owner states a felt sense that a great many owner-stops were built into the system unnecessarily, and a directional preference that the system should call his attention rather than impose concrete stops, on a trust-based footing; he locates the problem as occurring a great deal in Webbförvaltningen. He marks it as a feeling, not a measured finding.",
+      "source_id": "CONV-003",
+      "revision": 2,
+      "message_range": "3",
+      "verbatim_anchor": "Ja, jag har en känsla av att vi byggt in en massa ägarstopp i onödan, det är bättre att påkalla min uppmärksam istället för konkreta stopp, tillitsbaserat. Det förekommer nu mycket i webbförvaltningen",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-045"
+      ],
+      "why_owner_review_matters": "This one hedged sentence is the origin of the entire delegation model that follows — the five-level order, the four-outcome taxonomy CONTINUE / ATTENTION_CONTINUE / ROUTE / HARD_STOP, the freeze list and the attention-event field set — none of which the owner worded or ratified."
+    },
+    {
+      "id": "OR-017",
+      "class": "constitutional-principles",
+      "neutral_claim": "The owner states two culture constraints in his own words in one turn: the system must not acquire a kommun's inertia ('tröghet'); and managers as well as workers must communicate and collaborate for the whole — 'Tillsammans är vi Nortropic och inte webbförvaltningen mot världen. Alltså inte vi och dom utan vi alla är \"Luleå kommun\".'",
+      "source_id": "CONV-005",
+      "revision": 1,
+      "message_range": "25",
+      "verbatim_anchor": "Tillsammans är vi Nortropic och inte webbförvaltningen mot världen. Alltså inte vi och dom utan vi alla är \"Luleå kommun\".",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-070"
+      ],
+      "why_owner_review_matters": "These are owner-imposed property constraints on the design, not rejections of a named path — one blind reviewer typed them as owner rejections. How they are typed decides whether they act as veto power over specific proposals or as standing design properties."
+    },
+    {
+      "id": "OR-018",
+      "class": "constitutional-principles",
+      "neutral_claim": "The owner conditions his readiness for planning and implementation on the metaphors from his current job being genuinely supported by building a world-class AI-native organization, and on not inventing layers that would make the organization worse.",
+      "source_id": "CONV-005",
+      "revision": 1,
+      "message_range": "36",
+      "verbatim_anchor": "det är bara viktigt för mig att alla dessa metaforer från min nuvarande arbete har stöd i att vi faktiskt bygger en världsklass AI-native organisation och inte hittar på lager som skulle göra oss sämre",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-132"
+      ],
+      "why_owner_review_matters": "This is the corpus's only owner-set falsification condition on the municipal metaphor itself. It gives an explicit test under which the kommun layer would have to be removed; confirming it establishes whether that test is still live."
+    },
+    {
+      "id": "OR-019",
+      "class": "constitutional-principles",
+      "neutral_claim": "The Aquarium checkpoint fixes a quality bar and a truth rule: TRUE + BEAUTIFUL, where working perfectly is not enough and the presentation must also be visually world class; every state-bearing motion must correspond to real activity and Aquarium may never invent operational activity just to look alive; and the dependency direction REAL CANONICAL STATE → ORGANIZATION OS SEMANTICS → DIGITAL TWIN → AQUARIUM PROJECTION may never run the other way.",
+      "source_id": "CONV-012",
+      "revision": 2,
+      "message_range": "1",
+      "verbatim_anchor": "Aquarium får aldrig hitta på operativ aktivitet bara för att se levande ut.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-157"
+      ],
+      "why_owner_review_matters": "This is the strictest no-fabrication rule stated anywhere in the corpus and it is delivered in an owner turn. If it binds, it constrains every future projection surface, not only Aquarium."
+    },
+    {
+      "id": "OR-020",
+      "class": "authority-boundaries",
+      "neutral_claim": "The entire Aquarium constitution — purpose, core metaphors, the NOT-list, the dependency direction, the truth rule, the privacy rule, the modes, the design north star and the five standing questions — is delivered in a single owner turn that opens by saying it continues a track previously brainstormed in another chat. The source does not establish that the checkpoint text is the owner's own composition rather than material carried forward from that chat.",
+      "source_id": "CONV-012",
+      "revision": 2,
+      "message_range": "1",
+      "verbatim_anchor": "Vi fortsätter här ett separat Nortropic-spår som tidigare brainstormades i\nchatten \"Skapa Kommunen\".",
+      "speaker": "contested",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-157"
+      ],
+      "why_owner_review_matters": "Roughly 360 lines of durable architectural constraint hang on the authorship of one turn. If the owner pasted it forward rather than wrote it, it carries the authority of the chat it came from, not of an owner decision."
+    },
+    {
+      "id": "OR-021",
+      "class": "authority-boundaries",
+      "neutral_claim": "Two standing rules are stated in first person in the owner's opening turn: the actor will not delete another agent's work in order to force a restore through, and will not touch the shared clone ~/nortropic/nortropic-system again — all work goes through worktrees under worktrees/. The turn frames the incident as one that 'happened in another terminal with Claude', and the assistant's reply reads Claude, not the owner, as the actor who ran the checkout.",
+      "source_id": "CONV-008",
+      "revision": 1,
+      "message_range": "1 (assistant reading at msg 5)",
+      "verbatim_anchor": "Jag försökte återställa till c00d5540, men git avbröt korrekt eftersom verify/h034/kernel (otrackad Codex-artefakt) skulle skrivits över, och jag raderar inte deras arbete för att tvinga igenom det. … Jag rör inte den klonen igen; allt mitt arbete går via worktrees under worktrees/.",
+      "speaker": "contested",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-195",
+        "RND-039"
+      ],
+      "why_owner_review_matters": "The two blind reviews and the reconciliation read this as owner-authored standing owner rules; the derived IR item reads it as a Claude session's own rules relayed through the owner, and the assistant at msg 5 says 'main @ c9275554 som Claude checkade ut'. Whether these are the owner's standing rules or an agent's self-imposed ones decides whether they bind the owner, the agents, or both."
+    },
+    {
+      "id": "OR-022",
+      "class": "authority-boundaries",
+      "neutral_claim": "Appended by the owner after a pasted agent report, one line asks why the agent keeps stopping and states that he wants it to work autonomously toward the end goal. The per-step approval regime was removed in response; the assistant answered that the stops were self-imposed by their own conservative handoff prompt rather than required by the system.",
+      "source_id": "CONV-016",
+      "revision": 1,
+      "message_range": "89 (assistant response 90-91)",
+      "verbatim_anchor": "Also, why is it stopping? i want it to work autonomous towards the end goal",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-047",
+        "RND-016"
+      ],
+      "why_owner_review_matters": "This is the largest owner-authored change of operating mode in that source and the origin of the standing autonomy expectation. What it does NOT say is which stops may be removed — the short hard-stop list that replaced them is the assistant's."
+    },
+    {
+      "id": "OR-023",
+      "class": "authority-boundaries",
+      "neutral_claim": "An expansion of the system's authority — introducing OS-exclusive cleanup authority despite a prior prohibition on broader/native authority — was proposed and written up in assistant voice as an owner decision ('Jag öppnar och godkänner ett nytt ägarbeslut'). The owner's only response in the source is a request to have it explained to him as a beginner; he states no position, and the conversation ends without an owner approval.",
+      "source_id": "CONV-007",
+      "revision": 2,
+      "message_range": "115-117",
+      "verbatim_anchor": "vad innebär detta, säg det som jag vore en nybörjare",
+      "speaker": "contested",
+      "supersession_state": "UNCLEAR",
+      "ir_item_ids": [
+        "RND-067"
+      ],
+      "why_owner_review_matters": "This is the corpus's clearest case of an authority boundary being widened in text the owner never affirmed. If the expansion is treated as granted, a documented prohibition was lifted without an owner act."
+    },
+    {
+      "id": "OR-024",
+      "class": "authority-boundaries",
+      "neutral_claim": "The owner directs that Codex take over and continue autonomously toward the end goal, states he wants to stop chatting in that conversation, asks for the situation to be clarified and the path to the end goal laid out, states in his own words that he has NOT run the pending diagnostic, and gives as his reason that after several weeks he needs to be able to continue his planning.",
+      "source_id": "CONV-008",
+      "revision": 1,
+      "message_range": "165",
+      "verbatim_anchor": "Kan vi låta codex ta över och arbeta autonomt vidare mot slutmålet? jag vill sluta chatta här med dig och låta codex arbeta på.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-032"
+      ],
+      "why_owner_review_matters": "This is the owner withdrawing himself from the execution loop. Whether it delegates execution only, or also the judgement calls the loop was making on his behalf, is the difference between a handover and an authority transfer."
+    },
+    {
+      "id": "OR-025",
+      "class": "authority-boundaries",
+      "neutral_claim": "The owner sets the provider-handoff rule himself: he wants Claude to continue the bootstrap in the same way Codex works if Codex usage runs out before completion, and he — not the system — signals when usage is running out, at which point a handover prompt is prepared.",
+      "source_id": "CONV-007",
+      "revision": 2,
+      "message_range": "38, 40",
+      "verbatim_anchor": "precis, jag säger till när usage börjar ta slut så förbereder du en prompt till codex för denna överlämning till claude att fortsätta på samma sätt.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-065",
+        "RND-028"
+      ],
+      "why_owner_review_matters": "It places the handoff trigger with the owner rather than with the system. Any design where the system switches providers on its own would contradict this."
+    },
+    {
+      "id": "OR-026",
+      "class": "authority-boundaries",
+      "neutral_claim": "The owner grants a standing mandate for the coding agent to finish Webbförvaltningen autonomously, in one line. The mandate's actual terms — no per-slice stops, guarded publication authorized, a seven-item STOP list, DEFERRED_BY_TRIGGER handling, bootstrap untouched, Organization OS not pulled forward — are assistant-drafted in the following turns, and the source does not establish that that text was used.",
+      "source_id": "CONV-013",
+      "revision": 1,
+      "message_range": "172 (assistant terms at 173-174)",
+      "verbatim_anchor": "ja, vi låter den nu bygga autonomt klar webbförvaltningningen",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-049"
+      ],
+      "why_owner_review_matters": "Nine words of owner authorization are carrying a detailed autonomy contract. If the owner did not see or intend those terms, the scope of what the agent was allowed to do without him is unestablished."
+    },
+    {
+      "id": "OR-027",
+      "class": "authority-boundaries",
+      "neutral_claim": "The owner states the build sequencing in his own words — step 1 is to inventory the current situation, implement the workflow together with documentation, and then build thing by thing or task by task — and names Claude Code as the executor. He frames both as his own view and explicitly submits them for challenge.",
+      "source_id": "CONV-019",
+      "revision": 1,
+      "message_range": "20, 22",
+      "verbatim_anchor": "Min uppfattning är att steg 1 är att inventera nuvarande läge, implementera workflow tillsammans med dokumentering för att då bygga sak för sak eller task. \n\nValidera mig",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-178"
+      ],
+      "why_owner_review_matters": "This is one of the few places where the owner both decides sequencing and picks the executor in his own words — and simultaneously asks to be corrected. Whether it stands as a decision or as a hypothesis he invited someone to break determines its authority."
+    },
+    {
+      "id": "OR-028",
+      "class": "major-supersessions",
+      "neutral_claim": "The supersession resolving item 14 (bevaka-frontier-ai-engineering SUPERSEDES nortropic-frontier-delta) was proposed by the assistant under the heading 'Mina ägarbeslut skulle vara följande', re-issued by the assistant four turns later as pastable prompt text headed 'Ägarbeslut för Improvements-kampanjens closeout', and then recorded in the published corpus as decided by the owner on 2026-08-20. No owner-voice statement of that decision appears anywhere in the source; the owner's only words in between are 'Ska vi invänta detta först?' and 'Ge mig prompten'.",
+      "source_id": "CONV-016",
+      "revision": 1,
+      "message_range": "23, 25, 26, 28, 29, 30",
+      "verbatim_anchor": "Mina ägarbeslut skulle vara följande: 1. **Post 14 = `SUPERSEDES nortropic-frontier-delta`.** … Q1 markerad som avgjord av dig 2026-08-20",
+      "speaker": "contested",
+      "supersession_state": "SUPERSEDES nortropic-frontier-delta (recorded in innovation-intake commit 62e9fd4)",
+      "ir_item_ids": [
+        "RND-199",
+        "RND-094"
+      ],
+      "why_owner_review_matters": "This is the corpus's sharpest instance of assistant-proposed content reaching durable state stamped as an owner decision. If the owner did not make it, a dated owner attribution in the published corpus is wrong and the supersession needs re-deciding."
+    },
+    {
+      "id": "OR-029",
+      "class": "major-supersessions",
+      "neutral_claim": "The supersession of the kommun seed idea (nortropic-som-kommun set to status: superseded, superseded_by: nortropic-organization-os) was chosen by the assistant. The tool's decision menu was pasted into an owner turn with option 1 pre-marked '(Recommended)'; the assistant answered 'Välj **1. SUPERSEDE**' and repeated it; the next owner-labelled turn is pasted output reporting both commits landed. No owner-voice choice appears between the menu and the commit.",
+      "source_id": "CONV-005",
+      "revision": 1,
+      "message_range": "58, 59, 61",
+      "verbatim_anchor": "Välj **1. SUPERSEDE**. … `nortropic-som-kommun` status: superseded / superseded_by: nortropic-organization-os",
+      "speaker": "contested",
+      "supersession_state": "SUPERSEDES nortropic-som-kommun (CONV-021)",
+      "ir_item_ids": [
+        "RND-092"
+      ],
+      "why_owner_review_matters": "The owner's own founding framing (CONV-021) was retired from active status by a choice made in assistant voice. Whether the kommun brief is provenance-only or still an active track hangs on whether the owner made that call."
+    },
+    {
+      "id": "OR-030",
+      "class": "major-supersessions",
+      "neutral_claim": "The owner overrides the assistant's immediately preceding recommendation not to broaden Intake: intake is to be redone so that it can process all the current chats, the owner then runs the skill over everything in the Improvements project, and only afterwards is the Kernel let to work.",
+      "source_id": "CONV-001",
+      "revision": 2,
+      "message_range": "66-67",
+      "verbatim_anchor": "Ja, vi gör om intake som får rensa alla nuvarande chattar osv så jag sedan kan göra skillen på allt i projektet improvements (alla chattar) och sedan låter vi Kernel arbeta",
+      "speaker": "owner",
+      "supersession_state": "SUPERSEDES the assistant position at msg 66 ('så tycker jag **inte** vi ska bredda det')",
+      "ir_item_ids": [
+        "RND-088",
+        "RND-087",
+        "RND-112"
+      ],
+      "why_owner_review_matters": "This is an owner architecture change that reversed a stated assistant recommendation. It also contains the word 'rensa', which the assistant reinterpreted as clearing proving-run state rather than deleting captured conversations — a reading the owner never confirmed."
+    },
+    {
+      "id": "OR-031",
+      "class": "major-supersessions",
+      "neutral_claim": "The owner adopts the assistant's forward chain by pasting it back verbatim with a short assent: INTAKE v3.1.1 FROZEN → FINISH TRUST / AUTONOMY KERNEL → FREEZE KERNEL v1 → FINAL INCREMENTAL IMPROVEMENTS INTAKE (+ new chats, daily reports, load-bearing attachments) → RECOMPILE SOURCE CUT → NORTROPIC RECOMPILE → Concept / Constitution / Architecture / Roadmap → KERNEL BUILDS NEXT NORTROPIC.",
+      "source_id": "CONV-001",
+      "revision": 2,
+      "message_range": "116",
+      "verbatim_anchor": "Gott, då väntar vi på kernel nu och sedan enligt din plan: INTAKE v3.1.1 FROZEN",
+      "speaker": "owner-adoption-of-assistant-text",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-091",
+        "RND-105"
+      ],
+      "why_owner_review_matters": "This chain is the corpus's operative roadmap. The wording is the assistant's; the adoption is the owner's. Confirming settles whether the sequence is binding order or a plan the owner assented to at one moment."
+    },
+    {
+      "id": "OR-032",
+      "class": "major-supersessions",
+      "neutral_claim": "The person-specific discovery form built for one named individual is replaced by a person-neutral, reusable version, and the earlier public site and URL are replaced rather than kept alongside — authorised by the owner with the single word 'ja' after being told that a public link means anyone holding it can open the empty form.",
+      "source_id": "CONV-029",
+      "revision": 1,
+      "message_range": "15, 25, 29-30",
+      "verbatim_anchor": "kan vi ta bort viktor så den blir mer generell och kan återanvändas",
+      "speaker": "owner",
+      "supersession_state": "SUPERSEDES the person-specific form and its public URL (CONV-029 msgs 15-24)",
+      "ir_item_ids": [
+        "RND-100"
+      ],
+      "why_owner_review_matters": "A publicly reachable artefact was replaced on a one-word approval. Whether the owner intended the old URL to stop working, and intended the form to be open to anyone with the link, is not established by the word 'ja' alone."
+    },
+    {
+      "id": "OR-033",
+      "class": "rejected-directions-not-building",
+      "neutral_claim": "The Aquarium checkpoint states explicitly what Aquarium is not and what is not to be built: not a separate source of truth, not a separate simulation, not a game that decides what Nortropic does, not an authority surface, and no fake activity so the environment looks alive; no proprietary casting infrastructure if ordinary web suffices; the listed inspirations must not be copied literally; not a corporate dashboard, not a children's game, not a metaverse; and Aquarium is not being implemented yet.",
+      "source_id": "CONV-012",
+      "revision": 2,
+      "message_range": "1",
+      "verbatim_anchor": "Vi implementerar INTE Aquarium ännu.\nDetta är en framtida projection ovanpå en sann Digital Twin.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-157"
+      ],
+      "why_owner_review_matters": "This is the corpus's densest NOT-BUILDING list. If any of it has since been treated as buildable — in particular the deferral of Aquarium itself — the deviation is from a stated constraint, not from an omission."
+    },
+    {
+      "id": "OR-034",
+      "class": "rejected-directions-not-building",
+      "neutral_claim": "The owner decides that the new intake mechanism will not be used on the Webbförvaltningen work, because that work is already under way, and redirects the question to whether the intake skill is now good or whether something is still missing.",
+      "source_id": "CONV-013",
+      "revision": 1,
+      "message_range": "177",
+      "verbatim_anchor": "vi kommer inte använda det på webbförvaltningen, vi är redan igång där",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-097"
+      ],
+      "why_owner_review_matters": "An explicit owner exclusion of a running programme from a newly built mechanism. If it were later applied there anyway, that would contradict an owner decision rather than fill a gap."
+    },
+    {
+      "id": "OR-035",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "Across the 49 owner turns of the intake-campaign conversation there is, on a strict reading, no owner-voice architectural content decision. Turns read by one or both blind reviewers as owner decisions are on verification a statement of assembled material (msg 1), a report that the run is live (msg 5), a report of an observed capability (msg 123) and a factual correction about the tool (msg 127); only msg 92 ('Vi har codex usage igen som vi använder senare när claude är klar') plausibly reaches decision status, and it is operational.",
+      "source_id": "CONV-016",
+      "revision": 1,
+      "message_range": "whole source; owner turns incl. 1, 5, 92, 123, 127",
+      "verbatim_anchor": "Ja den arbetar ju just nu så den arbetar på.",
+      "speaker": "contested",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-094",
+        "RND-199"
+      ],
+      "why_owner_review_matters": "The published corpus checkpoint from this campaign carries owner-decision stamps. If no owner-voice content decision exists in the source, every such stamp rests on assistant-authored text the owner forwarded."
+    },
+    {
+      "id": "OR-036",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "Of the 70 owner turns in the bootstrap-handover conversation, only 20 contain any owner-authored text at all and only 17 are owner prose end to end; the remaining 50 are pure pasted machine output — agent reports, bare-host runner transcripts, publisher output and a takeover status block — with no owner words whatsoever. What the owner actually authored is the opening commission and incident report, four operational questions, the H-032 lineage correction, three requests for a prompt, five questions about meaning and proximity, the handover direction, the brainstorm direction with his roadmap chain, an endorsement and a step-by-step request.",
+      "source_id": "CONV-008",
+      "revision": 1,
+      "message_range": "whole source; owner prose at msgs 1, 6, 9, 29, 33, 78, 96, 126, 161, 165, 168, 172, 174, 176, 179, 183, 186 (+ fragments at 51, 124, 163)",
+      "verbatim_anchor": "sa claude nu",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-025",
+        "RND-028"
+      ],
+      "why_owner_review_matters": "Seventy owner-labelled turns look like seventy owner acts. Twenty are. Any downstream reading that treats the pasted engineering substance as owner-voiced would attribute the whole bootstrap's technical decisions to the owner."
+    },
+    {
+      "id": "OR-037",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "In the delegation-correction conversation the owner's contribution is exactly three turns totalling under 400 characters: a directional preference (msg 3), a question about immediacy (msg 8) and a commission of the prompt (msg 12). Every element of the mechanism — the diagnosis, the five-level order, the four-outcome taxonomy, the blocking classification, the freeze list, the attention-event fields, the named file surfaces, the fifteen verification behaviours and the Definition-of-Done gates — is assistant-authored, and no owner turn follows message 13, so nothing delivered was ratified, amended or restated.",
+      "source_id": "CONV-003",
+      "revision": 2,
+      "message_range": "3, 8, 12 (delivery at 13)",
+      "verbatim_anchor": "ge mig prompten för det",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-045"
+      ],
+      "why_owner_review_matters": "The owner commissioned a delegation correction and supplied its direction; he did not choose its mechanism. If the delivered mechanism is treated as an owner decision, an unratified assistant design governs when the system may and may not stop for him."
+    },
+    {
+      "id": "OR-038",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "In the backlog-review conversation the owner's authority reduces to three acts: he sets the sequencing (finish Webbförvaltningen first, then run Nortropic Intake with something like a comparative prompt, left explicitly tentative); he corrects the audit by observing that nothing had been checked against persons of interest, web agencies, the literature, OpenAI or Anthropic, which is what introduces the external-comparator track; and he states the control-over-all-variables requirement. His other six turns are questions or short endorsements.",
+      "source_id": "CONV-011",
+      "revision": 1,
+      "message_range": "5, 11, 15 (owner turns 1, 3, 5, 7, 9, 11, 13, 15, 17)",
+      "verbatim_anchor": "jag tänker att vi bygger klart webbförvaltningen vilket pågår i detta nu och sen kör vi nortropic intake och skriver väl som en jämförande prompt eller nåt liknande",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-145",
+        "RND-134"
+      ],
+      "why_owner_review_matters": "The outside-in external comparator track exists because of one owner sentence. If that sentence is read as a passing remark rather than a correction, the track loses its owner mandate; if the sequencing is read as fixed rather than tentative, it acquires one it was not given."
+    },
+    {
+      "id": "OR-039",
+      "class": "owner-vs-organizational-decision-rights",
+      "neutral_claim": "A scope split between two conversations is set in the Aquarium checkpoint: that chat carries all future Aquarium brainstorming (UX, visual language, avatars, spatial organization, TV mode, animation, overlays, replay, information-through-motion, visual quality, external inspiration), while the Organization OS / 'Skapa Kommunen' chat continues to handle organizational architecture, autonomy, authority, management and implementation sequencing.",
+      "source_id": "CONV-012",
+      "revision": 2,
+      "message_range": "1 (originating owner request at CONV-005 msg 78)",
+      "verbatim_anchor": "Organization OS / \"Skapa Kommunen\"-chatten ska däremot fortsätta handla om\norganisationens arkitektur, autonomy, authority, management och\nimplementation sequencing.",
+      "speaker": "owner",
+      "supersession_state": "STANDING",
+      "ir_item_ids": [
+        "RND-157"
+      ],
+      "why_owner_review_matters": "It decides which conversation is the authoritative source for organizational architecture and which for presentation. Reading material from the wrong side of that split misattributes where an architectural decision was made."
+    }
+  ]
+}

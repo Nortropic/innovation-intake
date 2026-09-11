@@ -1,0 +1,151 @@
+
+R38 SEVENTH SEMANTIC REMATCH — FINAL REPORT
+
+1–2. Prestate and v7 inputs
+
+All verified: frozen witnesses · rematch6 = dfd6b033056b7272… · c1 4a05fc36… · c2 b340122226a57bb4… · 36/36 revisions unmutated · BODY_SOURCE_IDENTITY 994fa5b0… / FULL_SOURCE_SURFACE_IDENTITY 51311084… unchanged · worktrees 0 changed · no post-r38 compile · no Recompile · nortropic-system read-only.
+
+v7: 4c8b498608d2a94e… (md) · 966f90be5de0a56c… (json) — both ✅. v4 restatement correction carried forward, values match disk.
+
+3. Authoritative residual set
+
+From the artifact: SOURCE_BOUND_BUT_INSUFFICIENT = CONV007-A-001, A-003 · STILL_UNRESOLVED = CONV-001 A-007/A-006/B-028/A-014 ✓
+
+4. A-001 — four-limb adjudication
+
+2A · FOURTEEN_STEP_PROVENANCE = RECONSTRUCTION_SUPPORTED_BY_SOURCE_ORDER
+
+v7 states no numbered list exists in the source. I re-read frozen msg 63 directly: it contains zero numbered items — a dash-bullet chain of 13 steps, with bullets 14-20 being a separate attack-category list (fsync crashes, Git-ref/head changes, filesystem replacement, descriptor/identity swaps, concurrent reviewers, environment authority, restart/recovery). The 14 source milestones map onto those 13 bullets in order: observer defect→repair (b1←m2/3) · oracle over-normalisation then tightening (b2←m3/4) · three weakened injectors→decoys (b3←m5) · ambient-Git authority→closed environment (b4←m6/7) · three reviewers READY on bd31 (b5←m8/9) · runner's own fail-open repaired (b6←m10/11) · first connected pass failure (b7←m11) · PATH + ancestor-injector (b8←m12) · split-injector successor (b9←m13) · owner fixtures/163-166/torn-tail/classifier rebuild (b10-12←m14).
+
+The frozen question is now decided: the ordering is msg 63's reconstruction, and the source order corroborates it. (Noted: the adjudication says "fourteen-step"; msg 63 actually carries 13 chain bullets. Not material.)
+
+2B · tallies — ANSWERED
+
+Result: 137/137
+Suite: frozen
+Context: pure-isolated-regression checkpoint
+Kind: observed PASS
+────────────────────────────────────────
+Result: 16/16
+Suite: source
+Context: same checkpoint
+Kind: observed PASS
+────────────────────────────────────────
+Result: 168/168
+Suite: inheritance
+Context: same checkpoint; contract review also runs a
+deep 168-case suite
+Kind: observed PASS
+────────────────────────────────────────
+Result: 10/10
+Suite: generated-product
+Context: same checkpoint
+Kind: observed PASS
+────────────────────────────────────────
+Result: 91/91
+Suite: bootstrap+dispatch
+Context: repaired successor, non-owner regression, before
+owner-family
+Kind: observed PASS
+────────────────────────────────────────
+Result: 166/166
+Suite: canonical owner family
+Context: candidate provisional until the decisive owner
+family reaches exactly this
+Kind: TARGET — not observed
+────────────────────────────────────────
+Result: 163/166
+Suite: owner family
+Context: a later owner-suite run
+Kind: OBSERVED PARTIAL — one attest-recovery failure +
+two likely downstream delegation/dispatch failures
+
+163/166 is not flattened into PASS.
+
+2C · PARTIALLY_TESTABLE_NO_STABLE_REVIEWER_ID
+
+Testable: three distinct roles (identity/physical/contract); demonstrably different attack surfaces; and decisively — each found a different defect (identity: stale 118→126 prose counts; physical mutation: three weakened injectors; static/contract: judge-only ambient-Git authority). Three reviews each surfacing a distinct defect cannot be one review relabelled three times. Plus ordered READY/quiescence on exact bd31 with hashes and modified-path set matched beforehand.
+
+Not testable: whether they were separate actors rather than one actor doing three role-labelled passes — no stable session/model/account identifier exists. This matters because RND-001 is the corpus's own law that agent self-report is never PASS authority, and the independence claim is made by the agent under review about itself.
+
+2D · PROGRESSIVE_CONVERGENCE (not a stall)
+
+Tied to mechanics, not tone: 59/63 dispatch denied credit rather than averaged green · 63/63 still rejected after an independent mutant found over-normalisation · checkpoints 5fb332 and 7581 each disqualified on distinct findings · the runner repair itself rejected once for insufficient append-only evidence · first connected pass failed and retained evidence, the replacement pass exposing distinct PATH/owner defects · owner 163/166 held and independently classified rather than promoted. Successive failure sets are mechanically different and narrowing. This is the discriminator the frozen text names for RND-169's over-hardening hypothesis.
+
+A-001 verdict: SOURCE_BOUND_BUT_INSUFFICIENT — three of four limbs fully answered; residue is limb 2C alone.
+
+5. A-003 — five-limb adjudication
+
+3A · VERIFIED. 16+27+6+64+166 = 279 ✓. Locally corroborated: 279/279 ×12 in the frozen body; 163/166 ×1 fixes an owner family of cardinality 166.
+
+3B · NOT_PROVEN_LOCALLY
+
+CONNECTED_FAMILY_CARDINALITY_MAP = { owner: 166,
+                                     H038: UNPROVEN, bootstrap: UNPROVEN,
+                                     loader: UNPROVEN, dispatch: UNPROVEN }
+MAP_BASIS = frozen '163/166' (owner=166) and '279/279' ×12 (total). Nothing else.
+
+I searched the frozen body for every per-family anchor: 91/91=0, 27/27=0, 64/64=0, 166/166=0, 16/16=0, 10/10=0. The positional reading (H038=16, bootstrap=27, loader=6, dispatch=64) follows the stated pass order but is not locally proven, so I do not emit it. An active caution: 6/6 does occur once locally — in a focused physical-suite context, which warns directly against assuming loader=6.
+
+3C · PARTIALLY_FALSIFIABLE. Now falsifiable: closed-environment start with both runner reviews READY and agents quiescent; H038→bootstrap→loader→dispatch progression with previously PATH-blocked legacy cases green; owner controls begin and both broken physical ancestor canaries pass; pass 1 completes fail-closed exit 1 with retained evidence read before any second pass; one failed case in an otherwise structurally valid 279-case pass; independent path diagnosis. Still not falsifiable: the per-family test surface, because 3B failed.
+
+3D · PARTIALLY_TESTABLE_NO_STABLE_REVIEWER_ID. Strongest limb: the independent reviews agree product behaviour is correct and the gate is wrong, yet disagree on repair mechanics — reviewers converging on a verdict while diverging on remedy are doing separate reasoning. Plus read-only-reviewer versus sole-writer separation, and adversarial rejection of the first repair before it earned credit. Absent: stable external identifiers.
+
+3E · FULLY_PRESERVED. All six elements recoverable — opt-vs-Cellar mismatch for the same physically pinned interpreter; the first proposed repair; its adversarial rejection; the attack that motivated it (a writable Homebrew alias retargeted during the call and restored afterward, undetectable by post-call validation); the narrower correction (-S judge child, authenticated startup binding, canonical pinned executable); and the reasoning itself — "a lexical opt-vs-Cellar mismatch alone was not accepted as a reason to admit generic aliases." This is the negative knowledge XS-013 says the register leaves empty, now recoverable in full.
+
+A-003 verdict: SOURCE_BOUND_BUT_INSUFFICIENT — residue is 3B (family map) and 3D (reviewer identity).
+
+6–7. CONV-001 and CONV-013
+
+CONV-001 ×4 STILL_UNRESOLVED, unchanged; no new fingerprint, no search repeated. CONV-013: KNOWN_UNRESOLVED, FULL_SOURCE_CAPTURE_CONV_013=NO.
+
+8. No c3
+
+The newly readable content confirms the frozen transcript rather than falsifying it — which is precisely why the frozen adjudication said the propositions survive and only their testability was lost. No IR text, typing, relation or uncertainty is shown wrong. c1/c2 byte-identical.
+
+9. All-21 algebra
+
+BINDING     BOUND=16   AMBIGUOUS=1   NOT_BOUND=4      (unchanged — v7 was content, not binding)
+
+RESOLVED_BY_SOURCE_BOUND_READABLE_EXTERNAL = 15
+SOURCE_BOUND_BUT_INSUFFICIENT              =  2
+MISMATCHED_SOURCE                          =  0
+STILL_UNRESOLVED                           =  4
+MATERIAL_UNRESOLVED                        =  6
+
+10. Contracts / result
+
+1/1 projects satisfy the project contract · rnd validate: 0 FAIL, 1 WARN · worktrees 0 changed · prestate re-verified OK after all work.
+
+SEVENTH_REMATCH_RESULT_SHA256 = 35c7400d11e295e08092c916fb41239fb42b14054b09e50ea61ef5bbf3627732
+
+Final state
+
+CORPUS_INTEGRITY                    = PASS
+SOURCE_CAPTURE_COMPLETENESS         = NO
+SEMANTIC_QUALIFICATION              = NOT_ESTABLISHED
+FULL_SOURCE_CAPTURE_CONV_013        = NO
+ATTACHMENT_SEMANTIC_R38             = FAIL
+FINAL_IMPROVEMENTS_CORPUS_QUALIFIED = NO
+POST_R38_CAPTURE_STARTED            = NO
+RECOMPILE_STARTED                   = NO
+NORTROPIC_SYSTEM_MUTATIONS          = 0
+
+Residual requests — two, both single named fields
+
+CONTENT_V7 · A-003 limb 3B — one line: the family-name header row of the 279-case connected matrix (or the sealed runner's family table). Concrete and likely obtainable.
+
+REVIEWER_IDENTITY_V7 · A-001 limb 2C + A-003 limb 3D — classified precisely as Phase 9 requires: missing stable identity, not missing artifact (READY entries and quiescence ordering are present) and not missing reasoning (distinct findings and divergent repair reasoning are present). What is absent is a stable external session/model/account identifier.
+
+This one may be unobtainable in principle from this source class. Both bound objects are terminal/log pastes, and a terminal log does not carry external session identity — so further extraction from these two objects is unlikely to help. What would actually settle it is either an execution-side artifact outside the paste (a runner ledger or review record carrying per-reviewer identity), or an owner adjudication that role separation plus demonstrably distinct defects plus divergent repair reasoning satisfies the frozen contract's independence test. The second is a decision rather than an extraction, and it is yours — I have not made it here.
+
+---
+
+What this run determined: v7 delivered everything it promised, and it moved both findings a long way — the fourteen-step provenance question is now decided, the tallies are fully anchored with target/observed preserved, convergence is established mechanically, and A-003's negative knowledge is recoverable in full. Neither finding resolved, and the reason is worth stating plainly: after seven rematches both residues converge on one shared structural limit — a log cannot certify who read it — plus one concrete missing line. That is a materially different situation from "insufficient content", and it is the first point in this sequence where the blocker may not be an extraction problem at all.
+
+✻ Worked for 5m 21s · done 6:30 PM
+
+──────────────────────────────────────────────────────────
+❯
+──────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to

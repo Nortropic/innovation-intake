@@ -1,0 +1,92 @@
+Final report — Intake vNext validation & freeze candidate
+
+CURRENT STATE
+
+- Skill repo ~/.claude/skills/nortropic-intake: branch main @ ac2c580, synced with origin; carried the uncommitted three-layer change exactly as previously reported (verified by re-running the contract lint: 31/31 before any new edit).
+- Corpus repo ~/nortropic/innovation-intake: branch main @ 62e9fd4, clean at start (only untracked .DS_Store).
+- Nothing was committed, pushed, merged, reset or stashed in either repo at any point.
+
+CORPUS DOC UPDATE
+
+- File: ~/nortropic/innovation-intake/CLAUDE.md (docs-only).
+- Semantic change: "två papper" → three artifacts (brief = VAD, design-rationale = VARFÖR, full-chat = RÅ BEVISNING, with per-file load semantics and the pre-contract backfill note); new section "Progressiv exponering & auktoritet" adding the role-based read order (implementer → brief; architect/reviewer → + rationale; provenance → targeted ranges) and the full authority precedence (canonical repo authority > owner-approved spec > brief > rationale > transcript; within a package brief > rationale > transcript). No structural changes, no idea migration.
+
+INTAKE RESULT
+
+- Slug: nortropic-organization-os. The owner-provided URL resolved to ChatGPT chat "Skapa Kommunen" (project "Improvements"); the topic checksum matched the capture (all ~16 checksum terms present with healthy counts).
+- Capture: data-layer first per scripts/data_capture.js run verbatim; transfer via the clipboard relay (trusted-click activation after diagnosing a dead margin zone; user clipboard backed up and restored); reassemble_verify.py passed fail-closed: exact length 503,544, JSON parse, roles match, balanced fences. Fidelity: full.
+- Message count: 57 (29 user / 28 assistant), 423,868 visible chars.
+- First/last verification: first = the Munder Difflin link message; last = the ChatGPT message containing this very mission prompt — both match the probe previews and the golden signature previews.
+- Attachments: 12 inventoried on message 1 (6 images + 6 sediment pointers, same Munder screenshots); contents not captured (images), declared in the transcript header.
+- Dedup (Phase 2.8): probable evolution of nortropic-som-kommun detected → owner asked → SUPERSEDE approved; old brief set to status: superseded + superseded_by, INDEX row updated. related: set on the new brief to workflow-orkestrering, dokumentation-repo-struktur, bevaka-frontier-ai-engineering, bootstrap-closeout-rebaseline — mutual back-links on those four briefs deliberately NOT written, per this mission's "do not modify the other existing corpus ideas" (flagged below as a small follow-up).
+- Artifacts: nortropic-organization-os/idea-nortropic-organization-os.md, …-design-rationale.md, …-full-chat.md. INDEX: exactly one new row for the idea; status: idea; no Phase 2.5 interview (IDÉBANK route as directed); open questions left open.
+
+EXECUTION BRIEF REVIEW (fresh reviewer, no legacy leniency)
+
+17/20 — PASS, no critical zeros. R1 2, R2 2, R3 1 (missing "— because" on several entries), R4 2 (8 provenance tags resolved against the transcript, all match), R5 1 (msgs 17–18 measurement tangent unsorted), R6 2, R7 2, R8 2, R9 2, R10 1 (length ~1.5× the ~1000-word cap; invariants pointers exemplary). Verdict: "strong brief… compact enough to serve." All three prescribed fixes were then applied: because-clauses added everywhere, D14 (measurement as sensor/learning system, ← msg 17–18) added, and a tightening pass taken. Residual: the brief sits at ~1586 raw words (~1400 prose) — see Owner decisions.
+
+DESIGN RATIONALE REVIEW (fresh reviewer)
+
+20/20 — PASS, no zeros anywhere. ~20 citation spot-checks, zero failures (including Munder issue numbers, the 171-study meta-analysis, owner quotes, and the NOT_READY start condition). Explicit verdicts: materially distinct from the brief — yes; provenance sufficient — yes ("the strongest aspect"); rejections protected — yes; unresolved stays unresolved — yes; metaphor section genuinely translates — yes. Its two non-scoring precision notes (dual-cite the "mechanical" wording; claim-kind note for §4) were applied.
+
+ADVERSARIAL REVIEW (fresh reviewer, 10 questions)
+
+Q1 rejected-idea implementable: NO · Q2 metaphor-as-requirement: NO · Q3 knowledge-as-runtime-authority: NO · Q4 premature OS start: NO (five independent guards) · Q5 Verkstadsgolvet as authority: NO · Q6 GOD-supervisor recreation: NO · Q7 transcript preloaded by default: NO (four explicit prohibitions) · Q8 "why" reconstructible from brief+rationale alone: YES · Q9 retrieval map practical: YES (5 entries verified against actual headers) · Q10 brief compact enough: YES. No blocking defects; both minor observations fixed (v1-prompt "superseded" marker added to the retrieval map). Verdict: STRONG.
+
+VNEXT GOLDEN VERDICT
+
+READY_AS_VNEXT_GOLDEN. Evidence: no critical zeros anywhere; no authority confusion, no lost rejection, no silently promoted unresolved item (adversarial Q1–Q7 all NO); provenance verified at both review layers; brief/rationale materially distinct; progressive disclosure intact end-to-end.
+
+Files added for the golden, following existing conventions (measured signatures committed, artifacts in the corpus, no parallel golden architecture):
+- evals/golden/nortropic-organization-os.signature.json — measured from the real, verified delivery (57 msgs, 419,741 body chars, body sha256 recorded) and verified with --check.
+- evals/README.md — goldens now split into LEGACY CAPTURE FIXTURES (untouched) vs VNEXT THREE-LAYER GOLDEN; check 2 gains the third command; checks 3/5 anchor to the Organization OS package as the known-good reference; recommended calibrated thresholds documented: brief ≥17/20, rationale ≥18/20, no critical zeros — legacy 15/20 is never a pass for new artifacts.
+
+REGRESSION VERIFICATION
+
+┌───────────────┬──────────────────────────────────────┬───────────────┐
+│     Check     │               Command                │    Result     │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│               │                                      │ 31/31 PASS    │
+│ Contract lint │ python3 evals/contract_check.py      │ (re-run after │
+│               │                                      │  every edit)  │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│ ChatGPT       │ capture_signature.py …               │ OK — 75 msgs, │
+│ legacy golden │ gauntlet-wayfinder                   │  148,406      │
+│               │                                      │ chars         │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│ claude.ai     │ capture_signature.py …               │ OK — 18 msgs, │
+│ legacy golden │ agent-workflow-claudeai              │  29,084 chars │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│               │ capture_signature.py …               │ OK — 57 msgs, │
+│ vNext golden  │ nortropic-organization-os            │  419,741      │
+│               │                                      │ chars         │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│ Extraction    │ git diff scripts                     │               │
+│ mechanics     │ references/extraction.md             │ empty diff    │
+│               │ capture_signature.py trigger.json    │               │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│ Trigger eval  │ not re-run — its inputs unchanged    │ n/a           │
+│               │ this mission; prior 16/16 stands     │               │
+├───────────────┼──────────────────────────────────────┼───────────────┤
+│ Rubrics on    │ fresh reviewers (above)              │ 17/20 PASS ·  │
+│ new artifacts │                                      │ 20/20 PASS    │
+└───────────────┴──────────────────────────────────────┴───────────────┘
+
+Also verified: dedup semantics intact (exercised for real, with owner approval); IDÉBANK routing honored (no interview, status: idea, stop before plan mode); transcript fidelity full; INDEX one row per idea; no unrelated corpus idea changed; nortropic-knowledge git-clean (no writes); no runtime dependency added; no Organization OS implementation started.
+
+FILES CHANGED
+
+Skill repo (prior session's 8 files unchanged, plus): evals/golden/nortropic-organization-os.signature.json (new — vNext golden signature), evals/README.md (golden classes + thresholds).
+Corpus repo: CLAUDE.md (three-layer orientation), INDEX.md (new idea row; kommun row superseded), nortropic-som-kommun/idea-nortropic-som-kommun.md (superseded frontmatter, owner-approved), nortropic-organization-os/ (new: brief, rationale, full-chat). An empty .claude/.cc-writes/ harness directory appeared in the idea folder — invisible to git, harmless.
+
+ANTI-OVERENGINEERING — deliberately not built
+
+No vector DB, no semantic search, no rationale registry, no workflow engine, no automatic knowledge promotion, no per-artifact INDEX rows, no blanket backfill (17 other ideas untouched — lazy-backfill policy honored), no new statuses, no transcript-versioning platform, no Organization OS implementation or planning, no runtime dependency on Intake. Still exactly: brief + rationale + transcript with progressive disclosure.
+
+OWNER DECISIONS REQUIRED
+
+1. Brief length vs completeness calibration. With 14 decisions + 9 rejections mandated for preservation, the brief lands at ~1400 prose words against the template's ~1000-word cap even after two tightening passes (reviewer: R10 = 1, but "compact enough to serve"; adversarial: ~280:1 compression, "comfortably usable"). Decide: raise the cap for stress-test-scale sources (e.g. "~1000 words, hard max 1600 for sources > 40 messages"), or direct further cuts to the decision log.
+2. Mutual related-links. Phase 2.8 normally writes related: back-links onto the four related briefs; this mission's "do not modify other corpus ideas" constraint left them one-directional (new brief + INDEX only). Approve writing the four back-links, or keep as is.
+3. Commit ceremony. Both repos hold the complete, verified candidate uncommitted — the skill freeze (three-layer contract + vNext golden) and the corpus delivery are ready for your review and explicit commit.
+
+Definition of done: all 14 items met. The candidate is frozen locally, nothing published, and Organization OS remains parked behind its NOT_READY gate exactly as intended.

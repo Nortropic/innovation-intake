@@ -1,0 +1,61 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-043",
+  "revision": 1,
+  "source_path": "_projects/improvements/sources/CONV-043/conversation.md",
+  "source_sha256": "92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+  "declared_count": 2,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 2 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 2,
+    "filecite_turns": 1,
+    "upload_phrases": 0,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "file": 2,
+      "search": 1,
+      "view": 5
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-043-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "a821fc90ef44d2d77e592f9c2ab189bdab24343125a990f0da39b6b115bbfdd9",
+      "artifact_path": "_projects/improvements/sources/CONV-043/attachments/ATT-043-001-a821fc90ef44.jpeg",
+      "byte_length": 222047,
+      "registered_at": "2026-09-11",
+      "original_filename": "IMG_1182(1).jpeg",
+      "declared_kind": "image_asset_pointer",
+      "media_type": "image/jpeg",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_0000000071d081f48c39260b5526dc0b",
+      "platform_declared_size_bytes": 222047,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_0000000071d081f48c39260b5526dc0b, which the data-layer export of conversation 6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e lists in message(s) 1; sha256 a821fc90ef44d2d77e592f9c2ab189bdab24343125a990f0da39b6b115bbfdd9 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'IMG_1182(1).jpeg', content-type 'image/jpeg'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    },
+    {
+      "attachment_id": "ATT-043-002",
+      "ordinal": 2,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "24b569346a994af74fb4d347b2186d2915738ab57f481fe9e6ff6243a4c3ab0e",
+      "artifact_path": "_projects/improvements/sources/CONV-043/attachments/ATT-043-002-24b569346a99.jpeg",
+      "byte_length": 232474,
+      "registered_at": "2026-09-11",
+      "original_filename": "IMG_1183.jpeg",
+      "declared_kind": "image_asset_pointer",
+      "media_type": "image/jpeg",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_000000004da08243a74ca88502f3b47d",
+      "platform_declared_size_bytes": 232474,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_000000004da08243a74ca88502f3b47d, which the data-layer export of conversation 6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e lists in message(s) 1; sha256 24b569346a994af74fb4d347b2186d2915738ab57f481fe9e6ff6243a4c3ab0e computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'IMG_1183.jpeg', content-type 'image/jpeg'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}

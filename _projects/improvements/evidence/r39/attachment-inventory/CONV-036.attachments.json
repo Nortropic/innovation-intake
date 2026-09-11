@@ -1,0 +1,39 @@
+{
+ "conversation_id": "6aa067d0-1e88-83eb-987b-e8c6d2d41549",
+ "source_id": "CONV-036",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "eBook-DevOpsKubernetes.pdf",
+   "file_id": "file_00000000b9808243ab6c69fca2c1b387",
+   "name": "eBook-DevOpsKubernetes.pdf",
+   "mime_type": "application/pdf",
+   "size_bytes": 257481
+  },
+  {
+   "msg": 11,
+   "label": "Observability Engineering_2ndEd.pdf",
+   "file_id": "file_000000002b7c81f4ad6e6cd54a92aeb0",
+   "name": "Observability Engineering_2ndEd.pdf",
+   "mime_type": "application/pdf",
+   "size_bytes": 15099859
+  },
+  {
+   "msg": 20,
+   "label": "intro.pdf",
+   "file_id": "file_00000000926882469c4be556c3176685",
+   "name": "intro.pdf",
+   "mime_type": "application/pdf",
+   "size_bytes": 691702
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000b9808243ab6c69fca2c1b387",
+  "file_000000002b7c81f4ad6e6cd54a92aeb0",
+  "file_00000000926882469c4be556c3176685"
+ ],
+ "declared_count": 3,
+ "exportLen": 204614,
+ "sha256": "52874192aa50d45d6f2812aedfbf7cb44cddfd43c1e8b141b0c3e6a33bc78975"
+}

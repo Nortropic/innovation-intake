@@ -1,0 +1,21 @@
+{
+ "conversation_id": "6a8f256f-2aec-83eb-9d75-bf1476a2c03e",
+ "source_id": "CONV-011",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "Nortropic_100_dagar_manual_v2.3_verified.pdf",
+   "file_id": "file_00000000c54481f484343693e5bc9b6f",
+   "name": "Nortropic_100_dagar_manual_v2.3_verified.pdf",
+   "mime_type": "application/pdf",
+   "size_bytes": 1649181
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000c54481f484343693e5bc9b6f"
+ ],
+ "declared_count": 1,
+ "exportLen": 172909,
+ "sha256": "13253ef9af5ddb5c7eb4bd9c7a60497e87abd768d4f156420ea98813d2a69ba4"
+}

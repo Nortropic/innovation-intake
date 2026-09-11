@@ -1,0 +1,39 @@
+{
+ "conversation_id": "6a92b1a9-eb88-83ed-9fec-a3fbbdd69def",
+ "source_id": "CONV-007",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 59,
+   "label": "Inklistrad markdown(1).md",
+   "file_id": "file_00000000f598820abf09cc4eb2477b1a",
+   "name": "Inklistrad markdown(1).md",
+   "mime_type": "text/markdown",
+   "size_bytes": 32514
+  },
+  {
+   "msg": 70,
+   "label": "Inklistrad markdown(2).md",
+   "file_id": "file_0000000046e48243a02e6185821b4c16",
+   "name": "Inklistrad markdown(2).md",
+   "mime_type": "text/markdown",
+   "size_bytes": 11713
+  },
+  {
+   "msg": 314,
+   "label": "Inklistrad markdown(4).md",
+   "file_id": "file_00000000fe2c81f48ca45d84a820d79c",
+   "name": "Inklistrad markdown(4).md",
+   "mime_type": "text/markdown",
+   "size_bytes": 183527
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000f598820abf09cc4eb2477b1a",
+  "file_0000000046e48243a02e6185821b4c16",
+  "file_00000000fe2c81f48ca45d84a820d79c"
+ ],
+ "declared_count": 3,
+ "exportLen": 799245,
+ "sha256": "912f8aa6d05e52a6f617a7567f2e01cb30235feaf54d3fad981db7ae503c9096"
+}

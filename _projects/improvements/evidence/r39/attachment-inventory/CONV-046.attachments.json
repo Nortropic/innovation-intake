@@ -1,0 +1,28 @@
+{
+ "conversation_id": "6a9d0b03-8368-83eb-90ff-d03f759d2bc6",
+ "source_id": "CONV-046",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "sediment://file_0000000042408210890aab23a2b7bc11",
+   "asset_pointer": "sediment://file_0000000042408210890aab23a2b7bc11",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 224380
+  },
+  {
+   "msg": 0,
+   "label": "IMG_1167.jpeg",
+   "file_id": "file_0000000042408210890aab23a2b7bc11",
+   "name": "IMG_1167.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 224380
+  }
+ ],
+ "distinct_file_ids": [
+  "file_0000000042408210890aab23a2b7bc11"
+ ],
+ "declared_count": 1,
+ "exportLen": 25203,
+ "sha256": "f06b2f24d04fec788fd30cd6a1088fa1f309985614722e6fbdf8523322f358a4"
+}

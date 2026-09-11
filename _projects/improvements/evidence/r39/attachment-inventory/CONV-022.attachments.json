@@ -1,0 +1,48 @@
+{
+ "conversation_id": "6a808f5c-70d4-83ed-b605-c3bd0616644f",
+ "source_id": "CONV-022",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 17,
+   "label": "Inklistrad text(20260815-185211).txt",
+   "file_id": "file_00000000fd3081f48f54e34bd5ea0e99",
+   "name": "Inklistrad text(20260815-185211).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 36781
+  },
+  {
+   "msg": 20,
+   "label": "Inklistrad text(20260815-191908).txt",
+   "file_id": "file_00000000fedc820abb3c2990fb09cf20",
+   "name": "Inklistrad text(20260815-191908).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 41823
+  },
+  {
+   "msg": 22,
+   "label": "Inklistrad text(20260815-193948).txt",
+   "file_id": "file_00000000779881f49d4c791164c7d6ee",
+   "name": "Inklistrad text(20260815-193948).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 45628
+  },
+  {
+   "msg": 29,
+   "label": "nortropic-knowledge-phase0-owner-review-20260815-233344.tgz",
+   "file_id": "file_0000000001a0820a90a449eed3533c1d",
+   "name": "nortropic-knowledge-phase0-owner-review-20260815-233344.tgz",
+   "mime_type": "application/x-tar",
+   "size_bytes": 13490
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000fd3081f48f54e34bd5ea0e99",
+  "file_00000000fedc820abb3c2990fb09cf20",
+  "file_00000000779881f49d4c791164c7d6ee",
+  "file_0000000001a0820a90a449eed3533c1d"
+ ],
+ "declared_count": 4,
+ "exportLen": 108391,
+ "sha256": "3571de6e6eaec66663450ab0bc516bda7b33c76a4145c9326808d9ffe0b2f1cd"
+}

@@ -8,25 +8,25 @@
   "enumeration": {
     "method": "data-layer",
     "verified": true,
-    "declared_inventory_sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
-    "note": "Incremental re-sweep 2026-09-01: fresh cursor walk (30 items; 3 new vs the 27-item 2026-08-31 inventory)",
+    "declared_inventory_sha256": "dc3a509b11cf47212703c0a97d1f2fbf127bbadfc9d48fbf38faed3be5a4122e",
+    "note": "R39 discovery 2026-09-11: fresh cursor walk, 55 items (25 new vs r38's 30)",
     "evidence": {
-      "sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
+      "sha256": "dc3a509b11cf47212703c0a97d1f2fbf127bbadfc9d48fbf38faed3be5a4122e",
       "source": "project-discovery-cursor",
       "endpoint": "/backend-api/gizmos/g-p-6a86d9dcb8488191b03ee843bb19eb6c/conversations",
       "membership_scope": "path-scoped-project-endpoint",
       "membership_established_by": "project id in the request PATH",
       "terminal_signal": "cursor-absent",
-      "pages_walked": 1,
-      "collected": 30,
+      "pages_walked": 2,
+      "collected": 55,
       "duplicates_dropped": 0,
       "count_oracle": "absent — this endpoint sends no total; exhaustion is the proof",
-      "record": "_projects/improvements/enumeration-evidence-r30.json"
+      "record": "_projects/improvements/enumeration-evidence-r39.json"
     }
   },
   "project_status": "COMPLETE_WITH_OPEN_REVIEW",
-  "inventory_revision": 38,
-  "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
+  "inventory_revision": 74,
+  "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
   "inventory_history": [
     {
       "revision": 1,
@@ -255,6 +255,222 @@
       "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
       "at": "2026-09-01",
       "note": "capture CONV-002 r2"
+    },
+    {
+      "revision": 39,
+      "inventory_sha256": "25aa1766bea32ccdd178a6b825b9863732758e0bfea9ebe4bf9a4b70d85587e3",
+      "at": "2026-09-11",
+      "note": "declare inventory (data-layer, 55 item(s))"
+    },
+    {
+      "revision": 40,
+      "inventory_sha256": "783554789ad7121c87cde37fef53b9b1a776351638e0a9314da4e44fc33aa8f0",
+      "at": "2026-09-11",
+      "note": "capture CONV-002 r3"
+    },
+    {
+      "revision": 41,
+      "inventory_sha256": "d2f68179b31b7df9e9fedafc60de97120ce36cb33debcf9cea92e4d09c8e55ea",
+      "at": "2026-09-11",
+      "note": "capture CONV-003 r3"
+    },
+    {
+      "revision": 42,
+      "inventory_sha256": "63b9d321753192104442a4c2a6956470d3e073bab857a926683afe661feeab4e",
+      "at": "2026-09-11",
+      "note": "capture CONV-006 r3"
+    },
+    {
+      "revision": 43,
+      "inventory_sha256": "388d61efb76d9dee0065f548819245990f380b431e20ccd8d42ade58cc288217",
+      "at": "2026-09-11",
+      "note": "capture CONV-007 r3"
+    },
+    {
+      "revision": 44,
+      "inventory_sha256": "ec6beab92d2a47c596c8a66d4dc680350e1ba28ffa2b1a3d6cfbe5fa0b8bf123",
+      "at": "2026-09-11",
+      "note": "capture CONV-012 r3"
+    },
+    {
+      "revision": 45,
+      "inventory_sha256": "70af2e04428ccf5e66c1c3826b19d06a130e6b7f07ebd765ed577afa0c486bc9",
+      "at": "2026-09-11",
+      "note": "capture CONV-028 r2"
+    },
+    {
+      "revision": 46,
+      "inventory_sha256": "ddc89d6186fa524a8105512acc4ec9082f60056215e76449686bb2e5cd9e2e68",
+      "at": "2026-09-11",
+      "note": "capture CONV-029 r2"
+    },
+    {
+      "revision": 47,
+      "inventory_sha256": "9d38f1cfb7dc3f6aa1740b2dafd25d07ec6ffd5b7106ac8290e3d324b96097b0",
+      "at": "2026-09-11",
+      "note": "capture CONV-031 r1"
+    },
+    {
+      "revision": 48,
+      "inventory_sha256": "4b630bdfd79747d41a39f9eb1524ab1ef4e5f59318487141c2467202eaa34ac5",
+      "at": "2026-09-11",
+      "note": "capture CONV-032 r1"
+    },
+    {
+      "revision": 49,
+      "inventory_sha256": "e6bbb22cb46d7b4117e501380b8b555ddd6cc17bdc84dc67dcdc65cd25b7f0d5",
+      "at": "2026-09-11",
+      "note": "capture CONV-033 r1"
+    },
+    {
+      "revision": 50,
+      "inventory_sha256": "718533b3ad0e5c10d38bbf4555e2403f749623c0535c47c0e6eb5ab6ed28527d",
+      "at": "2026-09-11",
+      "note": "capture CONV-034 r1"
+    },
+    {
+      "revision": 51,
+      "inventory_sha256": "303ab2ff0b1b1cca71e0dae9f4a841700a1c1d4521c7a91d8551f656b6e741fe",
+      "at": "2026-09-11",
+      "note": "capture CONV-035 r1"
+    },
+    {
+      "revision": 52,
+      "inventory_sha256": "1c156cc9ed5cf7d335d407095315378ee2ae73abf6b0b1fc2caf01f77713273e",
+      "at": "2026-09-11",
+      "note": "capture CONV-036 r1"
+    },
+    {
+      "revision": 53,
+      "inventory_sha256": "2d5cc4a827f5ff4f6fd9eb6997ae2a97e05b4551b813f6fc5dc843088790dc6d",
+      "at": "2026-09-11",
+      "note": "capture CONV-037 r1"
+    },
+    {
+      "revision": 54,
+      "inventory_sha256": "9e93417c2545914e266b8e8a329509f19daf3a7cdd839afc079200c27d0c3288",
+      "at": "2026-09-11",
+      "note": "capture CONV-038 r1"
+    },
+    {
+      "revision": 55,
+      "inventory_sha256": "5187828a5998ba6eb28b8963790e73fa427256f904fd01b5f13a3cf74ab3a953",
+      "at": "2026-09-11",
+      "note": "capture CONV-039 r1"
+    },
+    {
+      "revision": 56,
+      "inventory_sha256": "61d2305a82217439605aeb1260cab9414ca0be806e477afc5856d72f757d520b",
+      "at": "2026-09-11",
+      "note": "capture CONV-040 r1"
+    },
+    {
+      "revision": 57,
+      "inventory_sha256": "8e36e6f3ce93b9cf7537ad92377ff12e21f816a5826b37616f619fc270c1c7a7",
+      "at": "2026-09-11",
+      "note": "capture CONV-041 r1"
+    },
+    {
+      "revision": 58,
+      "inventory_sha256": "6d20705dc848dfab3b33d6d2df870f812684f24dd0bf84156e24be7c4dfb10f6",
+      "at": "2026-09-11",
+      "note": "capture CONV-042 r1"
+    },
+    {
+      "revision": 59,
+      "inventory_sha256": "52569cbb788cac10d2b1c57ec4c1e3d9878e5400c55c1525f75448945401fb81",
+      "at": "2026-09-11",
+      "note": "capture CONV-043 r1"
+    },
+    {
+      "revision": 60,
+      "inventory_sha256": "8697fec8ee04ab581ef21e733f9362f59a3becb0b0b4df79101818ad6c1a692f",
+      "at": "2026-09-11",
+      "note": "capture CONV-044 r1"
+    },
+    {
+      "revision": 61,
+      "inventory_sha256": "12367db29e0dfefb4e280815e5cce834a4060424eb4b3d37492e51c52f5cbd53",
+      "at": "2026-09-11",
+      "note": "capture CONV-045 r1"
+    },
+    {
+      "revision": 62,
+      "inventory_sha256": "0be72d70f6582929a8e1fb77ad553092ba41a40bfc9e2a9cb9d85903c29b248b",
+      "at": "2026-09-11",
+      "note": "capture CONV-046 r1"
+    },
+    {
+      "revision": 63,
+      "inventory_sha256": "f35bcfa5978f2f280de15299e2e4cc150133659358ba4ff46c4e8baf2f607434",
+      "at": "2026-09-11",
+      "note": "capture CONV-047 r1"
+    },
+    {
+      "revision": 64,
+      "inventory_sha256": "4f29b4e4984102cfd883d0c3614a6ed732ff4c40e2623f5f84293fa77137ec39",
+      "at": "2026-09-11",
+      "note": "capture CONV-048 r1"
+    },
+    {
+      "revision": 65,
+      "inventory_sha256": "fce4edda7108ef5db0962e1358379de7e2f33e95570952f67e7ccfcc2481a4d6",
+      "at": "2026-09-11",
+      "note": "capture CONV-049 r1"
+    },
+    {
+      "revision": 66,
+      "inventory_sha256": "6f738c2ae08b7e4e55f448b84a38b2979a0112796858e1f82d5c1310584e3821",
+      "at": "2026-09-11",
+      "note": "capture CONV-050 r1"
+    },
+    {
+      "revision": 67,
+      "inventory_sha256": "2f42c2251817fabbc3032eee1915ba47ae125205794a1711f4776a24bcad6696",
+      "at": "2026-09-11",
+      "note": "capture CONV-051 r1"
+    },
+    {
+      "revision": 68,
+      "inventory_sha256": "d15edcee668a2fedd1ddc85a0a2aa27ccd7b9e3f5469aeecc2b7c19c645516b3",
+      "at": "2026-09-11",
+      "note": "capture CONV-052 r1"
+    },
+    {
+      "revision": 69,
+      "inventory_sha256": "298161ac88dffa302a6b622387439c614085ac4151d219ad537756ab294370cb",
+      "at": "2026-09-11",
+      "note": "capture CONV-053 r1"
+    },
+    {
+      "revision": 70,
+      "inventory_sha256": "6ec98dc1f8073b4cb28bff980b71db57460a43bb6b477104234572478071e6f9",
+      "at": "2026-09-11",
+      "note": "capture CONV-054 r1"
+    },
+    {
+      "revision": 71,
+      "inventory_sha256": "509b29628ee3b69c10781405c04e8e6ce21a6d0b0c78b8233a224da67a9003f6",
+      "at": "2026-09-11",
+      "note": "capture CONV-055 r1"
+    },
+    {
+      "revision": 72,
+      "inventory_sha256": "703cecbaea6e28d375639ae0ebc40b5a5182b70999a43fcb63df58267e8ff384",
+      "at": "2026-09-11",
+      "note": "register-document DOC-001 (project_file)"
+    },
+    {
+      "revision": 73,
+      "inventory_sha256": "3d0f02f6064a02960c59d8899359deea9de5093401e5f3895acdb60f87406840",
+      "at": "2026-09-11",
+      "note": "register-document DOC-002 (project_file)"
+    },
+    {
+      "revision": 74,
+      "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+      "at": "2026-09-11",
+      "note": "register-document DOC-003 (project_file)"
     }
   ],
   "sources": [
@@ -285,7 +501,11 @@
           "message_count": 117,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-001.md"
         }
       ],
       "extracted_revision": 2,
@@ -304,7 +524,7 @@
       "url": "https://chatgpt.com/c/6a8e82a1-9acc-83ed-ab47-c4055063d6ec",
       "title": "OpenAI Codex migration and Claude Code canary",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -326,6 +546,17 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-002/conversation-r3.md",
+          "sha256": "e6230f5e15445f0c6c156be22b97497821bb598dae50852103390b9353a7b365",
+          "source_sha256": "5f5385ff767f8b98a0fe70fbabf3d47d75360df374ef77aaebc52420a2898d43",
+          "captured_at": "2026-09-11",
+          "message_count": 17,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
       "extracted_revision": 2,
@@ -340,7 +571,7 @@
       "url": "https://chatgpt.com/c/6a8d3c28-e464-83eb-8d9d-8545f9b683c1",
       "title": "Nortropic frontier delta highlights four material shifts",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -359,6 +590,17 @@
           "source_sha256": "b15a981ab5f9c37f5f8d9ded4065f1c694e8c0d307ba4037271148ac8cc32f20",
           "captured_at": "2026-09-01",
           "message_count": 19,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-003/conversation-r3.md",
+          "sha256": "087421c57fbe026140e50c749827c1000eea7cff60e2f5fe5da4a3396881e305",
+          "source_sha256": "193a3de7f371ce83378a2c577082f1e09c4d27f46b460df5c78e6d2a560522be",
+          "captured_at": "2026-09-11",
+          "message_count": 28,
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
@@ -388,7 +630,11 @@
           "message_count": 4,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f0c63eaa0e141132db5f2106c479a3d0cbb8e2f026f1775e83a540d700e8404d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-004.md"
         }
       ],
       "extracted_revision": 1,
@@ -415,7 +661,11 @@
           "message_count": 79,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "04d38687d7b3f8ba47ec92c56c88db5a767ea9943961b64063462286d7193198",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-005.md"
         }
       ],
       "extracted_revision": 1,
@@ -433,7 +683,7 @@
       "url": "https://chatgpt.com/c/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd",
       "title": "Agent Control-Room Watch",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -455,6 +705,17 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-006/conversation-r3.md",
+          "sha256": "6e5b621cfd83da1681f270dd38229ec77bf66628d854ab16b2a8897b5ff95d0f",
+          "source_sha256": "1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+          "captured_at": "2026-09-11",
+          "message_count": 26,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
       "extracted_revision": 2,
@@ -471,7 +732,7 @@
       "url": "https://chatgpt.com/c/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def",
       "title": "Rapportera Bootstrap status",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -490,6 +751,17 @@
           "source_sha256": "906356f70c7a50d54c8ee9b2050c82d48ef3a97b887bc9fb6a15317659819e1d",
           "captured_at": "2026-09-01",
           "message_count": 117,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-007/conversation-r3.md",
+          "sha256": "17338ef226f72b525c9988b2eee9c23859638958165fba073c142f30dedacd81",
+          "source_sha256": "bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+          "captured_at": "2026-09-11",
+          "message_count": 325,
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
@@ -519,7 +791,11 @@
           "message_count": 187,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "7eb936b9889b6c4c97b274bf08da2e12a9a02ab88435e6ab66cd4f0bba6d0dbf",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-008.md"
         }
       ],
       "extracted_revision": 1,
@@ -546,7 +822,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "9002596bc79559ad300d10fb5be205e4792bcebe9170ee63846e0800ac1d7642",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-009.md"
         }
       ],
       "extracted_revision": 1,
@@ -571,7 +851,11 @@
           "message_count": 10,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "1a9529b500f497fd338798406e56ceda96049605a3ffa7718fb536d85c704e0e",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-010.md"
         }
       ],
       "extracted_revision": 1,
@@ -598,7 +882,11 @@
           "message_count": 18,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-011.md"
         }
       ],
       "extracted_revision": 1,
@@ -615,7 +903,7 @@
       "url": "https://chatgpt.com/c/6a8d5b27-ee50-83eb-afba-a04298552052",
       "title": "Nortropic Evolution Radar",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -633,6 +921,17 @@
           "sha256": "4fc4b833690c74594d87db46a38edd43ad699c51b793ad96c6afc9284df8bc9b",
           "captured_at": "2026-08-31",
           "message_count": 18,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-012/conversation-r3.md",
+          "sha256": "a0033dd5102c7e5d25a85aae608225c31701b3501b1a94508dffacdcc32f588e",
+          "source_sha256": "c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+          "captured_at": "2026-09-11",
+          "message_count": 20,
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
@@ -663,7 +962,11 @@
           "message_count": 227,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-013.md"
         }
       ],
       "extracted_revision": 1,
@@ -690,7 +993,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f0a6dc32d89e32f14af419d105d53db2e10fecc54d099ede26f904ec958f788c",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-014.md"
         }
       ],
       "extracted_revision": 1,
@@ -717,7 +1024,11 @@
           "message_count": 336,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "56245dd8ecb3f45c23164cbbb6f78f28c22bdbdef2bd66bf8d0f24484698d559",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-015.md"
         }
       ],
       "extracted_revision": 1,
@@ -748,7 +1059,11 @@
           "message_count": 128,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-016.md"
         }
       ],
       "extracted_revision": 1,
@@ -777,7 +1092,11 @@
           "message_count": 9,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "0d81a86b9def4aecf585cfa3348e18437fdffa49c02da6be3c24355124af5e89",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-017.md"
         }
       ],
       "extracted_revision": 1,
@@ -802,7 +1121,11 @@
           "message_count": 5,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "95124492b52cf5214b77ffd5cca88bfc9393861251265c07c78990403b9cda0e",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-018.md"
         }
       ],
       "extracted_revision": 1,
@@ -829,7 +1152,11 @@
           "message_count": 25,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "645b06bdbc2fc759f091cc750c1ed7e36b7e3a7302e6a8daab5d1b602d32feea",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-019.md"
         }
       ],
       "extracted_revision": 1,
@@ -856,7 +1183,11 @@
           "message_count": 117,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "dedc6742fa803a25e7f9703532aceba6c683fbabc71824ae7eeff9a01ebede9f",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-020.md"
         }
       ],
       "extracted_revision": 1,
@@ -883,7 +1214,11 @@
           "message_count": 2,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "7eb488b8c9047c130603b9b0ef4612cac9a5acdebedf82a1a9d7578eb13367a4",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-021.md"
         }
       ],
       "extracted_revision": 1,
@@ -910,7 +1245,11 @@
           "message_count": 35,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "d292382abf50f3de0fb9b58240c4ef8332868ce8c5d574f262cb0e3dc63b36c7",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-022.md"
         }
       ],
       "extracted_revision": 1,
@@ -937,7 +1276,11 @@
           "message_count": 75,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "ab498b8587845112989df7e329d72a2b4922cceaf69e72ae9eaeeebf4cabafcf",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-023.md"
         }
       ],
       "extracted_revision": 1,
@@ -964,7 +1307,11 @@
           "message_count": 26,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "d27178d71a3a88714601168c4379b0b99bc49a402effbd8d11d7b11f8b1b2c3d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-024.md"
         }
       ],
       "extracted_revision": 1,
@@ -991,7 +1338,11 @@
           "message_count": 8,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "ad80e48b6ca123e2010b200f9ea5319ac70e8156d2ae1bb6f8f5a84af898e17f",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-025.md"
         }
       ],
       "extracted_revision": 1,
@@ -1018,7 +1369,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "062a64e2802e0b30edaaf9a8a6c8e343252ee3dc0114d5bf3f11374cc5b159f7",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-026.md"
         }
       ],
       "extracted_revision": 1,
@@ -1045,7 +1400,11 @@
           "message_count": 9,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "6b3a302d22eb76a66b89d458af717a937de627618e67a37b687e37dbe0ec4f22",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-027.md"
         }
       ],
       "extracted_revision": 1,
@@ -1062,7 +1421,7 @@
       "url": "https://chatgpt.com/c/6a96d48e-dc88-83ed-af6b-ca63fa519441",
       "title": "Grok Bot-delta",
       "discovered_at": "2026-09-01",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -1071,6 +1430,17 @@
           "source_sha256": "e66616d7dae94b18a5faa0a263fa1ef39d6e923f035744f3d5d1909a01459237",
           "captured_at": "2026-09-01",
           "message_count": 58,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-028/conversation-r2.md",
+          "sha256": "33274d35dd0563ec6ed5f9aba10da2c4406c0aadc687b0a69fad6e8f7e548bed",
+          "source_sha256": "8aee2c23e04a50609bcdc49fc0abefeb94f26d9ec25e2306cf3f4bc8636666f4",
+          "captured_at": "2026-09-11",
+          "message_count": 82,
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
@@ -1088,7 +1458,7 @@
       "url": "https://chatgpt.com/c/6a970273-24f0-83eb-b033-ee199e96d345",
       "title": "Nortropic Market Radar",
       "discovered_at": "2026-09-01",
-      "state": "COMPLETE",
+      "state": "VERIFIED",
       "revisions": [
         {
           "revision": 1,
@@ -1097,6 +1467,17 @@
           "source_sha256": "3a7058e05577e487099e1fa307706c876344cf34359fd2af0bb512b26fef48c4",
           "captured_at": "2026-09-01",
           "message_count": 32,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-029/conversation-r2.md",
+          "sha256": "294add2ee2d496ed6b6ee57b00660c088c686e6774afdf0431b2237f69825891",
+          "source_sha256": "b3d8456712525620b8ef45253626b5d1ff7b6a1989147cca541acb5816c72a73",
+          "captured_at": "2026-09-11",
+          "message_count": 51,
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
@@ -1127,7 +1508,11 @@
           "message_count": 18,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-030.md"
         }
       ],
       "extracted_revision": 1,
@@ -1136,6 +1521,752 @@
         "nortropic-marknadsposition"
       ],
       "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-031",
+      "conversation_key": "chatgpt.com/6aa3d42d-f684-83ed-8b78-888c72dc9ae2",
+      "url": "https://chatgpt.com/c/6aa3d42d-f684-83ed-8b78-888c72dc9ae2",
+      "title": "Nortropics syfte",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-031/conversation.md",
+          "sha256": "7b7eb5aa48fd860042da69da0b11f317ff8a82143c8d51979ed844b7a23d75f8",
+          "source_sha256": "ed5307132a9ab012d6d6719330fb63d164bb970887e70ba35688d1cdd21467af",
+          "captured_at": "2026-09-11",
+          "message_count": 29,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-032",
+      "conversation_key": "chatgpt.com/6a9c2a34-7c84-83eb-8971-4e844f4a7b8b",
+      "url": "https://chatgpt.com/c/6a9c2a34-7c84-83eb-8971-4e844f4a7b8b",
+      "title": "Claude/Codex Workflow Watch",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-032/conversation.md",
+          "sha256": "1e1d8117df156db89d758ba3e0bfb162f444e5be19ebacd03aec9a085800472a",
+          "source_sha256": "50d17341b3d516630d8f65b7e091a04f43376faadbfae2fd19e0661947107fcd",
+          "captured_at": "2026-09-11",
+          "message_count": 32,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-033",
+      "conversation_key": "chatgpt.com/6a97c656-e1b0-83eb-9371-22859858db7a",
+      "url": "https://chatgpt.com/c/6a97c656-e1b0-83eb-9371-22859858db7a",
+      "title": "Grok Bot-delta",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-033/conversation.md",
+          "sha256": "813d12645b01e4584fd34084fda66b56625c2915a88f9594708e514723cb21bb",
+          "source_sha256": "8aafdd65a783bd9a9b26f30bbb98a7cbe0dea63e8e88d51d7d8b708466aafe91",
+          "captured_at": "2026-09-11",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-034",
+      "conversation_key": "chatgpt.com/6aa1785a-912c-83eb-adf2-a3d4041a217b",
+      "url": "https://chatgpt.com/c/6aa1785a-912c-83eb-adf2-a3d4041a217b",
+      "title": "Brainstorma filsystem",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-034/conversation.md",
+          "sha256": "d27a8ac3aa28dd88fd927f4dd4ed0ca0b68ae07ca4a9072438a38b45e4c2387c",
+          "source_sha256": "9c35dc86cb3198a68ace7f61b7d0ed5a71ba116d4e81f2d3a46d255bf1c9c91d",
+          "captured_at": "2026-09-11",
+          "message_count": 3,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-035",
+      "conversation_key": "chatgpt.com/6aa082e2-c888-83eb-bff0-9c0177335fd5",
+      "url": "https://chatgpt.com/c/6aa082e2-c888-83eb-bff0-9c0177335fd5",
+      "title": "Brainstorma Jake Van Clief",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-035/conversation.md",
+          "sha256": "670092e4a9ce09378b77fa6eab0772561fbc934c3230ccf3920489b1845152a8",
+          "source_sha256": "ce93199ed8b90e497f87556a67d80574706e9c3e3a08102f20f7eed3fba2b1b4",
+          "captured_at": "2026-09-11",
+          "message_count": 38,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-036",
+      "conversation_key": "chatgpt.com/6aa067d0-1e88-83eb-987b-e8c6d2d41549",
+      "url": "https://chatgpt.com/c/6aa067d0-1e88-83eb-987b-e8c6d2d41549",
+      "title": "Utforska Datadog Kubernetes",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-036/conversation.md",
+          "sha256": "82f069a151f01e211ff41ec1c5be98c53028691902adbdd84915ca75c82f2e88",
+          "source_sha256": "7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+          "captured_at": "2026-09-11",
+          "message_count": 37,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-037",
+      "conversation_key": "chatgpt.com/6aa0458b-6bcc-83eb-a5a8-d0b963679ea4",
+      "url": "https://chatgpt.com/c/6aa0458b-6bcc-83eb-a5a8-d0b963679ea4",
+      "title": "Brainstorma",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-037/conversation.md",
+          "sha256": "d287b07e02ef4d90e4a38fcbdc150fd45dea0d4f58f9280aacd1ea9e0e3aa2a8",
+          "source_sha256": "3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+          "captured_at": "2026-09-11",
+          "message_count": 15,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-038",
+      "conversation_key": "chatgpt.com/6a9fada9-29f8-83eb-a01a-5e978bf57d29",
+      "url": "https://chatgpt.com/c/6a9fada9-29f8-83eb-a01a-5e978bf57d29",
+      "title": "Brainstorming",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-038/conversation.md",
+          "sha256": "451c83b7a94a0aa35c8f21b7a085883d1a6b887f673b152853d32ca33201d4c6",
+          "source_sha256": "375da93c206f676484db0c2b7169f43dcf88e34c7eb3ba7223274be05931f6f9",
+          "captured_at": "2026-09-11",
+          "message_count": 5,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-039",
+      "conversation_key": "chatgpt.com/6a9fe3ca-be28-83eb-9fa6-646e23023033",
+      "url": "https://chatgpt.com/c/6a9fe3ca-be28-83eb-9fa6-646e23023033",
+      "title": "Sammanställ brainstormingschattar",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-039/conversation.md",
+          "sha256": "5969c8166587af4d508e23278985c0c061c049e0be8238d87bf0a3b37c338251",
+          "source_sha256": "b07ddd2db7bd8c843a69694ee2e638135197afef0a45cde36fb69d9474658938",
+          "captured_at": "2026-09-11",
+          "message_count": 8,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-040",
+      "conversation_key": "chatgpt.com/6a9fb3a9-c6f4-83eb-9288-2a156ec3d84a",
+      "url": "https://chatgpt.com/c/6a9fb3a9-c6f4-83eb-9288-2a156ec3d84a",
+      "title": "Brainstorma självuppdatering",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-040/conversation.md",
+          "sha256": "1ed3ca9fae5e57561deaf22fa6523d0027bba5d46498dbdd71377e310d8bfbab",
+          "source_sha256": "cf4273ec9d4dc7a84d54ea622da61c35d5a0490939781d4a6451f8793efb8d53",
+          "captured_at": "2026-09-11",
+          "message_count": 73,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-041",
+      "conversation_key": "chatgpt.com/6a9ec9bd-0a38-83eb-b792-5db45b2678f9",
+      "url": "https://chatgpt.com/c/6a9ec9bd-0a38-83eb-b792-5db45b2678f9",
+      "title": "Informationsarkitektur och nootropika",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-041/conversation.md",
+          "sha256": "8dd5c3be33e4808ec18d2f45dafc60de888aabaf7f7ed5380c683559d18c29c1",
+          "source_sha256": "a00c51aa60c68c45da5435bba6cc202fba574e16753a144203c4e8dcd1bff2d9",
+          "captured_at": "2026-09-11",
+          "message_count": 20,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-042",
+      "conversation_key": "chatgpt.com/6a9e6cbe-5eac-83eb-a649-9bc2fb8eaeba",
+      "url": "https://chatgpt.com/c/6a9e6cbe-5eac-83eb-a649-9bc2fb8eaeba",
+      "title": "Definiera Notropica autonomi",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-042/conversation.md",
+          "sha256": "e98de6ef01b53f8de073c7b787e21f6c2113eb6268ac14799a5a5c989984f2c4",
+          "source_sha256": "d16208d4e16ea4e6c11ec02274aa66f5d27773f00c2743bffbd6110569f44684",
+          "captured_at": "2026-09-11",
+          "message_count": 37,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-043",
+      "conversation_key": "chatgpt.com/6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e",
+      "url": "https://chatgpt.com/c/6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e",
+      "title": "Brainstorma",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-043/conversation.md",
+          "sha256": "bd7533b0355e782e38b9d4d4592e06fbb0e03b1f4621a65ae0571723fc6a496e",
+          "source_sha256": "92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-044",
+      "conversation_key": "chatgpt.com/6a9948f8-91d8-83ed-a3fb-e81a5d7410c3",
+      "url": "https://chatgpt.com/c/6a9948f8-91d8-83ed-a3fb-e81a5d7410c3",
+      "title": "Brainstorma hårdvarusetsning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-044/conversation.md",
+          "sha256": "21da48bdf570d13dc4115f8ecbe16547780a30755ced0a481bbfc73e0117a063",
+          "source_sha256": "57213beb6737a072808e2e310ea9ab48208bf70e565622c537a3546b97caa411",
+          "captured_at": "2026-09-11",
+          "message_count": 22,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-045",
+      "conversation_key": "chatgpt.com/6a9d0cbf-42c0-83eb-9e01-95ff5d3414a5",
+      "url": "https://chatgpt.com/c/6a9d0cbf-42c0-83eb-9e01-95ff5d3414a5",
+      "title": "Brainstorma företagsnamn",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-045/conversation.md",
+          "sha256": "f9746970778f2d3250b98d573ee4c7784ef8efa2820a20b1795665a15d9fa02e",
+          "source_sha256": "7a9f988fb1a7b730eab6cc8740cd8b09967eeeada566341a3e1b52cecda5baae",
+          "captured_at": "2026-09-11",
+          "message_count": 16,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-046",
+      "conversation_key": "chatgpt.com/6a9d0b03-8368-83eb-90ff-d03f759d2bc6",
+      "url": "https://chatgpt.com/c/6a9d0b03-8368-83eb-90ff-d03f759d2bc6",
+      "title": "Brainstorma Codexplattformen",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-046/conversation.md",
+          "sha256": "407aece7f08952223ae2615800c6ffec86b1b87b4db331743767b6cedad977a9",
+          "source_sha256": "c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-047",
+      "conversation_key": "chatgpt.com/6a9c70cf-3398-83ed-8496-d7503e0830b1",
+      "url": "https://chatgpt.com/c/6a9c70cf-3398-83ed-8496-d7503e0830b1",
+      "title": "Brainstorma Sam Altman startup",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-047/conversation.md",
+          "sha256": "c97aedf0bcc5dfc5f179b7e7c6628e45ab7f69d5094cf7cc5401f02133dfb15f",
+          "source_sha256": "1b759d6cda776fd038ca5795027a18467f85c3a72e163c96ef24daae6c1af6e5",
+          "captured_at": "2026-09-11",
+          "message_count": 10,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-048",
+      "conversation_key": "chatgpt.com/6a9c5f19-3780-83eb-b3c8-0810ec00880f",
+      "url": "https://chatgpt.com/c/6a9c5f19-3780-83eb-b3c8-0810ec00880f",
+      "title": "Brainstorma Instagramkonto",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-048/conversation.md",
+          "sha256": "b4af6cb7107cbbf9a9875780c43b0a8ff6c8ef5fec372c9674f00a3340e33f38",
+          "source_sha256": "10521391293a18dd34215b0825ef9932da40fb77290c7fd5370b606dd6c2bf1e",
+          "captured_at": "2026-09-11",
+          "message_count": 4,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-049",
+      "conversation_key": "chatgpt.com/6a9c3a1e-acb4-83ed-88a1-b1fa95dc3c26",
+      "url": "https://chatgpt.com/c/6a9c3a1e-acb4-83ed-88a1-b1fa95dc3c26",
+      "title": "Nortropic familjekarta Granskning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-049/conversation.md",
+          "sha256": "754864c7e0ea0e323aaff8bcbb15bab9e37bc0bd60afd1444b0b07f04baff9d9",
+          "source_sha256": "60136ecb22acdccc9a76d1ceeb65117fd032540586354bb36170bc0f7c6413cd",
+          "captured_at": "2026-09-11",
+          "message_count": 29,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-050",
+      "conversation_key": "chatgpt.com/6a9bfcef-5390-83ed-818b-9b7198d095d9",
+      "url": "https://chatgpt.com/c/6a9bfcef-5390-83ed-818b-9b7198d095d9",
+      "title": "Forska om Evolution Plane",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-050/conversation.md",
+          "sha256": "64ab062dabff2e4d587a53edbd7b393f302b302ffe20c027798b9f12cf8145b8",
+          "source_sha256": "6f2f4d7de0b1bbeb72226269d3a0500f5b7d808ff2f6bd2e6adddc1ede102081",
+          "captured_at": "2026-09-11",
+          "message_count": 16,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-051",
+      "conversation_key": "chatgpt.com/6a9be39e-4d24-83ed-9f41-7525718eb8f5",
+      "url": "https://chatgpt.com/c/6a9be39e-4d24-83ed-9f41-7525718eb8f5",
+      "title": "Brainstorma Capability Atlas",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-051/conversation.md",
+          "sha256": "9cf54b3a0078606809340399342b6107a1224ebc0c50ac436bacaaa341962140",
+          "source_sha256": "3123c495555f33b3e8c2e7e97820e237d6958784c3009c3493aa23fd793e7ed2",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-052",
+      "conversation_key": "chatgpt.com/6a9b0652-9764-83eb-81b8-45e2b03047ab",
+      "url": "https://chatgpt.com/c/6a9b0652-9764-83eb-81b8-45e2b03047ab",
+      "title": "Brainstorma Agentic OS",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-052/conversation.md",
+          "sha256": "87a0ed92a52b8d6fcea243cc82aeb6559462c66cdeed5046e32c14ef732ccb0e",
+          "source_sha256": "a5c7c1c709bb9cffc81abbeeb16c61f987ae9ae819ffda85c7c8d99fb717216b",
+          "captured_at": "2026-09-11",
+          "message_count": 4,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-053",
+      "conversation_key": "chatgpt.com/6a9af05d-9144-83eb-bbe9-b81f700f6194",
+      "url": "https://chatgpt.com/c/6a9af05d-9144-83eb-bbe9-b81f700f6194",
+      "title": "Brainstorma AIövervakning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-053/conversation.md",
+          "sha256": "2f5b35a0683ee286c12a70ec0071a44931f3e970972210b473d8b8ec8ff81540",
+          "source_sha256": "816bd2f535312eb4f0bf609915d4687adcf9dfe404f2542b578bdbef91d0667e",
+          "captured_at": "2026-09-11",
+          "message_count": 23,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-054",
+      "conversation_key": "chatgpt.com/6a999e48-1f4c-83eb-97a1-d9415ce8b6f1",
+      "url": "https://chatgpt.com/c/6a999e48-1f4c-83eb-97a1-d9415ce8b6f1",
+      "title": "Nortropic Seam-Gap Watch",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-054/conversation.md",
+          "sha256": "ca73ff6ba3527a5fec3e44713f262549b3736eb46a86247bb28f36639573f44f",
+          "source_sha256": "a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+          "captured_at": "2026-09-11",
+          "message_count": 143,
+          "adapter": "data-layer",
+          "verified": false,
+          "verify_detail": "message numbering not contiguous 1..143: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]…"
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": [
+        {
+          "at": "2026-09-11",
+          "stage": "verify",
+          "detail": "message numbering not contiguous 1..143: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]…"
+        }
+      ]
+    },
+    {
+      "source_id": "CONV-055",
+      "conversation_key": "chatgpt.com/6a9a8b33-96b0-83eb-979f-6d68389e82bd",
+      "url": "https://chatgpt.com/c/6a9a8b33-96b0-83eb-979f-6d68389e82bd",
+      "title": "Boris Agent Workflow Radar",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-055/conversation.md",
+          "sha256": "15acf939a4d6ca09619ecd6ae73b1f34728b904c72b9e387fded0e8d625c8d37",
+          "source_sha256": "55a330f8ed04ac8175c115cb728c54928742b1db55a2722ec75e982b85000e00",
+          "captured_at": "2026-09-11",
+          "message_count": 61,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "DOC-001",
+      "kind": "document",
+      "title": "Nortropic Frontier Delta.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000483481f58a4181619bdaae80 (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_07f7c7d924888191929a6c16cf2a203f of message 58f11e11-f37e-4abc-b3de-138b6fecccfb in conversation 6a804fc7-8458-83eb-9b9c-a702d8639f5e = CONV-015 assistant message 138; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — text identical except the platform's canvas fence ids (```text id=...) which the chat rendering drops; evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "första förvaltningen",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-001/document.txt",
+          "sha256": "219c876e3b818d53d0162b23108fb00d5abfd42c2d1eb9667519abed7baa08e7",
+          "byte_length": 14984,
+          "line_count": 821,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-015",
+          "messages": "138"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source_id": "DOC-002",
+      "kind": "document",
+      "title": "Skapa Kommunen.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000c1d8820c87a2f2953eee005a (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_7b61a11caa28819196941da1c6b992d7 of message b54d4441-8628-41a7-ad19-76e9654ec775 in conversation 6a8d28df-6df0-83ed-ad33-645de2094295 = CONV-005 assistant message 68; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — text byte-equal to the message after strip; evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "nybörjarnivå",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-002/document.txt",
+          "sha256": "6c3116faccb21b2700ddd3c56485cf067d44f8cebf5e78fee857bdd22f5df6bf",
+          "byte_length": 5097,
+          "line_count": 25,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-005",
+          "messages": "68"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source_id": "DOC-003",
+      "kind": "document",
+      "title": "Bevaka Nortropic-relevanta agentbyggen.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000a974824689fa90940a6467b4 (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_6a3b447cccf08191a67c6a881996db34 of message 7c7a213c-4d3f-4ec9-b6e3-be6ea36d8c64 in conversation 6a92c6bc-0d8c-83eb-815e-3e4eafba0a95 = CONV-001 assistant message 64; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — text identical except the platform's canvas fence ids (```text id=...) which the chat rendering drops; evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "samling brainstorm",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-003/document.txt",
+          "sha256": "2632b4ac2b27d34573c0c09351ac2af6d86f0478fd611e03fae3df5ae0cc195c",
+          "byte_length": 17283,
+          "line_count": 823,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-001",
+          "messages": "64"
+        }
+      ],
       "errors": []
     }
   ],

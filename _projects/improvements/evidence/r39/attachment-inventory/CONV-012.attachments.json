@@ -1,0 +1,21 @@
+{
+ "conversation_id": "6a8d5b27-ee50-83eb-afba-a04298552052",
+ "source_id": "CONV-012",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "Inklistrad markdown.md",
+   "file_id": "file_000000009fe48243ad19e061dbf6cbe5",
+   "name": "Inklistrad markdown.md",
+   "mime_type": "text/markdown",
+   "size_bytes": 15551
+  }
+ ],
+ "distinct_file_ids": [
+  "file_000000009fe48243ad19e061dbf6cbe5"
+ ],
+ "declared_count": 1,
+ "exportLen": 104796,
+ "sha256": "77accd7a755f94e15433342e1deb0e35863a425bc2568d1e497a37e7d28b93a7"
+}
