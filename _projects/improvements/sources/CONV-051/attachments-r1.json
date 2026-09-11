@@ -15,8 +15,8 @@
     "mentioned_paths": 0,
     "cite_kinds": {}
   },
-  "reconciliation": "UNKNOWN",
-  "full_source_capture": "UNKNOWN",
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
   "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
   "attachments": [
     {

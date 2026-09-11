@@ -1,0 +1,44 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-012",
+  "revision": 3,
+  "source_path": "_projects/improvements/sources/CONV-012/conversation-r3.md",
+  "source_sha256": "c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+  "declared_count": 1,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 7,
+    "filecite_turns": 7,
+    "upload_phrases": 0,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "file": 7,
+      "search": 22,
+      "view": 11
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-012-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "a65d8841874f145de528859d0e9e8833c41f1fbc1473a3a111e3eaba18a78b89",
+      "artifact_path": "_projects/improvements/sources/CONV-012/attachments/ATT-012-001-a65d8841874f.md",
+      "byte_length": 15551,
+      "registered_at": "2026-09-11",
+      "original_filename": "Inklistrad markdown.md",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/markdown",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_000000009fe48243ad19e061dbf6cbe5",
+      "platform_declared_size_bytes": 15551,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_000000009fe48243ad19e061dbf6cbe5, which the data-layer export of conversation 6a8d5b27-ee50-83eb-afba-a04298552052 lists in message(s) 1; sha256 a65d8841874f145de528859d0e9e8833c41f1fbc1473a3a111e3eaba18a78b89 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Inklistrad markdown.md', content-type 'text/markdown; charset=utf-8'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-007",
+  "revision": 3,
+  "source_path": "_projects/improvements/sources/CONV-007/conversation-r3.md",
+  "source_sha256": "bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+  "declared_count": 3,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 3 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 71,
+    "filecite_turns": 65,
+    "upload_phrases": 4,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "academia": 1,
+      "file": 71,
+      "search": 57,
+      "view": 10
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-007-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "c5c98ecdb358b91b3ae8278ac638cdaf3d80cbd236279d7b49120cbb6ec2baf1",
+      "artifact_path": "_projects/improvements/sources/CONV-007/attachments/ATT-007-001-c5c98ecdb358.md",
+      "byte_length": 32514,
+      "registered_at": "2026-09-11",
+      "original_filename": "Inklistrad markdown(1).md",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/markdown",
+      "message_binding": "Meddelande 60",
+      "platform_file_id": "file_00000000f598820abf09cc4eb2477b1a",
+      "platform_declared_size_bytes": 32514,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000f598820abf09cc4eb2477b1a, which the data-layer export of conversation 6a92b1a9-eb88-83ed-9fec-a3fbbdd69def lists in message(s) 60; sha256 c5c98ecdb358b91b3ae8278ac638cdaf3d80cbd236279d7b49120cbb6ec2baf1 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Inklistrad markdown(1).md', content-type 'text/markdown; charset=utf-8'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    },
+    {
+      "attachment_id": "ATT-007-002",
+      "ordinal": 2,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "73ecb6fb7b87aeeadf342d3ca10c56a437d0b8d34b1269cd3d56c020d9085f07",
+      "artifact_path": "_projects/improvements/sources/CONV-007/attachments/ATT-007-002-73ecb6fb7b87.md",
+      "byte_length": 11713,
+      "registered_at": "2026-09-11",
+      "original_filename": "Inklistrad markdown(2).md",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/markdown",
+      "message_binding": "Meddelande 71",
+      "platform_file_id": "file_0000000046e48243a02e6185821b4c16",
+      "platform_declared_size_bytes": 11713,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_0000000046e48243a02e6185821b4c16, which the data-layer export of conversation 6a92b1a9-eb88-83ed-9fec-a3fbbdd69def lists in message(s) 71; sha256 73ecb6fb7b87aeeadf342d3ca10c56a437d0b8d34b1269cd3d56c020d9085f07 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Inklistrad markdown(2).md', content-type 'text/markdown; charset=utf-8'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    },
+    {
+      "attachment_id": "ATT-007-003",
+      "ordinal": 3,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "09fb84b842ffd46a77d8922621cebdddab9e91182975dd464eed86c2bebab6c1",
+      "artifact_path": "_projects/improvements/sources/CONV-007/attachments/ATT-007-003-09fb84b842ff.md",
+      "byte_length": 183527,
+      "registered_at": "2026-09-11",
+      "original_filename": "Inklistrad markdown(4).md",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/markdown",
+      "message_binding": "Meddelande 315",
+      "platform_file_id": "file_00000000fe2c81f48ca45d84a820d79c",
+      "platform_declared_size_bytes": 183527,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000fe2c81f48ca45d84a820d79c, which the data-layer export of conversation 6a92b1a9-eb88-83ed-9fec-a3fbbdd69def lists in message(s) 315; sha256 09fb84b842ffd46a77d8922621cebdddab9e91182975dd464eed86c2bebab6c1 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Inklistrad markdown(4).md', content-type 'text/markdown; charset=utf-8'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}
