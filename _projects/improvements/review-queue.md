@@ -324,3 +324,12 @@ append_only: true
 - recommendation: ta med i v4.4.1: (a) rnd validate löser en kompilerings källbindningar mot den revision/cut den bands vid (source_set.cut / inventory_revision), inte mot senaste; (b) RND_SOURCE_SET_INCOMPLETE gäller bara kompileringar med source_set (IR v4) eller mäts mot inventory-revisionen vid kompileringen; mutanter: en ny källa efter cut får inte fälla en tidigare kompilering, en ändrad bunden revision ska fortfarande fälla; R39-commiten på arbetsgrenen improvements-r39 är gjord lokalt med --no-verify som vittne av fångsten (inte pushad, ingen PR) — ägarens explicita val krävs för att publicera med bypass eller efter v4.4.1
 - evidence: `git stash && rnd_contract.py validate --corpus .` → 0 FAIL på a1680869; med R39-arbetsträdet → 415 FAIL (koder ovan); hooks/pre-commit raderna om rnd-grinden
 - owner_judgment_required: yes
+
+## RQ-042
+- date: 2026-09-12
+- issue: Rättelser efter oberoende svepaudit AUDIT-74 (inventory-revision 74) och kompileringsaudit AUDIT-1 (improvements-r39): (a) FIND-008 — CONV-013:s två MATERIAL-bilagor ATT-013-006/007 (uppladdningarna 2026-08-24 19:38:58/19:41:04) stod som CAPTURED_REFERENCE_ONLY trots att R39 hämtat exakt deras plattforms-fil-id (listade i CONV-015:s inventering, msg 251/252) — nu RECOVERED_EXACT med identitetsproveniens (öppningsraden resp. Part 12-innehållet som CONV-013 msg 149 tillskriver dem); ägarerkännandet RQ-032 står kvar (deklarerat 5 mot observerat 7, KNOWN_UNRESOLVED); (b) FIND-009 — RQ-040:s siffra 28 (17+11) var 27 (17+10): den 28:e DISAGREE-källan i byggrapporten är CONV-013 (5 filer inventerade, golv 7), inte en noll-filskälla; (c) FIND-010 — DOC-001:s origin sade "identisk utom canvas-fence-id"; fem rader skiljer sig därtill (citeringschips i chatten mot renderade utm_source-länkar i filen), origin-texten rättad; (d) RQ-037:s evidensrad pekar på en icke-existerande fil `conversation-r1.md` — CONV-054 r1 ligger i `conversation.md`
+- affects: CONV-013, CONV-015, CONV-054
+- recommendation: rättelserna är införda i manifest/bilagemanifest; ny cut tas efter auditrundans append (cut binder sweep-audit.md); kompileringen improvements-r39 binds om mot den nya cut-identiteten
+- evidence: _projects/improvements/sweep-audit.md AUDIT-74 FIND-008..010; sources/CONV-013/attachments-r1.json (ATT-013-006/007 recovery_provenance); r39/build-report.json (reconcile per källa)
+- owner_judgment_required: no
+- owner_answer: none (mekaniska rättelser av redovisningsfel som auditen mätte; ingen ny ägarfråga)

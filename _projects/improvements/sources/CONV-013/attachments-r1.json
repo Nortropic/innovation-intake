@@ -146,7 +146,7 @@
     {
       "attachment_id": "ATT-013-006",
       "ordinal": 6,
-      "capture_status": "CAPTURED_REFERENCE_ONLY",
+      "capture_status": "RECOVERED_EXACT",
       "materiality": "MATERIAL",
       "original_filename": "Inklistrad text.txt",
       "platform_file_id": "file_00000000029881f6b64adaa932cbd86f",
@@ -154,12 +154,21 @@
       "declared_in_header": false,
       "basis": "AMR-004. CONV-013 msg 141/149/152 name this upload with its stamp and its opening line; the header's five chips are dated 20260825-20260826 and do not contain it. Reference identity recovered from RECOVERY_MANIFEST_NORTROPIC_DIGITAL.md; bytes NOT recovered.",
       "downstream_dependents": "RND-347/190/191",
-      "why_qualification_is_blocked": "The master plan's own propositions cannot be read. The only artifact carrying this content declares itself 'source-bound but not byte-identical', so promoting it to source would be the AMR-001 failure mode."
+      "why_qualification_is_blocked": "The master plan's own propositions cannot be read. The only artifact carrying this content declares itself 'source-bound but not byte-identical', so promoting it to source would be the AMR-001 failure mode.",
+      "content_sha256": "09f732ee196887014afae4b0ee9828bb1c82461a9983d31512ecbd16377b2538",
+      "artifact_path": "_projects/improvements/sources/CONV-013/attachments/ATT-013-006-09f732ee1968.txt",
+      "byte_length": 91829,
+      "registered_at": "2026-09-12",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/plain",
+      "message_binding": "Meddelande 141,149,152 (named there); bytes carried by platform file id file_00000000029881f6b64adaa932cbd86f",
+      "recovery_provenance": "R39 sweep-audit AUDIT-74 FIND-008: the row already carried platform_file_id file_00000000029881f6b64adaa932cbd86f (from RECOVERY_MANIFEST_NORTROPIC_DIGITAL.md); the same platform id is listed in CONV-015's data-layer inventory (msg 251, 'Inklistrad text(8).txt', 91 829 B) and its bytes were fetched 2026-09-11 via /backend-api/files/download/<id>?conversation_id=<CONV-015 id> (sha256 09f732ee… in-page and on disk, ledger r39/attachments/ledger.jsonl); identity to CONV-013's 2026-08-24 19:38:58 upload: CONV-013 msg 149 attributes to it the opening line 'Nortropic Digital — Master Plan (Universal Web Competency → Digital Department → Operating System)', which is the artifact's first line; evidence _projects/improvements/evidence/r39/att-probe-r39.json",
+      "byte_identity": "ESTABLISHED"
     },
     {
       "attachment_id": "ATT-013-007",
       "ordinal": 7,
-      "capture_status": "CAPTURED_REFERENCE_ONLY",
+      "capture_status": "RECOVERED_EXACT",
       "materiality": "MATERIAL",
       "original_filename": "Inklistrad text.txt",
       "platform_file_id": "file_00000000824081f99f6eb3a69f4ff014",
@@ -167,7 +176,16 @@
       "declared_in_header": false,
       "basis": "AMR-004, second upload; CONV-013 msg 149/152 bind it to Part 12/13.",
       "downstream_dependents": "RND-347/190/191",
-      "why_qualification_is_blocked": "same as ATT-013-006"
+      "why_qualification_is_blocked": "same as ATT-013-006",
+      "content_sha256": "31bf38d982a931417d423f136fd65d9904c72a4090668badf3d200cdf4926bd4",
+      "artifact_path": "_projects/improvements/sources/CONV-013/attachments/ATT-013-007-31bf38d982a9.txt",
+      "byte_length": 84052,
+      "registered_at": "2026-09-12",
+      "declared_kind": "uploaded_file",
+      "media_type": "text/plain",
+      "message_binding": "Meddelande 149,152 (named there); bytes carried by platform file id file_00000000824081f99f6eb3a69f4ff014",
+      "recovery_provenance": "R39 sweep-audit AUDIT-74 FIND-008: the row already carried platform_file_id file_00000000824081f99f6eb3a69f4ff014; the same platform id is listed in CONV-015's data-layer inventory (msg 252, 'Inklistrad text(9).txt', 84 052 B) and its bytes were fetched 2026-09-11 via /backend-api/files/download/<id>?conversation_id=<CONV-015 id> (sha256 31bf38d9… in-page and on disk, ledger r39/attachments/ledger.jsonl); identity to CONV-013's 2026-08-24 19:41:04 upload: CONV-013 msg 149 describes it as the continuation/final part carrying Part 12, coherence/freeze and the continued Digital Department plan — the artifact opens with sections V–W and carries 'Part 12 — EXECUTION ORDER'; evidence _projects/improvements/evidence/r39/att-probe-r39.json",
+      "byte_identity": "ESTABLISHED"
     }
   ],
   "owner_acknowledgement": {
