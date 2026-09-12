@@ -1,0 +1,44 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-046",
+  "revision": 1,
+  "source_path": "_projects/improvements/sources/CONV-046/conversation.md",
+  "source_sha256": "c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+  "declared_count": 1,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 10,
+    "filecite_turns": 9,
+    "upload_phrases": 0,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "file": 10,
+      "search": 1,
+      "view": 4
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-046-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "7cc5a2a0d321d3046e19121bd8e152dad123747987b86f1d9bdbc469094093bf",
+      "artifact_path": "_projects/improvements/sources/CONV-046/attachments/ATT-046-001-7cc5a2a0d321.jpeg",
+      "byte_length": 224380,
+      "registered_at": "2026-09-11",
+      "original_filename": "IMG_1167.jpeg",
+      "declared_kind": "image_asset_pointer",
+      "media_type": "image/jpeg",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_0000000042408210890aab23a2b7bc11",
+      "platform_declared_size_bytes": 224380,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_0000000042408210890aab23a2b7bc11, which the data-layer export of conversation 6a9d0b03-8368-83eb-90ff-d03f759d2bc6 lists in message(s) 1; sha256 7cc5a2a0d321d3046e19121bd8e152dad123747987b86f1d9bdbc469094093bf computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'IMG_1167.jpeg', content-type 'image/jpeg'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}

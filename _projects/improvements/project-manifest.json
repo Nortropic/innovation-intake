@@ -8,25 +8,25 @@
   "enumeration": {
     "method": "data-layer",
     "verified": true,
-    "declared_inventory_sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
-    "note": "Incremental re-sweep 2026-09-01: fresh cursor walk (30 items; 3 new vs the 27-item 2026-08-31 inventory)",
+    "declared_inventory_sha256": "dc3a509b11cf47212703c0a97d1f2fbf127bbadfc9d48fbf38faed3be5a4122e",
+    "note": "R39 discovery 2026-09-11: fresh cursor walk, 55 items (25 new vs r38's 30)",
     "evidence": {
-      "sha256": "453ebb5f1abeafe0c48ff96ad2fed39b19834cf8f31cc605e12f5e22bbd5171d",
+      "sha256": "dc3a509b11cf47212703c0a97d1f2fbf127bbadfc9d48fbf38faed3be5a4122e",
       "source": "project-discovery-cursor",
       "endpoint": "/backend-api/gizmos/g-p-6a86d9dcb8488191b03ee843bb19eb6c/conversations",
       "membership_scope": "path-scoped-project-endpoint",
       "membership_established_by": "project id in the request PATH",
       "terminal_signal": "cursor-absent",
-      "pages_walked": 1,
-      "collected": 30,
+      "pages_walked": 2,
+      "collected": 55,
       "duplicates_dropped": 0,
       "count_oracle": "absent — this endpoint sends no total; exhaustion is the proof",
-      "record": "_projects/improvements/enumeration-evidence-r30.json"
+      "record": "_projects/improvements/enumeration-evidence-r39.json"
     }
   },
   "project_status": "COMPLETE_WITH_OPEN_REVIEW",
-  "inventory_revision": 38,
-  "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
+  "inventory_revision": 74,
+  "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
   "inventory_history": [
     {
       "revision": 1,
@@ -255,6 +255,222 @@
       "inventory_sha256": "c433a6771d4dbca4e02f7a8d45e119328d32a0d6cc76a79440d2384f86759c73",
       "at": "2026-09-01",
       "note": "capture CONV-002 r2"
+    },
+    {
+      "revision": 39,
+      "inventory_sha256": "25aa1766bea32ccdd178a6b825b9863732758e0bfea9ebe4bf9a4b70d85587e3",
+      "at": "2026-09-11",
+      "note": "declare inventory (data-layer, 55 item(s))"
+    },
+    {
+      "revision": 40,
+      "inventory_sha256": "783554789ad7121c87cde37fef53b9b1a776351638e0a9314da4e44fc33aa8f0",
+      "at": "2026-09-11",
+      "note": "capture CONV-002 r3"
+    },
+    {
+      "revision": 41,
+      "inventory_sha256": "d2f68179b31b7df9e9fedafc60de97120ce36cb33debcf9cea92e4d09c8e55ea",
+      "at": "2026-09-11",
+      "note": "capture CONV-003 r3"
+    },
+    {
+      "revision": 42,
+      "inventory_sha256": "63b9d321753192104442a4c2a6956470d3e073bab857a926683afe661feeab4e",
+      "at": "2026-09-11",
+      "note": "capture CONV-006 r3"
+    },
+    {
+      "revision": 43,
+      "inventory_sha256": "388d61efb76d9dee0065f548819245990f380b431e20ccd8d42ade58cc288217",
+      "at": "2026-09-11",
+      "note": "capture CONV-007 r3"
+    },
+    {
+      "revision": 44,
+      "inventory_sha256": "ec6beab92d2a47c596c8a66d4dc680350e1ba28ffa2b1a3d6cfbe5fa0b8bf123",
+      "at": "2026-09-11",
+      "note": "capture CONV-012 r3"
+    },
+    {
+      "revision": 45,
+      "inventory_sha256": "70af2e04428ccf5e66c1c3826b19d06a130e6b7f07ebd765ed577afa0c486bc9",
+      "at": "2026-09-11",
+      "note": "capture CONV-028 r2"
+    },
+    {
+      "revision": 46,
+      "inventory_sha256": "ddc89d6186fa524a8105512acc4ec9082f60056215e76449686bb2e5cd9e2e68",
+      "at": "2026-09-11",
+      "note": "capture CONV-029 r2"
+    },
+    {
+      "revision": 47,
+      "inventory_sha256": "9d38f1cfb7dc3f6aa1740b2dafd25d07ec6ffd5b7106ac8290e3d324b96097b0",
+      "at": "2026-09-11",
+      "note": "capture CONV-031 r1"
+    },
+    {
+      "revision": 48,
+      "inventory_sha256": "4b630bdfd79747d41a39f9eb1524ab1ef4e5f59318487141c2467202eaa34ac5",
+      "at": "2026-09-11",
+      "note": "capture CONV-032 r1"
+    },
+    {
+      "revision": 49,
+      "inventory_sha256": "e6bbb22cb46d7b4117e501380b8b555ddd6cc17bdc84dc67dcdc65cd25b7f0d5",
+      "at": "2026-09-11",
+      "note": "capture CONV-033 r1"
+    },
+    {
+      "revision": 50,
+      "inventory_sha256": "718533b3ad0e5c10d38bbf4555e2403f749623c0535c47c0e6eb5ab6ed28527d",
+      "at": "2026-09-11",
+      "note": "capture CONV-034 r1"
+    },
+    {
+      "revision": 51,
+      "inventory_sha256": "303ab2ff0b1b1cca71e0dae9f4a841700a1c1d4521c7a91d8551f656b6e741fe",
+      "at": "2026-09-11",
+      "note": "capture CONV-035 r1"
+    },
+    {
+      "revision": 52,
+      "inventory_sha256": "1c156cc9ed5cf7d335d407095315378ee2ae73abf6b0b1fc2caf01f77713273e",
+      "at": "2026-09-11",
+      "note": "capture CONV-036 r1"
+    },
+    {
+      "revision": 53,
+      "inventory_sha256": "2d5cc4a827f5ff4f6fd9eb6997ae2a97e05b4551b813f6fc5dc843088790dc6d",
+      "at": "2026-09-11",
+      "note": "capture CONV-037 r1"
+    },
+    {
+      "revision": 54,
+      "inventory_sha256": "9e93417c2545914e266b8e8a329509f19daf3a7cdd839afc079200c27d0c3288",
+      "at": "2026-09-11",
+      "note": "capture CONV-038 r1"
+    },
+    {
+      "revision": 55,
+      "inventory_sha256": "5187828a5998ba6eb28b8963790e73fa427256f904fd01b5f13a3cf74ab3a953",
+      "at": "2026-09-11",
+      "note": "capture CONV-039 r1"
+    },
+    {
+      "revision": 56,
+      "inventory_sha256": "61d2305a82217439605aeb1260cab9414ca0be806e477afc5856d72f757d520b",
+      "at": "2026-09-11",
+      "note": "capture CONV-040 r1"
+    },
+    {
+      "revision": 57,
+      "inventory_sha256": "8e36e6f3ce93b9cf7537ad92377ff12e21f816a5826b37616f619fc270c1c7a7",
+      "at": "2026-09-11",
+      "note": "capture CONV-041 r1"
+    },
+    {
+      "revision": 58,
+      "inventory_sha256": "6d20705dc848dfab3b33d6d2df870f812684f24dd0bf84156e24be7c4dfb10f6",
+      "at": "2026-09-11",
+      "note": "capture CONV-042 r1"
+    },
+    {
+      "revision": 59,
+      "inventory_sha256": "52569cbb788cac10d2b1c57ec4c1e3d9878e5400c55c1525f75448945401fb81",
+      "at": "2026-09-11",
+      "note": "capture CONV-043 r1"
+    },
+    {
+      "revision": 60,
+      "inventory_sha256": "8697fec8ee04ab581ef21e733f9362f59a3becb0b0b4df79101818ad6c1a692f",
+      "at": "2026-09-11",
+      "note": "capture CONV-044 r1"
+    },
+    {
+      "revision": 61,
+      "inventory_sha256": "12367db29e0dfefb4e280815e5cce834a4060424eb4b3d37492e51c52f5cbd53",
+      "at": "2026-09-11",
+      "note": "capture CONV-045 r1"
+    },
+    {
+      "revision": 62,
+      "inventory_sha256": "0be72d70f6582929a8e1fb77ad553092ba41a40bfc9e2a9cb9d85903c29b248b",
+      "at": "2026-09-11",
+      "note": "capture CONV-046 r1"
+    },
+    {
+      "revision": 63,
+      "inventory_sha256": "f35bcfa5978f2f280de15299e2e4cc150133659358ba4ff46c4e8baf2f607434",
+      "at": "2026-09-11",
+      "note": "capture CONV-047 r1"
+    },
+    {
+      "revision": 64,
+      "inventory_sha256": "4f29b4e4984102cfd883d0c3614a6ed732ff4c40e2623f5f84293fa77137ec39",
+      "at": "2026-09-11",
+      "note": "capture CONV-048 r1"
+    },
+    {
+      "revision": 65,
+      "inventory_sha256": "fce4edda7108ef5db0962e1358379de7e2f33e95570952f67e7ccfcc2481a4d6",
+      "at": "2026-09-11",
+      "note": "capture CONV-049 r1"
+    },
+    {
+      "revision": 66,
+      "inventory_sha256": "6f738c2ae08b7e4e55f448b84a38b2979a0112796858e1f82d5c1310584e3821",
+      "at": "2026-09-11",
+      "note": "capture CONV-050 r1"
+    },
+    {
+      "revision": 67,
+      "inventory_sha256": "2f42c2251817fabbc3032eee1915ba47ae125205794a1711f4776a24bcad6696",
+      "at": "2026-09-11",
+      "note": "capture CONV-051 r1"
+    },
+    {
+      "revision": 68,
+      "inventory_sha256": "d15edcee668a2fedd1ddc85a0a2aa27ccd7b9e3f5469aeecc2b7c19c645516b3",
+      "at": "2026-09-11",
+      "note": "capture CONV-052 r1"
+    },
+    {
+      "revision": 69,
+      "inventory_sha256": "298161ac88dffa302a6b622387439c614085ac4151d219ad537756ab294370cb",
+      "at": "2026-09-11",
+      "note": "capture CONV-053 r1"
+    },
+    {
+      "revision": 70,
+      "inventory_sha256": "6ec98dc1f8073b4cb28bff980b71db57460a43bb6b477104234572478071e6f9",
+      "at": "2026-09-11",
+      "note": "capture CONV-054 r1"
+    },
+    {
+      "revision": 71,
+      "inventory_sha256": "509b29628ee3b69c10781405c04e8e6ce21a6d0b0c78b8233a224da67a9003f6",
+      "at": "2026-09-11",
+      "note": "capture CONV-055 r1"
+    },
+    {
+      "revision": 72,
+      "inventory_sha256": "703cecbaea6e28d375639ae0ebc40b5a5182b70999a43fcb63df58267e8ff384",
+      "at": "2026-09-11",
+      "note": "register-document DOC-001 (project_file)"
+    },
+    {
+      "revision": 73,
+      "inventory_sha256": "3d0f02f6064a02960c59d8899359deea9de5093401e5f3895acdb60f87406840",
+      "at": "2026-09-11",
+      "note": "register-document DOC-002 (project_file)"
+    },
+    {
+      "revision": 74,
+      "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+      "at": "2026-09-11",
+      "note": "register-document DOC-003 (project_file)"
     }
   ],
   "sources": [
@@ -285,7 +501,11 @@
           "message_count": 117,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-001.md"
         }
       ],
       "extracted_revision": 2,
@@ -304,7 +524,7 @@
       "url": "https://chatgpt.com/c/6a8e82a1-9acc-83ed-ab47-c4055063d6ec",
       "title": "OpenAI Codex migration and Claude Code canary",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -326,12 +546,23 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-002/conversation-r3.md",
+          "sha256": "e6230f5e15445f0c6c156be22b97497821bb598dae50852103390b9353a7b365",
+          "source_sha256": "5f5385ff767f8b98a0fe70fbabf3d47d75360df374ef77aaebc52420a2898d43",
+          "captured_at": "2026-09-11",
+          "message_count": 17,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 2,
+      "extracted_revision": 3,
       "routed_revision": 2,
       "ideas": [],
-      "extraction_note": "bevaknings-/assistanttråd (7 assistentmeddelanden, 0 användare); r2-deltat är en Codex 0.152.0-rapport — förblir råevidens per RQ-024-policyn",
+      "extraction_note": "R39 (2026-09-11): revision 3 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r2. Inga nya idépaketsepisoder per RQ-039. r38-not: bevaknings-/assistanttråd (7 assistentmeddelanden, 0 användare); r2-deltat är en Codex 0.152.0-rapport — förblir råevidens per RQ-024-policyn",
       "errors": []
     },
     {
@@ -340,7 +571,7 @@
       "url": "https://chatgpt.com/c/6a8d3c28-e464-83eb-8d9d-8545f9b683c1",
       "title": "Nortropic frontier delta highlights four material shifts",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -362,14 +593,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-003/conversation-r3.md",
+          "sha256": "087421c57fbe026140e50c749827c1000eea7cff60e2f5fe5da4a3396881e305",
+          "source_sha256": "193a3de7f371ce83378a2c577082f1e09c4d27f46b460df5c78e6d2a560522be",
+          "captured_at": "2026-09-11",
+          "message_count": 28,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 2,
+      "extracted_revision": 3,
       "routed_revision": 2,
       "ideas": [
         "owner-attention-inte-owner-stop"
       ],
-      "extraction_note": "r2-delta (msg 19): frontier-delta-rapport med Anthropic-korroboration av stopptaxonomin — levererad som CHAT-002-episod",
+      "extraction_note": "R39 (2026-09-11): revision 3 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r2. Inga nya idépaketsepisoder per RQ-039. r38-not: r2-delta (msg 19): frontier-delta-rapport med Anthropic-korroboration av stopptaxonomin — levererad som CHAT-002-episod",
       "errors": []
     },
     {
@@ -388,7 +630,11 @@
           "message_count": 4,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f0c63eaa0e141132db5f2106c479a3d0cbb8e2f026f1775e83a540d700e8404d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-004.md"
         }
       ],
       "extracted_revision": 1,
@@ -415,7 +661,11 @@
           "message_count": 79,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "04d38687d7b3f8ba47ec92c56c88db5a767ea9943961b64063462286d7193198",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-005.md"
         }
       ],
       "extracted_revision": 1,
@@ -433,7 +683,7 @@
       "url": "https://chatgpt.com/c/6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd",
       "title": "Agent Control-Room Watch",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -455,14 +705,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-006/conversation-r3.md",
+          "sha256": "6e5b621cfd83da1681f270dd38229ec77bf66628d854ab16b2a8897b5ff95d0f",
+          "source_sha256": "1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+          "captured_at": "2026-09-11",
+          "message_count": 26,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 2,
+      "extracted_revision": 3,
       "routed_revision": 2,
       "ideas": [
         "nortropic-planning-wall"
       ],
-      "extraction_note": "r2-delta (msg 16): Codex 0.152.0-reconnect-semantik → föreslagen degraded/reconcile-princip för Factory Room — levererad som CHAT-002-episod (oratificerad assistentsyntes, markerad så i briefen)",
+      "extraction_note": "R39 (2026-09-11): revision 3 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r2. Inga nya idépaketsepisoder per RQ-039. r38-not: r2-delta (msg 16): Codex 0.152.0-reconnect-semantik → föreslagen degraded/reconcile-princip för Factory Room — levererad som CHAT-002-episod (oratificerad assistentsyntes, markerad så i briefen)",
       "errors": []
     },
     {
@@ -471,7 +732,7 @@
       "url": "https://chatgpt.com/c/6a92b1a9-eb88-83ed-9fec-a3fbbdd69def",
       "title": "Rapportera Bootstrap status",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -493,14 +754,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-007/conversation-r3.md",
+          "sha256": "17338ef226f72b525c9988b2eee9c23859638958165fba073c142f30dedacd81",
+          "source_sha256": "bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+          "captured_at": "2026-09-11",
+          "message_count": 325,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 2,
+      "extracted_revision": 3,
       "routed_revision": 2,
       "ideas": [
         "claude-bootstrap-takeover-protocol"
       ],
-      "extraction_note": "r2-delta (msg 97-117): H035 R17→R26-exekveringslogg + två legitima ägarstopps-exemplar — kvar som råevidens; RQ-028 öppnad för relationen till owner-attention-inte-owner-stop",
+      "extraction_note": "R39 (2026-09-11): revision 3 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r2. Inga nya idépaketsepisoder per RQ-039. r38-not: r2-delta (msg 97-117): H035 R17→R26-exekveringslogg + två legitima ägarstopps-exemplar — kvar som råevidens; RQ-028 öppnad för relationen till owner-attention-inte-owner-stop",
       "errors": []
     },
     {
@@ -519,7 +791,11 @@
           "message_count": 187,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "7eb936b9889b6c4c97b274bf08da2e12a9a02ab88435e6ab66cd4f0bba6d0dbf",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-008.md"
         }
       ],
       "extracted_revision": 1,
@@ -546,7 +822,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "9002596bc79559ad300d10fb5be205e4792bcebe9170ee63846e0800ac1d7642",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-009.md"
         }
       ],
       "extracted_revision": 1,
@@ -571,7 +851,11 @@
           "message_count": 10,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "1a9529b500f497fd338798406e56ceda96049605a3ffa7718fb536d85c704e0e",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-010.md"
         }
       ],
       "extracted_revision": 1,
@@ -598,7 +882,11 @@
           "message_count": 18,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-011.md"
         }
       ],
       "extracted_revision": 1,
@@ -615,7 +903,7 @@
       "url": "https://chatgpt.com/c/6a8d5b27-ee50-83eb-afba-a04298552052",
       "title": "Nortropic Evolution Radar",
       "discovered_at": "2026-08-31",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -636,15 +924,26 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 3,
+          "path": "_projects/improvements/sources/CONV-012/conversation-r3.md",
+          "sha256": "a0033dd5102c7e5d25a85aae608225c31701b3501b1a94508dffacdcc32f588e",
+          "source_sha256": "c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+          "captured_at": "2026-09-11",
+          "message_count": 20,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 2,
+      "extracted_revision": 3,
       "routed_revision": 2,
       "ideas": [
         "nortropic-aquarium",
         "nortropic-evolution-foundations"
       ],
-      "extraction_note": "",
+      "extraction_note": "R39 (2026-09-11): revision 3 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r2. Inga nya idépaketsepisoder per RQ-039. r38-not: —",
       "errors": []
     },
     {
@@ -663,7 +962,11 @@
           "message_count": 227,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-013.md"
         }
       ],
       "extracted_revision": 1,
@@ -690,7 +993,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f0a6dc32d89e32f14af419d105d53db2e10fecc54d099ede26f904ec958f788c",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-014.md"
         }
       ],
       "extracted_revision": 1,
@@ -717,7 +1024,11 @@
           "message_count": 336,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "56245dd8ecb3f45c23164cbbb6f78f28c22bdbdef2bd66bf8d0f24484698d559",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-015.md"
         }
       ],
       "extracted_revision": 1,
@@ -748,7 +1059,11 @@
           "message_count": 128,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-016.md"
         }
       ],
       "extracted_revision": 1,
@@ -777,7 +1092,11 @@
           "message_count": 9,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "0d81a86b9def4aecf585cfa3348e18437fdffa49c02da6be3c24355124af5e89",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-017.md"
         }
       ],
       "extracted_revision": 1,
@@ -802,7 +1121,11 @@
           "message_count": 5,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "95124492b52cf5214b77ffd5cca88bfc9393861251265c07c78990403b9cda0e",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-018.md"
         }
       ],
       "extracted_revision": 1,
@@ -829,7 +1152,11 @@
           "message_count": 25,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "645b06bdbc2fc759f091cc750c1ed7e36b7e3a7302e6a8daab5d1b602d32feea",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-019.md"
         }
       ],
       "extracted_revision": 1,
@@ -856,7 +1183,11 @@
           "message_count": 117,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "dedc6742fa803a25e7f9703532aceba6c683fbabc71824ae7eeff9a01ebede9f",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-020.md"
         }
       ],
       "extracted_revision": 1,
@@ -883,7 +1214,11 @@
           "message_count": 2,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "7eb488b8c9047c130603b9b0ef4612cac9a5acdebedf82a1a9d7578eb13367a4",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-021.md"
         }
       ],
       "extracted_revision": 1,
@@ -910,7 +1245,11 @@
           "message_count": 35,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "d292382abf50f3de0fb9b58240c4ef8332868ce8c5d574f262cb0e3dc63b36c7",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-022.md"
         }
       ],
       "extracted_revision": 1,
@@ -937,7 +1276,11 @@
           "message_count": 75,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "ab498b8587845112989df7e329d72a2b4922cceaf69e72ae9eaeeebf4cabafcf",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-023.md"
         }
       ],
       "extracted_revision": 1,
@@ -964,7 +1307,11 @@
           "message_count": 26,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "d27178d71a3a88714601168c4379b0b99bc49a402effbd8d11d7b11f8b1b2c3d",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-024.md"
         }
       ],
       "extracted_revision": 1,
@@ -991,7 +1338,11 @@
           "message_count": 8,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "ad80e48b6ca123e2010b200f9ea5319ac70e8156d2ae1bb6f8f5a84af898e17f",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-025.md"
         }
       ],
       "extracted_revision": 1,
@@ -1018,7 +1369,11 @@
           "message_count": 6,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "062a64e2802e0b30edaaf9a8a6c8e343252ee3dc0114d5bf3f11374cc5b159f7",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-026.md"
         }
       ],
       "extracted_revision": 1,
@@ -1045,7 +1400,11 @@
           "message_count": 9,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "6b3a302d22eb76a66b89d458af717a937de627618e67a37b687e37dbe0ec4f22",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-027.md"
         }
       ],
       "extracted_revision": 1,
@@ -1062,7 +1421,7 @@
       "url": "https://chatgpt.com/c/6a96d48e-dc88-83ed-af6b-ca63fa519441",
       "title": "Grok Bot-delta",
       "discovered_at": "2026-09-01",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -1074,12 +1433,23 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-028/conversation-r2.md",
+          "sha256": "33274d35dd0563ec6ed5f9aba10da2c4406c0aadc687b0a69fad6e8f7e548bed",
+          "source_sha256": "8aee2c23e04a50609bcdc49fc0abefeb94f26d9ec25e2306cf3f4bc8636666f4",
+          "captured_at": "2026-09-11",
+          "message_count": 82,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
+      "extracted_revision": 2,
       "routed_revision": 1,
       "ideas": [],
-      "extraction_note": "Grok Bot-delta: assistentsyntes (fyra koncept + ADOPT/REJECT-tabell) utan explicit ägaradoption i tråden — per RQ-024-policyn paketeras den inte; ägarbeslut i tråden (strategi msg 9/11, v4-ordern msg 37) är bevarade i rå och v4 är redan exekverad; RQ-027 öppnad för koncepten",
+      "extraction_note": "R39 (2026-09-11): revision 2 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r1. Inga nya idépaketsepisoder per RQ-039. r38-not: Grok Bot-delta: assistentsyntes (fyra koncept + ADOPT/REJECT-tabell) utan explicit ägaradoption i tråden — per RQ-024-policyn paketeras den inte; ägarbeslut i tråden (strategi msg 9/11, v4-ordern msg 37) är bevarade i rå och v4 är redan exekverad; RQ-027 öppnad för koncepten",
       "errors": []
     },
     {
@@ -1088,7 +1458,7 @@
       "url": "https://chatgpt.com/c/6a970273-24f0-83eb-b033-ee199e96d345",
       "title": "Nortropic Market Radar",
       "discovered_at": "2026-09-01",
-      "state": "COMPLETE",
+      "state": "EXTRACTED",
       "revisions": [
         {
           "revision": 1,
@@ -1100,14 +1470,25 @@
           "adapter": "data-layer",
           "verified": true,
           "verify_detail": ""
+        },
+        {
+          "revision": 2,
+          "path": "_projects/improvements/sources/CONV-029/conversation-r2.md",
+          "sha256": "294add2ee2d496ed6b6ee57b00660c088c686e6774afdf0431b2237f69825891",
+          "source_sha256": "b3d8456712525620b8ef45253626b5d1ff7b6a1989147cca541acb5816c72a73",
+          "captured_at": "2026-09-11",
+          "message_count": 51,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
         }
       ],
-      "extracted_revision": 1,
+      "extracted_revision": 2,
       "routed_revision": 1,
       "ideas": [
         "nortropic-function-intake"
       ],
-      "extraction_note": "",
+      "extraction_note": "R39 (2026-09-11): revision 2 är den IR v4-kompileringen improvements-r39 binder (alla turer i ledger/poster); r38-leveransen står oförändrad — episoderna är hashlänkade till r1. Inga nya idépaketsepisoder per RQ-039. r38-not: —",
       "errors": []
     },
     {
@@ -1127,7 +1508,11 @@
           "message_count": 18,
           "adapter": "data-layer",
           "verified": true,
-          "verify_detail": ""
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-030.md"
         }
       ],
       "extracted_revision": 1,
@@ -1137,7 +1522,1424 @@
       ],
       "extraction_note": "",
       "errors": []
+    },
+    {
+      "source_id": "CONV-031",
+      "conversation_key": "chatgpt.com/6aa3d42d-f684-83ed-8b78-888c72dc9ae2",
+      "url": "https://chatgpt.com/c/6aa3d42d-f684-83ed-8b78-888c72dc9ae2",
+      "title": "Nortropics syfte",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-031/conversation.md",
+          "sha256": "7b7eb5aa48fd860042da69da0b11f317ff8a82143c8d51979ed844b7a23d75f8",
+          "source_sha256": "ed5307132a9ab012d6d6719330fb63d164bb970887e70ba35688d1cdd21467af",
+          "captured_at": "2026-09-11",
+          "message_count": 29,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-032",
+      "conversation_key": "chatgpt.com/6a9c2a34-7c84-83eb-8971-4e844f4a7b8b",
+      "url": "https://chatgpt.com/c/6a9c2a34-7c84-83eb-8971-4e844f4a7b8b",
+      "title": "Claude/Codex Workflow Watch",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-032/conversation.md",
+          "sha256": "1e1d8117df156db89d758ba3e0bfb162f444e5be19ebacd03aec9a085800472a",
+          "source_sha256": "50d17341b3d516630d8f65b7e091a04f43376faadbfae2fd19e0661947107fcd",
+          "captured_at": "2026-09-11",
+          "message_count": 32,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-033",
+      "conversation_key": "chatgpt.com/6a97c656-e1b0-83eb-9371-22859858db7a",
+      "url": "https://chatgpt.com/c/6a97c656-e1b0-83eb-9371-22859858db7a",
+      "title": "Grok Bot-delta",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-033/conversation.md",
+          "sha256": "813d12645b01e4584fd34084fda66b56625c2915a88f9594708e514723cb21bb",
+          "source_sha256": "8aafdd65a783bd9a9b26f30bbb98a7cbe0dea63e8e88d51d7d8b708466aafe91",
+          "captured_at": "2026-09-11",
+          "message_count": 6,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-034",
+      "conversation_key": "chatgpt.com/6aa1785a-912c-83eb-adf2-a3d4041a217b",
+      "url": "https://chatgpt.com/c/6aa1785a-912c-83eb-adf2-a3d4041a217b",
+      "title": "Brainstorma filsystem",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-034/conversation.md",
+          "sha256": "d27a8ac3aa28dd88fd927f4dd4ed0ca0b68ae07ca4a9072438a38b45e4c2387c",
+          "source_sha256": "9c35dc86cb3198a68ace7f61b7d0ed5a71ba116d4e81f2d3a46d255bf1c9c91d",
+          "captured_at": "2026-09-11",
+          "message_count": 3,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-035",
+      "conversation_key": "chatgpt.com/6aa082e2-c888-83eb-bff0-9c0177335fd5",
+      "url": "https://chatgpt.com/c/6aa082e2-c888-83eb-bff0-9c0177335fd5",
+      "title": "Brainstorma Jake Van Clief",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-035/conversation.md",
+          "sha256": "670092e4a9ce09378b77fa6eab0772561fbc934c3230ccf3920489b1845152a8",
+          "source_sha256": "ce93199ed8b90e497f87556a67d80574706e9c3e3a08102f20f7eed3fba2b1b4",
+          "captured_at": "2026-09-11",
+          "message_count": 38,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-036",
+      "conversation_key": "chatgpt.com/6aa067d0-1e88-83eb-987b-e8c6d2d41549",
+      "url": "https://chatgpt.com/c/6aa067d0-1e88-83eb-987b-e8c6d2d41549",
+      "title": "Utforska Datadog Kubernetes",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-036/conversation.md",
+          "sha256": "82f069a151f01e211ff41ec1c5be98c53028691902adbdd84915ca75c82f2e88",
+          "source_sha256": "7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+          "captured_at": "2026-09-11",
+          "message_count": 37,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-037",
+      "conversation_key": "chatgpt.com/6aa0458b-6bcc-83eb-a5a8-d0b963679ea4",
+      "url": "https://chatgpt.com/c/6aa0458b-6bcc-83eb-a5a8-d0b963679ea4",
+      "title": "Brainstorma",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-037/conversation.md",
+          "sha256": "d287b07e02ef4d90e4a38fcbdc150fd45dea0d4f58f9280aacd1ea9e0e3aa2a8",
+          "source_sha256": "3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+          "captured_at": "2026-09-11",
+          "message_count": 15,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-038",
+      "conversation_key": "chatgpt.com/6a9fada9-29f8-83eb-a01a-5e978bf57d29",
+      "url": "https://chatgpt.com/c/6a9fada9-29f8-83eb-a01a-5e978bf57d29",
+      "title": "Brainstorming",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-038/conversation.md",
+          "sha256": "451c83b7a94a0aa35c8f21b7a085883d1a6b887f673b152853d32ca33201d4c6",
+          "source_sha256": "375da93c206f676484db0c2b7169f43dcf88e34c7eb3ba7223274be05931f6f9",
+          "captured_at": "2026-09-11",
+          "message_count": 5,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-039",
+      "conversation_key": "chatgpt.com/6a9fe3ca-be28-83eb-9fa6-646e23023033",
+      "url": "https://chatgpt.com/c/6a9fe3ca-be28-83eb-9fa6-646e23023033",
+      "title": "Sammanställ brainstormingschattar",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-039/conversation.md",
+          "sha256": "5969c8166587af4d508e23278985c0c061c049e0be8238d87bf0a3b37c338251",
+          "source_sha256": "b07ddd2db7bd8c843a69694ee2e638135197afef0a45cde36fb69d9474658938",
+          "captured_at": "2026-09-11",
+          "message_count": 8,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-040",
+      "conversation_key": "chatgpt.com/6a9fb3a9-c6f4-83eb-9288-2a156ec3d84a",
+      "url": "https://chatgpt.com/c/6a9fb3a9-c6f4-83eb-9288-2a156ec3d84a",
+      "title": "Brainstorma självuppdatering",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-040/conversation.md",
+          "sha256": "1ed3ca9fae5e57561deaf22fa6523d0027bba5d46498dbdd71377e310d8bfbab",
+          "source_sha256": "cf4273ec9d4dc7a84d54ea622da61c35d5a0490939781d4a6451f8793efb8d53",
+          "captured_at": "2026-09-11",
+          "message_count": 73,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-041",
+      "conversation_key": "chatgpt.com/6a9ec9bd-0a38-83eb-b792-5db45b2678f9",
+      "url": "https://chatgpt.com/c/6a9ec9bd-0a38-83eb-b792-5db45b2678f9",
+      "title": "Informationsarkitektur och nootropika",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-041/conversation.md",
+          "sha256": "8dd5c3be33e4808ec18d2f45dafc60de888aabaf7f7ed5380c683559d18c29c1",
+          "source_sha256": "a00c51aa60c68c45da5435bba6cc202fba574e16753a144203c4e8dcd1bff2d9",
+          "captured_at": "2026-09-11",
+          "message_count": 20,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-042",
+      "conversation_key": "chatgpt.com/6a9e6cbe-5eac-83eb-a649-9bc2fb8eaeba",
+      "url": "https://chatgpt.com/c/6a9e6cbe-5eac-83eb-a649-9bc2fb8eaeba",
+      "title": "Definiera Notropica autonomi",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-042/conversation.md",
+          "sha256": "e98de6ef01b53f8de073c7b787e21f6c2113eb6268ac14799a5a5c989984f2c4",
+          "source_sha256": "d16208d4e16ea4e6c11ec02274aa66f5d27773f00c2743bffbd6110569f44684",
+          "captured_at": "2026-09-11",
+          "message_count": 37,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-043",
+      "conversation_key": "chatgpt.com/6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e",
+      "url": "https://chatgpt.com/c/6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e",
+      "title": "Brainstorma",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-043/conversation.md",
+          "sha256": "bd7533b0355e782e38b9d4d4592e06fbb0e03b1f4621a65ae0571723fc6a496e",
+          "source_sha256": "92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-044",
+      "conversation_key": "chatgpt.com/6a9948f8-91d8-83ed-a3fb-e81a5d7410c3",
+      "url": "https://chatgpt.com/c/6a9948f8-91d8-83ed-a3fb-e81a5d7410c3",
+      "title": "Brainstorma hårdvarusetsning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-044/conversation.md",
+          "sha256": "21da48bdf570d13dc4115f8ecbe16547780a30755ced0a481bbfc73e0117a063",
+          "source_sha256": "57213beb6737a072808e2e310ea9ab48208bf70e565622c537a3546b97caa411",
+          "captured_at": "2026-09-11",
+          "message_count": 22,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-045",
+      "conversation_key": "chatgpt.com/6a9d0cbf-42c0-83eb-9e01-95ff5d3414a5",
+      "url": "https://chatgpt.com/c/6a9d0cbf-42c0-83eb-9e01-95ff5d3414a5",
+      "title": "Brainstorma företagsnamn",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-045/conversation.md",
+          "sha256": "f9746970778f2d3250b98d573ee4c7784ef8efa2820a20b1795665a15d9fa02e",
+          "source_sha256": "7a9f988fb1a7b730eab6cc8740cd8b09967eeeada566341a3e1b52cecda5baae",
+          "captured_at": "2026-09-11",
+          "message_count": 16,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-046",
+      "conversation_key": "chatgpt.com/6a9d0b03-8368-83eb-90ff-d03f759d2bc6",
+      "url": "https://chatgpt.com/c/6a9d0b03-8368-83eb-90ff-d03f759d2bc6",
+      "title": "Brainstorma Codexplattformen",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-046/conversation.md",
+          "sha256": "407aece7f08952223ae2615800c6ffec86b1b87b4db331743767b6cedad977a9",
+          "source_sha256": "c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-047",
+      "conversation_key": "chatgpt.com/6a9c70cf-3398-83ed-8496-d7503e0830b1",
+      "url": "https://chatgpt.com/c/6a9c70cf-3398-83ed-8496-d7503e0830b1",
+      "title": "Brainstorma Sam Altman startup",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-047/conversation.md",
+          "sha256": "c97aedf0bcc5dfc5f179b7e7c6628e45ab7f69d5094cf7cc5401f02133dfb15f",
+          "source_sha256": "1b759d6cda776fd038ca5795027a18467f85c3a72e163c96ef24daae6c1af6e5",
+          "captured_at": "2026-09-11",
+          "message_count": 10,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-048",
+      "conversation_key": "chatgpt.com/6a9c5f19-3780-83eb-b3c8-0810ec00880f",
+      "url": "https://chatgpt.com/c/6a9c5f19-3780-83eb-b3c8-0810ec00880f",
+      "title": "Brainstorma Instagramkonto",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-048/conversation.md",
+          "sha256": "b4af6cb7107cbbf9a9875780c43b0a8ff6c8ef5fec372c9674f00a3340e33f38",
+          "source_sha256": "10521391293a18dd34215b0825ef9932da40fb77290c7fd5370b606dd6c2bf1e",
+          "captured_at": "2026-09-11",
+          "message_count": 4,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-049",
+      "conversation_key": "chatgpt.com/6a9c3a1e-acb4-83ed-88a1-b1fa95dc3c26",
+      "url": "https://chatgpt.com/c/6a9c3a1e-acb4-83ed-88a1-b1fa95dc3c26",
+      "title": "Nortropic familjekarta Granskning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-049/conversation.md",
+          "sha256": "754864c7e0ea0e323aaff8bcbb15bab9e37bc0bd60afd1444b0b07f04baff9d9",
+          "source_sha256": "60136ecb22acdccc9a76d1ceeb65117fd032540586354bb36170bc0f7c6413cd",
+          "captured_at": "2026-09-11",
+          "message_count": 29,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-050",
+      "conversation_key": "chatgpt.com/6a9bfcef-5390-83ed-818b-9b7198d095d9",
+      "url": "https://chatgpt.com/c/6a9bfcef-5390-83ed-818b-9b7198d095d9",
+      "title": "Forska om Evolution Plane",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-050/conversation.md",
+          "sha256": "64ab062dabff2e4d587a53edbd7b393f302b302ffe20c027798b9f12cf8145b8",
+          "source_sha256": "6f2f4d7de0b1bbeb72226269d3a0500f5b7d808ff2f6bd2e6adddc1ede102081",
+          "captured_at": "2026-09-11",
+          "message_count": 16,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-051",
+      "conversation_key": "chatgpt.com/6a9be39e-4d24-83ed-9f41-7525718eb8f5",
+      "url": "https://chatgpt.com/c/6a9be39e-4d24-83ed-9f41-7525718eb8f5",
+      "title": "Brainstorma Capability Atlas",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-051/conversation.md",
+          "sha256": "9cf54b3a0078606809340399342b6107a1224ebc0c50ac436bacaaa341962140",
+          "source_sha256": "3123c495555f33b3e8c2e7e97820e237d6958784c3009c3493aa23fd793e7ed2",
+          "captured_at": "2026-09-11",
+          "message_count": 2,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-052",
+      "conversation_key": "chatgpt.com/6a9b0652-9764-83eb-81b8-45e2b03047ab",
+      "url": "https://chatgpt.com/c/6a9b0652-9764-83eb-81b8-45e2b03047ab",
+      "title": "Brainstorma Agentic OS",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-052/conversation.md",
+          "sha256": "87a0ed92a52b8d6fcea243cc82aeb6559462c66cdeed5046e32c14ef732ccb0e",
+          "source_sha256": "a5c7c1c709bb9cffc81abbeeb16c61f987ae9ae819ffda85c7c8d99fb717216b",
+          "captured_at": "2026-09-11",
+          "message_count": 4,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-053",
+      "conversation_key": "chatgpt.com/6a9af05d-9144-83eb-bbe9-b81f700f6194",
+      "url": "https://chatgpt.com/c/6a9af05d-9144-83eb-bbe9-b81f700f6194",
+      "title": "Brainstorma AIövervakning",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-053/conversation.md",
+          "sha256": "2f5b35a0683ee286c12a70ec0071a44931f3e970972210b473d8b8ec8ff81540",
+          "source_sha256": "816bd2f535312eb4f0bf609915d4687adcf9dfe404f2542b578bdbef91d0667e",
+          "captured_at": "2026-09-11",
+          "message_count": 23,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "CONV-054",
+      "conversation_key": "chatgpt.com/6a999e48-1f4c-83eb-97a1-d9415ce8b6f1",
+      "url": "https://chatgpt.com/c/6a999e48-1f4c-83eb-97a1-d9415ce8b6f1",
+      "title": "Nortropic Seam-Gap Watch",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-054/conversation.md",
+          "sha256": "ca73ff6ba3527a5fec3e44713f262549b3736eb46a86247bb28f36639573f44f",
+          "source_sha256": "a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+          "captured_at": "2026-09-11",
+          "message_count": 141,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": "",
+          "verified_unchanged_at": "2026-09-11",
+          "verified_unchanged_source_sha256": "a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+          "verified_unchanged_adapter": "data-layer",
+          "verified_unchanged_input": "CONV-054.md",
+          "reverification": {
+            "at": "2026-09-11",
+            "skill": "nortropic-intake v4.4.1 (SKILL_MAIN f015d226, PR #15)",
+            "previous_verdict": "message numbering not contiguous 1..143: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]…",
+            "basis": "RQ-037: the v4.4 verdict counted two header lines quoted inside message 131; v4.4.1 reads block-opening headers (141 contiguous) — the verdict is derived from the unchanged bytes (source_sha256 a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856), not asserted — message_count corrected 143→141 (the v4.4 count included the two quoted header lines)",
+            "previous_message_count": 143
+          }
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": [
+        {
+          "at": "2026-09-11",
+          "stage": "verify",
+          "detail": "message numbering not contiguous 1..143: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]…"
+        }
+      ]
+    },
+    {
+      "source_id": "CONV-055",
+      "conversation_key": "chatgpt.com/6a9a8b33-96b0-83eb-979f-6d68389e82bd",
+      "url": "https://chatgpt.com/c/6a9a8b33-96b0-83eb-979f-6d68389e82bd",
+      "title": "Boris Agent Workflow Radar",
+      "discovered_at": "2026-09-11",
+      "state": "VERIFIED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/CONV-055/conversation.md",
+          "sha256": "15acf939a4d6ca09619ecd6ae73b1f34728b904c72b9e387fded0e8d625c8d37",
+          "source_sha256": "55a330f8ed04ac8175c115cb728c54928742b1db55a2722ec75e982b85000e00",
+          "captured_at": "2026-09-11",
+          "message_count": 61,
+          "adapter": "data-layer",
+          "verified": true,
+          "verify_detail": ""
+        }
+      ],
+      "extracted_revision": 0,
+      "routed_revision": 0,
+      "ideas": [],
+      "extraction_note": "",
+      "errors": []
+    },
+    {
+      "source_id": "DOC-001",
+      "kind": "document",
+      "title": "Nortropic Frontier Delta.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000483481f58a4181619bdaae80 (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_07f7c7d924888191929a6c16cf2a203f of message 58f11e11-f37e-4abc-b3de-138b6fecccfb in conversation 6a804fc7-8458-83eb-9b9c-a702d8639f5e = CONV-015 assistant message 138; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — the saved text differs from the chat rendering in the platform's canvas fence ids (```text id=...) and in five lines where the chat shows citation-chip markers while the saved file carries rendered utm_source links (sweep-audit AUDIT-74 FIND-010; difflib ratio 0.964); evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "första förvaltningen",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-001/document.txt",
+          "sha256": "219c876e3b818d53d0162b23108fb00d5abfd42c2d1eb9667519abed7baa08e7",
+          "byte_length": 14984,
+          "line_count": 821,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-015",
+          "messages": "138"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source_id": "DOC-002",
+      "kind": "document",
+      "title": "Skapa Kommunen.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000c1d8820c87a2f2953eee005a (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_7b61a11caa28819196941da1c6b992d7 of message b54d4441-8628-41a7-ad19-76e9654ec775 in conversation 6a8d28df-6df0-83ed-ad33-645de2094295 = CONV-005 assistant message 68; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — text byte-equal to the message after strip; evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "nybörjarnivå",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-002/document.txt",
+          "sha256": "6c3116faccb21b2700ddd3c56485cf067d44f8cebf5e78fee857bdd22f5df6bf",
+          "byte_length": 5097,
+          "line_count": 25,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-005",
+          "messages": "68"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "source_id": "DOC-003",
+      "kind": "document",
+      "title": "Bevaka Nortropic-relevanta agentbyggen.txt",
+      "evidence_role": "project_file",
+      "origin": "ChatGPT project file file_00000000a974824689fa90940a6467b4 (project g-p-6a86d9dcb8488191b03ee843bb19eb6c, ProjectSave_6a3b447cccf08191a67c6a881996db34 of message 7c7a213c-4d3f-4ec9-b6e3-be6ea36d8c64 in conversation 6a92c6bc-0d8c-83eb-815e-3e4eafba0a95 = CONV-001 assistant message 64; bytes fetched 2026-09-11 via /backend-api/files/download, sha256 verified in-page and on disk; DERIVED_COPY_OF that message — text identical except the platform's canvas fence ids (```text id=...) which the chat rendering drops; evidence _projects/improvements/evidence/r39/project-files-r39.json)",
+      "use_anchor": "samling brainstorm",
+      "discovered_at": "2026-09-11",
+      "state": "CAPTURED",
+      "revisions": [
+        {
+          "revision": 1,
+          "path": "_projects/improvements/sources/DOC-003/document.txt",
+          "sha256": "2632b4ac2b27d34573c0c09351ac2af6d86f0478fd611e03fae3df5ae0cc195c",
+          "byte_length": 17283,
+          "line_count": 823,
+          "media_type": "text/plain",
+          "captured_at": "2026-09-11",
+          "adapter": "file",
+          "verified": true
+        }
+      ],
+      "used_in": [
+        {
+          "source_id": "CONV-001",
+          "messages": "64"
+        }
+      ],
+      "errors": []
     }
   ],
-  "finalized_at": "2026-09-01"
+  "finalized_at": "2026-09-01",
+  "source_cut_history": [
+    {
+      "at": "2026-09-11",
+      "cut_sha256": "5b0fc25cdc8c0e28cd3262a893df5e0996a59c448e3a8eacaf304c0b37744bbe",
+      "inventory_revision": 74,
+      "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+      "sources": 55,
+      "documents": 3,
+      "lines": [
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-001-38a0f13ab9b4.png 38a0f13ab9b4a55a8e7780337c3bff12a2811ccc5f5a13589651d03c2a8affe8",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-002-9a8c8c29c060.jpeg 9a8c8c29c06093e17f6f9314ae4cd183fa50fce5ca84e3d03ee933ba0d820fa2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-003-c3d7a8f3b414.jpeg c3d7a8f3b414dce1a461118084c779304471573bb2dcec24fda2553de96591ca",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-004-7165d88aeb7f.jpeg 7165d88aeb7f5e960156fca1d69bfeaae97758796d3e848ce5e4d3021704f1f5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-005-44ba8c9d5b68.jpeg 44ba8c9d5b68a195fe6d319ed7315f0491e16c4121010de51ed01e01e49e5af2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-006-2a007aa03de3.png 2a007aa03de3fc2339ccccdc97b949e983a4dd4312bc92f8d87bc535f65ea7d7",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-007-fc1ec097c889.png fc1ec097c889b021b900d05ca20ec41f4d219e669bf54e39c3574c83c211897f",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-008-f6c2b575ce69.png f6c2b575ce69e4ff32dd336986f97cea8a658756ac4c6d511cb596e3149d915c",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-009-28bafda3d393.jpeg 28bafda3d393399680ceeaee14e8c9c0514619e3b9d53bb34db22dc9f6d82c2a",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-010-ebc66dc6d473.png ebc66dc6d4734b8de5d8bfdd1ec2ebb822a6d591c2c5749d8a5a5f558a6a83c5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-021-6744deb4b7a8.png 6744deb4b7a8d7f07e7025fe8ca568ff21c475fc6a3c166f7963ca6371bf5ce0",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-022-6ae1d58b52f1.png 6ae1d58b52f1776de5955bfb3abb4293f0e4d30e5ed5bfa6f9e558edd0f6bb9b",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-023-f855bdf94279.png f855bdf94279bc17a94f5fb31ae5400f3f735bbd7cfa602a8e3341739ee21b50",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-024-f8afc9edd6fb.png f8afc9edd6fbde0e8d31271815647bf2d25565f73242d841cae06d57f11ca9e2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-025-72e638467388.png 72e63846738848b394e2cdb90c92ab74062c72b50e3b1abc0ce68160c4210db2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-026-fadfe45fc207.jpeg fadfe45fc2076feda8a81046c1049c7193d6c18ab30ff0dd61644a494e2ceed9",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-027-fc169568e397.png fc169568e397a9ec457e0007b921d31ce5b1109e38edaed18d4af094028308f5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-028-5175e9c0ec4d.jpeg 5175e9c0ec4de95d7bcfc44347327a8348eb830d06077f8b7ee3c2ecc2853671",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-029-08d266057440.jpeg 08d2660574400844a6053c945a93ba58e76ea665cb56083f64b808c575ef4ecb",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-030-52be7ee8a21b.jpeg 52be7ee8a21bad817ecc8bd68671016d89964dd808b54da00aed233165ae2c71",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-041-a5586a8936ce.jpeg a5586a8936cec6838252cb422da528c9fdd4cba1aa8aa6735e845035b3c743fd",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-042-c596bac600d4.png c596bac600d4732b0ef30d47baae1c3c34aee559e03dd3c83040741ecbb595dc",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-043-861a8854a9c1.jpeg 861a8854a9c1c0bd6755c00dba944c3fe952d3768f342aa5fc47817120ebd5d8",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-044-92899bdf57fd.jpeg 92899bdf57fdc69d221525b6090d5e895a8022ca064c21b31191bdffb05f5b91",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-045-fc114e948193.jpeg fc114e9481933b08e3fb835ade639de5801627208a47869d5e661d4bcde3c6ba",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-046-06a008ec5882.png 06a008ec58820e18a99ca0d2b95d10bf3c02fa3502a5b9e718ea05c0f7a29b7d",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-053-f02d5a15d73e.png f02d5a15d73e6004afe21fef349ac17b48d47c811b9063787c0069d1f310b2d7",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-055-5dfa86e09985.txt 5dfa86e099856631ca17c4c14a289704216e3bf3c0bf98a5a95935f1175fbc0d",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-001-1bd2fa62d998.jpeg 1bd2fa62d9982175b6b9b77d8626490879981c5959c956ba49a7dce1b8b06f36",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-002-6ed255aeb717.jpeg 6ed255aeb7172d05f72d192d0f998c02eab428bc072e6cb592478f67264ccab4",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-003-ea159bba3c1e.jpeg ea159bba3c1e0279acb0c7f910fbafd9dbf669582d1ecd97add8d7b2efcac6c5",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-004-aa2809c7c24f.jpeg aa2809c7c24fdb054b29aa6b181888c14a6bfb1f6605dd3d362e1b0c993884cd",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-005-531719fc61d7.png 531719fc61d77f762e55d593e0895549f9681a0190ebb5c65a364a52433d603d",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-006-2f231400cef5.png 2f231400cef5f287e4231d05d4414d4de15518895177eeea9391c6d31c0501f2",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-013-d258a21e1a7a.txt d258a21e1a7a3ea5eafaa87fbf7dbba27fb8227424d90f4eb9c2f34cc09390bc",
+        "ART _projects/improvements/sources/CONV-006/attachments/ATT-006-001-6be5496dce33.png 6be5496dce33dae24f802591a0f0aadc35a98a7bb367682d7917d83b87f76e84",
+        "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-001-c5c98ecdb358.md c5c98ecdb358b91b3ae8278ac638cdaf3d80cbd236279d7b49120cbb6ec2baf1",
+        "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-002-73ecb6fb7b87.md 73ecb6fb7b87aeeadf342d3ca10c56a437d0b8d34b1269cd3d56c020d9085f07",
+        "ART _projects/improvements/sources/CONV-011/attachments/ATT-011-001-902f55b27409.pdf 902f55b2740909d3b91d92ea5c911e17c6b662b0303ae1e0170a5f59783a12c4",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-001-09017f2e7fab.txt 09017f2e7fabb19a23ed51925b5208e841d97eb06fcae00d76f6e1f68e54e24c",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-002-2e941653f983.txt 2e941653f9838538df1fb8bdaa467428374fd2a26414ee7534ac39f13c2c85fb",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-003-28e38c7c292c.txt 28e38c7c292cf5d79546a25897d306f0425978c735feae1692174f7fa8d8fe5b",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-004-d35dc6ae4956.txt d35dc6ae4956c6fe9fe7feefac8623520c3364e4be84def84b7c44cfc3729c74",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-005-c6888abd23be.txt c6888abd23be0f2840a620a3f7d9f0f1d1f22497162cde3b5b6b9b6b79ac7eb5",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-001-11a659583faa.txt 11a659583faa7a3bf01992a82a5668e9c9662518b4e42d508d88a392dd6ae9b4",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-002-a0b3f38d0379.txt a0b3f38d0379cc6bb5ba786e5ba360f2372b260591c188166161bae041c4f901",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-003-fa5f31491d99.txt fa5f31491d99c07ce9a7acfabd20306761718981f1a792469d6ad53da582fc72",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-004-cd5c1538d380.txt cd5c1538d38045e142626bbaf700bbb5e4daf00844dc69da0fe398bf83185cc2",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-005-4e4c68a58246.txt 4e4c68a582468b4647c00cab0e0620923968e43984c8fa2ebdbde1224f3ffec6",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-008-09f732ee1968.txt 09f732ee196887014afae4b0ee9828bb1c82461a9983d31512ecbd16377b2538",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-009-9f93b1c37d45.txt 9f93b1c37d451c0fcf0e614ea0cfcd92745b66ce97ae8dfa0b676eb58b4cd8c1",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-010-31bf38d982a9.txt 31bf38d982a931417d423f136fd65d9904c72a4090668badf3d200cdf4926bd4",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-001-e3b8c3e8c9f5.txt e3b8c3e8c9f52fc72663d2f7bebc5d37877e4fc993c80a010800eb089f19c636",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-002-d58c00d7e7f6.txt d58c00d7e7f6e7833e4bdb9e6600c3b59663e19d792203032591b1f68d082218",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-003-59658e4dfd1b.txt 59658e4dfd1b6e2dc01d77c3c516b138714efd6a928b6695b5800551b3adcdb4",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-004-fd370aa2da70.txt fd370aa2da70a8dbe0fd12b8aae4272b2a62a0d140f2d794f96fb1d2b6942025",
+        "ART _projects/improvements/sources/CONV-022/attachments/ATT-022-004-2d8cbc39da76.tgz 2d8cbc39da762cc088ff170de24e9f3f2513de6c8ae58ba6003f4e34abc6e20d",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-001-b14cfd62dc9f.pdf b14cfd62dc9f857f98b491ab4b655067a5a927ff2d9773eb7c789b825d9f561d",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-002-9c16c7ea948b.pdf 9c16c7ea948b0d5fa9f00b8861ace752097d71f546987e43d56f3b1bbe7874c1",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-003-d757033e2f5f.pdf d757033e2f5fe04859e139f46f3518489f2127b1359149bfeec960f22c5b3562",
+        "ART _projects/improvements/sources/CONV-037/attachments/ATT-037-001-2dc47fd10d25.pdf 2dc47fd10d2580ac187887e227ce603ad60bea7867f54747c23174ad6cc6a389",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-001-d69509df63dd.png d69509df63dd5b8dcbebe88072951bde442899a99a21350bbe5917ce7e03408f",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-002-b66b4a119153.png b66b4a119153da68721ee59220709a22c6aca3492e41c4710c3677c739f0c7eb",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-003-08799dd5e902.png 08799dd5e902a6f1177d5647e4ba520a1b749e06590df30b752e93a91d1a6fd2",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-004-30401abc7848.png 30401abc7848df14eadb7a256baeb0b44a2ead1bf554792faea28093e3424217",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-005-883107d4812f.png 883107d4812f1e64e3a35957820bb638bd09f0a2305bb43faa2288617ee4fc55",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-006-6ddf78cf7c03.png 6ddf78cf7c035ec425c90fc581d8cb76dc59503f5d23a36e5931359c045c8b34",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-007-109cf46b6503.jpeg 109cf46b650312637750f42084bf004058d2f810a7b67937df9f3252b4ce5f37",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-008-36f5b30bb688.png 36f5b30bb6887f6ceeddad7b12348a7e6a6f004aefcdbb9970df6c4f5a46c7cf",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-009-6158f323f921.jpeg 6158f323f921a9026eec9ea0cbe363772e8f1b91c89859e394904522666af044",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-010-6f7de87577e0.png 6f7de87577e0dadbf28df884a2b81ceb282cae299b5680147b1dbc13be7858eb",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-011-89ff86b73c25.png 89ff86b73c252292427d14c5b0ddcc47b7e242a0fc5284954647c417195dce72",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-012-75ba14adc80c.jpeg 75ba14adc80cbaf2d18acec853926091095c5744e0d351e8785067d3acedccaf",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-013-8f1d8ff334ec.png 8f1d8ff334ec09d3b7810b109b024799e62569bc372572811df6fee89b7416b6",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-014-a8b1b04a3552.png a8b1b04a3552f6fad93108b6ff177a0e0766d1cea3364689a7dcc44cc48e6ea1",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-015-69f7d92b247c.png 69f7d92b247ca4c4ac2d3ad77942ef13e5276065dc590206bbd403e5d9ec1326",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-016-7a4f9ffff40f.png 7a4f9ffff40f98c17f7171cc3a6544ad41ee01cab94042c5dc7979b5fd927cad",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-017-5de2ebce7a4b.png 5de2ebce7a4b0efa1385a1351dfe355e4fd103a2b4034b9e44a90265bf5361aa",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-018-2af85300205a.jpeg 2af85300205a78a06593f64882e1b3850d58d4d328bf3b11f03807aa252d9c8c",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-019-618803752baa.png 618803752baab7c44fb933acbb22bc29b88dc65a6fdb6b86911c2b6fcd5263d0",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-001-e5ddd1ead3c8.jpeg e5ddd1ead3c80122e9af4b03cfe3f4f650b5188325cd9e8a098d4331b15469c8",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-002-53798584fb91.png 53798584fb9111a930535d8ed48090aa998f509b716f91aca020654f499fbd2b",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-003-0ec0bfa61ba8.jpeg 0ec0bfa61ba80173827609862d2ec689920163eafe89dfd9649aa30a6b1aa693",
+        "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-001-a821fc90ef44.jpeg a821fc90ef44d2d77e592f9c2ab189bdab24343125a990f0da39b6b115bbfdd9",
+        "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-002-24b569346a99.jpeg 24b569346a994af74fb4d347b2186d2915738ab57f481fe9e6ff6243a4c3ab0e",
+        "ART _projects/improvements/sources/CONV-046/attachments/ATT-046-001-7cc5a2a0d321.jpeg 7cc5a2a0d321d3046e19121bd8e152dad123747987b86f1d9bdbc469094093bf",
+        "ART _projects/improvements/sources/CONV-048/attachments/ATT-048-001-b4fe889f8f24.jpeg b4fe889f8f2456e05fc21eccfe3cc807ca64897bb329b328c2ac25d21f786b12",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-001-b9a312bfcd58.jpeg b9a312bfcd58ba23b912894269f25f9be7f65ea85271e2835d80dbe70a08f979",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-002-914c753f6d31.jpeg 914c753f6d31e029420f2f162fba8701aff14dfd79bc7b68d1c038467d363809",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-003-3b00954feb39.jpeg 3b00954feb39433cb31819ae89848d9dee901940a441ae26307c7365c067ae71",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-004-f2176b451251.jpeg f2176b4512511dce8009b9452ba367e8b7a65b3a0abd282182bb02220942c335",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-005-cf562d881184.jpeg cf562d881184d6d6e7d86b716f3ab83397c9c7a452eaac555bf25494ed251b92",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-006-c428b148aba6.jpeg c428b148aba63b7f219479eb74f71d68f7d458e0ecb0f3b6ce26057fe1991437",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-007-83098287fe95.jpeg 83098287fe955aa5a4712d2e812bd55e2aebfd5b84d89e67da1ead361f8df7ae",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-008-f9297661de1d.jpeg f9297661de1df20a35f5bbacae54b97400c09cacc283d2d2859dee6023e7fcec",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-001-5e18ab46df2a.jpeg 5e18ab46df2a1123dd60e513c180384c3ec5cd0d1f6fc5e15d063a241e88561b",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-002-2532bf9e31ee.jpeg 2532bf9e31ee0d49d4ee871682d9c8ff4a8d42d263e3b473de02f868ec92afea",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-003-2d243e4fd9ee.jpeg 2d243e4fd9eefe1717b27d9013f194207177f01aefb8983496b2fca96ea6d47d",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-004-aad3ab0049a7.md aad3ab0049a785c709e1805892c4d80d21ebb84de0ab269ed0440756d0657a6a",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-005-cde1b723de47.json cde1b723de4781dfa28de2dda641cb906972eb2e4aee9dfb8443b4c5da6a140c",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-006-aee95234f0d9.txt aee95234f0d9746e540baecebdeb818c5cc51dafa3b1436273c113332c4beef2",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-007-f51eb8b7e1f6.txt f51eb8b7e1f6712b02eda143c7c52c9938746e811813255eb1657c5b40e6be54",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-008-26c4725c7e9f.txt 26c4725c7e9fd38b72b81208488b8baba0e5f3036d4f0ef814d739455cf2b46c",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-009-1d2add27983d.txt 1d2add27983d1e602d500539913e7e67d2f8f244a2c126b1b31022040b86b35c",
+        "ATT _projects/improvements/sources/CONV-001/attachments-r2.json 0021e37f048e7206577e330bbd2b8b3e61ac69d047e52f8a1ef8d6efa7ad0a1f",
+        "ATT _projects/improvements/sources/CONV-005/attachments-r1.json 7fc7d742ee1311663a4fe7fa69ae35e6b618bd856927ceeca631cdf057d285ba",
+        "ATT _projects/improvements/sources/CONV-006/attachments-r2.json 3e5bea88359b9bbc94e3c6a211cb956040080ac2d3f3e486a6e5f1d474c5b730",
+        "ATT _projects/improvements/sources/CONV-007/attachments-r2.json 89968cf99eefae080355e202bd4756f4bcc0f8d8c5b22073ea79611b1aba2270",
+        "ATT _projects/improvements/sources/CONV-011/attachments-r1.json 5aaac4cf952b1bb8230b22c8c0a13ce7f177e7872df44634005ebb66d07776f5",
+        "ATT _projects/improvements/sources/CONV-012/attachments-r2.json 395a5df150a250da44df1c65306c1368e551978f0d3c7998c042c8b7a72c5234",
+        "ATT _projects/improvements/sources/CONV-013/attachments-r1.json 3f831b793a16681c6423426072d3906ce88f56352013e0bd70e3a00afc267a68",
+        "ATT _projects/improvements/sources/CONV-015/attachments-r1.json b7906a510c2c381eb4662c00997a0ada3ee8c03c5af1fc57ee22e6f526e127ba",
+        "ATT _projects/improvements/sources/CONV-016/attachments-r1.json da51cb5a77125f907b2a8e1232c471f8b0f8be2c1448a05766487f1fbe937469",
+        "ATT _projects/improvements/sources/CONV-022/attachments-r1.json bbd4312dee2ba13e42c3e72b3a125504d53c17bca7c20da9d1b765d036500565",
+        "ATT _projects/improvements/sources/CONV-036/attachments-r1.json d7b22373cfafc990710653ac10e2fb2ea1368dd5612aba586f3a733c8e7cc1b6",
+        "ATT _projects/improvements/sources/CONV-037/attachments-r1.json 355a64c3501a189c732fe333bc40f56c57d108fb258154c8b3d20d9bac082a4f",
+        "ATT _projects/improvements/sources/CONV-038/attachments-r1.json cb3e60d2d982abbc1c226735f9aa17ba5c88a960a19cb1cd366648212d1e8ae2",
+        "ATT _projects/improvements/sources/CONV-041/attachments-r1.json fc4af69956a8c316cab8cb96c6ad8235b9fd280ce27ce8580b49c46309299ca6",
+        "ATT _projects/improvements/sources/CONV-043/attachments-r1.json 49baa4ed568c2444634d1cc04c4e8063b7a4526a6f2e31634a0a210cb2065154",
+        "ATT _projects/improvements/sources/CONV-046/attachments-r1.json aa46f920f9ea03e9d0a3de6132342299304dc49668936f3126094b8feb12380e",
+        "ATT _projects/improvements/sources/CONV-048/attachments-r1.json d76a1444914d2c5dd8c8051818d946a894aa89009451e7c9c3653932e5e508b3",
+        "ATT _projects/improvements/sources/CONV-051/attachments-r1.json f6444d27f45c1bcea2c624ed3d698573ca1373a7be67c4f02e86dfccb84975f3",
+        "ATT _projects/improvements/sources/CONV-054/attachments-r1.json f03a9ee46f1b119fac3d673691c4394a7478246fc2712de224e1f0a8f51d2351",
+        "AUD _projects/improvements/sweep-audit.md 4b652b215b91312f7ea73dd89d89f6d7b72e27c17f44c0552346daae99137b54",
+        "DOC DOC-001 r1 _projects/improvements/sources/DOC-001/document.txt 219c876e3b818d53d0162b23108fb00d5abfd42c2d1eb9667519abed7baa08e7",
+        "DOC DOC-002 r1 _projects/improvements/sources/DOC-002/document.txt 6c3116faccb21b2700ddd3c56485cf067d44f8cebf5e78fee857bdd22f5df6bf",
+        "DOC DOC-003 r1 _projects/improvements/sources/DOC-003/document.txt 2632b4ac2b27d34573c0c09351ac2af6d86f0478fd611e03fae3df5ae0cc195c",
+        "INV 74 285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+        "RQ _projects/improvements/review-queue.md 11289b88c1327c4e9b74eaffcab5ef6d6ec90f868b49f102b942c98617f017d0",
+        "SRC CONV-001 r2 _projects/improvements/sources/CONV-001/conversation-r2.md 6b1cccaa84fdb6c9393bcb8610288348b23a81d9f6eac5a574ef07a2d8e4a8cf 151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+        "SRC CONV-002 r3 _projects/improvements/sources/CONV-002/conversation-r3.md e6230f5e15445f0c6c156be22b97497821bb598dae50852103390b9353a7b365 5f5385ff767f8b98a0fe70fbabf3d47d75360df374ef77aaebc52420a2898d43",
+        "SRC CONV-003 r3 _projects/improvements/sources/CONV-003/conversation-r3.md 087421c57fbe026140e50c749827c1000eea7cff60e2f5fe5da4a3396881e305 193a3de7f371ce83378a2c577082f1e09c4d27f46b460df5c78e6d2a560522be",
+        "SRC CONV-004 r1 _projects/improvements/sources/CONV-004/conversation.md 03981ca00367f708686d92b6a3f4cd1113346b14e351c1a4c56866174e229091 f0c63eaa0e141132db5f2106c479a3d0cbb8e2f026f1775e83a540d700e8404d",
+        "SRC CONV-005 r1 _projects/improvements/sources/CONV-005/conversation.md 7547940b87200f6149475c813aea41f1ab857ef091b9aca241d4f84f5d9bffdf 04d38687d7b3f8ba47ec92c56c88db5a767ea9943961b64063462286d7193198",
+        "SRC CONV-006 r3 _projects/improvements/sources/CONV-006/conversation-r3.md 6e5b621cfd83da1681f270dd38229ec77bf66628d854ab16b2a8897b5ff95d0f 1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+        "SRC CONV-007 r3 _projects/improvements/sources/CONV-007/conversation-r3.md 17338ef226f72b525c9988b2eee9c23859638958165fba073c142f30dedacd81 bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+        "SRC CONV-008 r1 _projects/improvements/sources/CONV-008/conversation.md d34283811689fea29c5db482ab4a0f5f2461e370be9de5b5adbed5ffb94e705a 7eb936b9889b6c4c97b274bf08da2e12a9a02ab88435e6ab66cd4f0bba6d0dbf",
+        "SRC CONV-009 r1 _projects/improvements/sources/CONV-009/conversation.md 9b6488d3e74616f6fea897a1271678b2e36b9b0082af3e38569de5ca4ed8059e 9002596bc79559ad300d10fb5be205e4792bcebe9170ee63846e0800ac1d7642",
+        "SRC CONV-010 r1 _projects/improvements/sources/CONV-010/conversation.md 6dcc25f55830373a6982e020a693e5425b62f1254d7ff8867bceca53f4b9e5c1 1a9529b500f497fd338798406e56ceda96049605a3ffa7718fb536d85c704e0e",
+        "SRC CONV-011 r1 _projects/improvements/sources/CONV-011/conversation.md 3eeb53c56ce050236315ca2b3cbf346ee24c4109a95a2659ebb252c7a4051795 52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+        "SRC CONV-012 r3 _projects/improvements/sources/CONV-012/conversation-r3.md a0033dd5102c7e5d25a85aae608225c31701b3501b1a94508dffacdcc32f588e c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+        "SRC CONV-013 r1 _projects/improvements/sources/CONV-013/conversation.md c615eea24a295ae673beabdc95eabdd9429a9c079b67a8f7420bd8eadb2d7764 76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+        "SRC CONV-014 r1 _projects/improvements/sources/CONV-014/conversation.md e77fba105105ef15a9e4ebc042e6bfac4f412024315b4a7ea568b075e611548f f0a6dc32d89e32f14af419d105d53db2e10fecc54d099ede26f904ec958f788c",
+        "SRC CONV-015 r1 _projects/improvements/sources/CONV-015/conversation.md 208ce2eeb3cdaef5914469f2b76e955bc45b3e994d80ded616883a0cde803b88 56245dd8ecb3f45c23164cbbb6f78f28c22bdbdef2bd66bf8d0f24484698d559",
+        "SRC CONV-016 r1 _projects/improvements/sources/CONV-016/conversation.md 273e2a3e723565bdd04b6416ebc256d843d881873b69ac29de9a1e44e31ea169 e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+        "SRC CONV-017 r1 _projects/improvements/sources/CONV-017/conversation.md 09a2f8f853bc5ea27e48bf70c9b42bc8a38c3cdc2da7c416e454bf3b1f6ea357 0d81a86b9def4aecf585cfa3348e18437fdffa49c02da6be3c24355124af5e89",
+        "SRC CONV-018 r1 _projects/improvements/sources/CONV-018/conversation.md e45bb1fb488014ec6de93175612d2e21ef989031c38d795947ed3dcad0be3b4d 95124492b52cf5214b77ffd5cca88bfc9393861251265c07c78990403b9cda0e",
+        "SRC CONV-019 r1 _projects/improvements/sources/CONV-019/conversation.md 9de708a0dcaff2ba6655bf2fa6d123de24d093bae222189fb208074a725abb72 645b06bdbc2fc759f091cc750c1ed7e36b7e3a7302e6a8daab5d1b602d32feea",
+        "SRC CONV-020 r1 _projects/improvements/sources/CONV-020/conversation.md d071ed1b7a91ce2fd291ed70d3d545eefe14ccc2afda939520f4ecadd5eb9aa4 dedc6742fa803a25e7f9703532aceba6c683fbabc71824ae7eeff9a01ebede9f",
+        "SRC CONV-021 r1 _projects/improvements/sources/CONV-021/conversation.md 1f7c84adef03f584785328a29858ffcb1916e29c799acb2456f24efdf8054132 7eb488b8c9047c130603b9b0ef4612cac9a5acdebedf82a1a9d7578eb13367a4",
+        "SRC CONV-022 r1 _projects/improvements/sources/CONV-022/conversation.md 61bf6e350cfb35aab98882077377d80a97594005c2d1357f7570d900ca689d73 d292382abf50f3de0fb9b58240c4ef8332868ce8c5d574f262cb0e3dc63b36c7",
+        "SRC CONV-023 r1 _projects/improvements/sources/CONV-023/conversation.md 86a829325b4686b9870d63f3aa99b0d5e1f93c55beb85e7808854bf4099173bb ab498b8587845112989df7e329d72a2b4922cceaf69e72ae9eaeeebf4cabafcf",
+        "SRC CONV-024 r1 _projects/improvements/sources/CONV-024/conversation.md 5adce49b87f22737237a6cf4cf098c4a4ae1947da9ba06a31f387bc5cf260adb d27178d71a3a88714601168c4379b0b99bc49a402effbd8d11d7b11f8b1b2c3d",
+        "SRC CONV-025 r1 _projects/improvements/sources/CONV-025/conversation.md 3a1ec505494ed59cc5e639ed4d6db9d60706efe07045981dcd80030e686ba00d ad80e48b6ca123e2010b200f9ea5319ac70e8156d2ae1bb6f8f5a84af898e17f",
+        "SRC CONV-026 r1 _projects/improvements/sources/CONV-026/conversation.md a72252c3e94d583c306669ea056e41e0833029cacf0642fc81f3c752b702a0db 062a64e2802e0b30edaaf9a8a6c8e343252ee3dc0114d5bf3f11374cc5b159f7",
+        "SRC CONV-027 r1 _projects/improvements/sources/CONV-027/conversation.md 92618b61ec6b14e06a71dc8ff9742d53faeb44f8718fb4380d5d775c117168ca 6b3a302d22eb76a66b89d458af717a937de627618e67a37b687e37dbe0ec4f22",
+        "SRC CONV-028 r2 _projects/improvements/sources/CONV-028/conversation-r2.md 33274d35dd0563ec6ed5f9aba10da2c4406c0aadc687b0a69fad6e8f7e548bed 8aee2c23e04a50609bcdc49fc0abefeb94f26d9ec25e2306cf3f4bc8636666f4",
+        "SRC CONV-029 r2 _projects/improvements/sources/CONV-029/conversation-r2.md 294add2ee2d496ed6b6ee57b00660c088c686e6774afdf0431b2237f69825891 b3d8456712525620b8ef45253626b5d1ff7b6a1989147cca541acb5816c72a73",
+        "SRC CONV-030 r1 _projects/improvements/sources/CONV-030/conversation.md 0632fd5a1b48a0823f49bb7a11f8e5bae001e25edc808a73a704b518f1d9cbc7 f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+        "SRC CONV-031 r1 _projects/improvements/sources/CONV-031/conversation.md 7b7eb5aa48fd860042da69da0b11f317ff8a82143c8d51979ed844b7a23d75f8 ed5307132a9ab012d6d6719330fb63d164bb970887e70ba35688d1cdd21467af",
+        "SRC CONV-032 r1 _projects/improvements/sources/CONV-032/conversation.md 1e1d8117df156db89d758ba3e0bfb162f444e5be19ebacd03aec9a085800472a 50d17341b3d516630d8f65b7e091a04f43376faadbfae2fd19e0661947107fcd",
+        "SRC CONV-033 r1 _projects/improvements/sources/CONV-033/conversation.md 813d12645b01e4584fd34084fda66b56625c2915a88f9594708e514723cb21bb 8aafdd65a783bd9a9b26f30bbb98a7cbe0dea63e8e88d51d7d8b708466aafe91",
+        "SRC CONV-034 r1 _projects/improvements/sources/CONV-034/conversation.md d27a8ac3aa28dd88fd927f4dd4ed0ca0b68ae07ca4a9072438a38b45e4c2387c 9c35dc86cb3198a68ace7f61b7d0ed5a71ba116d4e81f2d3a46d255bf1c9c91d",
+        "SRC CONV-035 r1 _projects/improvements/sources/CONV-035/conversation.md 670092e4a9ce09378b77fa6eab0772561fbc934c3230ccf3920489b1845152a8 ce93199ed8b90e497f87556a67d80574706e9c3e3a08102f20f7eed3fba2b1b4",
+        "SRC CONV-036 r1 _projects/improvements/sources/CONV-036/conversation.md 82f069a151f01e211ff41ec1c5be98c53028691902adbdd84915ca75c82f2e88 7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+        "SRC CONV-037 r1 _projects/improvements/sources/CONV-037/conversation.md d287b07e02ef4d90e4a38fcbdc150fd45dea0d4f58f9280aacd1ea9e0e3aa2a8 3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+        "SRC CONV-038 r1 _projects/improvements/sources/CONV-038/conversation.md 451c83b7a94a0aa35c8f21b7a085883d1a6b887f673b152853d32ca33201d4c6 375da93c206f676484db0c2b7169f43dcf88e34c7eb3ba7223274be05931f6f9",
+        "SRC CONV-039 r1 _projects/improvements/sources/CONV-039/conversation.md 5969c8166587af4d508e23278985c0c061c049e0be8238d87bf0a3b37c338251 b07ddd2db7bd8c843a69694ee2e638135197afef0a45cde36fb69d9474658938",
+        "SRC CONV-040 r1 _projects/improvements/sources/CONV-040/conversation.md 1ed3ca9fae5e57561deaf22fa6523d0027bba5d46498dbdd71377e310d8bfbab cf4273ec9d4dc7a84d54ea622da61c35d5a0490939781d4a6451f8793efb8d53",
+        "SRC CONV-041 r1 _projects/improvements/sources/CONV-041/conversation.md 8dd5c3be33e4808ec18d2f45dafc60de888aabaf7f7ed5380c683559d18c29c1 a00c51aa60c68c45da5435bba6cc202fba574e16753a144203c4e8dcd1bff2d9",
+        "SRC CONV-042 r1 _projects/improvements/sources/CONV-042/conversation.md e98de6ef01b53f8de073c7b787e21f6c2113eb6268ac14799a5a5c989984f2c4 d16208d4e16ea4e6c11ec02274aa66f5d27773f00c2743bffbd6110569f44684",
+        "SRC CONV-043 r1 _projects/improvements/sources/CONV-043/conversation.md bd7533b0355e782e38b9d4d4592e06fbb0e03b1f4621a65ae0571723fc6a496e 92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+        "SRC CONV-044 r1 _projects/improvements/sources/CONV-044/conversation.md 21da48bdf570d13dc4115f8ecbe16547780a30755ced0a481bbfc73e0117a063 57213beb6737a072808e2e310ea9ab48208bf70e565622c537a3546b97caa411",
+        "SRC CONV-045 r1 _projects/improvements/sources/CONV-045/conversation.md f9746970778f2d3250b98d573ee4c7784ef8efa2820a20b1795665a15d9fa02e 7a9f988fb1a7b730eab6cc8740cd8b09967eeeada566341a3e1b52cecda5baae",
+        "SRC CONV-046 r1 _projects/improvements/sources/CONV-046/conversation.md 407aece7f08952223ae2615800c6ffec86b1b87b4db331743767b6cedad977a9 c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+        "SRC CONV-047 r1 _projects/improvements/sources/CONV-047/conversation.md c97aedf0bcc5dfc5f179b7e7c6628e45ab7f69d5094cf7cc5401f02133dfb15f 1b759d6cda776fd038ca5795027a18467f85c3a72e163c96ef24daae6c1af6e5",
+        "SRC CONV-048 r1 _projects/improvements/sources/CONV-048/conversation.md b4af6cb7107cbbf9a9875780c43b0a8ff6c8ef5fec372c9674f00a3340e33f38 10521391293a18dd34215b0825ef9932da40fb77290c7fd5370b606dd6c2bf1e",
+        "SRC CONV-049 r1 _projects/improvements/sources/CONV-049/conversation.md 754864c7e0ea0e323aaff8bcbb15bab9e37bc0bd60afd1444b0b07f04baff9d9 60136ecb22acdccc9a76d1ceeb65117fd032540586354bb36170bc0f7c6413cd",
+        "SRC CONV-050 r1 _projects/improvements/sources/CONV-050/conversation.md 64ab062dabff2e4d587a53edbd7b393f302b302ffe20c027798b9f12cf8145b8 6f2f4d7de0b1bbeb72226269d3a0500f5b7d808ff2f6bd2e6adddc1ede102081",
+        "SRC CONV-051 r1 _projects/improvements/sources/CONV-051/conversation.md 9cf54b3a0078606809340399342b6107a1224ebc0c50ac436bacaaa341962140 3123c495555f33b3e8c2e7e97820e237d6958784c3009c3493aa23fd793e7ed2",
+        "SRC CONV-052 r1 _projects/improvements/sources/CONV-052/conversation.md 87a0ed92a52b8d6fcea243cc82aeb6559462c66cdeed5046e32c14ef732ccb0e a5c7c1c709bb9cffc81abbeeb16c61f987ae9ae819ffda85c7c8d99fb717216b",
+        "SRC CONV-053 r1 _projects/improvements/sources/CONV-053/conversation.md 2f5b35a0683ee286c12a70ec0071a44931f3e970972210b473d8b8ec8ff81540 816bd2f535312eb4f0bf609915d4687adcf9dfe404f2542b578bdbef91d0667e",
+        "SRC CONV-054 r1 _projects/improvements/sources/CONV-054/conversation.md ca73ff6ba3527a5fec3e44713f262549b3736eb46a86247bb28f36639573f44f a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+        "SRC CONV-055 r1 _projects/improvements/sources/CONV-055/conversation.md 15acf939a4d6ca09619ecd6ae73b1f34728b904c72b9e387fded0e8d625c8d37 55a330f8ed04ac8175c115cb728c54928742b1db55a2722ec75e982b85000e00"
+      ],
+      "branch_probe": {
+        "sources_probed": 55,
+        "shared_prefix_pairs": [
+          {
+            "a": "CONV-037",
+            "b": "CONV-038",
+            "shared_prefix_messages": 1
+          },
+          {
+            "a": "CONV-037",
+            "b": "CONV-043",
+            "shared_prefix_messages": 1
+          },
+          {
+            "a": "CONV-038",
+            "b": "CONV-043",
+            "shared_prefix_messages": 1
+          }
+        ]
+      },
+      "note": ""
+    },
+    {
+      "at": "2026-09-11",
+      "cut_sha256": "c21a6f780b76ff9e10875c35b930aa9e4e3e1461a3f13f96d9f34d069afbcd77",
+      "inventory_revision": 74,
+      "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+      "sources": 55,
+      "documents": 3,
+      "lines": [
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-001-38a0f13ab9b4.png 38a0f13ab9b4a55a8e7780337c3bff12a2811ccc5f5a13589651d03c2a8affe8",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-002-9a8c8c29c060.jpeg 9a8c8c29c06093e17f6f9314ae4cd183fa50fce5ca84e3d03ee933ba0d820fa2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-003-c3d7a8f3b414.jpeg c3d7a8f3b414dce1a461118084c779304471573bb2dcec24fda2553de96591ca",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-004-7165d88aeb7f.jpeg 7165d88aeb7f5e960156fca1d69bfeaae97758796d3e848ce5e4d3021704f1f5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-005-44ba8c9d5b68.jpeg 44ba8c9d5b68a195fe6d319ed7315f0491e16c4121010de51ed01e01e49e5af2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-006-2a007aa03de3.png 2a007aa03de3fc2339ccccdc97b949e983a4dd4312bc92f8d87bc535f65ea7d7",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-007-fc1ec097c889.png fc1ec097c889b021b900d05ca20ec41f4d219e669bf54e39c3574c83c211897f",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-008-f6c2b575ce69.png f6c2b575ce69e4ff32dd336986f97cea8a658756ac4c6d511cb596e3149d915c",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-009-28bafda3d393.jpeg 28bafda3d393399680ceeaee14e8c9c0514619e3b9d53bb34db22dc9f6d82c2a",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-010-ebc66dc6d473.png ebc66dc6d4734b8de5d8bfdd1ec2ebb822a6d591c2c5749d8a5a5f558a6a83c5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-021-6744deb4b7a8.png 6744deb4b7a8d7f07e7025fe8ca568ff21c475fc6a3c166f7963ca6371bf5ce0",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-022-6ae1d58b52f1.png 6ae1d58b52f1776de5955bfb3abb4293f0e4d30e5ed5bfa6f9e558edd0f6bb9b",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-023-f855bdf94279.png f855bdf94279bc17a94f5fb31ae5400f3f735bbd7cfa602a8e3341739ee21b50",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-024-f8afc9edd6fb.png f8afc9edd6fbde0e8d31271815647bf2d25565f73242d841cae06d57f11ca9e2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-025-72e638467388.png 72e63846738848b394e2cdb90c92ab74062c72b50e3b1abc0ce68160c4210db2",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-026-fadfe45fc207.jpeg fadfe45fc2076feda8a81046c1049c7193d6c18ab30ff0dd61644a494e2ceed9",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-027-fc169568e397.png fc169568e397a9ec457e0007b921d31ce5b1109e38edaed18d4af094028308f5",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-028-5175e9c0ec4d.jpeg 5175e9c0ec4de95d7bcfc44347327a8348eb830d06077f8b7ee3c2ecc2853671",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-029-08d266057440.jpeg 08d2660574400844a6053c945a93ba58e76ea665cb56083f64b808c575ef4ecb",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-030-52be7ee8a21b.jpeg 52be7ee8a21bad817ecc8bd68671016d89964dd808b54da00aed233165ae2c71",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-041-a5586a8936ce.jpeg a5586a8936cec6838252cb422da528c9fdd4cba1aa8aa6735e845035b3c743fd",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-042-c596bac600d4.png c596bac600d4732b0ef30d47baae1c3c34aee559e03dd3c83040741ecbb595dc",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-043-861a8854a9c1.jpeg 861a8854a9c1c0bd6755c00dba944c3fe952d3768f342aa5fc47817120ebd5d8",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-044-92899bdf57fd.jpeg 92899bdf57fdc69d221525b6090d5e895a8022ca064c21b31191bdffb05f5b91",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-045-fc114e948193.jpeg fc114e9481933b08e3fb835ade639de5801627208a47869d5e661d4bcde3c6ba",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-046-06a008ec5882.png 06a008ec58820e18a99ca0d2b95d10bf3c02fa3502a5b9e718ea05c0f7a29b7d",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-053-f02d5a15d73e.png f02d5a15d73e6004afe21fef349ac17b48d47c811b9063787c0069d1f310b2d7",
+        "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-055-5dfa86e09985.txt 5dfa86e099856631ca17c4c14a289704216e3bf3c0bf98a5a95935f1175fbc0d",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-001-1bd2fa62d998.jpeg 1bd2fa62d9982175b6b9b77d8626490879981c5959c956ba49a7dce1b8b06f36",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-002-6ed255aeb717.jpeg 6ed255aeb7172d05f72d192d0f998c02eab428bc072e6cb592478f67264ccab4",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-003-ea159bba3c1e.jpeg ea159bba3c1e0279acb0c7f910fbafd9dbf669582d1ecd97add8d7b2efcac6c5",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-004-aa2809c7c24f.jpeg aa2809c7c24fdb054b29aa6b181888c14a6bfb1f6605dd3d362e1b0c993884cd",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-005-531719fc61d7.png 531719fc61d77f762e55d593e0895549f9681a0190ebb5c65a364a52433d603d",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-006-2f231400cef5.png 2f231400cef5f287e4231d05d4414d4de15518895177eeea9391c6d31c0501f2",
+        "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-013-d258a21e1a7a.txt d258a21e1a7a3ea5eafaa87fbf7dbba27fb8227424d90f4eb9c2f34cc09390bc",
+        "ART _projects/improvements/sources/CONV-006/attachments/ATT-006-001-6be5496dce33.png 6be5496dce33dae24f802591a0f0aadc35a98a7bb367682d7917d83b87f76e84",
+        "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-001-c5c98ecdb358.md c5c98ecdb358b91b3ae8278ac638cdaf3d80cbd236279d7b49120cbb6ec2baf1",
+        "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-002-73ecb6fb7b87.md 73ecb6fb7b87aeeadf342d3ca10c56a437d0b8d34b1269cd3d56c020d9085f07",
+        "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-003-09fb84b842ff.md 09fb84b842ffd46a77d8922621cebdddab9e91182975dd464eed86c2bebab6c1",
+        "ART _projects/improvements/sources/CONV-011/attachments/ATT-011-001-902f55b27409.pdf 902f55b2740909d3b91d92ea5c911e17c6b662b0303ae1e0170a5f59783a12c4",
+        "ART _projects/improvements/sources/CONV-012/attachments/ATT-012-001-a65d8841874f.md a65d8841874f145de528859d0e9e8833c41f1fbc1473a3a111e3eaba18a78b89",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-001-09017f2e7fab.txt 09017f2e7fabb19a23ed51925b5208e841d97eb06fcae00d76f6e1f68e54e24c",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-002-2e941653f983.txt 2e941653f9838538df1fb8bdaa467428374fd2a26414ee7534ac39f13c2c85fb",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-003-28e38c7c292c.txt 28e38c7c292cf5d79546a25897d306f0425978c735feae1692174f7fa8d8fe5b",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-004-d35dc6ae4956.txt d35dc6ae4956c6fe9fe7feefac8623520c3364e4be84def84b7c44cfc3729c74",
+        "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-005-c6888abd23be.txt c6888abd23be0f2840a620a3f7d9f0f1d1f22497162cde3b5b6b9b6b79ac7eb5",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-001-11a659583faa.txt 11a659583faa7a3bf01992a82a5668e9c9662518b4e42d508d88a392dd6ae9b4",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-002-a0b3f38d0379.txt a0b3f38d0379cc6bb5ba786e5ba360f2372b260591c188166161bae041c4f901",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-003-fa5f31491d99.txt fa5f31491d99c07ce9a7acfabd20306761718981f1a792469d6ad53da582fc72",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-004-cd5c1538d380.txt cd5c1538d38045e142626bbaf700bbb5e4daf00844dc69da0fe398bf83185cc2",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-005-4e4c68a58246.txt 4e4c68a582468b4647c00cab0e0620923968e43984c8fa2ebdbde1224f3ffec6",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-008-09f732ee1968.txt 09f732ee196887014afae4b0ee9828bb1c82461a9983d31512ecbd16377b2538",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-009-9f93b1c37d45.txt 9f93b1c37d451c0fcf0e614ea0cfcd92745b66ce97ae8dfa0b676eb58b4cd8c1",
+        "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-010-31bf38d982a9.txt 31bf38d982a931417d423f136fd65d9904c72a4090668badf3d200cdf4926bd4",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-001-e3b8c3e8c9f5.txt e3b8c3e8c9f52fc72663d2f7bebc5d37877e4fc993c80a010800eb089f19c636",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-002-d58c00d7e7f6.txt d58c00d7e7f6e7833e4bdb9e6600c3b59663e19d792203032591b1f68d082218",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-003-59658e4dfd1b.txt 59658e4dfd1b6e2dc01d77c3c516b138714efd6a928b6695b5800551b3adcdb4",
+        "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-004-fd370aa2da70.txt fd370aa2da70a8dbe0fd12b8aae4272b2a62a0d140f2d794f96fb1d2b6942025",
+        "ART _projects/improvements/sources/CONV-022/attachments/ATT-022-004-2d8cbc39da76.tgz 2d8cbc39da762cc088ff170de24e9f3f2513de6c8ae58ba6003f4e34abc6e20d",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-001-b14cfd62dc9f.pdf b14cfd62dc9f857f98b491ab4b655067a5a927ff2d9773eb7c789b825d9f561d",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-002-9c16c7ea948b.pdf 9c16c7ea948b0d5fa9f00b8861ace752097d71f546987e43d56f3b1bbe7874c1",
+        "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-003-d757033e2f5f.pdf d757033e2f5fe04859e139f46f3518489f2127b1359149bfeec960f22c5b3562",
+        "ART _projects/improvements/sources/CONV-037/attachments/ATT-037-001-2dc47fd10d25.pdf 2dc47fd10d2580ac187887e227ce603ad60bea7867f54747c23174ad6cc6a389",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-001-d69509df63dd.png d69509df63dd5b8dcbebe88072951bde442899a99a21350bbe5917ce7e03408f",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-002-b66b4a119153.png b66b4a119153da68721ee59220709a22c6aca3492e41c4710c3677c739f0c7eb",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-003-08799dd5e902.png 08799dd5e902a6f1177d5647e4ba520a1b749e06590df30b752e93a91d1a6fd2",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-004-30401abc7848.png 30401abc7848df14eadb7a256baeb0b44a2ead1bf554792faea28093e3424217",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-005-883107d4812f.png 883107d4812f1e64e3a35957820bb638bd09f0a2305bb43faa2288617ee4fc55",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-006-6ddf78cf7c03.png 6ddf78cf7c035ec425c90fc581d8cb76dc59503f5d23a36e5931359c045c8b34",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-007-109cf46b6503.jpeg 109cf46b650312637750f42084bf004058d2f810a7b67937df9f3252b4ce5f37",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-008-36f5b30bb688.png 36f5b30bb6887f6ceeddad7b12348a7e6a6f004aefcdbb9970df6c4f5a46c7cf",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-009-6158f323f921.jpeg 6158f323f921a9026eec9ea0cbe363772e8f1b91c89859e394904522666af044",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-010-6f7de87577e0.png 6f7de87577e0dadbf28df884a2b81ceb282cae299b5680147b1dbc13be7858eb",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-011-89ff86b73c25.png 89ff86b73c252292427d14c5b0ddcc47b7e242a0fc5284954647c417195dce72",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-012-75ba14adc80c.jpeg 75ba14adc80cbaf2d18acec853926091095c5744e0d351e8785067d3acedccaf",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-013-8f1d8ff334ec.png 8f1d8ff334ec09d3b7810b109b024799e62569bc372572811df6fee89b7416b6",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-014-a8b1b04a3552.png a8b1b04a3552f6fad93108b6ff177a0e0766d1cea3364689a7dcc44cc48e6ea1",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-015-69f7d92b247c.png 69f7d92b247ca4c4ac2d3ad77942ef13e5276065dc590206bbd403e5d9ec1326",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-016-7a4f9ffff40f.png 7a4f9ffff40f98c17f7171cc3a6544ad41ee01cab94042c5dc7979b5fd927cad",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-017-5de2ebce7a4b.png 5de2ebce7a4b0efa1385a1351dfe355e4fd103a2b4034b9e44a90265bf5361aa",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-018-2af85300205a.jpeg 2af85300205a78a06593f64882e1b3850d58d4d328bf3b11f03807aa252d9c8c",
+        "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-019-618803752baa.png 618803752baab7c44fb933acbb22bc29b88dc65a6fdb6b86911c2b6fcd5263d0",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-001-e5ddd1ead3c8.jpeg e5ddd1ead3c80122e9af4b03cfe3f4f650b5188325cd9e8a098d4331b15469c8",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-002-53798584fb91.png 53798584fb9111a930535d8ed48090aa998f509b716f91aca020654f499fbd2b",
+        "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-003-0ec0bfa61ba8.jpeg 0ec0bfa61ba80173827609862d2ec689920163eafe89dfd9649aa30a6b1aa693",
+        "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-001-a821fc90ef44.jpeg a821fc90ef44d2d77e592f9c2ab189bdab24343125a990f0da39b6b115bbfdd9",
+        "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-002-24b569346a99.jpeg 24b569346a994af74fb4d347b2186d2915738ab57f481fe9e6ff6243a4c3ab0e",
+        "ART _projects/improvements/sources/CONV-046/attachments/ATT-046-001-7cc5a2a0d321.jpeg 7cc5a2a0d321d3046e19121bd8e152dad123747987b86f1d9bdbc469094093bf",
+        "ART _projects/improvements/sources/CONV-048/attachments/ATT-048-001-b4fe889f8f24.jpeg b4fe889f8f2456e05fc21eccfe3cc807ca64897bb329b328c2ac25d21f786b12",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-001-b9a312bfcd58.jpeg b9a312bfcd58ba23b912894269f25f9be7f65ea85271e2835d80dbe70a08f979",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-002-914c753f6d31.jpeg 914c753f6d31e029420f2f162fba8701aff14dfd79bc7b68d1c038467d363809",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-003-3b00954feb39.jpeg 3b00954feb39433cb31819ae89848d9dee901940a441ae26307c7365c067ae71",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-004-f2176b451251.jpeg f2176b4512511dce8009b9452ba367e8b7a65b3a0abd282182bb02220942c335",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-005-cf562d881184.jpeg cf562d881184d6d6e7d86b716f3ab83397c9c7a452eaac555bf25494ed251b92",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-006-c428b148aba6.jpeg c428b148aba63b7f219479eb74f71d68f7d458e0ecb0f3b6ce26057fe1991437",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-007-83098287fe95.jpeg 83098287fe955aa5a4712d2e812bd55e2aebfd5b84d89e67da1ead361f8df7ae",
+        "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-008-f9297661de1d.jpeg f9297661de1df20a35f5bbacae54b97400c09cacc283d2d2859dee6023e7fcec",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-001-5e18ab46df2a.jpeg 5e18ab46df2a1123dd60e513c180384c3ec5cd0d1f6fc5e15d063a241e88561b",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-002-2532bf9e31ee.jpeg 2532bf9e31ee0d49d4ee871682d9c8ff4a8d42d263e3b473de02f868ec92afea",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-003-2d243e4fd9ee.jpeg 2d243e4fd9eefe1717b27d9013f194207177f01aefb8983496b2fca96ea6d47d",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-004-aad3ab0049a7.md aad3ab0049a785c709e1805892c4d80d21ebb84de0ab269ed0440756d0657a6a",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-005-cde1b723de47.json cde1b723de4781dfa28de2dda641cb906972eb2e4aee9dfb8443b4c5da6a140c",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-006-aee95234f0d9.txt aee95234f0d9746e540baecebdeb818c5cc51dafa3b1436273c113332c4beef2",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-007-f51eb8b7e1f6.txt f51eb8b7e1f6712b02eda143c7c52c9938746e811813255eb1657c5b40e6be54",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-008-26c4725c7e9f.txt 26c4725c7e9fd38b72b81208488b8baba0e5f3036d4f0ef814d739455cf2b46c",
+        "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-009-1d2add27983d.txt 1d2add27983d1e602d500539913e7e67d2f8f244a2c126b1b31022040b86b35c",
+        "ATT _projects/improvements/sources/CONV-001/attachments-r2.json 0021e37f048e7206577e330bbd2b8b3e61ac69d047e52f8a1ef8d6efa7ad0a1f",
+        "ATT _projects/improvements/sources/CONV-005/attachments-r1.json 7fc7d742ee1311663a4fe7fa69ae35e6b618bd856927ceeca631cdf057d285ba",
+        "ATT _projects/improvements/sources/CONV-006/attachments-r2.json 3e5bea88359b9bbc94e3c6a211cb956040080ac2d3f3e486a6e5f1d474c5b730",
+        "ATT _projects/improvements/sources/CONV-006/attachments-r3.json 2e1cc921a3586f82c66a41402b00c6d2b7e2be65a679e90792f072d260b7b14f",
+        "ATT _projects/improvements/sources/CONV-007/attachments-r2.json 89968cf99eefae080355e202bd4756f4bcc0f8d8c5b22073ea79611b1aba2270",
+        "ATT _projects/improvements/sources/CONV-007/attachments-r3.json e4a1e42578e4c48c80a2ef7564308d13987b69d165c2655d2c3d6b163f6518e4",
+        "ATT _projects/improvements/sources/CONV-011/attachments-r1.json 5aaac4cf952b1bb8230b22c8c0a13ce7f177e7872df44634005ebb66d07776f5",
+        "ATT _projects/improvements/sources/CONV-012/attachments-r2.json 395a5df150a250da44df1c65306c1368e551978f0d3c7998c042c8b7a72c5234",
+        "ATT _projects/improvements/sources/CONV-012/attachments-r3.json df4dee5130b41d127909c266a4ffb04a62c883d785de8e2174d762cf2b68aea8",
+        "ATT _projects/improvements/sources/CONV-013/attachments-r1.json 3f831b793a16681c6423426072d3906ce88f56352013e0bd70e3a00afc267a68",
+        "ATT _projects/improvements/sources/CONV-015/attachments-r1.json b7906a510c2c381eb4662c00997a0ada3ee8c03c5af1fc57ee22e6f526e127ba",
+        "ATT _projects/improvements/sources/CONV-016/attachments-r1.json da51cb5a77125f907b2a8e1232c471f8b0f8be2c1448a05766487f1fbe937469",
+        "ATT _projects/improvements/sources/CONV-022/attachments-r1.json bbd4312dee2ba13e42c3e72b3a125504d53c17bca7c20da9d1b765d036500565",
+        "ATT _projects/improvements/sources/CONV-036/attachments-r1.json d7b22373cfafc990710653ac10e2fb2ea1368dd5612aba586f3a733c8e7cc1b6",
+        "ATT _projects/improvements/sources/CONV-037/attachments-r1.json 355a64c3501a189c732fe333bc40f56c57d108fb258154c8b3d20d9bac082a4f",
+        "ATT _projects/improvements/sources/CONV-038/attachments-r1.json cb3e60d2d982abbc1c226735f9aa17ba5c88a960a19cb1cd366648212d1e8ae2",
+        "ATT _projects/improvements/sources/CONV-041/attachments-r1.json fc4af69956a8c316cab8cb96c6ad8235b9fd280ce27ce8580b49c46309299ca6",
+        "ATT _projects/improvements/sources/CONV-043/attachments-r1.json 49baa4ed568c2444634d1cc04c4e8063b7a4526a6f2e31634a0a210cb2065154",
+        "ATT _projects/improvements/sources/CONV-046/attachments-r1.json aa46f920f9ea03e9d0a3de6132342299304dc49668936f3126094b8feb12380e",
+        "ATT _projects/improvements/sources/CONV-048/attachments-r1.json d76a1444914d2c5dd8c8051818d946a894aa89009451e7c9c3653932e5e508b3",
+        "ATT _projects/improvements/sources/CONV-051/attachments-r1.json f6444d27f45c1bcea2c624ed3d698573ca1373a7be67c4f02e86dfccb84975f3",
+        "ATT _projects/improvements/sources/CONV-054/attachments-r1.json f03a9ee46f1b119fac3d673691c4394a7478246fc2712de224e1f0a8f51d2351",
+        "AUD _projects/improvements/sweep-audit.md 4b652b215b91312f7ea73dd89d89f6d7b72e27c17f44c0552346daae99137b54",
+        "DOC DOC-001 r1 _projects/improvements/sources/DOC-001/document.txt 219c876e3b818d53d0162b23108fb00d5abfd42c2d1eb9667519abed7baa08e7",
+        "DOC DOC-002 r1 _projects/improvements/sources/DOC-002/document.txt 6c3116faccb21b2700ddd3c56485cf067d44f8cebf5e78fee857bdd22f5df6bf",
+        "DOC DOC-003 r1 _projects/improvements/sources/DOC-003/document.txt 2632b4ac2b27d34573c0c09351ac2af6d86f0478fd611e03fae3df5ae0cc195c",
+        "INV 74 285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+        "RQ _projects/improvements/review-queue.md 11289b88c1327c4e9b74eaffcab5ef6d6ec90f868b49f102b942c98617f017d0",
+        "SRC CONV-001 r2 _projects/improvements/sources/CONV-001/conversation-r2.md 6b1cccaa84fdb6c9393bcb8610288348b23a81d9f6eac5a574ef07a2d8e4a8cf 151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+        "SRC CONV-002 r3 _projects/improvements/sources/CONV-002/conversation-r3.md e6230f5e15445f0c6c156be22b97497821bb598dae50852103390b9353a7b365 5f5385ff767f8b98a0fe70fbabf3d47d75360df374ef77aaebc52420a2898d43",
+        "SRC CONV-003 r3 _projects/improvements/sources/CONV-003/conversation-r3.md 087421c57fbe026140e50c749827c1000eea7cff60e2f5fe5da4a3396881e305 193a3de7f371ce83378a2c577082f1e09c4d27f46b460df5c78e6d2a560522be",
+        "SRC CONV-004 r1 _projects/improvements/sources/CONV-004/conversation.md 03981ca00367f708686d92b6a3f4cd1113346b14e351c1a4c56866174e229091 f0c63eaa0e141132db5f2106c479a3d0cbb8e2f026f1775e83a540d700e8404d",
+        "SRC CONV-005 r1 _projects/improvements/sources/CONV-005/conversation.md 7547940b87200f6149475c813aea41f1ab857ef091b9aca241d4f84f5d9bffdf 04d38687d7b3f8ba47ec92c56c88db5a767ea9943961b64063462286d7193198",
+        "SRC CONV-006 r3 _projects/improvements/sources/CONV-006/conversation-r3.md 6e5b621cfd83da1681f270dd38229ec77bf66628d854ab16b2a8897b5ff95d0f 1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+        "SRC CONV-007 r3 _projects/improvements/sources/CONV-007/conversation-r3.md 17338ef226f72b525c9988b2eee9c23859638958165fba073c142f30dedacd81 bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+        "SRC CONV-008 r1 _projects/improvements/sources/CONV-008/conversation.md d34283811689fea29c5db482ab4a0f5f2461e370be9de5b5adbed5ffb94e705a 7eb936b9889b6c4c97b274bf08da2e12a9a02ab88435e6ab66cd4f0bba6d0dbf",
+        "SRC CONV-009 r1 _projects/improvements/sources/CONV-009/conversation.md 9b6488d3e74616f6fea897a1271678b2e36b9b0082af3e38569de5ca4ed8059e 9002596bc79559ad300d10fb5be205e4792bcebe9170ee63846e0800ac1d7642",
+        "SRC CONV-010 r1 _projects/improvements/sources/CONV-010/conversation.md 6dcc25f55830373a6982e020a693e5425b62f1254d7ff8867bceca53f4b9e5c1 1a9529b500f497fd338798406e56ceda96049605a3ffa7718fb536d85c704e0e",
+        "SRC CONV-011 r1 _projects/improvements/sources/CONV-011/conversation.md 3eeb53c56ce050236315ca2b3cbf346ee24c4109a95a2659ebb252c7a4051795 52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+        "SRC CONV-012 r3 _projects/improvements/sources/CONV-012/conversation-r3.md a0033dd5102c7e5d25a85aae608225c31701b3501b1a94508dffacdcc32f588e c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+        "SRC CONV-013 r1 _projects/improvements/sources/CONV-013/conversation.md c615eea24a295ae673beabdc95eabdd9429a9c079b67a8f7420bd8eadb2d7764 76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+        "SRC CONV-014 r1 _projects/improvements/sources/CONV-014/conversation.md e77fba105105ef15a9e4ebc042e6bfac4f412024315b4a7ea568b075e611548f f0a6dc32d89e32f14af419d105d53db2e10fecc54d099ede26f904ec958f788c",
+        "SRC CONV-015 r1 _projects/improvements/sources/CONV-015/conversation.md 208ce2eeb3cdaef5914469f2b76e955bc45b3e994d80ded616883a0cde803b88 56245dd8ecb3f45c23164cbbb6f78f28c22bdbdef2bd66bf8d0f24484698d559",
+        "SRC CONV-016 r1 _projects/improvements/sources/CONV-016/conversation.md 273e2a3e723565bdd04b6416ebc256d843d881873b69ac29de9a1e44e31ea169 e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+        "SRC CONV-017 r1 _projects/improvements/sources/CONV-017/conversation.md 09a2f8f853bc5ea27e48bf70c9b42bc8a38c3cdc2da7c416e454bf3b1f6ea357 0d81a86b9def4aecf585cfa3348e18437fdffa49c02da6be3c24355124af5e89",
+        "SRC CONV-018 r1 _projects/improvements/sources/CONV-018/conversation.md e45bb1fb488014ec6de93175612d2e21ef989031c38d795947ed3dcad0be3b4d 95124492b52cf5214b77ffd5cca88bfc9393861251265c07c78990403b9cda0e",
+        "SRC CONV-019 r1 _projects/improvements/sources/CONV-019/conversation.md 9de708a0dcaff2ba6655bf2fa6d123de24d093bae222189fb208074a725abb72 645b06bdbc2fc759f091cc750c1ed7e36b7e3a7302e6a8daab5d1b602d32feea",
+        "SRC CONV-020 r1 _projects/improvements/sources/CONV-020/conversation.md d071ed1b7a91ce2fd291ed70d3d545eefe14ccc2afda939520f4ecadd5eb9aa4 dedc6742fa803a25e7f9703532aceba6c683fbabc71824ae7eeff9a01ebede9f",
+        "SRC CONV-021 r1 _projects/improvements/sources/CONV-021/conversation.md 1f7c84adef03f584785328a29858ffcb1916e29c799acb2456f24efdf8054132 7eb488b8c9047c130603b9b0ef4612cac9a5acdebedf82a1a9d7578eb13367a4",
+        "SRC CONV-022 r1 _projects/improvements/sources/CONV-022/conversation.md 61bf6e350cfb35aab98882077377d80a97594005c2d1357f7570d900ca689d73 d292382abf50f3de0fb9b58240c4ef8332868ce8c5d574f262cb0e3dc63b36c7",
+        "SRC CONV-023 r1 _projects/improvements/sources/CONV-023/conversation.md 86a829325b4686b9870d63f3aa99b0d5e1f93c55beb85e7808854bf4099173bb ab498b8587845112989df7e329d72a2b4922cceaf69e72ae9eaeeebf4cabafcf",
+        "SRC CONV-024 r1 _projects/improvements/sources/CONV-024/conversation.md 5adce49b87f22737237a6cf4cf098c4a4ae1947da9ba06a31f387bc5cf260adb d27178d71a3a88714601168c4379b0b99bc49a402effbd8d11d7b11f8b1b2c3d",
+        "SRC CONV-025 r1 _projects/improvements/sources/CONV-025/conversation.md 3a1ec505494ed59cc5e639ed4d6db9d60706efe07045981dcd80030e686ba00d ad80e48b6ca123e2010b200f9ea5319ac70e8156d2ae1bb6f8f5a84af898e17f",
+        "SRC CONV-026 r1 _projects/improvements/sources/CONV-026/conversation.md a72252c3e94d583c306669ea056e41e0833029cacf0642fc81f3c752b702a0db 062a64e2802e0b30edaaf9a8a6c8e343252ee3dc0114d5bf3f11374cc5b159f7",
+        "SRC CONV-027 r1 _projects/improvements/sources/CONV-027/conversation.md 92618b61ec6b14e06a71dc8ff9742d53faeb44f8718fb4380d5d775c117168ca 6b3a302d22eb76a66b89d458af717a937de627618e67a37b687e37dbe0ec4f22",
+        "SRC CONV-028 r2 _projects/improvements/sources/CONV-028/conversation-r2.md 33274d35dd0563ec6ed5f9aba10da2c4406c0aadc687b0a69fad6e8f7e548bed 8aee2c23e04a50609bcdc49fc0abefeb94f26d9ec25e2306cf3f4bc8636666f4",
+        "SRC CONV-029 r2 _projects/improvements/sources/CONV-029/conversation-r2.md 294add2ee2d496ed6b6ee57b00660c088c686e6774afdf0431b2237f69825891 b3d8456712525620b8ef45253626b5d1ff7b6a1989147cca541acb5816c72a73",
+        "SRC CONV-030 r1 _projects/improvements/sources/CONV-030/conversation.md 0632fd5a1b48a0823f49bb7a11f8e5bae001e25edc808a73a704b518f1d9cbc7 f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+        "SRC CONV-031 r1 _projects/improvements/sources/CONV-031/conversation.md 7b7eb5aa48fd860042da69da0b11f317ff8a82143c8d51979ed844b7a23d75f8 ed5307132a9ab012d6d6719330fb63d164bb970887e70ba35688d1cdd21467af",
+        "SRC CONV-032 r1 _projects/improvements/sources/CONV-032/conversation.md 1e1d8117df156db89d758ba3e0bfb162f444e5be19ebacd03aec9a085800472a 50d17341b3d516630d8f65b7e091a04f43376faadbfae2fd19e0661947107fcd",
+        "SRC CONV-033 r1 _projects/improvements/sources/CONV-033/conversation.md 813d12645b01e4584fd34084fda66b56625c2915a88f9594708e514723cb21bb 8aafdd65a783bd9a9b26f30bbb98a7cbe0dea63e8e88d51d7d8b708466aafe91",
+        "SRC CONV-034 r1 _projects/improvements/sources/CONV-034/conversation.md d27a8ac3aa28dd88fd927f4dd4ed0ca0b68ae07ca4a9072438a38b45e4c2387c 9c35dc86cb3198a68ace7f61b7d0ed5a71ba116d4e81f2d3a46d255bf1c9c91d",
+        "SRC CONV-035 r1 _projects/improvements/sources/CONV-035/conversation.md 670092e4a9ce09378b77fa6eab0772561fbc934c3230ccf3920489b1845152a8 ce93199ed8b90e497f87556a67d80574706e9c3e3a08102f20f7eed3fba2b1b4",
+        "SRC CONV-036 r1 _projects/improvements/sources/CONV-036/conversation.md 82f069a151f01e211ff41ec1c5be98c53028691902adbdd84915ca75c82f2e88 7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+        "SRC CONV-037 r1 _projects/improvements/sources/CONV-037/conversation.md d287b07e02ef4d90e4a38fcbdc150fd45dea0d4f58f9280aacd1ea9e0e3aa2a8 3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+        "SRC CONV-038 r1 _projects/improvements/sources/CONV-038/conversation.md 451c83b7a94a0aa35c8f21b7a085883d1a6b887f673b152853d32ca33201d4c6 375da93c206f676484db0c2b7169f43dcf88e34c7eb3ba7223274be05931f6f9",
+        "SRC CONV-039 r1 _projects/improvements/sources/CONV-039/conversation.md 5969c8166587af4d508e23278985c0c061c049e0be8238d87bf0a3b37c338251 b07ddd2db7bd8c843a69694ee2e638135197afef0a45cde36fb69d9474658938",
+        "SRC CONV-040 r1 _projects/improvements/sources/CONV-040/conversation.md 1ed3ca9fae5e57561deaf22fa6523d0027bba5d46498dbdd71377e310d8bfbab cf4273ec9d4dc7a84d54ea622da61c35d5a0490939781d4a6451f8793efb8d53",
+        "SRC CONV-041 r1 _projects/improvements/sources/CONV-041/conversation.md 8dd5c3be33e4808ec18d2f45dafc60de888aabaf7f7ed5380c683559d18c29c1 a00c51aa60c68c45da5435bba6cc202fba574e16753a144203c4e8dcd1bff2d9",
+        "SRC CONV-042 r1 _projects/improvements/sources/CONV-042/conversation.md e98de6ef01b53f8de073c7b787e21f6c2113eb6268ac14799a5a5c989984f2c4 d16208d4e16ea4e6c11ec02274aa66f5d27773f00c2743bffbd6110569f44684",
+        "SRC CONV-043 r1 _projects/improvements/sources/CONV-043/conversation.md bd7533b0355e782e38b9d4d4592e06fbb0e03b1f4621a65ae0571723fc6a496e 92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+        "SRC CONV-044 r1 _projects/improvements/sources/CONV-044/conversation.md 21da48bdf570d13dc4115f8ecbe16547780a30755ced0a481bbfc73e0117a063 57213beb6737a072808e2e310ea9ab48208bf70e565622c537a3546b97caa411",
+        "SRC CONV-045 r1 _projects/improvements/sources/CONV-045/conversation.md f9746970778f2d3250b98d573ee4c7784ef8efa2820a20b1795665a15d9fa02e 7a9f988fb1a7b730eab6cc8740cd8b09967eeeada566341a3e1b52cecda5baae",
+        "SRC CONV-046 r1 _projects/improvements/sources/CONV-046/conversation.md 407aece7f08952223ae2615800c6ffec86b1b87b4db331743767b6cedad977a9 c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+        "SRC CONV-047 r1 _projects/improvements/sources/CONV-047/conversation.md c97aedf0bcc5dfc5f179b7e7c6628e45ab7f69d5094cf7cc5401f02133dfb15f 1b759d6cda776fd038ca5795027a18467f85c3a72e163c96ef24daae6c1af6e5",
+        "SRC CONV-048 r1 _projects/improvements/sources/CONV-048/conversation.md b4af6cb7107cbbf9a9875780c43b0a8ff6c8ef5fec372c9674f00a3340e33f38 10521391293a18dd34215b0825ef9932da40fb77290c7fd5370b606dd6c2bf1e",
+        "SRC CONV-049 r1 _projects/improvements/sources/CONV-049/conversation.md 754864c7e0ea0e323aaff8bcbb15bab9e37bc0bd60afd1444b0b07f04baff9d9 60136ecb22acdccc9a76d1ceeb65117fd032540586354bb36170bc0f7c6413cd",
+        "SRC CONV-050 r1 _projects/improvements/sources/CONV-050/conversation.md 64ab062dabff2e4d587a53edbd7b393f302b302ffe20c027798b9f12cf8145b8 6f2f4d7de0b1bbeb72226269d3a0500f5b7d808ff2f6bd2e6adddc1ede102081",
+        "SRC CONV-051 r1 _projects/improvements/sources/CONV-051/conversation.md 9cf54b3a0078606809340399342b6107a1224ebc0c50ac436bacaaa341962140 3123c495555f33b3e8c2e7e97820e237d6958784c3009c3493aa23fd793e7ed2",
+        "SRC CONV-052 r1 _projects/improvements/sources/CONV-052/conversation.md 87a0ed92a52b8d6fcea243cc82aeb6559462c66cdeed5046e32c14ef732ccb0e a5c7c1c709bb9cffc81abbeeb16c61f987ae9ae819ffda85c7c8d99fb717216b",
+        "SRC CONV-053 r1 _projects/improvements/sources/CONV-053/conversation.md 2f5b35a0683ee286c12a70ec0071a44931f3e970972210b473d8b8ec8ff81540 816bd2f535312eb4f0bf609915d4687adcf9dfe404f2542b578bdbef91d0667e",
+        "SRC CONV-054 r1 _projects/improvements/sources/CONV-054/conversation.md ca73ff6ba3527a5fec3e44713f262549b3736eb46a86247bb28f36639573f44f a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+        "SRC CONV-055 r1 _projects/improvements/sources/CONV-055/conversation.md 15acf939a4d6ca09619ecd6ae73b1f34728b904c72b9e387fded0e8d625c8d37 55a330f8ed04ac8175c115cb728c54928742b1db55a2722ec75e982b85000e00"
+      ],
+      "branch_probe": {
+        "sources_probed": 55,
+        "shared_prefix_pairs": [
+          {
+            "a": "CONV-037",
+            "b": "CONV-038",
+            "shared_prefix_messages": 1
+          },
+          {
+            "a": "CONV-037",
+            "b": "CONV-043",
+            "shared_prefix_messages": 1
+          },
+          {
+            "a": "CONV-038",
+            "b": "CONV-043",
+            "shared_prefix_messages": 1
+          }
+        ]
+      },
+      "note": "",
+      "voided": "SOURCE_CUT_BROKEN 2026-09-12: three bound files moved after the cut by design — sweep-audit.md (AUDIT-74 rounds appended), review-queue.md (RQ-042), sources/CONV-013/attachments-r1.json (FIND-008 recovery registration); the frozen tool refuses a recut while the void cut is current, so the void cut is moved to history by hand (non-blocking skill finding: `cut` cannot supersede a BROKEN cut) and a fresh cut is taken"
+    }
+  ],
+  "source_cut": {
+    "at": "2026-09-11",
+    "cut_sha256": "6c470f71f4107434c52d2485ef03bd6feba66ce49f29c8e3ebe58e9d792f9dd8",
+    "inventory_revision": 74,
+    "inventory_sha256": "285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+    "sources": 55,
+    "documents": 3,
+    "lines": [
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-001-38a0f13ab9b4.png 38a0f13ab9b4a55a8e7780337c3bff12a2811ccc5f5a13589651d03c2a8affe8",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-002-9a8c8c29c060.jpeg 9a8c8c29c06093e17f6f9314ae4cd183fa50fce5ca84e3d03ee933ba0d820fa2",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-003-c3d7a8f3b414.jpeg c3d7a8f3b414dce1a461118084c779304471573bb2dcec24fda2553de96591ca",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-004-7165d88aeb7f.jpeg 7165d88aeb7f5e960156fca1d69bfeaae97758796d3e848ce5e4d3021704f1f5",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-005-44ba8c9d5b68.jpeg 44ba8c9d5b68a195fe6d319ed7315f0491e16c4121010de51ed01e01e49e5af2",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-006-2a007aa03de3.png 2a007aa03de3fc2339ccccdc97b949e983a4dd4312bc92f8d87bc535f65ea7d7",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-007-fc1ec097c889.png fc1ec097c889b021b900d05ca20ec41f4d219e669bf54e39c3574c83c211897f",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-008-f6c2b575ce69.png f6c2b575ce69e4ff32dd336986f97cea8a658756ac4c6d511cb596e3149d915c",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-009-28bafda3d393.jpeg 28bafda3d393399680ceeaee14e8c9c0514619e3b9d53bb34db22dc9f6d82c2a",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-010-ebc66dc6d473.png ebc66dc6d4734b8de5d8bfdd1ec2ebb822a6d591c2c5749d8a5a5f558a6a83c5",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-021-6744deb4b7a8.png 6744deb4b7a8d7f07e7025fe8ca568ff21c475fc6a3c166f7963ca6371bf5ce0",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-022-6ae1d58b52f1.png 6ae1d58b52f1776de5955bfb3abb4293f0e4d30e5ed5bfa6f9e558edd0f6bb9b",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-023-f855bdf94279.png f855bdf94279bc17a94f5fb31ae5400f3f735bbd7cfa602a8e3341739ee21b50",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-024-f8afc9edd6fb.png f8afc9edd6fbde0e8d31271815647bf2d25565f73242d841cae06d57f11ca9e2",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-025-72e638467388.png 72e63846738848b394e2cdb90c92ab74062c72b50e3b1abc0ce68160c4210db2",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-026-fadfe45fc207.jpeg fadfe45fc2076feda8a81046c1049c7193d6c18ab30ff0dd61644a494e2ceed9",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-027-fc169568e397.png fc169568e397a9ec457e0007b921d31ce5b1109e38edaed18d4af094028308f5",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-028-5175e9c0ec4d.jpeg 5175e9c0ec4de95d7bcfc44347327a8348eb830d06077f8b7ee3c2ecc2853671",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-029-08d266057440.jpeg 08d2660574400844a6053c945a93ba58e76ea665cb56083f64b808c575ef4ecb",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-030-52be7ee8a21b.jpeg 52be7ee8a21bad817ecc8bd68671016d89964dd808b54da00aed233165ae2c71",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-041-a5586a8936ce.jpeg a5586a8936cec6838252cb422da528c9fdd4cba1aa8aa6735e845035b3c743fd",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-042-c596bac600d4.png c596bac600d4732b0ef30d47baae1c3c34aee559e03dd3c83040741ecbb595dc",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-043-861a8854a9c1.jpeg 861a8854a9c1c0bd6755c00dba944c3fe952d3768f342aa5fc47817120ebd5d8",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-044-92899bdf57fd.jpeg 92899bdf57fdc69d221525b6090d5e895a8022ca064c21b31191bdffb05f5b91",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-045-fc114e948193.jpeg fc114e9481933b08e3fb835ade639de5801627208a47869d5e661d4bcde3c6ba",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-046-06a008ec5882.png 06a008ec58820e18a99ca0d2b95d10bf3c02fa3502a5b9e718ea05c0f7a29b7d",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-053-f02d5a15d73e.png f02d5a15d73e6004afe21fef349ac17b48d47c811b9063787c0069d1f310b2d7",
+      "ART _projects/improvements/sources/CONV-001/attachments/ATT-001-055-5dfa86e09985.txt 5dfa86e099856631ca17c4c14a289704216e3bf3c0bf98a5a95935f1175fbc0d",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-001-1bd2fa62d998.jpeg 1bd2fa62d9982175b6b9b77d8626490879981c5959c956ba49a7dce1b8b06f36",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-002-6ed255aeb717.jpeg 6ed255aeb7172d05f72d192d0f998c02eab428bc072e6cb592478f67264ccab4",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-003-ea159bba3c1e.jpeg ea159bba3c1e0279acb0c7f910fbafd9dbf669582d1ecd97add8d7b2efcac6c5",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-004-aa2809c7c24f.jpeg aa2809c7c24fdb054b29aa6b181888c14a6bfb1f6605dd3d362e1b0c993884cd",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-005-531719fc61d7.png 531719fc61d77f762e55d593e0895549f9681a0190ebb5c65a364a52433d603d",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-006-2f231400cef5.png 2f231400cef5f287e4231d05d4414d4de15518895177eeea9391c6d31c0501f2",
+      "ART _projects/improvements/sources/CONV-005/attachments/ATT-005-013-d258a21e1a7a.txt d258a21e1a7a3ea5eafaa87fbf7dbba27fb8227424d90f4eb9c2f34cc09390bc",
+      "ART _projects/improvements/sources/CONV-006/attachments/ATT-006-001-6be5496dce33.png 6be5496dce33dae24f802591a0f0aadc35a98a7bb367682d7917d83b87f76e84",
+      "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-001-c5c98ecdb358.md c5c98ecdb358b91b3ae8278ac638cdaf3d80cbd236279d7b49120cbb6ec2baf1",
+      "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-002-73ecb6fb7b87.md 73ecb6fb7b87aeeadf342d3ca10c56a437d0b8d34b1269cd3d56c020d9085f07",
+      "ART _projects/improvements/sources/CONV-007/attachments/ATT-007-003-09fb84b842ff.md 09fb84b842ffd46a77d8922621cebdddab9e91182975dd464eed86c2bebab6c1",
+      "ART _projects/improvements/sources/CONV-011/attachments/ATT-011-001-902f55b27409.pdf 902f55b2740909d3b91d92ea5c911e17c6b662b0303ae1e0170a5f59783a12c4",
+      "ART _projects/improvements/sources/CONV-012/attachments/ATT-012-001-a65d8841874f.md a65d8841874f145de528859d0e9e8833c41f1fbc1473a3a111e3eaba18a78b89",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-001-09017f2e7fab.txt 09017f2e7fabb19a23ed51925b5208e841d97eb06fcae00d76f6e1f68e54e24c",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-002-2e941653f983.txt 2e941653f9838538df1fb8bdaa467428374fd2a26414ee7534ac39f13c2c85fb",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-003-28e38c7c292c.txt 28e38c7c292cf5d79546a25897d306f0425978c735feae1692174f7fa8d8fe5b",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-004-d35dc6ae4956.txt d35dc6ae4956c6fe9fe7feefac8623520c3364e4be84def84b7c44cfc3729c74",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-005-c6888abd23be.txt c6888abd23be0f2840a620a3f7d9f0f1d1f22497162cde3b5b6b9b6b79ac7eb5",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-006-09f732ee1968.txt 09f732ee196887014afae4b0ee9828bb1c82461a9983d31512ecbd16377b2538",
+      "ART _projects/improvements/sources/CONV-013/attachments/ATT-013-007-31bf38d982a9.txt 31bf38d982a931417d423f136fd65d9904c72a4090668badf3d200cdf4926bd4",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-001-11a659583faa.txt 11a659583faa7a3bf01992a82a5668e9c9662518b4e42d508d88a392dd6ae9b4",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-002-a0b3f38d0379.txt a0b3f38d0379cc6bb5ba786e5ba360f2372b260591c188166161bae041c4f901",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-003-fa5f31491d99.txt fa5f31491d99c07ce9a7acfabd20306761718981f1a792469d6ad53da582fc72",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-004-cd5c1538d380.txt cd5c1538d38045e142626bbaf700bbb5e4daf00844dc69da0fe398bf83185cc2",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-005-4e4c68a58246.txt 4e4c68a582468b4647c00cab0e0620923968e43984c8fa2ebdbde1224f3ffec6",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-008-09f732ee1968.txt 09f732ee196887014afae4b0ee9828bb1c82461a9983d31512ecbd16377b2538",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-009-9f93b1c37d45.txt 9f93b1c37d451c0fcf0e614ea0cfcd92745b66ce97ae8dfa0b676eb58b4cd8c1",
+      "ART _projects/improvements/sources/CONV-015/attachments/ATT-015-010-31bf38d982a9.txt 31bf38d982a931417d423f136fd65d9904c72a4090668badf3d200cdf4926bd4",
+      "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-001-e3b8c3e8c9f5.txt e3b8c3e8c9f52fc72663d2f7bebc5d37877e4fc993c80a010800eb089f19c636",
+      "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-002-d58c00d7e7f6.txt d58c00d7e7f6e7833e4bdb9e6600c3b59663e19d792203032591b1f68d082218",
+      "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-003-59658e4dfd1b.txt 59658e4dfd1b6e2dc01d77c3c516b138714efd6a928b6695b5800551b3adcdb4",
+      "ART _projects/improvements/sources/CONV-016/attachments/ATT-016-004-fd370aa2da70.txt fd370aa2da70a8dbe0fd12b8aae4272b2a62a0d140f2d794f96fb1d2b6942025",
+      "ART _projects/improvements/sources/CONV-022/attachments/ATT-022-004-2d8cbc39da76.tgz 2d8cbc39da762cc088ff170de24e9f3f2513de6c8ae58ba6003f4e34abc6e20d",
+      "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-001-b14cfd62dc9f.pdf b14cfd62dc9f857f98b491ab4b655067a5a927ff2d9773eb7c789b825d9f561d",
+      "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-002-9c16c7ea948b.pdf 9c16c7ea948b0d5fa9f00b8861ace752097d71f546987e43d56f3b1bbe7874c1",
+      "ART _projects/improvements/sources/CONV-036/attachments/ATT-036-003-d757033e2f5f.pdf d757033e2f5fe04859e139f46f3518489f2127b1359149bfeec960f22c5b3562",
+      "ART _projects/improvements/sources/CONV-037/attachments/ATT-037-001-2dc47fd10d25.pdf 2dc47fd10d2580ac187887e227ce603ad60bea7867f54747c23174ad6cc6a389",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-001-d69509df63dd.png d69509df63dd5b8dcbebe88072951bde442899a99a21350bbe5917ce7e03408f",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-002-b66b4a119153.png b66b4a119153da68721ee59220709a22c6aca3492e41c4710c3677c739f0c7eb",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-003-08799dd5e902.png 08799dd5e902a6f1177d5647e4ba520a1b749e06590df30b752e93a91d1a6fd2",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-004-30401abc7848.png 30401abc7848df14eadb7a256baeb0b44a2ead1bf554792faea28093e3424217",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-005-883107d4812f.png 883107d4812f1e64e3a35957820bb638bd09f0a2305bb43faa2288617ee4fc55",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-006-6ddf78cf7c03.png 6ddf78cf7c035ec425c90fc581d8cb76dc59503f5d23a36e5931359c045c8b34",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-007-109cf46b6503.jpeg 109cf46b650312637750f42084bf004058d2f810a7b67937df9f3252b4ce5f37",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-008-36f5b30bb688.png 36f5b30bb6887f6ceeddad7b12348a7e6a6f004aefcdbb9970df6c4f5a46c7cf",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-009-6158f323f921.jpeg 6158f323f921a9026eec9ea0cbe363772e8f1b91c89859e394904522666af044",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-010-6f7de87577e0.png 6f7de87577e0dadbf28df884a2b81ceb282cae299b5680147b1dbc13be7858eb",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-011-89ff86b73c25.png 89ff86b73c252292427d14c5b0ddcc47b7e242a0fc5284954647c417195dce72",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-012-75ba14adc80c.jpeg 75ba14adc80cbaf2d18acec853926091095c5744e0d351e8785067d3acedccaf",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-013-8f1d8ff334ec.png 8f1d8ff334ec09d3b7810b109b024799e62569bc372572811df6fee89b7416b6",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-014-a8b1b04a3552.png a8b1b04a3552f6fad93108b6ff177a0e0766d1cea3364689a7dcc44cc48e6ea1",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-015-69f7d92b247c.png 69f7d92b247ca4c4ac2d3ad77942ef13e5276065dc590206bbd403e5d9ec1326",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-016-7a4f9ffff40f.png 7a4f9ffff40f98c17f7171cc3a6544ad41ee01cab94042c5dc7979b5fd927cad",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-017-5de2ebce7a4b.png 5de2ebce7a4b0efa1385a1351dfe355e4fd103a2b4034b9e44a90265bf5361aa",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-018-2af85300205a.jpeg 2af85300205a78a06593f64882e1b3850d58d4d328bf3b11f03807aa252d9c8c",
+      "ART _projects/improvements/sources/CONV-038/attachments/ATT-038-019-618803752baa.png 618803752baab7c44fb933acbb22bc29b88dc65a6fdb6b86911c2b6fcd5263d0",
+      "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-001-e5ddd1ead3c8.jpeg e5ddd1ead3c80122e9af4b03cfe3f4f650b5188325cd9e8a098d4331b15469c8",
+      "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-002-53798584fb91.png 53798584fb9111a930535d8ed48090aa998f509b716f91aca020654f499fbd2b",
+      "ART _projects/improvements/sources/CONV-041/attachments/ATT-041-003-0ec0bfa61ba8.jpeg 0ec0bfa61ba80173827609862d2ec689920163eafe89dfd9649aa30a6b1aa693",
+      "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-001-a821fc90ef44.jpeg a821fc90ef44d2d77e592f9c2ab189bdab24343125a990f0da39b6b115bbfdd9",
+      "ART _projects/improvements/sources/CONV-043/attachments/ATT-043-002-24b569346a99.jpeg 24b569346a994af74fb4d347b2186d2915738ab57f481fe9e6ff6243a4c3ab0e",
+      "ART _projects/improvements/sources/CONV-046/attachments/ATT-046-001-7cc5a2a0d321.jpeg 7cc5a2a0d321d3046e19121bd8e152dad123747987b86f1d9bdbc469094093bf",
+      "ART _projects/improvements/sources/CONV-048/attachments/ATT-048-001-b4fe889f8f24.jpeg b4fe889f8f2456e05fc21eccfe3cc807ca64897bb329b328c2ac25d21f786b12",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-001-b9a312bfcd58.jpeg b9a312bfcd58ba23b912894269f25f9be7f65ea85271e2835d80dbe70a08f979",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-002-914c753f6d31.jpeg 914c753f6d31e029420f2f162fba8701aff14dfd79bc7b68d1c038467d363809",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-003-3b00954feb39.jpeg 3b00954feb39433cb31819ae89848d9dee901940a441ae26307c7365c067ae71",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-004-f2176b451251.jpeg f2176b4512511dce8009b9452ba367e8b7a65b3a0abd282182bb02220942c335",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-005-cf562d881184.jpeg cf562d881184d6d6e7d86b716f3ab83397c9c7a452eaac555bf25494ed251b92",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-006-c428b148aba6.jpeg c428b148aba63b7f219479eb74f71d68f7d458e0ecb0f3b6ce26057fe1991437",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-007-83098287fe95.jpeg 83098287fe955aa5a4712d2e812bd55e2aebfd5b84d89e67da1ead361f8df7ae",
+      "ART _projects/improvements/sources/CONV-051/attachments/ATT-051-008-f9297661de1d.jpeg f9297661de1df20a35f5bbacae54b97400c09cacc283d2d2859dee6023e7fcec",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-001-5e18ab46df2a.jpeg 5e18ab46df2a1123dd60e513c180384c3ec5cd0d1f6fc5e15d063a241e88561b",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-002-2532bf9e31ee.jpeg 2532bf9e31ee0d49d4ee871682d9c8ff4a8d42d263e3b473de02f868ec92afea",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-003-2d243e4fd9ee.jpeg 2d243e4fd9eefe1717b27d9013f194207177f01aefb8983496b2fca96ea6d47d",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-004-aad3ab0049a7.md aad3ab0049a785c709e1805892c4d80d21ebb84de0ab269ed0440756d0657a6a",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-005-cde1b723de47.json cde1b723de4781dfa28de2dda641cb906972eb2e4aee9dfb8443b4c5da6a140c",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-006-aee95234f0d9.txt aee95234f0d9746e540baecebdeb818c5cc51dafa3b1436273c113332c4beef2",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-007-f51eb8b7e1f6.txt f51eb8b7e1f6712b02eda143c7c52c9938746e811813255eb1657c5b40e6be54",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-008-26c4725c7e9f.txt 26c4725c7e9fd38b72b81208488b8baba0e5f3036d4f0ef814d739455cf2b46c",
+      "ART _projects/improvements/sources/CONV-054/attachments/ATT-054-009-1d2add27983d.txt 1d2add27983d1e602d500539913e7e67d2f8f244a2c126b1b31022040b86b35c",
+      "ATT _projects/improvements/sources/CONV-001/attachments-r2.json 0021e37f048e7206577e330bbd2b8b3e61ac69d047e52f8a1ef8d6efa7ad0a1f",
+      "ATT _projects/improvements/sources/CONV-005/attachments-r1.json 7fc7d742ee1311663a4fe7fa69ae35e6b618bd856927ceeca631cdf057d285ba",
+      "ATT _projects/improvements/sources/CONV-006/attachments-r2.json 3e5bea88359b9bbc94e3c6a211cb956040080ac2d3f3e486a6e5f1d474c5b730",
+      "ATT _projects/improvements/sources/CONV-006/attachments-r3.json 2e1cc921a3586f82c66a41402b00c6d2b7e2be65a679e90792f072d260b7b14f",
+      "ATT _projects/improvements/sources/CONV-007/attachments-r2.json 89968cf99eefae080355e202bd4756f4bcc0f8d8c5b22073ea79611b1aba2270",
+      "ATT _projects/improvements/sources/CONV-007/attachments-r3.json e4a1e42578e4c48c80a2ef7564308d13987b69d165c2655d2c3d6b163f6518e4",
+      "ATT _projects/improvements/sources/CONV-011/attachments-r1.json 5aaac4cf952b1bb8230b22c8c0a13ce7f177e7872df44634005ebb66d07776f5",
+      "ATT _projects/improvements/sources/CONV-012/attachments-r2.json 395a5df150a250da44df1c65306c1368e551978f0d3c7998c042c8b7a72c5234",
+      "ATT _projects/improvements/sources/CONV-012/attachments-r3.json df4dee5130b41d127909c266a4ffb04a62c883d785de8e2174d762cf2b68aea8",
+      "ATT _projects/improvements/sources/CONV-013/attachments-r1.json a9432f5d3f25d1aa75dc694a5cd2263685f1fd2a3751e24292ae0dc7132412a4",
+      "ATT _projects/improvements/sources/CONV-015/attachments-r1.json b7906a510c2c381eb4662c00997a0ada3ee8c03c5af1fc57ee22e6f526e127ba",
+      "ATT _projects/improvements/sources/CONV-016/attachments-r1.json da51cb5a77125f907b2a8e1232c471f8b0f8be2c1448a05766487f1fbe937469",
+      "ATT _projects/improvements/sources/CONV-022/attachments-r1.json bbd4312dee2ba13e42c3e72b3a125504d53c17bca7c20da9d1b765d036500565",
+      "ATT _projects/improvements/sources/CONV-036/attachments-r1.json d7b22373cfafc990710653ac10e2fb2ea1368dd5612aba586f3a733c8e7cc1b6",
+      "ATT _projects/improvements/sources/CONV-037/attachments-r1.json 355a64c3501a189c732fe333bc40f56c57d108fb258154c8b3d20d9bac082a4f",
+      "ATT _projects/improvements/sources/CONV-038/attachments-r1.json cb3e60d2d982abbc1c226735f9aa17ba5c88a960a19cb1cd366648212d1e8ae2",
+      "ATT _projects/improvements/sources/CONV-041/attachments-r1.json fc4af69956a8c316cab8cb96c6ad8235b9fd280ce27ce8580b49c46309299ca6",
+      "ATT _projects/improvements/sources/CONV-043/attachments-r1.json 49baa4ed568c2444634d1cc04c4e8063b7a4526a6f2e31634a0a210cb2065154",
+      "ATT _projects/improvements/sources/CONV-046/attachments-r1.json aa46f920f9ea03e9d0a3de6132342299304dc49668936f3126094b8feb12380e",
+      "ATT _projects/improvements/sources/CONV-048/attachments-r1.json d76a1444914d2c5dd8c8051818d946a894aa89009451e7c9c3653932e5e508b3",
+      "ATT _projects/improvements/sources/CONV-051/attachments-r1.json f6444d27f45c1bcea2c624ed3d698573ca1373a7be67c4f02e86dfccb84975f3",
+      "ATT _projects/improvements/sources/CONV-054/attachments-r1.json f03a9ee46f1b119fac3d673691c4394a7478246fc2712de224e1f0a8f51d2351",
+      "AUD _projects/improvements/sweep-audit.md 4a3197e92b14aae08c5d970a7171a81b77dc1c1eaa48f1faad42b1806d2656af",
+      "DOC DOC-001 r1 _projects/improvements/sources/DOC-001/document.txt 219c876e3b818d53d0162b23108fb00d5abfd42c2d1eb9667519abed7baa08e7",
+      "DOC DOC-002 r1 _projects/improvements/sources/DOC-002/document.txt 6c3116faccb21b2700ddd3c56485cf067d44f8cebf5e78fee857bdd22f5df6bf",
+      "DOC DOC-003 r1 _projects/improvements/sources/DOC-003/document.txt 2632b4ac2b27d34573c0c09351ac2af6d86f0478fd611e03fae3df5ae0cc195c",
+      "INV 74 285aa45b915a1dd2d9d7546c6ed4245314bff44cdd4558fd0b49fa224f0098cb",
+      "RQ _projects/improvements/review-queue.md ad5023d655b0bae588aa53c9c741e91787f013293b96c6c0cf845c3e7d523ec9",
+      "SRC CONV-001 r2 _projects/improvements/sources/CONV-001/conversation-r2.md 6b1cccaa84fdb6c9393bcb8610288348b23a81d9f6eac5a574ef07a2d8e4a8cf 151d1fc329756e36892573c90150c0033be2da173cbad866ab8acd43d25eb1c4",
+      "SRC CONV-002 r3 _projects/improvements/sources/CONV-002/conversation-r3.md e6230f5e15445f0c6c156be22b97497821bb598dae50852103390b9353a7b365 5f5385ff767f8b98a0fe70fbabf3d47d75360df374ef77aaebc52420a2898d43",
+      "SRC CONV-003 r3 _projects/improvements/sources/CONV-003/conversation-r3.md 087421c57fbe026140e50c749827c1000eea7cff60e2f5fe5da4a3396881e305 193a3de7f371ce83378a2c577082f1e09c4d27f46b460df5c78e6d2a560522be",
+      "SRC CONV-004 r1 _projects/improvements/sources/CONV-004/conversation.md 03981ca00367f708686d92b6a3f4cd1113346b14e351c1a4c56866174e229091 f0c63eaa0e141132db5f2106c479a3d0cbb8e2f026f1775e83a540d700e8404d",
+      "SRC CONV-005 r1 _projects/improvements/sources/CONV-005/conversation.md 7547940b87200f6149475c813aea41f1ab857ef091b9aca241d4f84f5d9bffdf 04d38687d7b3f8ba47ec92c56c88db5a767ea9943961b64063462286d7193198",
+      "SRC CONV-006 r3 _projects/improvements/sources/CONV-006/conversation-r3.md 6e5b621cfd83da1681f270dd38229ec77bf66628d854ab16b2a8897b5ff95d0f 1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+      "SRC CONV-007 r3 _projects/improvements/sources/CONV-007/conversation-r3.md 17338ef226f72b525c9988b2eee9c23859638958165fba073c142f30dedacd81 bf46694f5e60e2001d555c54af9ccbbdbb8f70c950ef9f083383e662f501b860",
+      "SRC CONV-008 r1 _projects/improvements/sources/CONV-008/conversation.md d34283811689fea29c5db482ab4a0f5f2461e370be9de5b5adbed5ffb94e705a 7eb936b9889b6c4c97b274bf08da2e12a9a02ab88435e6ab66cd4f0bba6d0dbf",
+      "SRC CONV-009 r1 _projects/improvements/sources/CONV-009/conversation.md 9b6488d3e74616f6fea897a1271678b2e36b9b0082af3e38569de5ca4ed8059e 9002596bc79559ad300d10fb5be205e4792bcebe9170ee63846e0800ac1d7642",
+      "SRC CONV-010 r1 _projects/improvements/sources/CONV-010/conversation.md 6dcc25f55830373a6982e020a693e5425b62f1254d7ff8867bceca53f4b9e5c1 1a9529b500f497fd338798406e56ceda96049605a3ffa7718fb536d85c704e0e",
+      "SRC CONV-011 r1 _projects/improvements/sources/CONV-011/conversation.md 3eeb53c56ce050236315ca2b3cbf346ee24c4109a95a2659ebb252c7a4051795 52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+      "SRC CONV-012 r3 _projects/improvements/sources/CONV-012/conversation-r3.md a0033dd5102c7e5d25a85aae608225c31701b3501b1a94508dffacdcc32f588e c2d61931a80a381d92434fc59a89272e60a63aeb7e881eaf14d639df8e567d8c",
+      "SRC CONV-013 r1 _projects/improvements/sources/CONV-013/conversation.md c615eea24a295ae673beabdc95eabdd9429a9c079b67a8f7420bd8eadb2d7764 76efa4a2d7d26a12a871872dbc1b9c5862841ab50b946ac6bdea87995dfbaa3d",
+      "SRC CONV-014 r1 _projects/improvements/sources/CONV-014/conversation.md e77fba105105ef15a9e4ebc042e6bfac4f412024315b4a7ea568b075e611548f f0a6dc32d89e32f14af419d105d53db2e10fecc54d099ede26f904ec958f788c",
+      "SRC CONV-015 r1 _projects/improvements/sources/CONV-015/conversation.md 208ce2eeb3cdaef5914469f2b76e955bc45b3e994d80ded616883a0cde803b88 56245dd8ecb3f45c23164cbbb6f78f28c22bdbdef2bd66bf8d0f24484698d559",
+      "SRC CONV-016 r1 _projects/improvements/sources/CONV-016/conversation.md 273e2a3e723565bdd04b6416ebc256d843d881873b69ac29de9a1e44e31ea169 e20e576eeca71e2f55f52d00fff372f75ec624eb52960a367e56cd698a007679",
+      "SRC CONV-017 r1 _projects/improvements/sources/CONV-017/conversation.md 09a2f8f853bc5ea27e48bf70c9b42bc8a38c3cdc2da7c416e454bf3b1f6ea357 0d81a86b9def4aecf585cfa3348e18437fdffa49c02da6be3c24355124af5e89",
+      "SRC CONV-018 r1 _projects/improvements/sources/CONV-018/conversation.md e45bb1fb488014ec6de93175612d2e21ef989031c38d795947ed3dcad0be3b4d 95124492b52cf5214b77ffd5cca88bfc9393861251265c07c78990403b9cda0e",
+      "SRC CONV-019 r1 _projects/improvements/sources/CONV-019/conversation.md 9de708a0dcaff2ba6655bf2fa6d123de24d093bae222189fb208074a725abb72 645b06bdbc2fc759f091cc750c1ed7e36b7e3a7302e6a8daab5d1b602d32feea",
+      "SRC CONV-020 r1 _projects/improvements/sources/CONV-020/conversation.md d071ed1b7a91ce2fd291ed70d3d545eefe14ccc2afda939520f4ecadd5eb9aa4 dedc6742fa803a25e7f9703532aceba6c683fbabc71824ae7eeff9a01ebede9f",
+      "SRC CONV-021 r1 _projects/improvements/sources/CONV-021/conversation.md 1f7c84adef03f584785328a29858ffcb1916e29c799acb2456f24efdf8054132 7eb488b8c9047c130603b9b0ef4612cac9a5acdebedf82a1a9d7578eb13367a4",
+      "SRC CONV-022 r1 _projects/improvements/sources/CONV-022/conversation.md 61bf6e350cfb35aab98882077377d80a97594005c2d1357f7570d900ca689d73 d292382abf50f3de0fb9b58240c4ef8332868ce8c5d574f262cb0e3dc63b36c7",
+      "SRC CONV-023 r1 _projects/improvements/sources/CONV-023/conversation.md 86a829325b4686b9870d63f3aa99b0d5e1f93c55beb85e7808854bf4099173bb ab498b8587845112989df7e329d72a2b4922cceaf69e72ae9eaeeebf4cabafcf",
+      "SRC CONV-024 r1 _projects/improvements/sources/CONV-024/conversation.md 5adce49b87f22737237a6cf4cf098c4a4ae1947da9ba06a31f387bc5cf260adb d27178d71a3a88714601168c4379b0b99bc49a402effbd8d11d7b11f8b1b2c3d",
+      "SRC CONV-025 r1 _projects/improvements/sources/CONV-025/conversation.md 3a1ec505494ed59cc5e639ed4d6db9d60706efe07045981dcd80030e686ba00d ad80e48b6ca123e2010b200f9ea5319ac70e8156d2ae1bb6f8f5a84af898e17f",
+      "SRC CONV-026 r1 _projects/improvements/sources/CONV-026/conversation.md a72252c3e94d583c306669ea056e41e0833029cacf0642fc81f3c752b702a0db 062a64e2802e0b30edaaf9a8a6c8e343252ee3dc0114d5bf3f11374cc5b159f7",
+      "SRC CONV-027 r1 _projects/improvements/sources/CONV-027/conversation.md 92618b61ec6b14e06a71dc8ff9742d53faeb44f8718fb4380d5d775c117168ca 6b3a302d22eb76a66b89d458af717a937de627618e67a37b687e37dbe0ec4f22",
+      "SRC CONV-028 r2 _projects/improvements/sources/CONV-028/conversation-r2.md 33274d35dd0563ec6ed5f9aba10da2c4406c0aadc687b0a69fad6e8f7e548bed 8aee2c23e04a50609bcdc49fc0abefeb94f26d9ec25e2306cf3f4bc8636666f4",
+      "SRC CONV-029 r2 _projects/improvements/sources/CONV-029/conversation-r2.md 294add2ee2d496ed6b6ee57b00660c088c686e6774afdf0431b2237f69825891 b3d8456712525620b8ef45253626b5d1ff7b6a1989147cca541acb5816c72a73",
+      "SRC CONV-030 r1 _projects/improvements/sources/CONV-030/conversation.md 0632fd5a1b48a0823f49bb7a11f8e5bae001e25edc808a73a704b518f1d9cbc7 f43b01787fbbdb141020e0b987b981e92880bac8107111be45db7078738e128b",
+      "SRC CONV-031 r1 _projects/improvements/sources/CONV-031/conversation.md 7b7eb5aa48fd860042da69da0b11f317ff8a82143c8d51979ed844b7a23d75f8 ed5307132a9ab012d6d6719330fb63d164bb970887e70ba35688d1cdd21467af",
+      "SRC CONV-032 r1 _projects/improvements/sources/CONV-032/conversation.md 1e1d8117df156db89d758ba3e0bfb162f444e5be19ebacd03aec9a085800472a 50d17341b3d516630d8f65b7e091a04f43376faadbfae2fd19e0661947107fcd",
+      "SRC CONV-033 r1 _projects/improvements/sources/CONV-033/conversation.md 813d12645b01e4584fd34084fda66b56625c2915a88f9594708e514723cb21bb 8aafdd65a783bd9a9b26f30bbb98a7cbe0dea63e8e88d51d7d8b708466aafe91",
+      "SRC CONV-034 r1 _projects/improvements/sources/CONV-034/conversation.md d27a8ac3aa28dd88fd927f4dd4ed0ca0b68ae07ca4a9072438a38b45e4c2387c 9c35dc86cb3198a68ace7f61b7d0ed5a71ba116d4e81f2d3a46d255bf1c9c91d",
+      "SRC CONV-035 r1 _projects/improvements/sources/CONV-035/conversation.md 670092e4a9ce09378b77fa6eab0772561fbc934c3230ccf3920489b1845152a8 ce93199ed8b90e497f87556a67d80574706e9c3e3a08102f20f7eed3fba2b1b4",
+      "SRC CONV-036 r1 _projects/improvements/sources/CONV-036/conversation.md 82f069a151f01e211ff41ec1c5be98c53028691902adbdd84915ca75c82f2e88 7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+      "SRC CONV-037 r1 _projects/improvements/sources/CONV-037/conversation.md d287b07e02ef4d90e4a38fcbdc150fd45dea0d4f58f9280aacd1ea9e0e3aa2a8 3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+      "SRC CONV-038 r1 _projects/improvements/sources/CONV-038/conversation.md 451c83b7a94a0aa35c8f21b7a085883d1a6b887f673b152853d32ca33201d4c6 375da93c206f676484db0c2b7169f43dcf88e34c7eb3ba7223274be05931f6f9",
+      "SRC CONV-039 r1 _projects/improvements/sources/CONV-039/conversation.md 5969c8166587af4d508e23278985c0c061c049e0be8238d87bf0a3b37c338251 b07ddd2db7bd8c843a69694ee2e638135197afef0a45cde36fb69d9474658938",
+      "SRC CONV-040 r1 _projects/improvements/sources/CONV-040/conversation.md 1ed3ca9fae5e57561deaf22fa6523d0027bba5d46498dbdd71377e310d8bfbab cf4273ec9d4dc7a84d54ea622da61c35d5a0490939781d4a6451f8793efb8d53",
+      "SRC CONV-041 r1 _projects/improvements/sources/CONV-041/conversation.md 8dd5c3be33e4808ec18d2f45dafc60de888aabaf7f7ed5380c683559d18c29c1 a00c51aa60c68c45da5435bba6cc202fba574e16753a144203c4e8dcd1bff2d9",
+      "SRC CONV-042 r1 _projects/improvements/sources/CONV-042/conversation.md e98de6ef01b53f8de073c7b787e21f6c2113eb6268ac14799a5a5c989984f2c4 d16208d4e16ea4e6c11ec02274aa66f5d27773f00c2743bffbd6110569f44684",
+      "SRC CONV-043 r1 _projects/improvements/sources/CONV-043/conversation.md bd7533b0355e782e38b9d4d4592e06fbb0e03b1f4621a65ae0571723fc6a496e 92fa3743458ebf48211ce957911088b5de8181d612108efe6a1bfb58fefa8597",
+      "SRC CONV-044 r1 _projects/improvements/sources/CONV-044/conversation.md 21da48bdf570d13dc4115f8ecbe16547780a30755ced0a481bbfc73e0117a063 57213beb6737a072808e2e310ea9ab48208bf70e565622c537a3546b97caa411",
+      "SRC CONV-045 r1 _projects/improvements/sources/CONV-045/conversation.md f9746970778f2d3250b98d573ee4c7784ef8efa2820a20b1795665a15d9fa02e 7a9f988fb1a7b730eab6cc8740cd8b09967eeeada566341a3e1b52cecda5baae",
+      "SRC CONV-046 r1 _projects/improvements/sources/CONV-046/conversation.md 407aece7f08952223ae2615800c6ffec86b1b87b4db331743767b6cedad977a9 c70933de6f4ab5fa8417d57a4f529a2be1f2834afaabc548537ae2594fb55d7a",
+      "SRC CONV-047 r1 _projects/improvements/sources/CONV-047/conversation.md c97aedf0bcc5dfc5f179b7e7c6628e45ab7f69d5094cf7cc5401f02133dfb15f 1b759d6cda776fd038ca5795027a18467f85c3a72e163c96ef24daae6c1af6e5",
+      "SRC CONV-048 r1 _projects/improvements/sources/CONV-048/conversation.md b4af6cb7107cbbf9a9875780c43b0a8ff6c8ef5fec372c9674f00a3340e33f38 10521391293a18dd34215b0825ef9932da40fb77290c7fd5370b606dd6c2bf1e",
+      "SRC CONV-049 r1 _projects/improvements/sources/CONV-049/conversation.md 754864c7e0ea0e323aaff8bcbb15bab9e37bc0bd60afd1444b0b07f04baff9d9 60136ecb22acdccc9a76d1ceeb65117fd032540586354bb36170bc0f7c6413cd",
+      "SRC CONV-050 r1 _projects/improvements/sources/CONV-050/conversation.md 64ab062dabff2e4d587a53edbd7b393f302b302ffe20c027798b9f12cf8145b8 6f2f4d7de0b1bbeb72226269d3a0500f5b7d808ff2f6bd2e6adddc1ede102081",
+      "SRC CONV-051 r1 _projects/improvements/sources/CONV-051/conversation.md 9cf54b3a0078606809340399342b6107a1224ebc0c50ac436bacaaa341962140 3123c495555f33b3e8c2e7e97820e237d6958784c3009c3493aa23fd793e7ed2",
+      "SRC CONV-052 r1 _projects/improvements/sources/CONV-052/conversation.md 87a0ed92a52b8d6fcea243cc82aeb6559462c66cdeed5046e32c14ef732ccb0e a5c7c1c709bb9cffc81abbeeb16c61f987ae9ae819ffda85c7c8d99fb717216b",
+      "SRC CONV-053 r1 _projects/improvements/sources/CONV-053/conversation.md 2f5b35a0683ee286c12a70ec0071a44931f3e970972210b473d8b8ec8ff81540 816bd2f535312eb4f0bf609915d4687adcf9dfe404f2542b578bdbef91d0667e",
+      "SRC CONV-054 r1 _projects/improvements/sources/CONV-054/conversation.md ca73ff6ba3527a5fec3e44713f262549b3736eb46a86247bb28f36639573f44f a42beec37870d7d5157c61ed09968ee9a1d0a20fe10890faad84568fc3133856",
+      "SRC CONV-055 r1 _projects/improvements/sources/CONV-055/conversation.md 15acf939a4d6ca09619ecd6ae73b1f34728b904c72b9e387fded0e8d625c8d37 55a330f8ed04ac8175c115cb728c54928742b1db55a2722ec75e982b85000e00"
+    ],
+    "branch_probe": {
+      "sources_probed": 55,
+      "shared_prefix_pairs": [
+        {
+          "a": "CONV-037",
+          "b": "CONV-038",
+          "shared_prefix_messages": 1
+        },
+        {
+          "a": "CONV-037",
+          "b": "CONV-043",
+          "shared_prefix_messages": 1
+        },
+        {
+          "a": "CONV-038",
+          "b": "CONV-043",
+          "shared_prefix_messages": 1
+        }
+      ]
+    },
+    "note": "R39 recut (2026-09-12) after sweep-audit AUDIT-74 (FIND-008..010 remediated) — supersedes void cut c21a6f78; sources verified 2026-09-11"
+  }
 }

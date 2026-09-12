@@ -1,0 +1,21 @@
+{
+ "conversation_id": "6aa0458b-6bcc-83eb-a5a8-d0b963679ea4",
+ "source_id": "CONV-037",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "ResearchReport-2026StateofAIEngineering.pdf",
+   "file_id": "file_00000000dc0081f4990b83a79949a124",
+   "name": "ResearchReport-2026StateofAIEngineering.pdf",
+   "mime_type": "application/pdf",
+   "size_bytes": 2882600
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000dc0081f4990b83a79949a124"
+ ],
+ "declared_count": 1,
+ "exportLen": 97517,
+ "sha256": "1471a517f9bb9c7408c123976851ef9726f34869e192cae3b58d9a3a42723a9f"
+}

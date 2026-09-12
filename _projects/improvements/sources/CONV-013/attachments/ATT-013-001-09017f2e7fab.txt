@@ -1,0 +1,162 @@
+All evidence is complete and all residue removed. Here is the adjudication.
+
+---
+FOUNDATION_REPAIR_GATE — INDEPENDENT ADJUDICATION REPORT
+
+1. Adjudication timestamp: 2026-08-25 (session started ~13:50 UTC, canonical Mac).
+2. Reviewed state: origin/main = e075de15ca2771fde60239e320d50ff6af30b018, tree = 0bc0ab40063555022995cd14b717e7b8e72f4993 — exactly the required publication. Re-fetched again after all evidence was gathered: main unmoved.
+3. Fresh worktree: git worktree add --detach …/worktrees/gate-adjudication-e075de15 e075de15 — detached HEAD, no branch, clean (status --porcelain empty), HEAD/tree byte-exact.
+4. Independence/no-write proof: no branch created, no commits, no review artifacts written into the repo; 0 replace refs, not shallow, no grafts file, no alternates, no identity-changing git config (local/global inspected). The only filesystem effects were ignored node_modules in the canonical tool root, session-scratchpad files, and one disposable clone — all removed before the verdict; the review worktree itself was removed at the end. Zero writes to Git authority (final status over agents/skills/workflows/tests/scripts/config/docs: 0 lines).
+
+Publication integrity (Part A)
+
+5. Merge commit parents in order: 96d9d733…, 13e8a903… ✓. Candidate 13e8a903 is a direct child of 96d9d733 (single parent) ✓. Candidate tree = merge tree = 0bc0ab40… ✓. GitHub API reports the merge signature verified: true / reason: valid ✓.
+6. Cut changed-path proof: git diff 96d9d733..13e8a903 = exactly the five declared paths (docs/05, tests/fixtures/README.md, foundation README, kontroller.sh, testklient/index.html added). No hidden sixth path; no runner/tool/vendor/workflow/constitution path touched.
+
+§A6 state truth (Part B)
+
+7. Foundation README line 3: STATUS: KLIPPT 2026-08-25 ✓.
+8. Testclient audit (published bytes): exists; carries the "FABRICERAD FOUNDATION TESTKLIENT — INTE KUNDSAJT" banner; <meta name="robots" content="noindex,nofollow"> present (line 6); explicitly no company/person/address/phone/reviews/certifications/promises; zero external resources (inline CSS only), zero scripts/forms/analytics; 2 075 bytes total page weight.
+9. NY_REGIM_KLIPPT = false verbatim in workflows/nortropic-verify-suite.js:26 ✓.
+10. Universal-regime fixtures (FIX-A/B/NOBUILD/MIGRATION) do not exist as files — correctly a separate later §A6 family; the three legacy baselines remain marked HISTORISK URKUND. No tests/fixtures/foundation/verktyg/ exists. docs/07 untouched by the cut (path proof above).
+
+Mechanical controls (Part C)
+
+11. kontroller.sh, run now: exit 0 — K1, K2, K3, K4, K5a, K5b (19 skill files), K6, K7, K5c all PASS; 0 FAIL; 0 ODÖMBART. Note (WARN below): the script emits 9 named control verdicts; the cut narrative and this gate prompt say "10/10". I count 9 # ---- K sections in both the pre-cut and published script (the cut changed only the header comment). Fully green either way — the count label is imprecise, not the mechanics.
+12. verify-vendored-integrity.mjs: PASS 9/9, exit 0.
+13. check-invariants.mjs: 8 PASS, 0 FAIL, exit 0.
+14. Workflows: 6/6 compile both via node --check and via the doctor's exact AsyncFunction construction.
+Non-vacuity independently proven: in a disposable scratch clone (origin URL set to repo identity), a planted mutable-fetch line tripped K5b and a single mutated vendored byte tripped K5a; restore → green. The controls actually bite.
+
+Doctor 1–13 (Part D)
+
+15. #1 PASS (all 26 agent/skill frontmatters parse via npx js-yaml, the doctor's own instrument) · #2 PASS · #3 PASS (9/9 load-bearing vendored trees present; agent skill references, cross-skill references/* pointers, fork agent: chains, and the profile.ts chain all resolve — my first automated pass produced false FAILs from my own naive parsing, each disproven against actual bytes) · #4 KUNDE-EJ-KÖRAS (MCP-status ej bekräftad) for the design-stack MCP servers (chrome-devtools, playwright, 21st, shadcn-ui, context7, reactbits, magicuidesign, motion-dev, gsap) — not visible from this adjudication session; Trybloom confirmed visible. Per the steward's own tri-state this is a report-to-main-session status, not FAIL, and it is not one of the eight Foundation claims · #5 PASS (rule-16 trio nortropic-plan/-init/-retro all carry disable-model-invocation: true — exactly the set docs/03 rule 16 and INV-007 define; AUTO-tag guard over §A surfaces: zero hits; AUTOPILOT content exactly off; eval rubric: header 100/weights sum 100/criteria count reconciles incl. sub-criteria; invariant lists 03↔SYSTEM MAP in sync; profile.ts contract version parses) · #6 PASS (clean tree) · #7 KUNDE-EJ-KÖRAS class (ii) — no ~/.claude/agent-memory (WARN, legitimate absence) · #8 PASS (all 7 agents match MODELLKONTRAKTET; account-credit availability not mechanically verifiable from here — noted) · #9A PASS (9/9) · #9B PASS with the expected normal state "repo-nativ: ingen härledd kopia" (~/.claude/skills/ holds only nortropic-intake and use-railway — no vendored copies) · #10 WARN (no ~/.nortropic/factory/usage-log.md — runtime state absent) · #11 KUNDE-EJ-KÖRAS (inget kundrepo) WARN-class · #12 WARN (sub-check (d): ten docs' "Senast verifierad" dates predate the 2026-08-25 R-series commits — the contract's own propose-only "kör docs-synk" class; (a)–(c), (e) clean) · #13 WARN-class only (models.json fresh, reviderad 2026-07-27; image library legitimately absent).
+No doctor FAIL. No unevaluable check is load-bearing for the eight Foundation claims.
+
+R1–R11 current state (Part E) — items 16–26
+
+Slice: R1 repo-native foundation
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: K1/K2 green in a path never seen before (fresh
+worktree); FIXTURE-REGIME doc retires legacy; cut touched no rorjour
+material; runtime state re-homed to ~/.nortropic/factory/ with documented
+precedence
+────────────────────────────────────────
+Slice: R2 provenance
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: all nine VENDORED.md carry PROVENIENS (R2
+2026-08-25); taste's hybrid explicitly disclosed; no UNKNOWN load-bearing
+upstream
+────────────────────────────────────────
+Slice: R3 web-design-guidelines
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: K3 full: no fetch/latest instruction, pinned
+bytes @ e3d624ba, payload sha256 matches registered anchor
+────────────────────────────────────────
+Slice: R4 impeccable
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: K4 full: LOCAL_NORTROPIC_FORK marker, update
+machinery absent, fail-closed detect-url, CSP gate present, Apache license
+ present
+────────────────────────────────────────
+Slice: R5 vendored integrity
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: 9/9 now; verifier read-only (no write calls);
+unexpected tenth dir = FAIL (source line 167); K5a pins verifier+manifest;
+ falsification proven
+────────────────────────────────────────
+Slice: R6 axe
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: K6 full + independent run (Part H)
+────────────────────────────────────────
+Slice: R7 Lighthouse
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: K7 full + independent run (Part I); Gate 2 bound
+to canonical runner
+────────────────────────────────────────
+Slice: R8 taste hygiene
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: taste = 2 files matching manifest; no hybrid
+residue returned (R8 carried payload+manifest+pin in one commit)
+────────────────────────────────────────
+Slice: R9 animation refs
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: find-animation-opportunities truthfully
+proposal-only; zero improve-/review-animations references outside the
+decision log; stack-builder/design-reviewer route intact
+────────────────────────────────────────
+Slice: R10 capability closure
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: no ghost names in any executable surface
+────────────────────────────────────────
+Slice: R11 legacy closure
+CURRENT_STATE: HOLDS
+Key current-bytes evidence: agent bodies clean ("legacy name retired, R11"
+notes in place); planner's 7-section PROJECT-BRIEF contract intact; Gate
+4/Gate 7 anchors intact; seo-optimizer Audit mode owns crawl/indexing with
+ noindex protections; content image route repo-native via <skill-base-dir>
+
+Pre-cut + cut-compat (Part F) — items 27–28
+
+PRECUT verdict: HOLDS. Touched exactly its declared surfaces; it strengthened authority (qa-launcher and lighthouse-targets.md npx routes replaced with the canonical runner; content-designer/fetch-images re-pointed from ~/.claude ambient path to the skill-base-dir convention). CUT-COMPAT verdict: HOLDS. Changed only docs/05 + foundation README; git diff across it on skills/nortropic-prelaunch/SKILL.md + run-lighthouse-gate.mjs = 0 lines (F8 byte-proof). F1–F7, F9 all verified: one tool root, no foundation/verktyg, families separated, flag false, qa-launcher/prelaunch agree on the canonical runner, and FOUNDATION_LIGHTHOUSE_EXPECTED_NOINDEX_RED appears only in foundation/README.md and docs/05 — never in any production Gate 2 surface. seo-optimizer's customer semantics independently keep noindex CRITICAL on a skarp klient.
+
+Tool identity ceremony (Part G) — item 29
+
+All four tracked hashes matched the expected anchors before provisioning and were byte-identical after npm ci: axe-runner a1d9b85c…, LH-runner e60bc63d…, package 9d837e88…, lock e6dc3c8a…. Installed: @axe-core/cli 4.13.0, axe-core 4.13.0, lighthouse 13.4.1, chromedriver 151.0.5 (explicitly pinned incl. overrides closing the upstream chromedriver: latest hole). Node v22.23.2; canonical Chrome at the canonical path, 151.0.7922.174.
+
+Independent runs — items 30–34
+
+30. Axe (Part H): run-axe-gate.mjs file://…/testklient/index.html → exit 0, PASS, engine 4.13.0 in the result itself, ZERO violations, zero incomplete; material hash 4f53cda1… — independently reproduces the cut's recorded hash. Chrome sandbox on (no bypass flags exist in the runner source).
+31. Lighthouse (Part I): served the exact published bytes via a scratch-only strict one-shot loopback server (only / serves; /robots.txt → 404 — the server log proves Lighthouse requested it and got 404, so the cut's catch-all artifact was avoided). run-lighthouse-gate.mjs http://127.0.0.1:62202/ → actual runner status FAIL, exit 1; categories 100/100/96/60; LCP 753 ms; CLS 0; mobile/simulate; exact 13.4.1; canonical Chrome; thresholdFailures = ["seo: 60.0 < 95"] — exactly one failure class; no runtimeError. Never called a Gate 2 PASS.
+32. 13-condition evaluation: all thirteen hold — canonical runner identity (hash-proven), exact 13.4.1, canonical Chrome/settings, Chrome sandbox ON, perf ≥90, a11y ≥95, BP ≥95, LCP <2500, CLS <0.1, no non-SEO deviation, committed noindex present, pinned source still lists noindex/none as blocking in is-crawlable.js with the ≥31 % design-weight comment in default-config.js, and the causal proof re-established below.
+33–34. Causal control (Part J): disposable copy outside the fixture surface; diff proven to be exactly the one noindex line (6d5); same strict server semantics, same runner → PASS, exit 0, 100/100/96/100, thresholdFailures=[]. Same page ± only noindex flips PASS↔SEO-only-FAIL on the published artifact itself. Control destroyed.
+
+Template lens (Part K) — item 35
+
+PASS. design-reviewer's template test (step 7) consumes nortropic-antislop/references/design-blocklist.md — read in full; section A applied to the actual fixture source: no centered-hero-with-CTA-pair, no icon-card rows, no cards/gradients/pills/emoji/icon libraries, no AI-cluster palette, system-ui type — zero template hits requiring §5 justification. Both lens inputs are repo-native; no rorjour fixture, no frozen preview, no ~/Workflow needed. (The ~/Workflow legacy-map in design-reviewer step 9 belongs to the prior-customer comparison lens — explicitly self-dying and, per the gate contract, not a Foundation requirement.)
+
+Adversarial matrix (Part L) — item 36
+
+L1 CLOSED (K5a pins live in §A6-protected kontroller.sh; falsified live) · L2 CLOSED (verifier FAILs an unexpected tenth dir) · L3 CLOSED (no derived copies exist; where they could, they're declared subordinate + diffed by #9B) · L4 CLOSED (ghosts removed; doctor #3 guards existence) · L5 CLOSED (direct pinned paths; K6/K7 fail on active npx; every documented route is the canonical runner) · L6 CLOSED (forbidden-flag greps + source inspection) · L7 CLOSED (INP truth boundary emitted; INP_PASS string forbidden by K7) · L8 CLOSED (expected-RED string confined to Foundation surfaces; production Gate 2 byte-unchanged; seo-optimizer keeps customer noindex CRITICAL) · L9 CLOSED (K5c fail-closed in both directions) · L10 CLOSED (kontroller.sh's PASS never asserts fixture existence, and the gate requires actual runner evidence, which goes ODÖMBART fail-closed on a missing target — noted as WARN that kontroller.sh itself carries no fixture-existence check) · L11 CLOSED (no Foundation-gate surface depends on rorjour/~/Workflow) · L12 CLOSED (zero PR #105 references in executable surfaces) · L13 CLOSED (agent bodies clean; one stale docs/02 prose mention = docs-drift WARN) · L14 CLOSED-with-WARN (docs/07 §B4/§B7 and the retro-skill wrapper still carry legacy ~/Workflow runtime-state paths; the steward body documents this residual explicitly, declares the factory paths operative, and reserves the docs/07 fix for the human's own HÖGRISK act — it cannot produce false green in any Foundation control). No OPEN_DEFECT at any material trust boundary.
+
+History vs current (Part M) — item 37
+
+Measured surfaces (verifier, manifest, both runners, tool root, vendored trees) were touched only by their stated transitions (R6, R7, R8, R9) since R5's merge — nothing after R9, and PRECUT/CUT-COMPAT/CUT left them byte-identical. R8 and R9 each carried payload + manifest + K5a pin in the same commit — no manifest-without-payload or payload-without-pin transition. No later commit undid an earlier repair: every repaired invariant re-verifies mechanically today. No parallel authority found.
+
+WARNs — item 38
+
+1. Count-label imprecision: docs/05's cut row (and this gate prompt) say "kontroller 10/10"; the published script emits 9 named control verdicts (K1–K4, K5a–c, K6–K7), all PASS. No mechanical fact depends on the count.
+2. Doctor #12(d): ten docs files' "Senast verifierad" dates predate the R-series — docs-synk debt (propose-only class).
+3. docs/02-agenter.md prose still names R11-retired helper skills (e.g. site-architecture) — same docs-drift class; runtime consumes agent bodies, which are clean.
+4. docs/07 §B4/§B7 + nortropic-retro SKILL + verify-kalibrering still carry legacy ~/Workflow runtime-state paths — documented residual awaiting the human's own docs/07 HÖGRISK update, with declared operative precedence.
+5. project-planner/plan-skill/copy-blocklist still actively reference ~/Workflow/profiler/ although S0 declared that library retired — customer-lane legacy-path debt (same R1-class family as the finding R11 registered OUT_OF_SCOPE for content-designer).
+6. kontroller.sh contains no mechanical testclient-existence check (claim 7's proof lives in the gate's runner evidence, which is fail-closed).
+7. Doctor #7/#10/#11/#13 legitimate-absence items (no agent memory, no usage log, no customer repo, no image library yet).
+
+ODÖMBART facts (non-load-bearing) — item 39
+
+Doctor #4 MCP visibility for nine design-stack servers (unconfirmable from this session; Trybloom confirmed); account model-credit availability (#8); INP remains ODÖMBART by design (the truth boundary the system itself enforces — not a Foundation gate requirement). None of these is one of the eight Foundation claims or a Part A–M requirement.
+
+Proven defects — item 40
+
+None material. Every candidate defect I raised was either disproven against actual bytes or classified WARN with evidence above.
+
+41. Residue proof: scratch clone, control page, server script, doctor script, frontmatter extracts — all deleted; one-shot servers exited with their runs; node_modules lives only under the canonical, gitignored tool root; the review worktree itself removed (git worktree list no longer shows it). npm/npx caches under ~/.npm are ephemeral and non-authoritative.
+42. Worktree unmodified: git status --porcelain in the review worktree = empty at start and end; HEAD/tree byte-exact e075de15 / 0bc0ab40 throughout.
+43. PR #105: zero references in agents/skills/workflows/scripts/config/tests — not an authority; untouched, as the decision log claims.
+44. Gate algebra: publication/object integrity correct · STATUS truthfully KLIPPT · eight Foundation claims hold · current controls green · R5 9/9 · invariants/workflows clean · doctor: no FAIL, no load-bearing unevaluable check · R1–R11 all HOLD · PRECUT/CUT-COMPAT boundaries hold · independent axe PASS · independent Lighthouse = the exact admissible expected-noindex-RED · causal control PASS · template lens PASS · L1–L14 closed · no required evidence missing → GREEN.
+
+45. FINAL VERDICT
+
+NO_REMEDIATION_PERFORMED=YES
+FOUNDATION_SMOKE_TRUST_TRANSITION_ADJUDICATED=YES
+UNIVERSAL_REGIME_REMAINS_UNCUT=YES
+
+FOUNDATION_REPAIR_GATE=GREEN
+
+✻ Churned for 16m 36s
+
+─────────────────────────────────────────────────────────────────────────────
+❯
+─────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← fo

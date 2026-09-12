@@ -1,36 +1,48 @@
 {
- "attachment_manifest_version": 1,
- "source_id": "CONV-011",
- "revision": 1,
- "source_path": "_projects/improvements/sources/CONV-011/conversation.md",
- "source_sha256": "52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
- "declared_count": 1,
- "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (Nortropic_100_dagar_manual_v2.3_verified.pdf); innehållet ej infångat i svepet. --- ##",
- "observed_lower_bound": 1,
- "observed_signals": {
-  "filecite_sites": 27,
-  "filecite_turns": 26,
-  "upload_phrases": 0,
-  "named_upload_identities": [],
-  "mentioned_paths": 0
- },
- "reconciliation": "AGREE",
- "full_source_capture": "NO",
- "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
- "attachments": [
-  {
-   "attachment_id": "ATT-011-001",
-   "ordinal": 1,
-   "capture_status": "CAPTURED_REFERENCE_ONLY",
-   "materiality": "MATERIAL",
-   "materiality_basis": "adj-011.json: Nortropic_100_dagar_manual_v2.3_verified.pdf, all thirteen findings",
-   "declared_kind": "uploaded_document",
-   "original_filename": "Nortropic_100_dagar_manual_v2.3_verified.pdf",
-   "media_type": "application/pdf",
-   "message_binding": "owner msg 1 (\"detta var backloggen som vi skulle jobba pa\"); no owner paste exists in this source",
-   "message_binding_precision": "MESSAGE_KNOWN",
-   "declared_in_header": true,
-   "basis": "the PDF filename is preserved; its bytes are not. The transcript walks the document item by item, so its content is reproduced through the assistant rather than captured"
-  }
- ]
+  "attachment_manifest_version": 1,
+  "source_id": "CONV-011",
+  "revision": 1,
+  "source_path": "_projects/improvements/sources/CONV-011/conversation.md",
+  "source_sha256": "52f370073c79208d638adf91ba863672ab8e0964f20185acd3d0b749631ed987",
+  "declared_count": 1,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (Nortropic_100_dagar_manual_v2.3_verified.pdf); innehållet ej infångat i svepet. --- ##",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 27,
+    "filecite_turns": 26,
+    "upload_phrases": 0,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "file": 27,
+      "search": 40
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "Seeded from the FROZEN r38 attachment falsification witness (SCRATCH_RESULT_SHA256=94da7113d70289642acc842c51e7fa381b15e99bc35fcd79650beee425c5d64f), which is preserved unchanged. Capture states are that witness's; materiality is carried over only where the frozen adjudication bound it to a specific attachment, and is UNKNOWN otherwise.",
+  "attachments": [
+    {
+      "attachment_id": "ATT-011-001",
+      "ordinal": 1,
+      "capture_status": "RECOVERED_EXACT",
+      "materiality": "UNKNOWN",
+      "materiality_basis": "adj-011.json: Nortropic_100_dagar_manual_v2.3_verified.pdf, all thirteen findings",
+      "declared_kind": "uploaded_file",
+      "original_filename": "Nortropic_100_dagar_manual_v2.3_verified.pdf",
+      "media_type": "application/pdf",
+      "message_binding": "Meddelande 1",
+      "message_binding_precision": "MESSAGE_KNOWN",
+      "declared_in_header": true,
+      "basis": "the PDF filename is preserved; its bytes are not. The transcript walks the document item by item, so its content is reproduced through the assistant rather than captured",
+      "content_sha256": "902f55b2740909d3b91d92ea5c911e17c6b662b0303ae1e0170a5f59783a12c4",
+      "artifact_path": "_projects/improvements/sources/CONV-011/attachments/ATT-011-001-902f55b27409.pdf",
+      "byte_length": 1649181,
+      "registered_at": "2026-09-11",
+      "recovery_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000c54481f484343693e5bc9b6f, which the data-layer export of conversation 6a8f256f-2aec-83eb-9d75-bf1476a2c03e lists in message(s) 1; sha256 902f55b2740909d3b91d92ea5c911e17c6b662b0303ae1e0170a5f59783a12c4 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Nortropic_100_dagar_manual_v2.3_verified.pdf', content-type 'application/pdf'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json; identity to the bound r1: the R39 export of this conversation is byte-identical to r1 (CAPTURE_UNCHANGED on the transcript_source_sha256), so the file ids it carries are the ids of the attachments r1 declared",
+      "byte_identity": "ESTABLISHED",
+      "platform_file_id": "file_00000000c54481f484343693e5bc9b6f",
+      "platform_declared_size_bytes": 1649181
+    }
+  ]
 }

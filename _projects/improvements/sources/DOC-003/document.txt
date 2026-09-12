@@ -1,0 +1,823 @@
+Ja. Nu tycker jag att vi har kommit till en punkt där **Improvements inte längre bör betraktas som en samling brainstorm-chattar**. Det har blivit Nortropics **R&D-korpus**: där finns visionen, arbetsmetoderna, externa jämförelserna, det vi har förkastat, det vi har ändrat uppfattning om och nu även ett ganska sammanhängande arkitekturlandskap.
+
+Därför skulle jag **inte** efter Bootstrap göra: “nu tar vi nästa gamla plan och börjar bygga”.
+
+Jag skulle göra något betydligt mer kraftfullt:
+
+# Bootstrapens första riktiga uppdrag bör vara att kompilera om Nortropic
+
+I princip:
+
+```text id="d9lpzb"
+AUTONOMY KERNEL v1 FÄRDIG
+        │
+        ▼
+FREEZE / BASELINE
+        │
+        ▼
+IMPROVEMENTS RECOMPILE
+        │
+        ├── nuvarande Nortropic-repo
+        ├── alla Improvements-chattar
+        ├── Innovation Intake
+        ├── nortropic-knowledge
+        ├── Digitala förvaltningen
+        ├── tidigare RFC:er / planer / beslut
+        └── external research / GitHub corpus
+        │
+        ▼
+CURRENT NORTROPIC CONCEPT
+        │
+        ▼
+ORGANIZATION ARCHITECTURE
+        │
+        ▼
+DEPENDENCY ROADMAP
+        │
+        ▼
+OWNER JUDGMENT — endast verkliga vägval
+        │
+        ▼
+FÖRSTA AUTONOMA BYGGFASEN
+```
+
+Och det fina är att **Kernel själv bör göra huvuddelen av detta**. Det blir den perfekta första dogfooding-missionen: Nortropic använder sin nya autonomi för att förstå och förbättra Nortropic.
+
+---
+
+# Steg 0 — Bootstrap ska verkligen avslutas
+
+Innan vi gör något med Improvements skulle jag vilja ha en tydlig:
+
+```text id="txeh3h"
+AUTONOMY KERNEL v1
+FROZEN
+```
+
+Det betyder inte “perfekt för evigt”.
+
+Det betyder:
+
+- den autonoma lifecycle:n fungerar end-to-end,
+- authority/confinement är verifierad,
+- worker → attempt → candidate → independent verification → remediation → completion/publication fungerar,
+- provider/model-routing har en definierad baseline,
+- arbetskopian är ren,
+- det finns ett reproducerbart bevis på vad **Kernel v1 faktiskt är**.
+
+Det är startpunkten för allt senare.
+
+Vi ska undvika att blanda:
+
+> “vi försöker fortfarande färdigställa Kernel”
+
+med:
+
+> “Kernel börjar omdesigna resten av Nortropic”.
+
+---
+
+# Steg 1 — Improvements fryses som rå evidens, inte som backlog
+
+Det första vi behöver säkra efter Bootstrap är själva korpusen.
+
+Alla relevanta Improvements-chattar ska landa som **exakta råkällor**.
+
+I vår tidigare modell ungefär:
+
+```text id="jl7t80"
+artifacts/conversations/
+  2026/
+    ...
+      full-chat.md
+```
+
+Inte:
+
+```text id="kw1wbo"
+chat.md
+summary.md
+chatgpt-opinion.md
+implementation-plan.md
+```
+
+som fyra competing truths.
+
+**Råchatten är source evidence.**
+
+Allt annat är derived.
+
+Det här är viktigt eftersom vi precis kom fram till något större genom `ai-memory`, ICM, Caveman osv:
+
+> dagens synthesis får aldrig bli det enda som överlever.
+
+Om GPT-7 om två år kan förstå vårt 2026-material mycket bättre ska Nortropic kunna **rekompilera originalmaterialet igen**.
+
+Så:
+
+```text id="4vkcnd"
+RAW IMPROVEMENTS
+=
+permanent evidence corpus
+
+CURRENT SYNTHESIS
+=
+replaceable compiled artifact
+```
+
+---
+
+# Steg 2 — Befintlig Nortropic Intake används, men blir inte “sanningen”
+
+Vi har redan byggt Innovation Intake och testat den på ett antal chattar. Den delen ska vi absolut återanvända.
+
+Men jag skulle inte säga:
+
+> “Vi har Intake, alltså låter vi dess tidigare 13 idéer representera Improvements.”
+
+För Improvements är nu mycket större än atomic idea extraction.
+
+Det innehåller åtminstone:
+
+```text id="39jyhs"
+IDEAS
+PRINCIPLES
+DECISIONS
+ASSUMPTIONS
+REJECTIONS
+SUPERSESSIONS
+EXTERNAL EVIDENCE
+DESIGN JUDGMENTS
+WORKING METHODS
+ARCHITECTURAL HYPOTHESES
+OWNER PREFERENCES
+OPEN QUESTIONS
+```
+
+Så den första Post-Bootstrap-missionen får fråga:
+
+> Klarar befintlig Intake denna compilation?
+
+Om nej:
+
+```text id="pzzngn"
+MISSION
+↓
+capability gap detected
+↓
+build minimal Improvements Intake capability
+↓
+verify it
+↓
+continue mission
+```
+
+**Vi ska inte manuellt bygga Intake v2 i förväg bara för att vi tror att den behövs.**
+
+Det är en perfekt första demonstration av vår capability-gap-princip.
+
+---
+
+# Steg 3 — Inte en giant prompt: multi-pass compilation
+
+Det här tycker jag nu är mycket viktigt.
+
+Vi ska **inte** ge Claude eller Codex:
+
+> “Här är 100 chattar, läs allt och skriv den ultimata arkitekturen.”
+
+Det är exakt det problem vi precis har studerat kring context dilution.
+
+Jag skulle göra en pipeline ungefär så här:
+
+```text id="frh61e"
+PASS 0 — SOURCE INVENTORY
+Vad finns?
+Vad är current repo truth?
+Vad är raw evidence?
+Vilka källor/versioner har vi?
+
+        ↓
+
+PASS 1 — ATOMIC EXTRACTION
+idea
+principle
+decision
+assumption
+requirement
+question
+external reference
+rejection
+supersession
+
+        ↓
+
+PASS 2 — PROVENANCE
+var kom varje sak ifrån?
+owner statement?
+repo fact?
+external source?
+model inference?
+
+        ↓
+
+PASS 3 — NORMALIZATION
+duplicates
+same concept / different words
+contradictions
+superseded ideas
+
+        ↓
+
+PASS 4 — CURRENT REALITY RECONCILIATION
+är idén redan byggd?
+delvis byggd?
+irrelevant?
+motsäger nuvarande Kernel?
+ersatt av bättre lösning?
+
+        ↓
+
+PASS 5 — CROSS-CORPUS SYNTHESIS
+vilka principer överlever?
+vilka externa system konvergerar?
+vad är faktiskt Nortropic-native?
+
+        ↓
+
+PASS 6 — CONCEPT
+Vad ÄR Nortropic nu?
+
+        ↓
+
+PASS 7 — ARCHITECTURE
+Vilka minsta primitives krävs?
+
+        ↓
+
+PASS 8 — ROADMAP
+Vilken dependency-order följer?
+```
+
+Varje pass får bara den information det behöver.
+
+Varje intermediate artifact är inspekterbart.
+
+Och om PASS 2 ändras ska vi kunna köra om PASS 3–8 utan att köra om hela världen.
+
+Det är **ICM + incremental compilation + provenance graph** applicerat på vårt verkliga projekt.
+
+---
+
+# Steg 4 — Vi måste skilja “det vi sagt” från “det som fortfarande gäller”
+
+Det är kanske rebaselinens viktigaste uppgift.
+
+Improvements är fullt av bra idéer.
+
+Men det finns även:
+
+- gamla idéer som Kernel redan har löst,
+- idéer vi senare har förbättrat,
+- saker vi uttryckligen har skrotat,
+- tidiga agent-hierarkier som senare ersatts av capability-first,
+- stora framework-idéer som senare förenklats,
+- gamla owner-stop-principer som vi blivit mer trust-based kring.
+
+Så compilationen måste producera något i stil med:
+
+| Disposition | Betydelse |
+|---|---|
+| `KEEP` | fortfarande rätt |
+| `ADAPT` | rätt idé, annan implementation |
+| `MERGE` | flera idéer är egentligen samma primitive |
+| `SIMPLIFY` | konceptet behövs men är överbyggt |
+| `SUPERSEDED` | ersatt av senare bättre idé |
+| `REJECT` | vi vill uttryckligen inte göra detta |
+| `DEFER` | relevant, men inte ännu |
+| `EXPERIMENT` | behöver empiriskt test |
+| `NEEDS_EVIDENCE` | för svagt underbyggt |
+| `FRONTIER_WATCH` | följ utvecklingen |
+| `ALREADY_IMPLEMENTED` | nuvarande Nortropic löser detta |
+
+Detta hindrar vår egen innovationshistoria från att bli en **requirements landfill**.
+
+---
+
+# Steg 5 — Repo truth måste vinna över våra gamla brainstorms
+
+Det här är centralt.
+
+Hierarkin bör ungefär vara:
+
+```text id="bu0s3y"
+CURRENT VERIFIED REPO REALITY
+            >
+CURRENT OWNER DECISION
+            >
+CURRENT ACCEPTED CONCEPT / SPEC
+            >
+DERIVED KNOWLEDGE
+            >
+OLD BRAINSTORM
+```
+
+Om en gammal Improvements-chat säger:
+
+> “Nortropic behöver X”
+
+men current repo visar:
+
+> X byggdes för tre veckor sedan på ett bättre sätt,
+
+då är chatten **historisk rationale**, inte ny backlog.
+
+Det är därför vi gör en **rebaseline**, inte bara en extraction.
+
+---
+
+# Steg 6 — Resultatet bör vara mindre än materialet, mycket mindre
+
+Efter all denna research ska vi inte landa i:
+
+> 947 saker Nortropic måste implementera.
+
+Jag vill snarare se något som:
+
+```text id="uv8r43"
+NORTROPIC CONSTITUTION v1
+10–20 mycket starka regler
+
+NORTROPIC CONCEPT v1
+vad systemet är och varför
+
+ORGANIZATION ARCHITECTURE v1
+ett litet antal first-class primitives
+
+CAPABILITY / DOMAIN MODEL
+de viktigaste kontrakten
+
+ASSURANCE MODEL
+hur systemet vet att saker fungerar
+
+DEPENDENCY ROADMAP
+ordningen
+
+EXPERIMENT QUEUE
+saker som måste bevisas innan de byggs
+
+DEFERRED FRONTIER
+bra framtidsgrejer som inte ska förorena V1
+```
+
+Det är den komprimering vi har börjat se i dessa repo-batcher.
+
+Sjuttio repos kanske i slutänden ger **tolv fundamentala primitives**.
+
+Det är bra.
+
+---
+
+# Jag tror konstitutionen kommer vara viktig
+
+Vi ska förstås inte låsa innehållet nu, men efter allt vi sett kan den komma att innehålla principer i stil med:
+
+```text id="yi2k3s"
+Capability > permanent Agent.
+
+Hard eligibility precedes optimization.
+
+Authority is not instruction.
+
+Source truth survives summaries.
+
+Model-visible context is provenance-traceable.
+
+Current operational reality outranks memory.
+
+Workers are ephemeral; institutional capability persists.
+
+Evaluation authority is outside candidate authority.
+
+Projection is not truth.
+
+Temporary exceptions must expire when their reason disappears.
+
+Competence scaffolding must be removable.
+
+Real outcomes close the learning loop.
+```
+
+Det här är inte “features”.
+
+Det är **regler som arkitekturen ska kunna härledas från**.
+
+Och de kan få Behavioral Eval Corpus så att en framtida recompile inte råkar bryta dem.
+
+---
+
+# Steg 7 — Concept v1 före Architecture v1
+
+Det här är ett misstag jag verkligen vill undvika:
+
+```text id="43h470"
+"Vi har massor idéer!"
+↓
+börja definiera databases/services/modules
+```
+
+Först måste Kernel kunna svara:
+
+> **Vad är Nortropic?**
+
+Kanske ungefär:
+
+> Ett capability-compounding autonomous organization system som omvandlar human intent och world evidence till verifierat arbete och real-world outcomes, och använder erfarenheten för att förbättra sin framtida organisatoriska förmåga under en stabil authority kernel.
+
+Men det där är bara vår nuvarande working hypothesis.
+
+Rebaseline-missionen ska få **falsifiera och förbättra den**.
+
+Sedan:
+
+```text id="1727xr"
+CONCEPT
+↓
+PRINCIPLES
+↓
+REQUIRED PROPERTIES
+↓
+ARCHITECTURE
+```
+
+inte tvärtom.
+
+---
+
+# Steg 8 — Organization Architecture v1 ska vara minimal
+
+Jag skulle inte på förhand tvinga den att bygga alla candidate concepts vi hittat:
+
+```text id="v9omdy"
+Profession Foundry
+Capability Foundry
+Evolution Lab
+Context Compiler
+Attention Fusion
+Why Graph
+...
+```
+
+Kernel ska fråga:
+
+> Vilka **minsta primitives** gör dessa behaviors möjliga?
+
+Det kan visa sig att flera är samma subsystem.
+
+Vi såg exempelvis hur hela capability-familjen nu kan beskrivas som en lifecycle:
+
+```text id="lwcy0b"
+NEED
+↓
+SOURCE / BUILD
+↓
+VERIFY
+↓
+ADMIT
+↓
+ROUTE
+↓
+EXECUTE
+↓
+OBSERVE
+↓
+EVOLVE
+↓
+REVALIDATE
+↓
+RETIRE
+```
+
+Det behöver inte vara tio microservices.
+
+Samma sak med context, knowledge och graph.
+
+**Vi vill abstrahera efter convergence, inte före.**
+
+---
+
+# Steg 9 — En riktig Owner Decision Pass
+
+Efter synthesis bör Kernel inte bara fortsätta planlöst.
+
+Den producerar en **liten decision queue** med endast de frågor där det verkligen finns genuint owner judgment.
+
+Exempel:
+
+```text id="mq5blq"
+DECISION 01
+
+Should Nortropic optimize initially for:
+A) single-company internal OS
+B) multi-customer operating platform
+
+Why this needs owner:
+changes early trust-domain assumptions
+
+Recommendation:
+A
+
+Reversibility:
+medium
+
+Evidence:
+...
+```
+
+Du ska inte behöva godkänna:
+
+```text id="4nx1b0"
+install dependency?
+rename file?
+write unit test?
+choose retry count?
+```
+
+Det är precis vår:
+
+> **OWNER ATTENTION ≠ OWNER PERMISSION**
+
+och nu även:
+
+> **owner judgment ska vara high-leverage.**
+
+---
+
+# Steg 10 — Sedan bygger Kernel vidare själv
+
+När:
+
+```text id="83fytk"
+Concept v1
+Architecture v1
+Roadmap v1
+owner decisions
+```
+
+är klara ska den **inte automatiskt stanna bara för att en plan producerats**.
+
+Missionen bör säga:
+
+> När den första nästa byggfasen är entydigt härledd, verifierbar och inom din authority — fortsätt.
+
+Det är viktigt.
+
+Annars får vi:
+
+```text id="8r57s2"
+autonomous system
+↓
+writes roadmap
+↓
+waits for Johnny
+```
+
+vilket bara skapar en bättre planner, inte en autonomous organization.
+
+---
+
+# Vad tror jag den första byggfasen blir?
+
+Det ska rebaselinen avgöra, men min nuvarande hypotes är fortfarande att vi börjar **read-first och grounded**, inte med ett gigantiskt City UI.
+
+Något ungefär:
+
+```text id="fn8sen"
+REAL KERNEL STATE
+       │
+       ▼
+MINIMAL ORGANIZATION MODEL
+
+Förvaltning
+Capability
+Work
+Attempt
+Verification
+Evidence
+Outcome
+Attention
+
+       │
+       ▼
+READ-ONLY PROJECTION
+
+Verkstadsgolvet v0
+```
+
+Sedan får verkligt arbete tvinga fram fler Domain Objects, Why-relations, knowledge/context osv.
+
+Inte:
+
+> “bygg hela framtida kommunen i ett svep.”
+
+Ponytail-principen gäller även oss.
+
+---
+
+# Digitala blir den första professionella kvalificeringsbanan
+
+Efter Organization OS-baseline skulle jag använda Digitala som första riktiga department/domain proving ground.
+
+Inte längre bara:
+
+> kan Nortropic generera en hemsida?
+
+Utan:
+
+```text id="u0dm0c"
+KAN DIGITALA
+
+förstå verksamheten?
+bygga professionell brief?
+ta fram flera designriktningar?
+hantera brand/design constitution?
+implementera korrekt?
+verifiera funktion?
+verifiera visual quality?
+verifiera accessibility/performance/SEO?
+hantera domain/DNS/deployment?
+driftsätta?
+observera outcomes?
+förbättra sig?
+```
+
+Detta blir vår första riktiga **Profession Qualification Ladder**.
+
+När Digitala faktiskt är kvalificerad har vi bevisat mer än website-generation.
+
+Vi har visat att Nortropic kan **lära sig och driva en förvaltning**.
+
+---
+
+# Sedan får Nortropic bygga nästa Nortropic
+
+Det är där systemet blir riktigt intressant.
+
+När ett verkligt problem uppstår:
+
+```text id="n8iphu"
+MISSION
+↓
+capability missing?
+```
+
+om ja:
+
+```text id="q0cmxb"
+source?
+existing?
+buy?
+integrate?
+self-host?
+build?
+```
+
+sedan:
+
+```text id="5kli39"
+verify
+↓
+admit
+↓
+use
+↓
+observe
+↓
+improve
+```
+
+Och om problemet ligger på organisationsnivå:
+
+```text id="xevbq3"
+repeated coordination failure
+↓
+organizational learning candidate
+↓
+architecture/process change
+↓
+behavioral eval
+↓
+Kernel-safe publication
+```
+
+Då får vi de tre nivåerna vi tidigare pratade om:
+
+```text id="02v6pb"
+LEVEL 1
+do work
+
+LEVEL 2
+improve capability
+
+LEVEL 3
+improve organization
+```
+
+utan att Kernel får avskaffa sina egna skyddsräcken för att göra livet enklare.
+
+---
+
+# Så här ser hela färdplanen ut för mig
+
+```text id="lr0fvc"
+NU
+│
+├── färdigställ Bootstrap
+│
+▼
+AUTONOMY KERNEL v1
+FROZEN
+│
+▼
+IMPROVEMENTS CORPUS SNAPSHOT
+lossless raw sources
+│
+▼
+POST-BOOTSTRAP REBASELINE
+multi-pass autonomous compilation
+│
+▼
+NORTROPIC CONCEPT v1
+│
+▼
+NORTROPIC CONSTITUTION v1
+│
+▼
+ORGANIZATION ARCHITECTURE v1
+│
+▼
+DEPENDENCY ROADMAP v1
+│
+▼
+SMALL OWNER JUDGMENT PASS
+│
+▼
+ORGANIZATION OS V0
+grounded/read-first
+│
+▼
+DIGITAL TWIN V0
+real state, no fake UI truth
+│
+▼
+DIGITALA PROFESSION QUALIFICATION
+│
+▼
+FIRST FULL REAL-WORLD OPERATING LOOP
+│
+▼
+OUTCOME / EXPERIENCE COMPILATION
+│
+▼
+CAPABILITY COMPOUNDING
+│
+▼
+NEW FÖRVALTNINGAR
+│
+▼
+NORTROPIC RECOMPILES ITSELF
+```
+
+Och sedan blir **rebaseline inte en engångsceremoni**.
+
+På sikt kan Nortropic recompile:a delar av sig självt när:
+
+```text id="e5qp5a"
+new model generation
+major world/practice shift
+new business direction
+accumulated production evidence
+architecture assumption invalidated
+```
+
+med selective invalidation i stället för att börja om från noll.
+
+---
+
+## Det här är vad jag skulle göra praktiskt
+
+**Just nu:** fortsätt hålla Innovations-/Improvements-arbetet separat från Bootstrap. Vi ska inte försöka pressa in de nya idéerna medan Kernel fortfarande sluts.
+
+**När Bootstrap verkligen är grönt:** innan Claude/Codex börjar något annat gör vi en **Post-Bootstrap handoff** vars första instruktion är att mekaniskt verifiera Kernel v1, snapshotta/frysa baseline och sedan ta sig an **Nortropic Improvements Recompile** som första real autonomous mission.
+
+Jag skulle då tillsammans med dig skriva **en enda mycket genomarbetad master mission spec**, inte ett promptmonster fyllt med våra slutsatser. Den ska främst tala om:
+
+> vilka sources som ska assimileras, vilka properties outputen måste ha, vilka epistemiska regler som gäller, vad Kernel får bygga om den saknar capability, vad som kräver owner judgment och att den ska fortsätta autonomt när nästa fas är entydig.
+
+**Den ska inte tala om för Kernel att våra nuvarande 15 favoritprimitives måste vara rätt.**
+
+Det är själva poängen med rebaselinen.
+
+Vi har nu producerat så mycket bra material att nästa stora kvalitetssteg inte är **mer brainstorming**. Det är att låta ett färdigt Nortropic göra en lossless, provenance-aware och adversarial **kompilation av allt vi har lärt oss till den minsta sammanhängande organisation som bäst motsvarar visionen — och därefter börja bygga den själv.**
+
+Det tycker jag är den klart bästa vägen efter Bootstrap. memcite

@@ -1,0 +1,48 @@
+{
+ "conversation_id": "6a86dd4f-3b24-83ed-8449-a08513c01736",
+ "source_id": "CONV-016",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 17,
+   "label": "Inklistrad text.txt",
+   "file_id": "file_00000000753482468ee16d87709d3cf4",
+   "name": "Inklistrad text.txt",
+   "mime_type": "text/plain",
+   "size_bytes": 11092
+  },
+  {
+   "msg": 37,
+   "label": "Inklistrad text(1).txt",
+   "file_id": "file_0000000010ac81f6876ad0d8a92706ff",
+   "name": "Inklistrad text(1).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 15462
+  },
+  {
+   "msg": 45,
+   "label": "Inklistrad text(2).txt",
+   "file_id": "file_00000000a8ac8211a2c4fd9c11602838",
+   "name": "Inklistrad text(2).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 26774
+  },
+  {
+   "msg": 84,
+   "label": "Inklistrad text(3).txt",
+   "file_id": "file_000000008bb481f4a6fd7c0bba376e82",
+   "name": "Inklistrad text(3).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 11360
+  }
+ ],
+ "distinct_file_ids": [
+  "file_00000000753482468ee16d87709d3cf4",
+  "file_0000000010ac81f6876ad0d8a92706ff",
+  "file_00000000a8ac8211a2c4fd9c11602838",
+  "file_000000008bb481f4a6fd7c0bba376e82"
+ ],
+ "declared_count": 4,
+ "exportLen": 399588,
+ "sha256": "a9a0838c7dbc59a80a742bedb43bf015f466c5c1ac97ac877636c87f44a81aaf"
+}

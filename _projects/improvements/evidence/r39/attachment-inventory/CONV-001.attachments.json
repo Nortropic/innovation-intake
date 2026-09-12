@@ -1,0 +1,453 @@
+{
+ "conversation_id": "6a92c6bc-0d8c-83eb-815e-3e4eafba0a95",
+ "source_id": "CONV-001",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 12,
+   "label": "sediment://file_0000000090cc82109ab74f94c7c06084",
+   "asset_pointer": "sediment://file_0000000090cc82109ab74f94c7c06084",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 857279
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_000000002e0c8246b5cb78fe7d84a243",
+   "asset_pointer": "sediment://file_000000002e0c8246b5cb78fe7d84a243",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 246034
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_0000000074b88243b8bd9c2363a12f12",
+   "asset_pointer": "sediment://file_0000000074b88243b8bd9c2363a12f12",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 210170
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_00000000eb0481f49307b06abddab4a3",
+   "asset_pointer": "sediment://file_00000000eb0481f49307b06abddab4a3",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 210889
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_00000000f8d881f4a03783959200df87",
+   "asset_pointer": "sediment://file_00000000f8d881f4a03783959200df87",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 198665
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_000000000b70821091415720b15fbbf6",
+   "asset_pointer": "sediment://file_000000000b70821091415720b15fbbf6",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 731275
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_000000002f0c8243a2a61aa9cefbadfd",
+   "asset_pointer": "sediment://file_000000002f0c8243a2a61aa9cefbadfd",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 662247
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_000000003d6c8246927b23a795dd573b",
+   "asset_pointer": "sediment://file_000000003d6c8246927b23a795dd573b",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 957362
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_000000009a4881f494fe30a42b41f87a",
+   "asset_pointer": "sediment://file_000000009a4881f494fe30a42b41f87a",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 203532
+  },
+  {
+   "msg": 12,
+   "label": "sediment://file_00000000433881f480e29a5468532513",
+   "asset_pointer": "sediment://file_00000000433881f480e29a5468532513",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 596423
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1130.png",
+   "file_id": "file_0000000090cc82109ab74f94c7c06084",
+   "name": "IMG_1130.png",
+   "mime_type": "image/png",
+   "size_bytes": 857279
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1129.jpeg",
+   "file_id": "file_000000002e0c8246b5cb78fe7d84a243",
+   "name": "IMG_1129.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 246034
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1128.jpeg",
+   "file_id": "file_0000000074b88243b8bd9c2363a12f12",
+   "name": "IMG_1128.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 210170
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1127.jpeg",
+   "file_id": "file_00000000eb0481f49307b06abddab4a3",
+   "name": "IMG_1127.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 210889
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1126.jpeg",
+   "file_id": "file_00000000f8d881f4a03783959200df87",
+   "name": "IMG_1126.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 198665
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1125.png",
+   "file_id": "file_000000000b70821091415720b15fbbf6",
+   "name": "IMG_1125.png",
+   "mime_type": "image/png",
+   "size_bytes": 731275
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1124.png",
+   "file_id": "file_000000002f0c8243a2a61aa9cefbadfd",
+   "name": "IMG_1124.png",
+   "mime_type": "image/png",
+   "size_bytes": 662247
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1122.png",
+   "file_id": "file_000000003d6c8246927b23a795dd573b",
+   "name": "IMG_1122.png",
+   "mime_type": "image/png",
+   "size_bytes": 957362
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1111.jpeg",
+   "file_id": "file_000000009a4881f494fe30a42b41f87a",
+   "name": "IMG_1111.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 203532
+  },
+  {
+   "msg": 12,
+   "label": "IMG_1112.png",
+   "file_id": "file_00000000433881f480e29a5468532513",
+   "name": "IMG_1112.png",
+   "mime_type": "image/png",
+   "size_bytes": 596423
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000ae2082438f6a177281f42464",
+   "asset_pointer": "sediment://file_00000000ae2082438f6a177281f42464",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 440687
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_000000003064820abde772fd059f5dfe",
+   "asset_pointer": "sediment://file_000000003064820abde772fd059f5dfe",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 462481
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000f1c4820a87556b8c8eca307c",
+   "asset_pointer": "sediment://file_00000000f1c4820a87556b8c8eca307c",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 643235
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000314882109565e1cfa8b88576",
+   "asset_pointer": "sediment://file_00000000314882109565e1cfa8b88576",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 483963
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000195881f5bbd61739e4ff3894",
+   "asset_pointer": "sediment://file_00000000195881f5bbd61739e4ff3894",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 464650
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000cab881f4bd6cbacf54e95565",
+   "asset_pointer": "sediment://file_00000000cab881f4bd6cbacf54e95565",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 255530
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_0000000043ec8210b76c36d2471bcc28",
+   "asset_pointer": "sediment://file_0000000043ec8210b76c36d2471bcc28",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 423532
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_00000000c94c81f49d468396ac478b92",
+   "asset_pointer": "sediment://file_00000000c94c81f49d468396ac478b92",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 233218
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_0000000062e081f4a69ebbacc2147b3e",
+   "asset_pointer": "sediment://file_0000000062e081f4a69ebbacc2147b3e",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 307178
+  },
+  {
+   "msg": 21,
+   "label": "sediment://file_000000007fb481f4855f0bfc300cd11a",
+   "asset_pointer": "sediment://file_000000007fb481f4855f0bfc300cd11a",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 308445
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1118(2).png",
+   "file_id": "file_00000000ae2082438f6a177281f42464",
+   "name": "IMG_1118(2).png",
+   "mime_type": "image/png",
+   "size_bytes": 440687
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1116(2).png",
+   "file_id": "file_000000003064820abde772fd059f5dfe",
+   "name": "IMG_1116(2).png",
+   "mime_type": "image/png",
+   "size_bytes": 462481
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1115.png",
+   "file_id": "file_00000000f1c4820a87556b8c8eca307c",
+   "name": "IMG_1115.png",
+   "mime_type": "image/png",
+   "size_bytes": 643235
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1114.png",
+   "file_id": "file_00000000314882109565e1cfa8b88576",
+   "name": "IMG_1114.png",
+   "mime_type": "image/png",
+   "size_bytes": 483963
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1113.png",
+   "file_id": "file_00000000195881f5bbd61739e4ff3894",
+   "name": "IMG_1113.png",
+   "mime_type": "image/png",
+   "size_bytes": 464650
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1104.jpeg",
+   "file_id": "file_00000000cab881f4bd6cbacf54e95565",
+   "name": "IMG_1104.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 255530
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1096.png",
+   "file_id": "file_0000000043ec8210b76c36d2471bcc28",
+   "name": "IMG_1096.png",
+   "mime_type": "image/png",
+   "size_bytes": 423532
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1095.jpeg",
+   "file_id": "file_00000000c94c81f49d468396ac478b92",
+   "name": "IMG_1095.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 233218
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1094.jpeg",
+   "file_id": "file_0000000062e081f4a69ebbacc2147b3e",
+   "name": "IMG_1094.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 307178
+  },
+  {
+   "msg": 21,
+   "label": "IMG_1078.jpeg",
+   "file_id": "file_000000007fb481f4855f0bfc300cd11a",
+   "name": "IMG_1078.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 308445
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_00000000be4c81f49dab1351ae5b3caf",
+   "asset_pointer": "sediment://file_00000000be4c81f49dab1351ae5b3caf",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 219675
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_00000000b42c81f4a9f1ec1aee89d740",
+   "asset_pointer": "sediment://file_00000000b42c81f4a9f1ec1aee89d740",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 933424
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_00000000a3e481f4b2f789c1dfbebb7c",
+   "asset_pointer": "sediment://file_00000000a3e481f4b2f789c1dfbebb7c",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 237574
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_0000000049d481f59a4076b603ab657b",
+   "asset_pointer": "sediment://file_0000000049d481f59a4076b603ab657b",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 186227
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_00000000bcc08210bd35e1a5d2d7cd6d",
+   "asset_pointer": "sediment://file_00000000bcc08210bd35e1a5d2d7cd6d",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 259515
+  },
+  {
+   "msg": 60,
+   "label": "sediment://file_000000005c2c81f497341756b340d6ed",
+   "asset_pointer": "sediment://file_000000005c2c81f497341756b340d6ed",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 381173
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1137.jpeg",
+   "file_id": "file_00000000be4c81f49dab1351ae5b3caf",
+   "name": "IMG_1137.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 219675
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1136.png",
+   "file_id": "file_00000000b42c81f4a9f1ec1aee89d740",
+   "name": "IMG_1136.png",
+   "mime_type": "image/png",
+   "size_bytes": 933424
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1135.jpeg",
+   "file_id": "file_00000000a3e481f4b2f789c1dfbebb7c",
+   "name": "IMG_1135.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 237574
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1134.jpeg",
+   "file_id": "file_0000000049d481f59a4076b603ab657b",
+   "name": "IMG_1134.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 186227
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1133.jpeg",
+   "file_id": "file_00000000bcc08210bd35e1a5d2d7cd6d",
+   "name": "IMG_1133.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 259515
+  },
+  {
+   "msg": 60,
+   "label": "IMG_1132.png",
+   "file_id": "file_000000005c2c81f497341756b340d6ed",
+   "name": "IMG_1132.png",
+   "mime_type": "image/png",
+   "size_bytes": 381173
+  },
+  {
+   "msg": 76,
+   "label": "sediment://file_00000000f6d081f9b99a31a5ceaf2da1",
+   "asset_pointer": "sediment://file_00000000f6d081f9b99a31a5ceaf2da1",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 272869
+  },
+  {
+   "msg": 76,
+   "label": "3659de3f-083b-4ffc-855f-83f7ace05488.png",
+   "file_id": "file_00000000f6d081f9b99a31a5ceaf2da1",
+   "name": "3659de3f-083b-4ffc-855f-83f7ace05488.png",
+   "mime_type": "image/png",
+   "size_bytes": 272869
+  },
+  {
+   "msg": 106,
+   "label": "Inklistrad text(20260901-054548).txt",
+   "file_id": "file_0000000046288210b465f8ea929e8793",
+   "name": "Inklistrad text(20260901-054548).txt",
+   "mime_type": "text/plain",
+   "size_bytes": 14522
+  }
+ ],
+ "distinct_file_ids": [
+  "file_0000000090cc82109ab74f94c7c06084",
+  "file_000000002e0c8246b5cb78fe7d84a243",
+  "file_0000000074b88243b8bd9c2363a12f12",
+  "file_00000000eb0481f49307b06abddab4a3",
+  "file_00000000f8d881f4a03783959200df87",
+  "file_000000000b70821091415720b15fbbf6",
+  "file_000000002f0c8243a2a61aa9cefbadfd",
+  "file_000000003d6c8246927b23a795dd573b",
+  "file_000000009a4881f494fe30a42b41f87a",
+  "file_00000000433881f480e29a5468532513",
+  "file_00000000ae2082438f6a177281f42464",
+  "file_000000003064820abde772fd059f5dfe",
+  "file_00000000f1c4820a87556b8c8eca307c",
+  "file_00000000314882109565e1cfa8b88576",
+  "file_00000000195881f5bbd61739e4ff3894",
+  "file_00000000cab881f4bd6cbacf54e95565",
+  "file_0000000043ec8210b76c36d2471bcc28",
+  "file_00000000c94c81f49d468396ac478b92",
+  "file_0000000062e081f4a69ebbacc2147b3e",
+  "file_000000007fb481f4855f0bfc300cd11a",
+  "file_00000000be4c81f49dab1351ae5b3caf",
+  "file_00000000b42c81f4a9f1ec1aee89d740",
+  "file_00000000a3e481f4b2f789c1dfbebb7c",
+  "file_0000000049d481f59a4076b603ab657b",
+  "file_00000000bcc08210bd35e1a5d2d7cd6d",
+  "file_000000005c2c81f497341756b340d6ed",
+  "file_00000000f6d081f9b99a31a5ceaf2da1",
+  "file_0000000046288210b465f8ea929e8793"
+ ],
+ "declared_count": 28,
+ "exportLen": 778695,
+ "sha256": "b7f5634f02e16ffd29ce2784bd651d90b8e44d2934fea6b2a67ee20122f8d5b3"
+}

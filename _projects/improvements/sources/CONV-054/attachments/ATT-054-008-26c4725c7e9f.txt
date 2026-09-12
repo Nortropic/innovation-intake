@@ -1,0 +1,165 @@
+R38 FOURTH SEMANTIC REMATCH — FINAL REPORT
+
+  1–2. Prestate and v4 artifact verification
+
+  ┌────────────────────────┬───────────────┬─────────┐
+  │        Artifact        │   Identity    │    ✓    │
+  ├────────────────────────┼───────────────┼─────────┤
+  │                        │ a0ad6666dc6d3 │         │
+  │ v4 bridge .md / .json  │ 57f… / a0e555 │ ✅      │
+  │                        │ 31c6366816…   │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ CONV-011               │ 822dcf7e62473 │ ✅      │
+  │ phase/day/artifact v2  │ ac8…          │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ CONV-022 full          │ 6438ff5baa996 │ ✅      │
+  │ inventory v1           │ 050…          │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ CONV-007 binding       │ 06da4bd4f7a32 │ ✅      │
+  │ fingerprints v1        │ fa2…          │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ v3 bridge + CONV-011   │ ce215476… /   │         │
+  │ v1                     │ 96c4b409… /   │ ✅      │
+  │                        │ 80f5b79a…     │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ THIRD_REMATCH_RESULT   │ 85de2b24baff4 │ ✅      │
+  │                        │ ed1…          │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │                        │ b340122226a57 │ ✅ immu │
+  │ C2_CANDIDATE / c1      │ bb4… /        │ table   │
+  │                        │ 4a05fc36…     │         │
+  ├────────────────────────┼───────────────┼─────────┤
+  │ BODY_SOURCE_IDENTITY / │ 994fa5b0… /   │ ✅ unch │
+  │  FULL_SOURCE_SURFACE_I │ 51311084…     │ anged   │
+  │ DENTITY                │               │         │
+  └────────────────────────┴───────────────┴─────────┘
+
+  36/36 revisions unmutated · _rnd holds only improvements-r38 + -c1 · 30 sources · worktrees 0 changed · nortropic-system read-only.
+
+  3. Authoritative 21-finding inventory
+
+  CONV-001 4 · CONV-007 2 · CONV-011 12 · CONV-015 2 · CONV-022 1 = 21 ✓
+
+  4. Binding — unchanged
+
+  BOUND = 14      AMBIGUOUS = 1      NOT_BOUND = 6
+
+  v4 supplied content for already-BOUND loci (CONV-011, CONV-022) and binding fingerprints for CONV-007 that did not bind.
+
+  5. Semantic outcome — the content axis is now exhausted
+
+  ┌───────────────────────────────────┬───────┬───────┐
+  │              Outcome              │ Remat │ Remat │
+  │                                   │ ch 3  │ ch 4  │
+  ├───────────────────────────────────┼───────┼───────┤
+  │ RESOLVED_BY_SOURCE_BOUND_READABLE │ 8     │ 15    │
+  │ _EXTERNAL                         │       │       │
+  ├───────────────────────────────────┼───────┼───────┤
+  │ SOURCE_BOUND_BUT_INSUFFICIENT     │ 7     │ 0     │
+  ├───────────────────────────────────┼───────┼───────┤
+  │ MISMATCHED_SOURCE                 │ 0     │ 0     │
+  ├───────────────────────────────────┼───────┼───────┤
+  │ STILL_UNRESOLVED                  │ 6     │ 6     │
+  ├───────────────────────────────────┼───────┼───────┤
+  │ MATERIAL_UNRESOLVED               │ 13    │ 6     │
+  └───────────────────────────────────┴───────┴───────┘
+
+  All four exact third-rematch content gaps are closed. Every remaining failure is now a binding or availability failure — none is a content-granularity failure.
+
+  6. CONV-011 — all six remaining findings resolved
+
+  3A · A-004 + B-005. 100/100 days carry {day, title, phase_number, phase_title, exit_condition}, no gaps, over a 10-phase map (P1 Stabilisera kärnan d1-10 … P10 Red-teama och certifiera v1 d91-100). Anchors: D1 "Frys en verifierbar baslinje" (P1); D19 "Skriv backup-, restore- och incidentrunbooks" (P2); D67 "Sätt WCAG 2.2 AA och browserprotokoll" (P7); D100 "Tagga v1.0 eller välj fortsatt kandidatstatus" (P10). The verdict limb was never attachment content — the 100 red/yellow/green rows are the assistant's own table in frozen msg 4, where the adjudicator parsed them.
+
+  3B · A-002 + B-002 + B-007. All four checkable propositions now present, including the one that returned zero hits on every variant in v3:
+
+  ▎ "Dagens repo, runtime, settings, credentials, externa tjänster och primärkällor måste rebaselinas före implementation."
+
+  plus the baseline main @ 1aa1394eed24f94d0ef2b0dc457cdf5db13bc783, and "korrekt utfall NO-OP VERIFIED, inte omskrivning". B-007's circularity is now checkable rather than alleged: the demotion is argued from "Paketet är inte bevis på att livekoden eller dagens runtime redan är åtgärdad" — a clause inside the demoted document — and the frozen body's three paraphrases (msgs 2/4/6) can be compared against it.
+
+  3C · B-009. 20 first-class artifacts, each {identifier, function, owner_or_use} — e.g. vendor-manifest.json "Exakta commits, hashar, licenser och update policy" / Supply chain; lead-contract.json "Versionerad lead/puls-semantik och env-/testregler" / Starter+QA. This is the specification body RND-303's tripwire needs to state a FORBIDDEN shape, and RND-299's "who owns this problem now?" is answerable from owner_or_use. Distinct from v3's 21 external inspiration rows (SiteInspire, Landbook…) — the confusion the phase warned against.
+
+  7. CONV-022 — resolved at full width
+
+  56 rows at exactly the five columns frozen msg 17 specified (repository | path | classification | evidence_reason | inbound_references_risk); 21 verkstadsgolvet + 35 nortropic-system; KEEP 46, UNCERTAIN 8, ARCHIVE/MOVE 2.
+
+  The column the adjudicator named as "the dependency reasoning that makes MUST_STAY_WITH_CODE a finding rather than a posture" now carries real content — CLAUDE.md: "hook, settings deny, 4 agent prompts, doctor, smoke, tests"; docs/02-agenter.md: "Machine-read — doctor #12(a) parses its table rows against agent frontmatter". Plus the three sections v3 lacked: 5 cross-repository duplication entries, a 13-item migration-risk register ("Blob-SHA pins can halt the autopilot on byte changes"), and the Phase 0-3 sequence whose Phase 1 is "Copy-only seeding" — the internal copy-first recommendation. Vocabulary preserved as KEEP/ARCHIVE-MOVE/UNCERTAIN; the 19:39 object stays LATER_SUPERSESSION_CONTEXT_ONLY; ATT-022-001 was not rewritten.
+
+  8. CONV-007 — NOT_BOUND, both findings
+
+  ┌─────────────────────────────────────┬─────────────┐
+  │                Test                 │   Result    │
+  ├─────────────────────────────────────┼─────────────┤
+  │ Four terminal openings (Last login: │ 0 in both   │
+  │  Wed Aug 12 …)                      │ revisions   │
+  ├─────────────────────────────────────┼─────────────┤
+  │ Last login at all                   │ 0           │
+  ├─────────────────────────────────────┼─────────────┤
+  │ Four PRESTATE markers / PRESTATE    │ 0           │
+  │ anywhere                            │             │
+  ├─────────────────────────────────────┼─────────────┤
+  │ UNFROZEN Python 3.12,               │             │
+  │ REVIEW_VERDICT=BLOCK, c4d358,       │ 0           │
+  │ R-001/2/3, Aug 12                   │             │
+  └─────────────────────────────────────┴─────────────┘
+
+  Absence of chip fingerprints is expected — the chips were never captured, which is the finding — so it is not disconfirming on its own. What is disconfirming: Python 3.12 occurs 0× and c4d358 0× in a 117-message conversation that names H035-R15 75×, and the 279-case marker the artifact itself calls load-bearing (msgs 71-88) appears in no candidate. The family reads as a different campaign episode.
+
+  The one real overlap — msg 71's "gate-fel i interpreter-identiteten" against the candidates' Python-interpreter-authority material — is a single shared word. Binding on that, on date proximity, or on the shape of a terminal paste is exactly what the rules forbid. The artifact's own rule then applies: keep unresolved. Locus confirmed as msgs 57-73 with owner lead-ins at 57/60/64/68; msg 60 measured at 70 chars ending in a dangling colon.
+
+  9–10. CONV-001 and CONV-013
+
+  - CONV-001 ×4 — STILL_UNRESOLVED, fail-closed. No primary source across four bridges.
+  - CONV-013 — KNOWN_UNRESOLVED, FULL_SOURCE_CAPTURE_CONV_013=NO, prior verdict STRONGLY_FAVOURS_CONV-015_FAMILY — NOT PROVEN carried forward. v4 supplies content and fingerprints, not upload records; no new source-surface candidate.
+
+  11. No c3 — rationale
+
+  c3 not created. No IR text, provenance typing or relation is falsified. The recovered warrant confirms the demotion RND-144 records; the 20 artifact specs confirm RND-303/RND-299; the CONV-022 table again uses the pre-supersession vocabulary c2 already recorded for RND-393. Seven findings became resolvable without any IR change — precisely the case Phase 8 says must not mint a c3. c1 and c2 verified byte-identical.
+
+  12–13. Contracts and result identity
+
+  1/1 projects satisfy the project contract · rnd validate: 0 FAIL, 1 WARN · worktrees 0 changed · prestate re-verified OK after all work. No validator added, so no new activation claimed.
+
+  FOURTH_REMATCH_RESULT_SHA256 = 521531731062ab688ddfdcd3609087c118b9f0feb459778f08346efb13e8654a
+
+  Final status
+
+  CORPUS_INTEGRITY                    = PASS
+  SOURCE_CAPTURE_COMPLETENESS         = NO
+  SEMANTIC_QUALIFICATION              = NOT_ESTABLISHED
+  FULL_SOURCE_CAPTURE_CONV_013        = NO
+  ATTACHMENT_SEMANTIC_R38             = FAIL
+  FINAL_IMPROVEMENTS_CORPUS_QUALIFIED = NO
+  POST_R38_CAPTURE_STARTED            = NO
+  RECOMPILE_STARTED                   = NO
+  NORTROPIC_SYSTEM_MUTATIONS          = 0
+
+  BOUND=14  AMBIGUOUS=1  NOT_BOUND=6
+  RESOLVED_BY_SOURCE_BOUND_READABLE_EXTERNAL=15
+BOUND=14  AMBIGUOUS=1  NOT_BOUND=6
+RESOLVED_BY_SOURCE_BOUND_READABLE_EXTERNAL=15
+SOURCE_BOUND_BUT_INSUFFICIENT=0
+MISMATCHED_SOURCE=0
+STILL_UNRESOLVED=6
+MATERIAL_UNRESOLVED=6
+
+ATTACHMENT_SEMANTIC_R38 stays FAIL — six MATERIAL gaps remain, so the frozen contract is not satisfied. Six ATTACHMENT_MATERIAL_UNAVAILABLE warnings and RECONCILIATION_KNOWN_UNRESOLVED=1 remain live and untouched.
+
+FILE_LIBRARY_CONTENT_RECOVERY_REQUESTS_V4 — none
+
+All four exact gaps closed. There is nothing further to ask for on the content axis.
+
+FILE_LIBRARY_BINDING_REQUESTS_V4 — 2 blocking, 1 recorded
+
+1. CONV007-A-001 / A-003 — for each of the five objects, the first line of its body after the terminal banner, to match against what msg 60's colon introduces; or decisively, which locus is the adversarially-rejected first fix.
+2. CONV-001 A-007/A-006/B-028/A-014 — any File Library object whose opening carries one of the five Context-family terms and predates msg 22.
+3. CONV-015 A-001 — recorded only; non-blocking, for the reasons established in rematch 3.
+
+---
+
+What this run determined: the third rematch's four content gaps were real, specific, and are now genuinely closed — SOURCE_BOUND_BUT_INSUFFICIENT went 7 → 0. The remaining six failures survive on a different axis entirely: two are unbindable without a distinguishing fingerprint, four have no source at all. No amount of further content extraction addresses either.
+
+✻ Crunched for 5m 33s · done 4:59 PM
+
+──────────────────────────────────────────────────────────
+❯
+───────────────────────────────────────────────────────

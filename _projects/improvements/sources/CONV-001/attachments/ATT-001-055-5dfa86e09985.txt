@@ -1,0 +1,247 @@
+Last login: Sat Aug 29 09:35:31 on ttys002
+
+elinhaggstrom@MacBook-Pro ~ % cd ~/nortropic/innovation-intake
+
+elinhaggstrom@MacBook-Pro innovation-intake % git status --short
+
+git rev-parse HEAD
+
+git rev-parse HEAD^{tree}
+
+git rev-parse origin/main
+
+6c82d333ad036cbd4f934ff44723cf6318442003
+
+9dd72fbf188bc20d3ccb2d1c9682f95b566551b9
+
+6c82d333ad036cbd4f934ff44723cf6318442003
+
+elinhaggstrom@MacBook-Pro innovation-intake % chmod +x hooks/pre-commit
+
+ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+
+elinhaggstrom@MacBook-Pro innovation-intake % test -x hooks/pre-commit && echo "TRACKED HOOK EXECUTABLE: PASS"
+
+test -L .git/hooks/pre-commit && echo "HOOK SYMLINK: PASS"
+
+readlink .git/hooks/pre-commit
+
+TRACKED HOOK EXECUTABLE: PASS
+
+HOOK SYMLINK: PASS
+
+../../hooks/pre-commit
+
+elinhaggstrom@MacBook-Pro innovation-intake % ./hooks/pre-commit
+
+PASS  [agent-harness-priorities]  status=idea  plan=—
+
+PASS  [arbetsmetoder-innovation]  status=idea  plan=—
+
+PASS  [autonomi-utan-sjalvcertifiering]  status=idea  plan=—
+
+PASS  [bevaka-frontier-ai-engineering]  status=idea  plan=—
+
+PASS  [bootstrap-closeout-rebaseline]  status=idea  plan=—
+
+PASS  [brainstorma-nortropic-engineering]  status=idea  plan=—
+
+PASS  [brainstorming-arbetsfloden]  status=idea  plan=—
+
+PASS  [build-fast-path]  status=clarified  plan=—
+
+PASS  [claude-bootstrap-takeover-protocol]  status=idea  plan=—
+
+PASS  [claude-design-watch]  status=idea  plan=—
+
+PASS  [corpus-control-plane]  status=idea  plan=—
+
+PASS  [digitalforvaltningen-webb-v2]  status=idea  plan=—
+
+PASS  [dokumentation-repo-struktur]  status=idea  plan=—
+
+PASS  [foundation-repair-gate]  status=idea  plan=—
+
+PASS  [gauntlet-wayfinder]  status=idea  plan=—
+
+PASS  [gold-extraction-overlay]  status=idea  plan=—
+
+PASS  [innovation-inbox-idehantering]  status=idea  plan=—
+
+PASS  [korpusfrysning-och-syntesmetod]  status=idea  plan=—
+
+PASS  [nortropic-aquarium]  status=idea  plan=—
+
+PASS  [nortropic-evolution-foundations]  status=idea  plan=—
+
+PASS  [nortropic-frontier-delta]  status=superseded  plan=—
+
+PASS  [nortropic-organization-os]  status=idea  plan=—
+
+PASS  [nortropic-owner-plane]  status=idea  plan=—
+
+PASS  [nortropic-planning-wall]  status=idea  plan=—
+
+PASS  [nortropic-recompile]  status=idea  plan=—
+
+PASS  [nortropic-som-kommun]  status=superseded  plan=—
+
+PASS  [openai-anthropic-workflow]  status=idea  plan=—
+
+PASS  [owner-attention-inte-owner-stop]  status=idea  plan=—
+
+PASS  [project-corpus-intake]  status=idea  plan=—
+
+PASS  [snabba-upp-loopar]  status=idea  plan=—
+
+PASS  [unattended-overnight-execution]  status=idea  plan=—
+
+PASS  [verkstadsgolvet-v2-cockpit]  status=idea  plan=—
+
+PASS  [webbforvaltningen-capability-assurance]  status=idea  plan=—
+
+PASS  [workflow-orkestrering]  status=idea  plan=—
+
+34/34 idea packages satisfy the approved-plan contract
+
+PASS  [agent-harness-priorities]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [agent-harness-priorities]  LEGACY_CONTEXT_MANIFEST_MISSING — no agent-harness-priorities-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [arbetsmetoder-innovation]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [arbetsmetoder-innovation]  LEGACY_CONTEXT_MANIFEST_MISSING — no arbetsmetoder-innovation-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [autonomi-utan-sjalvcertifiering]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [autonomi-utan-sjalvcertifiering]  LEGACY_CONTEXT_MANIFEST_MISSING — no autonomi-utan-sjalvcertifiering-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [bevaka-frontier-ai-engineering]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [bevaka-frontier-ai-engineering]  LEGACY_CONTEXT_MANIFEST_MISSING — no bevaka-frontier-ai-engineering-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [bootstrap-closeout-rebaseline]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [bootstrap-closeout-rebaseline]  LEGACY_CONTEXT_MANIFEST_MISSING — no bootstrap-closeout-rebaseline-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [brainstorma-nortropic-engineering]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [brainstorma-nortropic-engineering]  LEGACY_CONTEXT_MANIFEST_MISSING — no brainstorma-nortropic-engineering-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [brainstorming-arbetsfloden]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [brainstorming-arbetsfloden]  LEGACY_CONTEXT_MANIFEST_MISSING — no brainstorming-arbetsfloden-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [build-fast-path]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [build-fast-path]  LEGACY_CONTEXT_MANIFEST_MISSING — no build-fast-path-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [claude-bootstrap-takeover-protocol]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [claude-bootstrap-takeover-protocol]  LEGACY_CONTEXT_MANIFEST_MISSING — no claude-bootstrap-takeover-protocol-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [claude-design-watch]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [claude-design-watch]  LEGACY_CONTEXT_MANIFEST_MISSING — no claude-design-watch-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [corpus-control-plane]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [corpus-control-plane]  LEGACY_CONTEXT_MANIFEST_MISSING — no corpus-control-plane-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [digitalforvaltningen-webb-v2]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [digitalforvaltningen-webb-v2]  LEGACY_CONTEXT_MANIFEST_MISSING — no digitalforvaltningen-webb-v2-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [dokumentation-repo-struktur]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [dokumentation-repo-struktur]  LEGACY_CONTEXT_MANIFEST_MISSING — no dokumentation-repo-struktur-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [foundation-repair-gate]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [foundation-repair-gate]  LEGACY_CONTEXT_MANIFEST_MISSING — no foundation-repair-gate-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [gauntlet-wayfinder]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [gauntlet-wayfinder]  LEGACY_CONTEXT_MANIFEST_MISSING — no gauntlet-wayfinder-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [gold-extraction-overlay]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [gold-extraction-overlay]  LEGACY_CONTEXT_MANIFEST_MISSING — no gold-extraction-overlay-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [innovation-inbox-idehantering]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [innovation-inbox-idehantering]  LEGACY_CONTEXT_MANIFEST_MISSING — no innovation-inbox-idehantering-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [korpusfrysning-och-syntesmetod]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [korpusfrysning-och-syntesmetod]  LEGACY_CONTEXT_MANIFEST_MISSING — no korpusfrysning-och-syntesmetod-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-aquarium]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-aquarium]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-aquarium-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-evolution-foundations]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-evolution-foundations]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-evolution-foundations-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-frontier-delta]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-frontier-delta]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-frontier-delta-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-organization-os]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-organization-os]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-organization-os-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-owner-plane]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-owner-plane]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-owner-plane-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-planning-wall]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-planning-wall]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-planning-wall-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-recompile]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-recompile]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-recompile-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [nortropic-som-kommun]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [nortropic-som-kommun]  LEGACY_CONTEXT_MANIFEST_MISSING — no nortropic-som-kommun-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [openai-anthropic-workflow]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [openai-anthropic-workflow]  LEGACY_CONTEXT_MANIFEST_MISSING — no openai-anthropic-workflow-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [owner-attention-inte-owner-stop]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [owner-attention-inte-owner-stop]  LEGACY_CONTEXT_MANIFEST_MISSING — no owner-attention-inte-owner-stop-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [project-corpus-intake]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [project-corpus-intake]  LEGACY_CONTEXT_MANIFEST_MISSING — no project-corpus-intake-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [snabba-upp-loopar]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [snabba-upp-loopar]  LEGACY_CONTEXT_MANIFEST_MISSING — no snabba-upp-loopar-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [unattended-overnight-execution]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [unattended-overnight-execution]  LEGACY_CONTEXT_MANIFEST_MISSING — no unattended-overnight-execution-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [verkstadsgolvet-v2-cockpit]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [verkstadsgolvet-v2-cockpit]  LEGACY_CONTEXT_MANIFEST_MISSING — no verkstadsgolvet-v2-cockpit-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [webbforvaltningen-capability-assurance]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [webbforvaltningen-capability-assurance]  LEGACY_CONTEXT_MANIFEST_MISSING — no webbforvaltningen-capability-assurance-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+PASS  [workflow-orkestrering]  rev=— manifest=— owner-deltas=— audit=—
+
+WARN  [workflow-orkestrering]  LEGACY_CONTEXT_MANIFEST_MISSING — no workflow-orkestrering-context-manifest.json — packages captured before the context contract have none; build one when this idea is next activated, never from guesses
+
+34/34 packages satisfy the context contract
+
+codes: LEGACY_CONTEXT_MANIFEST_MISSING
+
+elinhaggstrom@MacBook-Pro innovation-intake % 

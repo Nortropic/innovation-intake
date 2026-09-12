@@ -1,0 +1,45 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-006",
+  "revision": 3,
+  "source_path": "_projects/improvements/sources/CONV-006/conversation-r3.md",
+  "source_sha256": "1e6dc802873fba3f501e2ded2749e0432faef48d5290efa5761f715074815407",
+  "declared_count": 1,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 50,
+    "filecite_turns": 48,
+    "upload_phrases": 0,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "file": 50,
+      "search": 17,
+      "view": 19
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-006-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "6be5496dce33dae24f802591a0f0aadc35a98a7bb367682d7917d83b87f76e84",
+      "artifact_path": "_projects/improvements/sources/CONV-006/attachments/ATT-006-001-6be5496dce33.png",
+      "byte_length": 1386112,
+      "registered_at": "2026-09-11",
+      "original_filename": "73e0fc06-3694-4442-819e-7c3f1f9ecc39.png",
+      "declared_kind": "image_asset_pointer",
+      "media_type": "image/png",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_00000000e5e881f48280375cab9b6a9a",
+      "platform_declared_size_bytes": 1154803,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000e5e881f48280375cab9b6a9a, which the data-layer export of conversation 6a8ac6dc-4314-83eb-9c3b-fbd4e6405bbd lists in message(s) 1; sha256 6be5496dce33dae24f802591a0f0aadc35a98a7bb367682d7917d83b87f76e84 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name '73e0fc06-3694-4442-819e-7c3f1f9ecc39.png', content-type 'image/png'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json",
+      "size_note": "platform metadata declares size_bytes=1154803 but the download endpoint served 1386112 bytes; the served bytes are what the platform exposes at this id today, the declared size is recorded as a discrepancy, not resolved"
+    }
+  ]
+}

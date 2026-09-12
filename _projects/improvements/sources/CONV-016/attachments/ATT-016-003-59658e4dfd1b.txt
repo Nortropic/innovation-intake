@@ -1,0 +1,406 @@
+Independent Semantic Review — Verdict
+
+Corpus-checkouten verifierades mot den frysta committen innan något användes som evidens: HEAD = 62e9fd44b6ea3e7d9f3d588ac07307c97f50b4f4, rent träd (endast ospårad .DS_Store). Reviewn bygger på samtliga 16 briefs i sin helhet, fullständig läsning av transkripten för snabba-upp-loopar, brainstorming-arbetsfloden, nortropic-frontier-delta, brainstorma-nortropic-engineering, arbetsmetoder-innovation, nortropic-som-kommun och agent-harness-priorities, samt riktade probes i workflow-orkestrering (msg 1–5, 6, 9–12, 19–25), bevaka (msg 1–5, 11, 15–18), gauntlet (msg 1, 4, 9, 12, 14, 69–72), innovation-inbox (msg 1–4, 105–117) och bootstrap-closeout (msg 1–11). Kampanjmanifestet användes endast för kronologikontroll, precis som RFC:n själv deklarerar.
+
+1. Overall verdict
+
+PASS_WITH_MINOR_REMEDIATION
+
+Syntesen är semantiskt ovanligt pålitlig: varje §2.3-korrektiv jag adversariellt återprövade mot originaltranskripten reproducerades exakt (inbox-rejectionens fem ord och smala scope, gauntlets ORA-mönster, closeout-ramens assistentmyntning, bevakas nioords-direktiv, frontier-deltas off-by-one-numrering, widget-klick-aktiveringen). Klassmatrisen, DO-NOT-BUILD-registret och §15:s icke-beslut är corpus-trogna. Det som kräver remediering är i huvudsak evidensviktning, inte arkitektur: (1) "genuine independent convergence"-språket ignorerar en bevisad delad-kontext-kanal (samma ChatGPT-projekt, projektfiler via filecite, korschatt-minne via memcite, explicita korsreferenser); (2) en kollisionsflagg är felattribuerad till en chatt när den är intake-briefens tillägg; (3) två §8-rader bär falsk OD-etikett och en matrisrad falsk AP-etikett. Inget av detta ändrar någon KEEP/ADD/DEFER-slutsats, men Phase 3-agenter skulle annars ärva överdriven oberoende-evidens som faktum.
+
+2. High-impact finding review
+
+Finding: A. Compile boundary som starkaste
+konvergens
+Verdict: SUPPORTED_WITH_QUALIFICATION
+Confidence: Hög
+Main evidence: Mönstret finns verbatim i varje
+instans: "compilation boundary" + Canonical Work
+ Order (workflow ← msg 5), "deterministic
+compiler" → Task Capsule (snabba ← msg 5),
+Context Resolver → Manifest med
+resolver_version/context_hash (workflow ← msg
+10, 19), Context Compiler → ContextPack
+(brainstorma ← msg 5), conversation compiler →
+BUILD IR (arbetsfloden ← msg 6). Noll
+termåteranvändning mellan chattarna
+(grep-verifierat).
+Main counter-evidence: Oberoendet är inte hållbart
+som "genuine": alla fem chattar ligger i
+ChatGPT-projektet "Improvements" med delade
+projektfiler (filecite-markörer på Nortropics
+trust-dokument i  snabba/workflow/frontier-delta
+ msg 5) och aktivt korschatt-minne (memcite);
+frontier-delta (skapad 11:38 samma morgon,
+mellan snabba 10:43 och workflow 12:08)
+refererar explicit "vår andra diskussion om hur
+looparna kan göras mycket snabbare" —
+assistenten bar bevisligen kontext mellan just
+morgonchattarna 15 aug. Dessutom blandar
+5-chatts-räkningen två delmönster
+(kontextartefakt: 3 chattar; intent-kompilering:
+ workflow/arbetsfloden/oaw).
+Action: Skriv om §7.1/§12.1: "samma assistents
+återkommande arkitekturdrag applicerat på fem
+olikt ramade problem, aldrig motsagt av ägaren"
+— designslutsatsen står, rösträkningsevidensen
+gör det inte.
+────────────────────────────────────────
+Finding: B. Context Manifest / Task Capsule /
+ContextPack
+Verdict: SUPPORTED_WITH_QUALIFICATION
+Confidence: Hög
+Main evidence: Falsifieringen av
+containment-hypotesen håller: i snabba msg 5 är
+task_capsule.json syskon till
+candidate-manifest.json och ett element i
+promptens variable suffix — ingen chatt
+definierar någon containment. Ägaren använder
+aldrig någon av de tre termerna (verifierat i
+samtliga ägarturer). "Work order ≠ manifest ≠
+BUILD IR"-gränsdragningen stöds av workflow msg
+5/AC1–AC2.
+Main counter-evidence: (i) RFC:ns CF-2-EVOLUTION
+påstår att brainstorma msg 5 "explicitly flag[s]
+ the collision" — falskt: transkriptet nämner
+aldrig Task Capsule eller Context Manifest;
+flaggan är intake-briefens Aug 20-annotering
+(§3/§6/Q2 i briefen). (ii) "10:43/12:08" är
+chatt-skapelsetider (avkodade ur
+conversation-id/manifest), inte meddelandetider
+— coinage-ordningen inom 15 aug är okänbar
+eftersom båda chattarna löpte parallellt till 20
+ aug. (iii) "outer contract"-formuleringen om
+Canonical Work Order antyder containment som
+corpusen inte uttalar (adjacens, inte omslag).
+Action: Rätta attributionen (msg 5 → briefen);
+hedga "outer"; namnvalet är redan korrekt lämnat
+ till ägaren (brainstorma Q2) — behåll det.
+────────────────────────────────────────
+Finding: C. Observatory vs Evolution Loop
+Verdict: SUPPORTED_WITH_QUALIFICATION
+Confidence: Hög
+Main evidence: Supersessionen är ett äkta
+ägarbeslut (frontmatter i båda briefs,
+"ägarbeslut 2026-08-20"). Grep bekräftar RFC:ns
+tystnadsclaim: "held-out" 0 träffar, "evidence
+ladder/evidensstege" 0 träffar i
+bevaka-transkriptet; evidensstegen, held-out,
+multi-run och SRG finns endast i frontier-delta
+(msg 5, 9, 10). Enda Gauntlet-korsomnämnandet är
+ Van Clief-parallellen (bevaka ← msg 10) — §9.6
+stämmer.
+Main counter-evidence: Observatory är inte
+rigor-tom: bevaka msg 18 §12–13 bär egen
+experimentdisciplin (signal → thesis → evidence
+→ counter-evidence → experiment → measurement,
+baseline/variant, "missed frozen negative
+controls" som failure-villkor,
+prediktionsfelskalibrering) plus
+IGNORE/WATCH/EXPERIMENT/ADOPT-gradering (msg
+12). "No counterpart" gäller de fyra namngivna
+mekanismerna — exakt så, men
+exec-sammanfattningen kan läsas bredare. Row 26
+tappar dessutom frontier-delta Q6:s egen
+brasklapp: P3/P4 vilar på preprints och ska per
+stegens egen regel hållas NEEDS-EVIDENCE tills
+lokalt replikerade.
+Action: Behåll merge-slutsatsen; precisera "no
+counterpart" till de fyra mekanismerna; för in
+Q6-caveaten i row 26.
+────────────────────────────────────────
+Finding: C-underfråga:
+held-out/hill-climbing-claimet
+Verdict: Explicit corpusposition + INF-brygga
+Confidence: Hög
+Main evidence: Hill-climbing-motiveringen är
+ordagrann corpus-utsaga, inte reviewer-inferens:
+ "en harness som optimerar sig själv mot samma
+testmängd kan överanpassa sig…" (frontier-delta
+← msg 3) och "agenten får inte se facit" med
+juli-2026-studie citerad (← msg 5), korroborerad
+ ← msg 9.
+Main counter-evidence: Kopplingen till just
+bevakas Experiment Engine (CF-3 RELATION) är
+stark cross-chat-inferens — bevaka nämner aldrig
+ held-out. Auktoritet: AP genomgående (assistent
+ + preprints), aldrig ägaruttalad.
+Action: Formulera bryggan som INF, inte som
+faktum; "critical preservation requirement" är
+försvarbar som proposal, inte som
+corpusposition.
+────────────────────────────────────────
+Finding: D. Authority attribution
+Verdict: SUPPORTED_WITH_QUALIFICATION
+Confidence: Hög
+Main evidence: Varje stickprovad korrektion
+reproducerades: inbox msg 108 är exakt "detta
+fungerade inte, vi skrotar denna idé" med
+assistentens scoping i msg 109 och ägarens
+fortsatta write-path-försök i msg 110/112/115 (→
+ U1 korrekt); gauntlet msg 12/14 är
+ratification-by-filing, msg 9 substantiell
+ägarstyrning; closeout msg 7 = assistentens
+frame + smala bootstrap-definition, msg 5/8 =
+ägarens korta autentiska kärnor; bevaka msg 15 =
+ ambitionsdirektivet, msg 17 = assistentens
+"lås".
+Main counter-evidence: RFC:n har dock gått fel åt
+båda hållen i tre fall: §8 rad 22–23 etiketterar
+ assistentrekommendationer (arbetsmetoder ← msg
+4, sourcade ur OpenAI-dokumentation) som OD;
+matrisrad 42 etiketterar operator-portal-ramen
+som AP fast e-tjänsteportal-ramen är ägarens
+(workflow ← msg 6: "Det känns lite som en
+Interaktiv e-tjänst portal… eller tänker jag
+fel?", bekräftad msg 8 "du tänker rätt").
+Exec-punkt 5:s "owner's authored contributions
+are commissions, constraints, vetoes, one
+organizational metaphor…" underräknar därmed
+ägarens konceptuella bidrag (även dokumentation
+← msg 1: split-idén; workflow ← msg 20:
+stegordningen). Hybridetiketter utanför
+§2.3-vokabulären ("OD (practiced)", "OD-driven",
+ "OD-adjacent"…) urvattnar schemat.
+Action: Rätta de tre etiketterna; normalisera
+hybridetiketter mot §2.3 (t.ex. "OD (practiced)"
+ ≡ ORA per RFC:ns egen definition).
+
+3. Material semantic findings
+
+F1 · HIGH · Oberoende-claims saknar delad-kontext-motbeviset.
+RFC_CLAIM: §7.1 "Zero cross-referencing … genuine independent convergence within 3 days"; §12.1 "Five chats converged here independently — the corpus's own strongest vote"; §1.1 "Every chat … independently re-derives the same master principle".
+WHY_WRONG_OR_OVERSTATED: Termåteranvändning saknas (sant, grep-verifierat), men oberoende kräver mer: alla chattar delar ChatGPT-projektet "Improvements", projektfiler som beskriver trust-arkitekturen (fileciteturn0file0 i snabba/workflow/frontier-delta msg 5 — P-1:s "oberoende härledningar" hade alltså samma facit i kontexten), och aktivt minne (memcite-markörer; arbetsfloden msg 6 citerar kommun-chatten och inbox-rejectionen; brainstorma msg 9 citerar gauntlet-kedjan och snabba; frontier-delta msg 5 citerar snabba samma morgon).
+CORPUS_EVIDENCE: transkriptmetadata (alla: projekt "Improvements", markörnoter för memcite/filecite); frontier-delta ← msg 5 ("vår andra diskussion om hur looparna kan göras mycket snabbare"); arbetsfloden ← msg 6; brainstorma ← msg 5, 9.
+RECOMMENDED_REMEDIATION: Lägg delad-kontext-kanalen till §2.2:s bias-motmedel och klassa konvergenserna SHARED_PRIOR_CONTEXT; behåll designslutsatserna med omformulerad evidensbas.
+
+F2 · MEDIUM · Felattribuerad kollisionsflagg.
+RFC_CLAIM: CF-2 EVOLUTION: "Aug 18: ContextPack + Context Compiler re-coin the context side and explicitly flag the collision, proposing one concept (brainstorma … ← msg 5)".
+WHY_WRONG: brainstorma-transkriptet nämner aldrig Task Capsule eller Context Manifest (grep: 0 träffar); flaggan ("three chats named the same thing — one implementation should serve all three") är intake-skillens brief-annotering daterad 20 aug.
+CORPUS_EVIDENCE: brainstorma-full-chat (hela); brief §3/§6/Q2.
+RECOMMENDED_REMEDIATION: Ändra citatet till briefen; notera att unifieringsförslaget är intake-processens, inte chattens. (Notera: Pass E kan inte fånga detta — ← msg 5 är mekaniskt giltigt men semantiskt fel objekt. Bra illustration av varför grön Pass E ≠ semantisk korrekthet.)
+
+F3 · MEDIUM · Falska ägarbeslut i §8 rad 22–23.
+RFC_CLAIM: "'Think hard'-style prompting … OD" och "'Best practices' as terminal criterion … OD".
+WHY_WRONG: Båda förkastandena formulerades av assistenten ur OpenAI-material (arbetsmetoder ← msg 4). Ägarens ord är paketgodkännandet "Detta låter bra, hur skulle jag kunna implementera detta" (← msg 5) och "Det ska alltid vara deep tänker jag" (← msg 7) — endast Deep-defaulten (D1) är OD.
+CORPUS_EVIDENCE: arbetsmetoder-full-chat msg 4, 5, 7.
+RECOMMENDED_REMEDIATION: OD → ORA på båda raderna; matrisrad 38 nyanseras "OD (D1) + ORA (D2–D4)".
+
+F4 · MEDIUM · Falsk assistant-only-klassning av portal-ramen.
+RFC_CLAIM: Matrisrad 42 "Verkstadsgolvet as operator portal / digital twin | ADD | AP".
+WHY_WRONG: E-tjänsteportal-ramen är ägarförfattad (workflow ← msg 6), assistentbekräftad (← msg 8); designdetaljerna (typed Operator API, owns-no-state, digital twin) är assistentens. Parallellt med hur rad 25 hanteras borde etiketten vara "OD-frame (← msg 6) + AP design". Detta underminerar också CF-9:s "the kommun frame — notably the corpus's only major owner-authored conceptual proposal".
+CORPUS_EVIDENCE: workflow msg 6, 8; jfr dokumentation ← msg 1 (split-idén ägarformulerad, om än sådd av tidigare assistentkommentar) och workflow ← msg 20 (ägarens stegordning).
+RECOMMENDED_REMEDIATION: Rätta rad 42:s authority; mjuka upp "only major owner-authored"-formuleringen i exec §1.5 och CF-9.
+
+F5 · MEDIUM · "8 chats" i §7.2 bryter mot RFC:ns egen räkneregel.
+RFC_CLAIM: "Advisory-never-authority (8 chats)".
+WHY_WRONG: §3 P-1 listar åtta instantieringar i sex distinkta chattar (workflow och frontier-delta räknas dubbelt). §2.2 lovar "convergence is counted in independent chats, never in mentions". Räkningen kan nå 8 chattar endast med instanser som inte listas (bevaka P1, dokumentation D3).
+RECOMMENDED_REMEDIATION: Rätta till "6 chattar / 8 instantieringar" eller utöka instanslistan; principen som sådan är fortsatt corpusens bredast stödda.
+
+F6 · MEDIUM · Tidsstämplarna daterar chattar, inte myntanden.
+RFC_CLAIM: "Task Capsule (snabba … ← msg 5, 10:43) and Context Manifest + canonical work order (workflow … 12:08) coined independently the same morning."
+WHY_OVERSTATED: 10:43/12:08 är chattarnas skapelsetider (manifest/conversation-id — verifierat: hex-prefixen avkodar exakt dessa klockslag). Båda chattarna var levande t.o.m. 20 aug; meddelandenas relativa ordning är okänbar ur corpusen, och beläggen är dessutom manifest-, inte corpus-härledda.
+RECOMMENDED_REMEDIATION: Formulera som "chattarna startades samma morgon (manifest)"; dra ingen ordningsslutsats om själva myntandena. §10.1:s "ContextPack är nyast (08-18)" står sig.
+
+F7 · LOW-MEDIUM · Delta-demoteringens referent.
+RFC_CLAIM: §8.4/rad 31 "Daily delta report as the product → demoted to notification surface (bevaka ← msg 18)".
+WHY_NEEDS_QUALIFICATION: Msg 18-satsen (rad 3107) demoterar specifikt "vår nuvarande Bevaka Frontier AI Engineering"; utsträckningen till frontier-deltas dagliga rapport är rimlig inferens (kadenstabellen behåller "Frontier Delta synthesis" veckovis) men bör märkas som sådan.
+RECOMMENDED_REMEDIATION: En parentes i §8.4/§10.2.
+
+F8 · LOW-MEDIUM · "No counterpart" kan överläsas.
+RFC_CLAIM: Exec §1.3 / CF-4: Evolution Loop-rigorn "has no counterpart in the Observatory design".
+WHY_NEEDS_QUALIFICATION: Sant för de fyra uppräknade mekanismerna (grep-verifierat), men bevaka msg 18 §12–13 har egen experimentdisciplin (counter-evidence-steg, baseline/variant, frozen negative controls, prediktionsfelskalibrering) — merge-uppgiften är förening av två partiellt överlappande rigor-system, inte transplantation in i ett tomrum. Row 26 bör även bära frontier-delta Q6:s preprint-caveat.
+RECOMMENDED_REMEDIATION: En mening i CF-4 + Q6-flagga i rad 26.
+
+F9 · LOW · "Outer contract"-formuleringen i §10.1.
+Corpusen stödjer adjacens (work order = uppströms intent-artefakt; dispatch = TASK_ID+ROLE+RUN_ID; manifest = per-run-kontext), aldrig att work ordern "omsluter" manifestet. Byt "outer wrapper/outer dispatch package" mot "adjacent upstream contract".
+
+F10 · LOW · Authority-vokabulärdrift.
+§8/§13 använder etiketter utanför §2.3 ("OD (practiced)", "OD-driven", "OD-endorsed", "OD (deictic)", "OD-adjacent", "AP-reversed", "External forcing"). Var för sig ärliga, kollektivt urvattnande — särskilt "OD (practiced)" (rad 13) som per §2.3:s definitioner är ORA. Normalisera eller definiera suffixen.
+
+F11 · LOW · En-klass-per-familj i §16.2 maskerar blandade familjer.
+CF-9 = DEFER som familj men innehåller ADD-rader (42, 48). Riskerar att Phase 3 filtrerar på familjeklass och tappar ADD-raderna. Lägg en not.
+
+F12 · LOW · §7.9 "Fresh context as a feature (4 chats)" listar tre distinkta chattar (workflow ×2, inbox, closeout). Antingen räkna om eller lägg till gauntlet (D8:s reviewer-fan-out på färska kontexter/immutable SHA), som gör räkningen sann.
+
+4. Missing counter-evidence
+
+CLAIM: "Genuine independent convergence" (compile
+boundary m.fl.)
+SUPPORTING_EVIDENCE: Ingen termåteranvändning;
+olika probleminramningar
+COUNTER_EVIDENCE: memcite/filecite, samma projekt,
+explicita korsreferenser (frontier-delta←snabba
+samma morgon; brainstorma←gauntlet/snabba;
+arbetsfloden←kommun/inbox)
+RFC_HANDLED: NO
+VERDICT: Nedgradera till SHARED_PRIOR_CONTEXT
+────────────────────────────────────────
+CLAIM: P-1 "independently re-derives"
+SUPPORTING_EVIDENCE: 8 instantieringar med olika
+ordval
+COUNTER_EVIDENCE: Delad projektfil som beskriver
+trust-kedjan (fileciteturn0file0) fanns i
+kontexten i minst tre av chattarna
+RFC_HANDLED: PARTIAL (CF-1 säger "kernel predates
+the corpus")
+VERDICT: Kvalificera §1.1/§7.2-språket
+────────────────────────────────────────
+CLAIM: Kommun = "only major owner-authored
+conceptual proposal"
+SUPPORTING_EVIDENCE: kommun ← msg 1 äkta
+COUNTER_EVIDENCE: workflow ← msg 6 (portal-ramen),
+dokumentation ← msg 1 (split-idén), workflow ←
+msg 20 (stegordningen)
+RFC_HANDLED: NO
+VERDICT: Mjuka upp
+────────────────────────────────────────
+CLAIM: "No counterpart" för Evolution-rigorn
+SUPPORTING_EVIDENCE: grep: held-out/ladder 0
+träffar i bevaka
+COUNTER_EVIDENCE: bevaka msg 18 §12–13 egen
+experimentdisciplin
+RFC_HANDLED: PARTIAL ("silence, not
+contradiction")
+VERDICT: Precisera till de fyra mekanismerna
+────────────────────────────────────────
+CLAIM: Rad 26 KEEP (multi-run/SRG-protokollet)
+SUPPORTING_EVIDENCE: frontier-delta ← msg 9, 10
+COUNTER_EVIDENCE: frontier-delta Q6: vilar på
+preprints → corpusens egen regel säger
+NEEDS-EVIDENCE tills lokalt replikerat
+RFC_HANDLED: NO (caveaten når inte matrisen)
+VERDICT: Bär in Q6-flaggan i raden
+
+5. Classification changes proposed
+
+Inga ändringar av klass (KEEP/SIMPLIFY/ADD/DEFER/REJECT/NEEDS_EVIDENCE) på någon av de 49 raderna — klasserna överlevde adversariell prövning. Föreslagna ändringar gäller AUTHORITY-kolumnen:
+
+Concept                                   | Current        | Proposed                       | Reason
+§8 rad 22 ("think hard"-rejection)        | OD             | ORA                            | assistentformulerad (arbetsmetoder ← msg 4); ägaren godkände paketet (← msg 5, 7)
+§8 rad 23 ("best practices"-rejection)    | OD             | ORA                            | samma
+Rad 42 Verkstadsgolvet operator portal    | AP             | OD-frame (← msg 6) + AP design | e-tjänsteportal-ramen är ägarens; jfr rad 25:s mönster
+Rad 13 Chat = working memory              | OD (practiced) | ORA                            | etiketten finns inte i §2.3; definitionen av ORA träffar exakt
+Rad 38 Deep Brainstorm-protokollet        | OD             | OD (D1) + ORA (D2–D4)          | endast Deep-defaulten är ägaruttalad
+
+6. Terminology verdict
+
+Term/family: Context Manifest som kanoniskt
+artefaktnamn
+Verdict: OWNER_CHOICE_REQUIRED
+Reason: RFC:n säger redan detta korrekt
+(brainstorma Q2); synonym-inte-lager-analysen
+verifierad; behåll att definitionen transfererar
+ oavsett namnval
+────────────────────────────────────────
+Term/family: Canonical Work Order som "outer
+contract"
+Verdict: AMBIGUOUS
+Reason: adjacens, inte containment, är det
+corpusen stödjer (F9)
+────────────────────────────────────────
+Term/family: Frontier Observatory (kanoniskt)
+Verdict: SAFE_TO_CANONICALIZE
+Reason: äkta ägar-supersession; deprecieringarna
+av "bevakningsagent"/"research agent" stöds av
+msg 16–18
+────────────────────────────────────────
+Term/family: Evolution Engineering som lagernamn
+Verdict: OWNER_CHOICE_REQUIRED
+Reason: ren AP (brainstorma P3)
+────────────────────────────────────────
+Term/family: Quality Gauntlet
+Verdict: SAFE_TO_CANONICALIZE
+Reason: "contains, not becomes" ordagrant
+förankrad (gauntlet ← msg 8, 12);
+Observatory-gränsen korrekt öppen (§9.6)
+────────────────────────────────────────
+Term/family: "Klart bootstrap" (snäv definition)
+Verdict: NEEDS_PHASE_3
+Reason: RFC:n flaggar själv korrekt:
+assistentmyntad (closeout ← msg 7), aldrig
+ägar-omformulerad
+────────────────────────────────────────
+Term/family: Engineering OS vs Nortropic
+Engineering Platform
+Verdict: OWNER_CHOICE_REQUIRED
+Reason: RFC:ns unifieringsförslag är rätt; båda är
+assistentnamn från olika chattar
+────────────────────────────────────────
+Term/family: Verkstadsgolvet = operator portal /
+digital twin
+Verdict: SAFE_TO_CANONICALIZE (efter
+F4-rättningen)
+Reason: ramen ägar-sådd, designen AP
+────────────────────────────────────────
+Term/family: Task IR ≠ BUILD IR
+Verdict: SAFE_TO_CANONICALIZE
+Reason: verifierat distinkta (epistemiskt
+typsystem vs kompilerad konversation); RFC:ns
+varning mot sammanblandning är riktig
+────────────────────────────────────────
+Term/family: R-etikettens specialfall
+(harness-priorities)
+Verdict: SAFE_TO_CANONICALIZE
+Reason: verifierat: R1–R3 är rekommendationer, 0
+ägarturer (transkript + manifest-DOM-korskoll)
+
+7. DO NOT BUILD review
+
+Ingen regel är scope-övergeneraliserad — registret är påfallande väl avgränsat (rad 13 uttryckligen smal med ägarens fortsatta write-path-försök noterade; rad 15 med legitima undantag; rad 3 med "reopenable on evidence" som matchar msg 18:s "Om vi senare empiriskt bevisar … då använder vi dem"). Kvarstående anmärkningar är authority (rad 22–23, se F3) och referentprecision (rad 4, se F7). I övrigt: NONE.
+
+8. Phase 3 question review
+
+KEEP    — alla åtta frågor; de kräver genuint checkpoint/implementation/mätdata
+KEEP    — fråga 2:s PHASE_3_HYPOTHESIS är transparent märkt; acceptabel styrning
+REWRITE — ingen nödvändig
+ADD     — "Absorberar den implementerade intake-skillens brief-template redan BUILD IR-sektionerna
+           (arbetsfloden Q1), eller behövs ett separat pull-to-build-artefakt?" — frågan är
+           implementationsberoende (skillens faktiska template) och hör hemma i §14, inte bara i CF-2
+REMOVE  — ingen; "klart bootstrap"-frågan är snarare ägarbekräftelse än empiri, men Phase 3
+           omfattar ägarbeslut per closeout D3, så den får stå
+
+9. Authority audit
+
+OWNER_DECIDED claims checked:      13 (bevaka msg 15; inbox msg 1, 108; closeout msg 1, 5, 8;
+                                       workflow msg 6, 20, 22; arbetsmetoder msg 5, 7;
+                                       gauntlet msg 9, 12, 14, 71; kommun msg 1; oaw msg 7, 10;
+                                       dokumentation msg 1, 9, 25–33; build-fast-path Clarifications)
+ASSISTANT_PROPOSAL claims checked: 16 (Task Capsule, Context Manifest, ContextPack, BUILD IR,
+                                       compilation boundary, Canonical Work Order, narrow bootstrap,
+                                       fem-fas-planen, Observatory-designen, swarm-reverseringen,
+                                       delta-demoteringen, SRG, held-out, evidensstegen,
+                                       memory-modellen, lagertaxonomin)
+INFERRED claims checked:            4 (§4-kompositionen; Experiment-Engine↔held-out-bryggan;
+                                       delta-demoteringens utsträckning; work-order-som-outer)
+
+false owner-decision findings:      2 (§8 rad 22, 23 — F3)
+false assistant-only findings:      1 (rad 42 portal-ramen — F4; plus underräkning av ägar-
+                                       författade bidrag i exec §1.5)
+ambiguous ratification findings:    3 (rad 13 "practiced" utan verbal ratificering; rad 6:s
+                                       3-chatts-ORA där arbetsfloden-delen är ren AP; kommun R1
+                                       "OD-adjacent" — brasklappen är assistentens inom ägarens ram)
+
+Samtliga §2.3-korrektiv som stickprovades höll för transkripten; nedgraderingarna är inte överdrivna — den enda systematiska sneddrivningen åt andra hållet är de tre felmärkta raderna ovan plus underräkningen av ägarens konceptuella bidrag.
+
+10. Final recommendation
+
+SAFE_TO_COMMIT_AFTER_TARGETED_REMEDIATION
+
+Minsta exakta remediation-lista (inget annat krävs före commit):
+
+1. §2.2 + §7.1 + §12.1 + §1.1: lägg till delad-kontext-kanalen (projekt/minne/projektfiler) som bias-faktor och byt "genuine independent convergence"/"independently re-derives"-språket mot konvergens-med-delad-priorkontext (F1). Rätta samtidigt §7.2:s "8 chats" (F5) och §7.9:s "4 chats" (F12).
+2. CF-2 EVOLUTION + §10.1: flytta kollisionsflaggans attribution från brainstorma ← msg 5 till briefen (F2); hedga "outer" (F9); märk 10:43/12:08 som chatt-skapelsetider (F6).
+3. Authority-kolumnen: de fem relabels i §5 ovan (F3, F4, F10-exemplet rad 13); mjuka upp "only major owner-authored conceptual proposal".
+4. CF-4/exec §1.3 + rad 26: precisera "no counterpart" till de fyra mekanismerna och bär in frontier-delta Q6:s preprint-caveat (F8); referent-parentes för delta-demoteringen (F7).
+
+Med dessa punkter åtgärdade kan RFC:n tryggt frysas som Phase 3:s konceptuella input: klasserna, rejection-registret, de olösta spänningarna och icke-besluten är corpus-trogna, och det som återstår är justeringar av evidensviktning och proveniensetiketter — inte av arkitekturen.
+
+Ingen fil i något repo har ändrats; reviewn var helt read-only (endast harnessets planfil uppdaterades med en resultatsammanfattning).
+
+✻ Crunched for 16m 31s
+
+※ recap: Independent semantic review of the Phase 2 RFC against the frozen corpus is complete: verdict PASS_WITH_MINOR_REMEDIATION, safe to commit after four targeted fixes listed in the report. Next action: apply those remediation edits to the RFC. (disable recaps in /config)
+
+───────────────────────────────────────────────────
+❯

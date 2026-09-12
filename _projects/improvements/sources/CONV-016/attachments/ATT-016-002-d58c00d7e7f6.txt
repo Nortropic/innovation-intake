@@ -1,0 +1,232 @@
+Plan: Phase 2 — Cross-Chat Synthesis av Nortropics R&D-corpus
+
+ Context
+
+ Nortropics brainstorm-corpus (16 idea briefs + transkript i Nortropic/innovation-intake)
+ är fryst vid commit 62e9fd4. Innan Phase 3 (rebaseline mot faktisk implementation, efter
+ bootstrap-checkpointen) ska corpusen syntetiseras till EN sammanhängande konceptuell modell
+ — inte 16 summaries. Syntesen producerar förslag (KEEP/SIMPLIFY/ADD/DEFER/REJECT/
+ NEEDS_EVIDENCE), aldrig ägarbeslut, och skriver aldrig till nortropic-system.
+ Mandatet för exakt denna syntes finns redan i corpusen själv
+ (bootstrap-closeout-rebaseline D3, kampanj-README:ns "Synthesis-outputkontrakt").
+
+ Verifierat i plan mode (read-only)
+
+ - Corpus-commit: 62e9fd44b6ea3e7d9f3d588ac07307c97f50b4f4 är HEAD i
+ ~/nortropic/innovation-intake; arbetsytan ren (endast otrackad .DS_Store).
+ - Inventory: exakt 16 idémappar, var och en med idea-<slug>.md + <slug>-full-chat.md.
+ Avstämt mot kampanjmanifestet (~/nortropic/intake-campaigns/improvements-2026-08/manifest.json):
+ 14 campaign-levererade + 1 dubblett (transkript in i befintliga gauntlet-wayfinder)
+   - 2 pre-campaign (build-fast-path, gauntlet-wayfinder) = 16. 0 failed, 0 väntande
+ ägarklassificeringar. Rubrik-QA: 13/13 PASS.
+ - Alla 16 briefs lästa i sin helhet (~2 500 rader). INDEX.md läst.
+ - Supersession-kedja (enda i corpusen): nortropic-frontier-delta → superseded_by
+ bevaka-frontier-ai-engineering (ägarbeslut 2026-08-20). gauntlet-wayfinder
+ supersedes en pre-corpus Drive-brief (gauntlet-quality-layer, finns ej som mapp).
+ - Kronologi-källa: alla 14 kampanjbriefs är daterade skördedagen 2026-08-20 — INTE
+ chattdagen. Manifestet bär chat_created/chat_updated per chatt; transkriptens
+ metadatablock bär exportdatum + meddelanderäkning per roll. Detta är tidslinjens grund.
+ - Transkriptformat: mekaniska markörer ## Meddelande N — <roll> + metadatablock
+ med "Antal meddelanden: N (X användare / Y assistent)" → provenance är skriptbart.
+ - Outputkontraktet finns redan utkastat i kampanj-README:n (grupperingskategorier,
+ KEEP/SIMPLIFY/ADD/DEFER/REJECT/NEEDS EVIDENCE som förslag, provenance <slug> (← msg N),
+ föreslaget hem nortropic-knowledge rfcs/ eller research/).
+ - nortropic-knowledge-konventioner: GOVERNANCE.md kräver frontmatter med exakt nio
+ nycklar (status, authority, provenance, created, last_reviewed,
+ canonical_sources [full 40-teckens SHA], external_sources, supersedes,
+ superseded_by); authority: none; "reference or distill, don't copy".
+
+ Fasgränser under exekveringen (oförändrade från uppdraget)
+
+ Inga skrivningar till nortropic-system; ingen påverkan på Codex/bootstrap; ingen
+ implementation/roadmap/owner-decision; ingen jämförelse mot aktuell implementation
+ ("PHASE_3_QUESTION:" / "PHASE_3_HYPOTHESIS:" används i stället); ingen webbresearch;
+ inga commits eller pushar — artefakten skrivs som fil, git är ägarens beslut.
+ Läsningar av nortropic-system görs inte alls (behövs ej: corpusen är analysbasen).
+
+ Metod — fem pass
+
+ Pass A: Koncept-extraktion per brief (mekanisk, bottom-up)
+
+ Ur varje brief extraheras strukturerade konceptposter till en arbetsfil i scratchpad
+ (concept-records.md): konceptnamn som briefen använder, definition-som-skriven,
+ epistemisk status, provenance. Corpusen är här ovanligt väl förberedd: briefs bär redan
+ etiketterna D (beslutat) / P (proposal) / R (rejected) / U (unresolved) med
+ (← msg N). Dessa etiketter bevaras och namespacas (build-fast-path.D2), och mappas
+ till uppdragets skala:
+
+ - EXPLICITLY DECIDED — endast D-poster där briefen anger ägarbekräftelse
+ - EXPLICITLY REJECTED — R-poster (och D-poster formulerade som REJECTED)
+ - EXPLORED BUT UNRESOLVED — U-poster och öppna frågor
+ - LATER SUPERSEDED — via supersession-kedjan + transcript-belagd evolution
+ - INFERRED CONVERGENCE — endast det syntesen själv härleder; alltid märkt som inferens
+
+ Kritisk regel: flera briefs deklarerar själva "inga ägarbeslut i denna chatt"
+ (agent-harness-priorities: noll användarmeddelanden; snabba-upp-loopar: endast D1 är
+ ägarens). Den deklarationen får aldrig tvättas bort i klustringen.
+
+ Pass B: Klustring till concept families (två steg, ingen förtida taxonomi)
+
+ Konceptposterna klustras bottom-up till familjer; de preliminära klustren (nedan) är
+ hypoteser som får sprängas/slås ihop. En explicit residual-hink behålls för koncept
+ som inte klustrar rent; koncept med två rimliga hem dokumenteras med båda alternativen.
+ Per familj byggs sedan evolutionskedjan (EARLY → REFINEMENT → REJECTION/CORRECTION →
+ LATER SYNTHESIS → CURRENT STRONGEST CORPUS POSITION) med tidslinje från manifestets
+ chattdatum, inte briefdatum.
+
+ Pass C: Riktade transkriptprober (subagenter, read-only, on demand)
+
+ Transkript läses aldrig slentrianmässigt och aldrig i huvudkontexten — per corpusens egen
+ konvention skickas en subagent med en smal fråga som returnerar fynd + msg-nummer.
+ Sannolikt nödvändiga prober (identifierade ur briefsen):
+
+ 1. Terminologi-trion — workflow-orkestrering (msg 5, 13, 17, 19; 4 615 rader),
+ snabba-upp-loopar (msg 5), brainstorma-nortropic-engineering (msg 8–9):
+ exakta fältlistor och gränser för Context Manifest / Task Capsule / ContextPack.
+ Uppdragets hypotes (Capsule = hela paketet ⊃ Manifest = inventory; ContextPack
+ pensioneras) prövas mot den konkurrerande hypotesen som briefsen snarare stödjer:
+ tre namn på samma artefakt (brainstorma… §6: "unify … into ONE concept — three
+ chats named the same thing"). Ingen av modellerna antas; proben avgör eller
+ rapporterar att corpusen inte räcker → NEEDS_EVIDENCE + Phase-3-fråga.
+ 2. Observatory/Evolution-Loop-merget — bevaka-frontier-ai-engineering
+ (msg 15–18; 3 276 rader) + nortropic-frontier-delta (msg 4–9; 606 rader):
+ vad av Evolution Loop-maskineriet (evidensstege, held-out evals, Strategy
+ Reconsideration Gate, S14–S20) överlever in i Observatory vs superseddes;
+ briefen säger själv "reconcile FIRST — one system, not two".
+ 3. Gauntlet vs Evolution Lab — gauntlet-wayfinder (5 513 rader, endast riktat)
+ för frontier-deltas öppna Q5 (samma labb, angränsande banor eller samma koncept?).
+ 4. Rejection-omfång i intake-familjen — innovation-inbox-idehantering
+ (msg 98–108): exakt vad ägarens "vi skrotar denna idé" täcker (Custom GPT-rutten)
+ vs vad som förblev U1 (ChatGPT→write-vägen).
+ 5. Mandatets ursprung — bootstrap-closeout-rebaseline (msg 7): originalformuleringen
+ av KEEP/SIMPLIFY/ADD/DEFER + fasplanen, som denna syntes ska vara trogen.
+ 6. Billig helläsning — agent-harness-priorities-full-chat.md (74 rader): bekräfta
+ noll-ägarmeddelanden-deklarationen.
+
+ Ytterligare prober utlöses endast av uppdragets triggerlista (motsägelse, kronologi,
+ provenance-verifiering, feltolkningsrisk, rejection vs sidospår, misstänkt dubblett).
+
+ Pass D: Skriva syntesartefakten
+
+ Struktur exakt enligt uppdragets 16 sektioner; per större familj de åtta fälten
+ (WHAT IT IS … PROVENANCE). Klassificeringsmatrisen får en extra kolumn AUTHORITY
+ (OWNER_DECIDED / ASSISTANT_PROPOSAL / INFERRED) så att förslag aldrig kan läsas
+ som beslut. Sektion 16 (Provenance/index) skrivs delvis maskinläsbart (fenced
+ YAML-block: familj → koncept → klass → provenance-lista) så att Pass E kan parsa den.
+ Sektion 15 (Explicit non-decisions) listar bl.a. att inget i dokumentet är ägarbeslut,
+ att inga roadmap-/implementationsslutsatser dras, och vilka frågor som medvetet lämnas.
+
+ Pass E: Mekanisk coverage- och provenance-verifiering (skript i scratchpad)
+
+ 1. Brief-täckning: alla 16 slugs förekommer i artefaktens provenance-index.
+ 2. Beslutstäckning: varje D/P/R/U-post i varje brief (extraherad med grep på
+ ^- [DPRU]\d-mönster) är antingen mappad till en familj i YAML-indexet eller
+ uppförd på en explicit "medvetet ej klustrad"-lista med skäl. Ingen tyst tappning —
+ särskilt inte av R-poster.
+ 3. Citatvaliditet: varje <slug> (← msg N) i artefakten kontrolleras mot
+ transkriptet: ## Meddelande N finns (N ≤ antal meddelanden i metadatablocket).
+ 4. Rollkontroll: varje påstående märkt EXPLICITLY DECIDED som citerar msg N
+ verifieras mot transkriptets rollmarkör — ett "ägarbeslut" som pekar på ett
+ assistentmeddelande flaggas (undantag: brief-dokumenterad ägarbekräftelse utanför
+ chatten, t.ex. build-fast-path D1/D8-klargöranden — då citeras briefen, inte msg).
+ 5. Klassificeringskomplett: varje familj har exakt en primär klass; varje klass-rad
+ har AUTHORITY-kolumn satt.
+ 6. Verifieringsresultatet (pass/fail per kontroll) bifogas artefaktens sektion 16.
+
+ Skydd mot kända felkällor
+
+ - Recency bias: tidslinje byggs från manifestets chat_created/chat_updated och
+ in-chat-datum — inte brief-created (14/16 = skördedagen). "Senast = starkast" kräver
+ explicit supersession eller ägarbekräftelse; annars redovisas båda positionerna.
+ - Duplicate counting / repetition som sanning: konvergens räknas i oberoende
+ chattar, inte omnämnanden. Två fällor hanteras explicit: (a) senare chattar citerar
+ tidigare (ej oberoende — kontrolleras via related:-länkar och datum); (b)
+ intake-skillens mall injicerar identisk text i alla briefs (t.ex.
+ invariant-boilerplaten "pointer, never a copy", processsektionen §10) — mallgenererad
+ text är aldrig konvergensbevis; konvergens måste spåras till chattinnehåll.
+ - Explored ≠ decided: D/P/R/U-etiketterna följer med hela vägen in i matrisen
+ (AUTHORITY-kolumnen); en P uppgraderas aldrig till D av syntesen.
+ - Tappade rejections: rejection-registret (artefaktens sektion 8 + DO NOT BUILD)
+ byggs FÖRST i Pass A via mekanisk grep över alla briefs, innan någon syntesprosa
+ skrivs — så att förkastade vägar inte försvinner i klustringen.
+ - Förtida taxonomi: två-stegs klustring med residual-hink och dokumenterade
+ alternativa hem (Pass B).
+ - Falsk precision: (← msg N) skrivs endast där briefen redan bär det eller en
+ probe verifierat det; annars citeras <slug> + sektion, eller osäkerheten markeras.
+
+ Preliminära concept clusters (hypoteser — inte låst taxonomi)
+
+ 1. Trust Kernel & authority-separation (metaprincip-familjen): builder aldrig egen
+ trust authority; frozen gates; fail closed; owner final gate; mekanisk verifiering.
+ Bredaste stödet i corpusen (~9 briefs). Kandidat till "master-principen":
+ mönstret "X may influence/propose — X may never manufacture authority"
+ instansieras för memory (brainstorma… P2), evaluator (gauntlet… D3), learning
+ (workflow… P2), monitoring (frontier-delta D1), frontier-claims (evidensstegen),
+ UI (workflow… AC5).
+ 2. Compile-boundary-familjen (största konvergensen): chat = working memory, aldrig
+ system of record; deterministisk kompilering av intent/kontext till avgränsade
+ artefakter. Medlemmar: canonical work orders + Context Manifest (workflow-orkestrering),
+ Task Capsule (snabba-upp-loopar), ContextPack + Context Compiler (brainstorma…),
+ BUILD IR + repo-rekonciliering (brainstorming-arbetsfloden), harvest→brief
+ (openai-anthropic-workflow). Obs: BUILD IR är intent-kompilering (chat→IR),
+ Manifest/Capsule/Pack är kontext-kompilering (repo→paket) — troligen två distinkta
+ koncept i en familj, prövas i Pass C-probe 1.
+ 3. Verifiering/Gauntlet/evals: tre-loop-separationen; critic ≠ grader ≠ authority;
+ frysta kvalitetsbars; budget ≠ PASS; evals-before-code; held-out evals; asymmetrisk
+ challenger.
+ 4. Frontier intelligence & evolution: Frontier Delta → Observatory (supersession);
+ evidensstege OBSERVED→ADOPTED; People Radar; Learning Fabric; Learn-steget;
+ retro-rutinen; tre aktiva bevakningsautomationer (konsolideringsfråga öppen).
+ 5. Knowledge & memory: thin authoritative core / thick knowledge base;
+ femtypsminnesmodellen ("normative is never memory"); ADR-beslutsminne; supersession
+ som förstaklassig egenskap.
+ 6. Idea lifecycle / Discovery Plane: inbox-funnel; intake-skillen; Deep Brainstorm
+ protocol; conversation compiler; korpuslivscykeln — inklusive att denna Phase 2
+ själv är corpus-designad process.
+ 7. Speed/loop efficiency: middle-out-compression; template repo + Content-split;
+ measure-first; parallellisera läsning/falsifiering, serialisera trust-övergångar.
+ 8. Orchestration & control plane: tunn deterministisk supervisor; controller-ägd
+ privileged-action-pipeline; typade transitions; no parallel backlog; provider-native
+ harness (Harness Substitution Contract); one writer.
+ 9. Organisation & product frame: kommun-modellen; förvaltningar; Verkstadsgolvet
+ som operator portal/digital twin; flera frontends över ett control plane.
+ 10. Visual/design workflow: Visual Intent (frys visuellt beslut före kod);
+ diverge-then-remix. (Liten — kan foldas in i 7/9.)
+ 11. Bootstrap/rebaseline-metastrategin: finish narrow → observe → rebaseline →
+ continue; corpus aldrig direkt agent-feed.
+
+ Tvärgående kandidat-konvergens att pröva: plane-separationstrilogin — Discovery ≠
+ Control (innovation-inbox), Thinking/Engineering/Execution (brainstorming-arbetsfloden),
+ Observatory/Engineering OS/Trust Kernel (bevaka…) — tre oberoende instanser av samma
+ arkitektoniska drag i olika skalor.
+
+ Output
+
+ Artefakt: "Nortropic R&D Synthesis — Improvements Corpus 2026-08".
+ Språk: engelska (ägarval 2026-08-20); svenska ägarcitat bevaras ordagrant.
+
+ Exakt path (ägarval 2026-08-20: rfcs/; skrivs först i exekveringen, ej nu):
+
+ ~/nortropic/nortropic-knowledge/rfcs/2026-08-nortropic-rd-synthesis-improvements-corpus.md
+
+ Motiv: rfcs-sektionens kontrakt är exakt detta läge — "explorations and proposals before
+ they become owner decisions" med status draft/proposed; klassificeringsmatrisen är
+ just förslag som väntar Phase 3. Frontmatter enligt
+ GOVERNANCE.md:s nio nycklar: status: proposed, authority: none, provenance: derived,
+ canonical_sources: ortropic/innovation-intake@62e9fd44b6ea3e7d9f3d588ac07307c97f50b4f4]
+ ev. kampanjmanifestet som källa), tomma supersedes/superseded_by.
+
+ Ingen commit/push — filen skrivs; git är ägarens explicita beslut (repo-konvention).
+ Inga andra filer ändras utanför scratchpad (arbetsfiler: concept-records.md,
+ tidslinjetabellen, verifieringsskriptet + dess rapport).
+
+ Verifiering av exekveringen (end-to-end)
+
+art = artefakten finns på föreslagen path med giltig frontmatter, alla 16 sektioner,
+ och Pass E-rapporten visar: 16/16 briefs täckta; alla D/P/R/U-poster mappade eller
+ explicit undantagna med skäl; alla msg-citat validerade mot transkriptmarkörer;
+ rollkontrollen utan oflaggade "ägarbeslut"; matrisen komplett med AUTHORITY-kolumn.
+ Därefter STOPP — Phase 3 initieras separat av ägaren efter bootstrap-checkpointen.
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+                                                                                      ───────────────────────────────────────────────────────────────────────────────────────
+aude has written up a plan and is ready to

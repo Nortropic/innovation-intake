@@ -1,0 +1,96 @@
+RESUME PREFLIGHT (steg 1–6) — utfall
+
+1–3. Basidentitet: EXAKT MATCH. origin/main = b4c9266f6d7c9ed41351b3a8d08056af88368c31, träd = 8aee6d817c2d2bdf5b6bc0d352aa27b1893e612e. Båda stämmer med checkpointen.
+
+4. Rent läge: inga replace-refs, repo-rot ~/nortropic/nortropic-system. Commits sedan mitt klipp är exakt fyra och alla Foundation-relaterade: 13e8a903 (klippet) → e075de15 (merge PR #123) → b4689be4 (GREEN-attestering) → b4c9266f (merge PR #124). Ingen auktoritetsdrift.
+
+5. Foundation GREEN-attestering finns: docs/05-beslutslogg.md bär raden "HÖGRISK CLOSEOUT: FOUNDATION_REPAIR_GATE=GRÖN — oberoende adjudikation accepterad, Foundation-reparationsbanan stängd". Fixturstatus KLIPPT 2026-08-25. NY_REGIM_KLIPPT = false bevisad på workflows/nortropic-verify-suite.js:26.
+
+6. Inget Digitala-förvaltningen-arbete har landat efter basen — inget som kan supersedera en plan.
+
+Preflighten är alltså grön. Jag har inte skapat worktree, gren eller ändrat en enda byte.
+
+Blockeraren: den frusna S1-min + K4-specifikationen finns inte i någon auktoritet jag når
+
+Direktivet säger att den detaljerade specen ligger i denna konversations kontext och förbjuder mig uttryckligen att omtolka S1-min + K4 från grunden. Jag har sökt fyra ställen:
+
+┌─────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                      Källa                      │                                                                 Utfall                                                                  │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Mitt nuvarande kontext                          │ Ingen Digitala-förvaltningen-plan — konversationen täcker R1–R11, PRECUT, CUT-COMPAT, §A6-klippet                                       │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Kompakteringssammanfattningen (som räknar upp   │ Inget meddelande innehåller planen, S1-min, K4 eller lärlagret                                                                          │
+│ samtliga dina meddelanden i konversationen)     │                                                                                                                                         │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                 │ 0 träffar på Digitala förvaltningen, S1-min, LEARNING-RECORD, Utfallshypotes, curriculum/kurrikulum, cost guard/kostnadsvakt,           │
+│ origin/main @ b4c9266f                          │ model-candidate. Endast justeringskarta (docs/04) och Erfarenhet (i docs/arkiv/hantverkare-profil-v13.md) existerar. S1/S3/S5 nämns     │
+│                                                 │ bara som banor tillhörande "den DESIGN-FRUSNA masterplanen" — och den masterplanen är inget dokument i repot                            │
+├─────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Föregående transkript                           │ Sökvägen .claude/projects/… är strukturellt sandlådenekad. Att läsa den är inte TRANSPORT-ONLY, så jag bypassade inte (din stående      │
+│                                                 │ regel)                                                                                                                                  │
+└─────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Jag har dessutom frågat den enda peer-sessionen på maskinen (elinhaggstrom-9a, startad för 5 dagar sedan) om den håller planen — läsfråga, inget uppdrag att arbeta. Den är interaktiv och kan dröja med svar.
+
+Bedömning: bevisen pekar på att planen frystes i en annan konversation (mest sannolikt Digitala-förvaltningens egen planeringssession), inte i denna. Att bygga LEARNING-RECORD, Utfallshypotes, §Erfarenhet, GC/hälsoregler, modellkandidatregeln, kurrikulum/kostnadsvakt och justeringskarta-integrationen från punktlistan i ditt direktiv vore precis den fabricerade-kontrakt-manöver som hela kampanjen har disciplinerats mot — och listan säger själv att den är en kontinuitetspåminnelse, inte en ersättningsspecifikation. Därför stannar jag hellre än att uppfinna.
+
+Status just nu:
+FOUNDATION_REPAIR_REOPENED=NO
+CODEX_BOOTSTRAP_TOUCHED=NO
+ACTIVE_SLICE=S1-min+K4
+DIGITALA_FORVALTNINGEN_RESUME=BLOCKED_ON_SPEC_RECOVERY
+
+Det jag behöver — vilket som helst av tre räcker:
+1. Klistra in den frusna S1-min + K4-specen (eller masterplanens S1-avsnitt) här.
+2. Peka ut var den bor — fil/sökväg utanför repot, eller sessionen som håller den (så frågar jag den direkt).
+3. Auktorisera en namngiven, snäv bypass-klass — t.ex. READ_ONLY_PLAN_RECOVERY — för exakt de sökvägar som håller planen. Notera dock: sammanfattningen räknar upp alla dina meddelanden i denna session och ingen bär planen, så transkriptet lär inte innehålla den; en extern plandokument-sökväg är troligare rätt mål.
+
+Så snart specen finns kör jag hela skivan i ett svep — worktree, exakt skrivmängd, implementation, falsifiering, regression, Foundation-GREEN-bevis, bootstrap-kollisionsbevis, oberoende granskning, push och PR — och stannar före merge.
+
+✻ Baked for 3m 15s
+
+@ 22995❯
+  Answer: NO — my context does not hold the frozen plan. I am a fresh session in ~ with no active workstream (my only Nortropic traces are memory notes from the Foundation-era work). But I searched the local disk read-only and found where the closest material lives:
+
+  1. The DESIGN-FROZEN masterplan document itself does NOT exist as a file anywhere under ~/nortropic. It is cited from many places (beslutslogg Step-0A rows say "Per DESIGN-FROZEN masterplanens Step-0A"; other worktrees cite "masterplanen (Part 12, R3)" and "Part 9 steg 7") but no file named or containing the masterplan exists. It appears to live only in the owner's planning conversation (or wherever commit d87b32d3's author had it).
+  2. Branch nortropic/paper-tranche-0 — pushed to origin as origin/nortropic/paper-tranche-0, single commit d87b32d3 "tranche-0: twelve UTKAST design drafts (paper only — EJ PRODUKTION)" dated 2026-08-24, on top of the step0a-containment merge — contains twelve drafts in docs/utkast-tranche-0/, all headed: "UTKAST — TRANCHE 0 (2026-08-24). EJ PRODUKTION, EJ AUKTORITET. Design-utkast enligt den DESIGN-FRUSNA masterplanen. Konsumeras av INGENTING före FOUNDATION_REPAIR_GATE; skarp version landar i sin riktiga hemvist i S1+."
+  3. Of your terms, docs/utkast-tranche-0/utkast-erfarenhet-och-kompetens.md is explicitly headed "Kandidater till S1-min/K4 enligt masterplan Part 2 I–M (+ Part 2d-fälten orsaksstatus/verklighetsklass, + completeness-test-lucka #1)". It contains: §Erfarenhet (mandatory STEWARD-REPORT section spec), LÄRDOM-KANDIDAT format, the LEARNING-RECORD.md per-customer contract (including the Utfallshypotes row derived from HANDOVER §7/framgangsmatt, tre hälsoaxlar SYSTEM/ANVÄNDARUTFALL/ORGANISATIONSUTFALL, orsaksstatus/verklighetsklass, placeringslagen), the kompetensregister table spec, and Modellkandidatregeln explicitly marked "(kandidat till K4)" with the versionsbump addendum. Neighboring drafts (kapacitetskatalog-v1, kunskapsmallar, gym-kontrakt-v1, etc.) cover adjacent ground; kunskapsmallar.md:52 has the only GC mention ("konsument: GC + radar-staleness").
+  4. NOT found anywhere on disk: the lane definitions S1–S5, a "Digitala förvaltningen" lane definition, curriculum/cost-guard, or a GC/health ruleset. "Digitala förvaltningen" appears only in idébanken at ~/nortropic/innovation-intake/nortropic-organization-os/ (idea brief + design rationale + full chat); the full chat's line 21 lists an exekveringssekvens "(Digitala förvaltningen → Full Autonomy Bootstrap → Autonomy Kernel v1 …)" but that trio contains none of S1-min/K4/LEARNING-RECORD.
+
+  Conclusion: the exact frozen S1-min + K4 scope/contract does not exist on disk as authority — only as explicitly non-authoritative UTKAST candidates on paper-tranche-0. If your directive claims a frozen plan "developed in your conversation", the plan text itself likely only ever lived in the owner's conversation; the owner (Jonkebronk) or whoever authored d87b32d3 must supply it. I have started/modified nothing.
+
+The peer's lead is checkable — verifying it myself rather than taking it at face value:
+
+  Ran 1 shell command
+
+Confirmed: owner-authored branch (Jonkebronk, 2026-08-24), standalone, twelve drafts — and utkast-research-kontrakt-karna-v3.md matches the directive's next slice, corroborating the sequence. Reading the S1-min/K4 draft:
+
+  Read 1 file, ran 1 shell command
+
+Substantive and specific — and it maps onto the directive's list almost item-for-item. But it carries four unanswered owner questions and cites "masterplan Part 2 I–M" as its authority. Inventorying the rest before I conclude anything:
+
+  Ran 1 shell command
+
+Now the picture is conclusive. Verified facts:
+
+- K4 appears nowhere — not in the twelve drafts, not on main. The only anchor is §5's own label "Modellkandidatregeln — stående regeltext (kandidat till K4)".
+- kurrikulum/curriculum, GC, justeringskarta appear in no draft. kostnad/budget appear only in gym-kontrakt-v1 and profil-ts-v2-spec — the gym lane, not this one.
+- Production homes: docs/04-justeringskarta.md and agents/nortropic-steward.md exist; docs/kompetensregister.md does not (it's the new file S1-min creates).
+
+That resolves most of the ambiguity. The draft is more precise than the directive's continuity list, and your directive says to follow the more precise plan — so I read the slice as the draft's own structure: §1–§4 = S1-min (§Erfarenhet, LÄRDOM-KANDIDAT, LEARNING-RECORD, kompetensregister) and §5 = K4 (Modellkandidatregeln in the steward's standing rules). The directive's "GC/health rules" maps to the three hälsoaxlar, "status/state table" to the kompetensregister status vocabulary; curriculum/cost-guard belongs to the gym lane, later.
+
+Your draft's open question 1 (holdout-repot) needs no ruling — the draft already dictates the answer: leg (ii) is recorded ODÖMBART, never faked green. The other three genuinely change the artifacts, and they're your own questions, never answered:
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+←  ☐ Slice-scope  ☐ ERFARENHET.md  ☐ Verklighetsklass  ☐ Riktningskolumn  ✔ Submit  →
+
+Bekräftar du slice-avgränsningen: utkastets §1–§4 = S1-min, §5 (Modellkandidatregeln) = K4?
+
+❯ 1. Ja — §1–4 = S1-min, §5 = K4 (Rekommenderas)
+     Följer utkastets egen struktur och dess etikett "kandidat till K4" på §5. Skrivmängd: STEWARD-REPORT-mallen (§Erfarenhet), LEARNING-RECORD-kontraktet, nya docs/kompetensregister.md, stewardens stående regler (K4), docs/05-rad. Kurrikulum/kostnadsvakt lämnas till gym-banan.
+  2. Ja, men K4 ska vara mekanisk kontroll
+     Samma innehåll, men modellkandidatregeln får dessutom en körbar kontroll (i stil med Foundation-kontrollerna K1–K7) som fäller vid modelluppställningsändring utan de fyra leden. Större skiva, mer bevisyta.
+  3. Nej — jag levererar masterplan Part 2 I–M
+     Du klistrar in den frusna auktoritetstexten och jag implementerar exakt den i stället för min härledning ur utkastet.
+  4. Type something.
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  5. Chat about this

@@ -1,0 +1,184 @@
+R38 THIRD SEMANTIC REMATCH — FINAL REPORT
+
+1–2. Prestate and v3 artifact verification
+
+┌────────────────────────┬───────────────┬─────────┐
+│        Artifact        │   Identity    │    ✓    │
+├────────────────────────┼───────────────┼─────────┤
+│ v3 bridge .md          │ ce2154769adb7 │ ✅      │
+│                        │ 4f9…          │         │
+├────────────────────────┼───────────────┼─────────┤
+│ v3 bridge .json        │ 96c4b409620c0 │ ✅      │
+│                        │ 0e2…          │         │
+├────────────────────────┼───────────────┼─────────┤
+│ CONV-011 recovery      │ 80f5b79a46a6f │ ✅      │
+│ .json                  │ c00…          │         │
+├────────────────────────┼───────────────┼─────────┤
+│ v2 bridge .md / .json  │ 2d5990a6… /   │ ✅      │
+│                        │ caa04a7f…     │         │
+├────────────────────────┼───────────────┼─────────┤
+│ SECOND_REMATCH_RESULT  │ 9902c470eb452 │ ✅      │
+│                        │ 5a1…          │         │
+├────────────────────────┼───────────────┼─────────┤
+│ C2_CANDIDATE           │ b340122226a57 │ ✅      │
+│                        │ bb4…          │         │
+├────────────────────────┼───────────────┼─────────┤
+│ Frozen witnesses (5) + │               │         │
+│  attachment scratch    │               │ ✅      │
+│ 60/60                  │               │         │
+├────────────────────────┼───────────────┼─────────┤
+│ BODY_SOURCE_IDENTITY / │ 994fa5b0… /   │ ✅ unch │
+│  FULL_SOURCE_SURFACE_I │ 51311084…     │ anged   │
+│ DENTITY                │               │         │
+└────────────────────────┴───────────────┴─────────┘
+
+36/36 revisions unmutated · _rnd holds only improvements-r38 + -c1 · 30 sources · worktrees 0 changed · nortropic-system read-only.
+
+3. Authoritative 21-finding inventory
+
+Re-derived: CONV-001 4 · CONV-007 2 · CONV-011 12 · CONV-015 2 · CONV-022 1 = 21 ✓
+
+4. Binding — unchanged, and correctly so
+
+BOUND = 14      AMBIGUOUS = 1      NOT_BOUND = 6
+
+v3 supplied content, not binding evidence. The one AMBIGUOUS record (A-001) is addressed under §6.
+
+5. Semantic outcome — before / after
+
+┌───────────────────────────────────┬───────┬───────┐
+│              Outcome              │ Remat │ Remat │
+│                                   │ ch 2  │ ch 3  │
+├───────────────────────────────────┼───────┼───────┤
+│ RESOLVED_BY_SOURCE_BOUND_READABLE │ 0     │ 8     │
+│ _EXTERNAL                         │       │       │
+├───────────────────────────────────┼───────┼───────┤
+│ SOURCE_BOUND_BUT_INSUFFICIENT     │ 15    │ 7     │
+├───────────────────────────────────┼───────┼───────┤
+│ MISMATCHED_SOURCE                 │ 0     │ 0     │
+├───────────────────────────────────┼───────┼───────┤
+│ STILL_UNRESOLVED                  │ 6     │ 6     │
+├───────────────────────────────────┼───────┼───────┤
+│ MATERIAL_UNRESOLVED               │ 21    │ 13    │
+└───────────────────────────────────┴───────┴───────┘
+
+The content-granularity bottleneck is genuinely broken — but not everywhere, and the residue is now nameable to the field.
+
+6. CONV-011 — 6 resolved / 6 insufficient
+
+Resolved, with anchors:
+
+Finding: A-003 + B-003
+Anchor: RND-144's missing oracle domain: 155 topics
+across 9 categories (Agency/operations 44, References
+21, Architecture 15, Design system 14, Candidate review
+ 14, Initial audit 12, Audit completeness 12,
+Governance 12, Memory/learning 11), each with a
+destination
+────────────────────────────────────────
+Finding: A-005 + B-006
+Anchor: 100 daily exit conditions. All six criteria
+reviewer B named as withheld are present and topically
+correct — D6 lead contract, D8 vendor-manifest ("Ingen
+agent får se eller exekvera driftad
+tredjepartsinstruktion"), D9 injection separation, D19
+restore-drill ("faktisk tid och avvikelse"), D29
+EXIT=PASS, D61 siteLifecycle. 6/6
+────────────────────────────────────────
+Finding: A-010 + B-015
+Anchor: RND-313's denominator computable (155); RND-298
+has a set to atomise; 114 of 155 rows carry
+Dag-destinations = the per-atom source pointers ("ingen
+ atom saknar source pointer")
+
+Insufficient, with the precise missing field:
+
+Finding: A-004 + B-005
+Missing: exit_criteria is {day, exit_condition} only —
+zero day titles, zero verdicts, no phase names
+────────────────────────────────────────
+Finding: A-002 + B-002 + B-007
+Missing: 3 of 4 propositions landed — date 2026-07-29,
+baseline 1aa1394, and NO-OP VERIFIED verbatim at
+COV-137. The fourth, rebaseline-before-implementation,
+returns 0 hits  on every variant. That clause is the
+warrant the reclassification was argued from
+────────────────────────────────────────
+Finding: B-009
+Missing: The ~19–20 artefact specifications. One
+FORBIDDEN row (COV-122); zero matching
+tripwire/anti-body/artefakt/specifikation. The 21
+"References" rows are external inspiration sites
+(SiteInspire, Landbook…), not specs
+
+7. CONV-015 A-001 — RESOLVED
+
+Sufficiency: satisfied, and independently cross-checked. I read frozen msg 251's twelve numbered issues myself and matched them against v3 12/12 — #1 gate-overrides-stale-dependencies, #2 S0-precedes-R1, #3 v4 trigger, #4 Case B SaaS-only, #5 invariant wording, #6 channels=CANDIDATES, #7 R6 no-smuggling, #8 Lighthouse pinned, #9 owner ceremonies, #10 two freeze states, #11 §A transition, #12 precedence. Plus FINAL STEP-0 ORDER, Foundation Repair Gate acceptance criteria, POST-GATE FIRST FIVE, DESIGN_FREEZE=YES.
+
+Binding-contract adjudication. The two objects (19:40:31 / 19:41:04) remain indistinguishable. I did not collapse them. The contract does not require unique-object identity here, on three independent grounds: the frozen finding itself records the locus as "unresolved-ordinal within ATT-015-001..011"; the qualification grades whether the IR represents the meaning, never which object carried it; and both candidates carry materially identical Part-13 verdicts, so object identity cannot change the answer. The finding's own harm clause — "the claim 'all 12 coherence points RESOLVED' survives with no evidence that could falsify it" — is removed. Byte identity is not claimed.
+
+8. CONV-015 A-002 — RESOLVED
+
+All three named limbs answered: slice contents (not labels) for COCKPIT-00..07 with files, tests and line budgets; the review regime (visualReview on 03/05/06 at 1440/900/390; tsc --noEmit → npm run build → npm run loop:test); and COCKPIT-00's authority-document mandate verbatim — "Ägarmandatet bytekopieras till docs/nortropic-verkstadsgolvet-v2-mandate.md via diff-grind + ledgerpost."
+
+9. CONV-022 — SOURCE_BOUND_BUT_INSUFFICIENT
+
+Per-document verdicts did arrive: 56 rows (21 verkstadsgolvet + 35 nortropic-system; KEEP 46, UNCERTAIN 8, ARCHIVE/MOVE 2) and all three candidate lists including MUST_STAY_WITH_CODE. But frozen msg 17 specifies a five-column table — repository | path | classification | evidence/reason | inbound references/risk — and every supplied row is width 2. The adjudicator named that missing column specifically as "the dependency reasoning that makes MUST_STAY_WITH_CODE a finding rather than a posture"; without it the 46 KEEPs are assertions, not findings. Also absent: duplication map, migration-risk register, Phase 0-3 proposal. The 19:39 revision stays LATER_SUPERSESSION_CONTEXT_ONLY; ATT-022-001 was not rewritten with SAFE_TO_COPY_PENDING_OWNER_REVIEW.
+
+10–12. Fail-closed and carry-forward
+
+- CONV-007 ×2 — STILL_UNRESOLVED. No new binding evidence; the 279-case marker is retained; the five-member family was not mapped by chronology or theme, and no file was assumed to cover both loci.
+- CONV-001 ×4 — STILL_UNRESOLVED. No artifact supplied across three bridges; no synthesis substituted.
+- CONV-013 — KNOWN_UNRESOLVED, FULL_SOURCE_CAPTURE_CONV_013=NO, prior verdict STRONGLY_FAVOURS_CONV-015_FAMILY — NOT PROVEN carried forward. v3 supplies content, not upload records, so no new source-surface candidate was created. v3's own unresolved_fail_closed records the same state.
+
+13. No c3 — rationale
+
+c3 was not created. No IR text, typing or relation requires correction. The v3 content confirms rather than falsifies: the 155-row index makes RND-313's denominator computable (its claim that the corpus cannot compute it stays true of the corpus), and the recovered 18:52 table uses KEEP / ARCHIVE-MOVE / UNCERTAIN — exactly the pre-supersession vocabulary c2 already recorded for RND-393. Only qualification outcomes moved, and the guardrail forbids a c3 for that alone. c1 and c2 verified byte-identical.
+
+14–15. Contracts and result identity
+
+1/1 projects satisfy the project contract (ATTACHMENT_MATERIAL_UNAVAILABLE, ATTACHMENT_SURFACE_KNOWN_UNRESOLVED) · rnd validate: 0 FAIL, 1 WARN · both worktrees 0 changed · prestate re-verified OK after all work. No validator added, so no new activation claimed.
+
+THIRD_REMATCH_RESULT_SHA256 = 85de2b24baff4ed16a41aa4fa44f29209b20c0c640839c554cbb7b2c9cf53c42
+
+Final status
+
+CORPUS_INTEGRITY                    = PASS
+SOURCE_CAPTURE_COMPLETENESS         = NO
+SEMANTIC_QUALIFICATION              = NOT_ESTABLISHED
+FULL_SOURCE_CAPTURE_CONV_013        = NO
+ATTACHMENT_SEMANTIC_R38             = FAIL
+FINAL_IMPROVEMENTS_CORPUS_QUALIFIED = NO
+POST_R38_CAPTURE_STARTED            = NO
+RECOMPILE_STARTED                   = NO
+NORTROPIC_SYSTEM_MUTATIONS          = 0
+
+BOUND=14  AMBIGUOUS=1  NOT_BOUND=6
+RESOLVED_BY_SOURCE_BOUND_READABLE_EXTERNAL=8
+SOURCE_BOUND_BUT_INSUFFICIENT=7
+MISMATCHED_SOURCE=0
+STILL_UNRESOLVED=6
+MATERIAL_UNRESOLVED=13
+
+ATTACHMENT_SEMANTIC_R38 stays FAIL — 13 MATERIAL gaps remain, so the frozen contract is not satisfied.
+
+FILE_LIBRARY_CONTENT_RECOVERY_REQUESTS_V3 — 4 rows
+
+Each names a field, not a granularity complaint:
+
+1. CONV-011 A-004+B-005 — the 100 rows as {day, title, phase}; the exit_condition is already held.
+2. CONV-011 A-002+B-002+B-007 — the single paragraph where the manual states its own baseline must not be treated as proof of current runtime. (Highest value in the set: it is the warrant, it is paraphrased three times and quoted never, so it exists in no readable form anywhere.)
+3. CONV-011 B-009 — the artefact section: each of ~20 identifiers plus its specification body.
+4. CONV-022 — the same 56 rows re-emitted at full width 5.
+
+FILE_LIBRARY_BINDING_REQUESTS_V3 — 3 rows
+
+1. CONV-007 — an opening line and timestamp per family member, checkable against msgs 57-73.
+2. CONV-001 — the original Context Mesh artifact.
+3. CONV-015 A-001 — recorded for completeness only; it did not block closure, for the reasons in §7.
+
+The honest shape of this run: content unblocked 8 of the 15 content-starved findings. The remaining 7 fail on four specific missing fields rather than on granularity, and the 6 fail-closed findings were untouched because nothing was offered for them.
+
+✻ Crunched for 7m 26s · done 12:35 PM
+                  new task? /clear to save 653.7k tokens
+──────────────────────────────────────────────

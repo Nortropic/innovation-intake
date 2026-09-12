@@ -1,0 +1,44 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-037",
+  "revision": 1,
+  "source_path": "_projects/improvements/sources/CONV-037/conversation.md",
+  "source_sha256": "3a44c99529c1ff11bdad71a5ae0a8d6280aa3704fb5cf6307a4e274d309e3f6a",
+  "declared_count": 1,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 1 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 7,
+    "filecite_turns": 3,
+    "upload_phrases": 7,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "academia": 1,
+      "file": 7,
+      "view": 12
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-037-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "2dc47fd10d2580ac187887e227ce603ad60bea7867f54747c23174ad6cc6a389",
+      "artifact_path": "_projects/improvements/sources/CONV-037/attachments/ATT-037-001-2dc47fd10d25.pdf",
+      "byte_length": 2882600,
+      "registered_at": "2026-09-11",
+      "original_filename": "ResearchReport-2026StateofAIEngineering.pdf",
+      "declared_kind": "uploaded_file",
+      "media_type": "application/pdf",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_00000000dc0081f4990b83a79949a124",
+      "platform_declared_size_bytes": 2882600,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000dc0081f4990b83a79949a124, which the data-layer export of conversation 6aa0458b-6bcc-83eb-a5a8-d0b963679ea4 lists in message(s) 1; sha256 2dc47fd10d2580ac187887e227ce603ad60bea7867f54747c23174ad6cc6a389 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'ResearchReport-2026StateofAIEngineering.pdf', content-type 'application/pdf'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}

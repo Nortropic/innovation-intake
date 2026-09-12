@@ -247,3 +247,89 @@ append_only: true
 - resolves: RQ-031
 - question: RQ-031 lade fram CONV-013:s deklarerade-mot-observerade motsägelse för ägarbedömning. Frozen r1 deklarerar 5 bilagor; oberoende bevis i samma frysta källa fastställer minst 7; den frysta källan får inte redigeras; den fullständiga historiska bilageytan är inte återvinningsbar ur nuvarande capture. Hur avslutas posten utan att vare sig redigera vittnet eller låtsas att luckan är lagad?
 - owner_answer: ERKÄNNANDE, INTE LÖSNING. Ägaren erkänner motsägelsen som en känd, olöst historisk källyte-lucka och accepterar att den ska FÖRBLI olöst. Ägaren adjudicerar uttryckligen INTE att CONV-013 har exakt 7 bilagor — bevisen fastställer 5 deklarerade och minst 7 observerade, inget mer. Erkännandet finns till för att en sanningsenlig korpus ska kunna vara strukturellt frisk utan att påstå att den underliggande källuckan är reparerad. Det får inte ändra den frusna r1-konversationen, inte skriva om 5 till 7 i den gamla källan, inte hävda ett exakt historiskt antal bortom bevisen, inte göra CONV-013 till FULL_SOURCE_CAPTURE=YES, inte göra ATTACHMENT_SEMANTIC_R38 till PASS, inte göra FINAL_IMPROVEMENTS_CORPUS_QUALIFIED till YES, och inte dämpa eller nedgradera fynden om otillgängligt material. Resulterande semantik: DECLARED_ATTACHMENTS=5, OBSERVED_ATTACHMENT_EVIDENCE>=7, RECONCILIATION=KNOWN_UNRESOLVED, FULL_SOURCE_CAPTURE=NO. En ägare får erkänna att en historisk bevislucka måste bestå; en ägare får INTE få saknade historiska bevis att existera genom beslut. Mekaniskt representerat i `_projects/improvements/sources/CONV-013/attachments-r1.json` under `owner_acknowledgement`, som kontraktet vägrar acceptera om den försöker påstå mer än detta.
+
+## RQ-033
+- date: 2026-09-11
+- issue: R39-bilageinfångning (D2/I2): data-layer-exporten bär plattformens fil-id per bilaga (112 distinkta id över 19 källor); 108 exponerades via /backend-api/files/<id>/download resp. /backend-api/files/download/<id>?conversation_id och byte-verifierades (sha256 i sidan + på disk, 52 145 645 B); r38-manifestens byteslösa rader återvanns med --recovered (identitet: R39-exporten är byte-identisk med bunden revision, så dess fil-id är de deklarerade bilagornas); de tre projektfilerna (ProjectSave-kopior av CONV-015 msg 138, CONV-005 msg 68, CONV-001 msg 64) registrerades som DOC-001..003 (project_file), två skiljer sig från chattexten enbart genom plattformens canvas-fence-id
+- affects: CONV-001, CONV-005, CONV-006, CONV-007, CONV-011, CONV-013, CONV-015, CONV-016, CONV-022, CONV-036, CONV-037, CONV-038, CONV-041, CONV-043, CONV-046, CONV-048, CONV-051, CONV-054
+- recommendation: behåll bytes och provenienskedjan som de står; ingen ägarfråga i infångningen som sådan — de öppna delarna är RQ-034..RQ-040 (blockerarna B1/B2 = RQ-037/RQ-038)
+- evidence: _projects/improvements/evidence/r39/att-probe-r39.json, attachment-bytes-ledger.jsonl, register-log.json, attachment-inventory/*.attachments.json, project-files-r39.json; sources/*/attachments-rN.json (fält platform_file_id, recovery_provenance/capture_provenance)
+- owner_judgment_required: no
+- owner_answer: none (mekanisk redovisning av infångningen; ägarfrågorna är utbrutna till egna poster)
+
+## RQ-034
+- date: 2026-09-11
+- issue: CONV-022 r1: alla fyra bilagor (Inklistrad text 20260815-185211/-191908/-193948 .txt, nortropic-knowledge-phase0-owner-review-20260815-233344.tgz) svarar 403 Forbidden på samtliga fyra prövade download-former (files/<id>/download, files/download/<id>, båda med conversation_id och gizmo_id; /gizmos/<g>/files/<id>/download 404); metadata (namn, storlek, use_case=gizmo, skapade 2026-08-15) är läsbar men bytes exponeras inte; r38:s RECOVERED_EXACT-tgz (ATT-022-004, annan väg) står kvar, tre txt-chips förblir UNAVAILABLE
+- affects: CONV-022
+- recommendation: NOT_EXPOSED på plattformen per 2026-09-11; inför slutlig source cut avgör ägaren om egen kopia finns, annars deklareras recovery_exhaustion med denna sökning som basis
+- evidence: _projects/improvements/evidence/r39/att-probe-r39.json (fyra id med download_status 403 + alt 403); sources/CONV-022/attachments-r1.json
+- owner_judgment_required: yes
+
+## RQ-035
+- date: 2026-09-11
+- issue: CONV-013 r1: plattformens data-layer-inventering listar exakt de fem deklarerade chipsen (Inklistrad text 20260825-140649 … 20260826-044847, alla nu RECOVERED_EXACT), men INTE de två uppladdningar 2026-08-24 som msg 141/149/152 namnger (ATT-013-006/007, CAPTURED_REFERENCE_ONLY); den ägarerkända KNOWN_UNRESOLVED-luckan (RQ-032) kvarstår oförändrad; CONV-012 r2 ATT-012-001 är CAPTURED_CONTENT inline (ägarmsg 1) och det frusna verktyget ersätter aldrig en bytes-bärande rad — plattformens fil "Inklistrad markdown.md" (15 551 B) och CONV-007:s "Inklistrad markdown(4).md" (msg 315, bortom bunden r2) ligger som deferred-bytes i evidence tills r3-manifest binds
+- affects: CONV-013, CONV-012, CONV-007
+- recommendation: låt RQ-032-erkännandet stå; bind de två deferred-filerna när r3 blir bunden revision (mark-extracted vid IR-kompileringen), inte förr
+- evidence: _projects/improvements/evidence/r39/attachment-inventory/CONV-013.attachments.json (5 poster); evidence/r39/deferred-bytes/ (två filer, sha i attachment-bytes-ledger.jsonl)
+- owner_judgment_required: no
+- owner_answer: none (mekanisk redovisning; inga nya ägarfrågor utöver RQ-032)
+
+## RQ-036
+- date: 2026-09-11
+- issue: Frusen-adapter-observation (icke-blockerande förbättringsfynd, separerat per ägarens instruktion): data_capture.js listar en bild två gånger för samma plattforms-fil-id i samma meddelande — en gång som multimodal part (asset_pointer) och en gång ur metadata.attachments — så r38:s rubrikräkningar (t.ex. CONV-001 "55 bilagor") är dubbelräkningar av 28 distinkta filer; R39-rubrikerna deklarerar distinkta plattforms-id, r38-manifestens andra-listningsrader är RECOVERED_DUPLICATE mot primärraden (med recorded_duplicate_of_r38 där r38 band fel rad, t.ex. ATT-006-002 → "ATT-005-001"); dessutom två storleksavvikelser plattform-size_bytes mot serverade bytes (CONV-001 file_…ceaf2da1 272 869→292 597; CONV-006 file_…ab9b6a9a 1 154 803→1 386 112), registrerade som size_note, inte lösta
+- affects: CONV-001, CONV-005, CONV-006, CONV-038, CONV-041, CONV-043, CONV-046, CONV-048, CONV-051, CONV-054
+- recommendation: adapterdedupe (nyckel på fil-id) tas som separat skillförbättring efter R39; ingen korpusändring
+- evidence: _projects/improvements/evidence/r39/attachment-inventory/*.attachments.json (fält msg + file_id/asset_pointer); sources/*/attachments-rN.json (size_note)
+- owner_judgment_required: no
+- owner_answer: none (förbättringsfynd separerat; kräver eget förändringsuppdrag)
+
+## RQ-037
+- date: 2026-09-11
+- issue: BLOCKERARE B1 (frusen skill v4.4, inte plattformen): CONV-054 r1 (Nortropic Seam-Gap Watch, 141 msgs) får verified=false med "message numbering not contiguous 1..143" därför att project_contract.verify_transcript_format räknar varje rad som börjar med "## Meddelande" — och assistentens meddelande 131 citerar ordagrant två sådana rubrikrader ur CONV-001:s R38-kvalificeringsprompt (filrader 36661/36672); rnd_contract.genuine_message_roles ankrar på blocköppnande rubriker och påverkas inte; källan är korrekt infångad (sha-verifierad export, 23 byte-identiska no-ops bevisar byggaren) men klassas CAPTURED = hård lucka → cut vägras → CHAIN_COMPLETE omöjligt
+- affects: CONV-054
+- recommendation: separat förändringsuppdrag v4.4.1: verify_transcript_format ankrar på blocköppnande rubriker (som genuine_message_roles), positivt test + mutanttest (inbäddad rubrikrad i en meddelandekropp får inte fälla; en verklig rubriklucka ska fälla), omfrysning + publicering; därefter re-verify CONV-054 (recapture no-op) och återuppta R39 från detta korpustillstånd; alternativ (redigera källan, scope-exkludering) avvisas som icke-förlustfria/RND_SCOPE≠FULL
+- evidence: sources/CONV-054/conversation-r1.md rader 36661, 36672; project-manifest.json CONV-054 r1 verify_detail; R39 capture-log (32 CAPTURED / 23 CAPTURE_UNCHANGED)
+- owner_judgment_required: yes
+
+## RQ-038
+- date: 2026-09-11
+- issue: BLOCKERARE B2 (frusen skill v4.4): CONV-051 r1 deklarerar 8 bilagor, manifestet har 8 rader med byte-verifierade bytes och plattforms-id, men kroppen saknar uppladdningsfraser/citeringar (bilder), så attachment_surface.reconcile ger UNKNOWN ("declared > 0 and floor == 0") och validate fäller ATTACHMENT_SURFACE_UNRECONCILED så snart ett manifest finns; kontraktet har ingen väg ur UNKNOWN (ägarerkännande gäller bara DISAGREE) → cut vägras
+- affects: CONV-051
+- recommendation: ta med i v4.4.1: när declared == antal rader och varje rad bär bytes med plattformsidentitet är deklarationen korroborerad av bytes, inte av prosa → AGREE (med mutant: en rad utan bytes ska fortfarande ge UNKNOWN); tills dess står manifestet kvar som det är (bytes ska inte tas bort för att tysta ett fynd)
+- evidence: sources/CONV-051/attachments-r1.json; attachment_surface.py reconcile() och validate-grenen "recon == UNKNOWN and manifest is not None"
+- owner_judgment_required: yes
+
+## RQ-039
+- date: 2026-09-11
+- issue: R39 är en infångnings-/kompileringsmission: de 25 nya källorna (CONV-031..055) och de 7 nya revisionerna (CONV-002/003/006/007/012 r3, CONV-028/029 r2) förblir VERIFIED utan idépaketsextraktion; IR v4-kompileringen improvements-r39 är R39:s extraktionsform, idépaketsleverans sker bara på ägarbeslut (RQ-024-policyn); mark-extracted sätts vid kompileringen med --no-ideas --note som pekar på IR-posterna, så att bunden revision blir r3 och r3-bilagor kan bindas
+- affects: CONV-002, CONV-003, CONV-006, CONV-007, CONV-012, CONV-028, CONV-029, CONV-031, CONV-032, CONV-033, CONV-034, CONV-035, CONV-036, CONV-037, CONV-038, CONV-039, CONV-040, CONV-041, CONV-042, CONV-043, CONV-044, CONV-045, CONV-046, CONV-047, CONV-048, CONV-049, CONV-050, CONV-051, CONV-052, CONV-053, CONV-054, CONV-055
+- recommendation: ingen ägarfråga nu; blir en om ägaren vill ha idépaket ur R39-materialet
+- evidence: project-manifest.json (state per källa); R38-prejudikat: 26 VERIFIED-källor lämnades oextraherade med COMPLETE_WITH_OPEN_REVIEW
+- owner_judgment_required: no
+- owner_answer: none (mekanisk redovisning av missionens avgränsning)
+
+## RQ-040
+- date: 2026-09-11
+- issue: 28 av 55 exporter bär uppladdningsfraser/citeringar i kroppen medan data-layer-inventeringen listar noll filer (17 av dem är R39-infångade revisioner med R39-rubrik, 11 är byte-identiska no-ops som behåller r38-rubriken); byggaren deklarerar då inget antal ("Bilageinventering osäker …") så ytan står UNKNOWN i stället för en falsk AGREE — samma form som r38:s no-op-källor (CONV-008/009/010 …) redan har; FULL_SOURCE_CAPTURE=UNKNOWN för dessa är en redovisad gräns, inte en lucka som blockerar cut
+- affects: CONV-002, CONV-003, CONV-028, CONV-029, CONV-031, CONV-032, CONV-034, CONV-035, CONV-039, CONV-040, CONV-042, CONV-045, CONV-047, CONV-049, CONV-050, CONV-053, CONV-055
+- recommendation: låt stå; en ägargenomläsning kan senare avgöra per källa om fraserna avser verkliga uppladdningar (då saknas plattformsspår) eller bara omtal
+- evidence: r39 build-report (reconcile DISAGREE 28 / AGREE 26 / UNKNOWN 1 före deklaration); attachments-rapportens kolumn observed=1 med declared=-
+- owner_judgment_required: no
+- owner_answer: none (redovisad gräns i plattformens spår)
+
+## RQ-041
+- date: 2026-09-11
+- issue: BLOCKERARE B3 (frusen skill v4.4, korpusens git-grind): de tre historiska kompileringarna under _rnd/ (improvements-r38, -c1, -c4-epistemic) validerade 0 FAIL på HEAD a1680869 men faller 415 FAIL så snart R39-fångsten ligger i arbetsträdet — RND_SOURCE_SET_INCOMPLETE (28 nya källor som en fryst kompilering omöjligen kan binda), RND_ITEM_UNSOURCED/RND_OWNER_TURN_UNACCOUNTED/RND_OWNER_AUTHORED_UNSUPPORTED (poster som citerar CONV-002/003/006/007/012/028/029 löses mot SENASTE revisionen r3/r2 i stället för den revision de kompilerades mot), RND_SOURCE_NOT_WITNESSED/MESSAGE_COUNT_MISMATCH för samma sju; pre-commit-hooken kör rnd validate över hela _rnd/ och vägrar därför varje commit som växer korpusen — en historisk kompilering pinnas inte till sin inventory-revision/cut
+- affects: CONV-002, CONV-003, CONV-006, CONV-007, CONV-012, CONV-028, CONV-029
+- recommendation: ta med i v4.4.1: (a) rnd validate löser en kompilerings källbindningar mot den revision/cut den bands vid (source_set.cut / inventory_revision), inte mot senaste; (b) RND_SOURCE_SET_INCOMPLETE gäller bara kompileringar med source_set (IR v4) eller mäts mot inventory-revisionen vid kompileringen; mutanter: en ny källa efter cut får inte fälla en tidigare kompilering, en ändrad bunden revision ska fortfarande fälla; R39-commiten på arbetsgrenen improvements-r39 är gjord lokalt med --no-verify som vittne av fångsten (inte pushad, ingen PR) — ägarens explicita val krävs för att publicera med bypass eller efter v4.4.1
+- evidence: `git stash && rnd_contract.py validate --corpus .` → 0 FAIL på a1680869; med R39-arbetsträdet → 415 FAIL (koder ovan); hooks/pre-commit raderna om rnd-grinden
+- owner_judgment_required: yes
+
+## RQ-042
+- date: 2026-09-12
+- issue: Rättelser efter oberoende svepaudit AUDIT-74 (inventory-revision 74) och kompileringsaudit AUDIT-1 (improvements-r39): (a) FIND-008 — CONV-013:s två MATERIAL-bilagor ATT-013-006/007 (uppladdningarna 2026-08-24 19:38:58/19:41:04) stod som CAPTURED_REFERENCE_ONLY trots att R39 hämtat exakt deras plattforms-fil-id (listade i CONV-015:s inventering, msg 251/252) — nu RECOVERED_EXACT med identitetsproveniens (öppningsraden resp. Part 12-innehållet som CONV-013 msg 149 tillskriver dem); ägarerkännandet RQ-032 står kvar (deklarerat 5 mot observerat 7, KNOWN_UNRESOLVED); (b) FIND-009 — RQ-040:s siffra 28 (17+11) var 27 (17+10): den 28:e DISAGREE-källan i byggrapporten är CONV-013 (5 filer inventerade, golv 7), inte en noll-filskälla; (c) FIND-010 — DOC-001:s origin sade "identisk utom canvas-fence-id"; fem rader skiljer sig därtill (citeringschips i chatten mot renderade utm_source-länkar i filen), origin-texten rättad; (d) RQ-037:s evidensrad pekar på en icke-existerande fil `conversation-r1.md` — CONV-054 r1 ligger i `conversation.md`
+- affects: CONV-013, CONV-015, CONV-054
+- recommendation: rättelserna är införda i manifest/bilagemanifest; ny cut tas efter auditrundans append (cut binder sweep-audit.md); kompileringen improvements-r39 binds om mot den nya cut-identiteten
+- evidence: _projects/improvements/sweep-audit.md AUDIT-74 FIND-008..010; sources/CONV-013/attachments-r1.json (ATT-013-006/007 recovery_provenance); r39/build-report.json (reconcile per källa)
+- owner_judgment_required: no
+- owner_answer: none (mekaniska rättelser av redovisningsfel som auditen mätte; ingen ny ägarfråga)

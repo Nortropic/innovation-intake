@@ -1,0 +1,201 @@
+Plan: Improvements ingestion campaign — preparation
+
+ntext
+
+hnny vill skörda alla ChatGPT-chattar i projektet mprovements" till idébanken
+ (~/nortropic/innovation-intake) via skillen nortropic-intake, och senare göra en
+ cross-chat rebaseline av Nortropic. Detta arbete är ENDAST förberedelsen: inventering,
+ gap-analys, kampanjmanifest, körstrategi, synthesis-kontrakt och separationsbevis.
+ Ingen intake körs, ingen rebaseline görs, inga owner decisions skapas.
+
+ Hård säkerhetsgräns: ~/nortropic/nortropic-system och den pågående
+ Codex-bootstrapen får inte röras — inga skrivningar, inga git-operationer som ändrar
+ state (endast git --no-optional-locks-läsningar), inga process-/launchd-ändringar.
+ innovation-intake och nortropic-knowledge är inte execution authority.
+
+ Fynd från inventeringen (steg 1–2, redan utförd read-only)
+
+ Skillen (~/.claude/skills/nortropic-intake/): komplett kontrakt — SKILL.md
+ (faser 0–3, checklista), references/extraction.md (data-layer först, fail-closed),
+ references/brief-template.md, evals med två goldens (ChatGPT + claude.ai). Skillen
+ ändras INTE av denna kampanj.
+
+ ~/nortropic/innovation-intake (lokal): HAR INDEX.md + CLAUDE.md (commit
+ 909236c, opushad) samt två idéer: build-fast-path (clarified), gauntlet-wayfinder
+ (idea, supersedes gauntlet-quality-layer). Working tree ren förutom untracked .DS_Store.
+
+ Divergens: remote Nortropic/innovation-intake HEAD är 32e7674 ("Update
+ README.md", web-UI 2026-08-17), lokal main är 909236c — gemensam förälder 3a4253c.
+ Remote saknar INDEX.md/CLAUDE.md. Johnny har auktoriserat fetch + rebase (ingen push).
+
+ ~/nortropic/nortropic-knowledge: i synk med remote (enda commit e764eb4),
+ explicit NORTROPIC_KNOWLEDGE_IS_EXECUTION_AUTHORITY=NO.
+
+ nortropic-system baseline (read-only): HEAD e56edc08e5f0… detached, ~80
+ worktrees under ~/nortropic/worktrees/.
+
+ Improvements-chattarnas URL:er finns inte lokalt — kön måste enumereras från
+ ChatGPT-projektsidan via Chrome (read-only).
+
+ Gap-lista (rapporteras i slutrapporten):
+ 1. Remote saknar korpus-lagret (INDEX/CLAUDE) → löses av auktoriserad rebase; push förblir separat beslut.
+ 2. Local/remote-divergens → löses av auktoriserad fetch+rebase.
+ 3. Ingen batch-orkestrering i skillen (medvetet) → kampanjmanifestet tillför den utanför skillen.
+ 4. Duplicate-handling kräver ägarfråga (Phase 2.8) → batch-policy: staga + OWNER_CLASSIFICATION_REQUIRED, aldrig tyst lagring. Ingen skilländring.
+ 5. Dangling supersedes-pekare: gauntlet-quality-layer (Drive-eran) finns inte i corpus — dokumenterat prejudikat, ingen åtgärd.
+ 6. Chat-URL:er saknas lokalt → enumeration krävs.
+ 7. Trivialt: untracked .DS_Store i innovation-intake (röra ej).
+ Ej gap: statuslivscykel, slug-format, related/supersedes-mekanik, provenance (← msg N),
+ fidelity-metadata, secret-scanning — allt definierat och fungerande i skillkontraktet.
+
+ Vad som skapas (execution efter godkännande)
+
+ 1. Kampanjkatalog (nytt, utanför alla repos — Johnnys val)
+
+ ~/nortropic/intake-campaigns/improvements-2026-08/
+ ├── README.md          # kampanjkontrakt + synthesis-outputkontrakt
+ ├── manifest.json      # ENDA canonical workflow-state för kampanjen
+ ├── staging/           # captures/briefs som väntar på ägarbeslut (ej i corpus ännu)
+ └── baseline/          # nortropic-system separationsbaseline (before/after)
+
+ README.md inleds med Johnnys headerflagga-block:
+ CAMPAIGN_STATE_ONLY=YES
+ NORTROPIC_EXECUTION_AUTHORITY=NO
+ CORPUS_AUTHORITY=NO
+ IMPLEMENTATION_INPUT=NO
+ SAFE_TO_RESUME=YES
+ plus: resume-protokoll ("read manifest → reconcile filesystem → next unfinished chat →
+ continue" — aldrig rekonstruktion från chatthistorik), kampanjpolicys (nedan) och
+ synthesis-outputkontraktet (steg 5).
+
+ 2. manifest.json-schema
+
+ Toppnivå: campaign, created, flags (samma som README), chats: [].
+ Per chatt:
+
+ {
+   "id": 1,
+   "source": "chatgpt",
+   "source_url": "https://chatgpt.com/c/<id>",
+   "chat_title": "…",
+   "proposed_slug": "…",
+   "route": "IDEBANK",
+   "capture_status": "pending | captured | failed",
+   "capture_method": null,
+   "verify_status": "pending | verified | failed",
+   "verify_evidence": null,
+   "brief_status": "pending | distilled",
+   "corpus_check_status": "pending | distinct | related | supersedes | OWNER_CLASSIFICATION_REQUIRED | BLOCKED_SECRETS",
+   "final_corpus_path": null,
+   "staging_path": null,
+   "attachments_skipped": [],
+   "errors": [],
+   "notes": ""
+ }
+
+ Idempotens: en post med verify_status: verified + satt final_corpus_path hoppas
+ över vid resume; verifierade captures görs aldrig om. Slug-unikhet valideras vid
+ enumerationen mot befintliga corpus-slugs och mot övriga manifestposter.
+
+ 3. Auktoriserad git-sync av innovation-intake (ingen push)
+
+ Exakt sekvens, med verifiering före och rapport efter:
+ 1. git -C ~/nortropic/innovation-intake status --porcelain → måste vara tomt
+ (.DS_Store untracked är ok; den ingår inte i rebasen).
+ 2. git fetch origin → tracking-ref uppdateras till 32e7674.
+ 3. Verifiera att exakt EN lokal commit (909236c) ligger ovanpå gamla origin/main.
+ 4. git rebase origin/main (rebasear endast 909236c ovanpå 32e7674).
+ Konfliktrisk: endast om README-editen kolliderar — vid konflikt: abort + rapportera,
+ inga egna lösningsbeslut.
+ 5. Rapportera: gammal SHA (909236c), ny SHA, git status, git log --oneline -3.
+ INGEN push.
+
+ 4. Enumerera Improvements-chattarna (Chrome, read-only)
+
+ - tabs_context_mcp → öppna/navigera till ChatGPT-projektet "Improvements" i Johnnys
+ inloggade Chrome.
+ - Discovery-först (skillens evidensprincip): läs nätverkstrafiken/sidan för att hitta
+ projektets faktiska conversation-list-endpoint; hämta listan same-origin (id, titel,
+ uppdaterad). Ingen sidmodifiering, inga dialoger.
+ - Populera manifest.json: en post per chatt med URL, titel, föreslagen slug
+ (kollisionskontrollerad), allt i status pending, route: IDEBANK.
+ - Fallback om data-layer inte hittas: läs projektsidans DOM-lista (endast metadata —
+ titlar/länkar, inte chattinnehåll).
+
+ 5. Separationsbevis
+
+ - Före all skrivning: spara baseline till baseline/nortropic-system-before.txt:
+ git --no-optional-locks -C ~/nortropic/nortropic-system log -1 --format=%H,
+ status --short --branch, worktree list. (Redan känd: HEAD e56edc08e5f0.)
+ - Efter allt: samma kommandon → baseline/nortropic-system-after.txt, diffa.
+ Rapportera NORTROPIC_SYSTEM_MODIFIED=NO + exakt lista över skrivna paths
+ (endast ~/nortropic/intake-campaigns/** samt innovation-intakes .git
+ via auktoriserad fetch/rebase).
+ - Inga processer, launchd-jobb eller worktrees röros; ingen commit/push någonstans.
+
+ Körstrategi för själva kampanjen (dokumenteras, körs INTE nu)
+
+ Alla chattar behandlas som IDÉBANKEN / STORE FOR LATER — routingfrågan (Phase 0.5)
+ är förbesvarad av Johnny, vilket SKILL.md uttryckligen tillåter ("or follow what he
+ already said in the request"). Ingen Phase 2.5-intervju, status: idea, öppna frågor
+ intakta, ALDRIG plan mode/implementation från en kampanjkörning.
+
+ Per chatt (skillens Source C-checklista oförändrad):
+ öppna URL read-only → data-layer capture (scripts/data_capture.js) → fail-closed
+ verify → <slug>-full-chat.md → brief per mall (status: idea) → corpus-check
+ (Phase 2.8) → skriv till corpus + INDEX-upsert → uppdatera manifestposten.
+
+ Kampanjpolicys (utanför skillen, bryter aldrig dess regler):
+ - Trolig dubblett/evolution → skriv INTE till corpus/INDEX; lägg båda filerna i
+ staging/<slug>/, sätt OWNER_CLASSIFICATION_REQUIRED, fortsätt med nästa
+ oberoende chatt. (Fail-closed bevarat: inget lagras tyst.)
+ - Riktiga secrets i chatten → stoppa den chatten före transfer, sätt
+ BLOCKED_SECRETS, rapportera; fortsätt med övriga.
+ - Capture-fel efter fallback → capture_status: failed + error i manifestet,
+ fortsätt; aldrig loop/refresh utan Johnny.
+ - Manifestet uppdateras efter VARJE stegbyte så avbrott var som helst är resumable.
+
+ Startkommandot Johnny använder sedan (rapportpunkt 7):
+
+ ▎ Kör Improvements-kampanjen: läs ~/nortropic/intake-campaigns/improvements-2026-08/manifest.json,
+ ▎ reconcilera mot filsystemet, ta nästa ofärdiga post och kör nortropic-intake
+ ▎ (Source C, route IDÉBANKEN) på dess URL; uppdatera manifestet efter varje steg.
+ ▎ Fortsätt tills kön är tom eller en post kräver ägarbeslut.
+
+ Synthesis-outputkontrakt (steg 5 — definieras i README, utförs INTE)
+
+ Framtida cross-chat synthesis är ett separat, senare uppdrag. Kontraktet (skrivs in i
+ kampanj-README:n):
+ - Input: samtliga briefs med final_corpus_path satt (endast corpus-levererade).
+ - Grupper: architecture; agent/harness engineering; context engineering;
+ memory/knowledge; workflows; verification/evals/Gauntlet; autonomous improvement /
+ Frontier Delta; documentation; developer experience; speed/cost/loop efficiency;
+ product/factory; Verkstadsgolvet/control room; ideas explicitly rejected;
+ unresolved hypotheses.
+ - Per större koncept: klassificering KEEP / SIMPLIFY / ADD / DEFER / REJECT /
+ NEEDS EVIDENCE — som FÖRSLAG till ägaren, aldrig beslut.
+ - Varje påstående bär provenance: <slug> + (← msg N).
+ - Föreslaget hem: nortropic-knowledge (t.ex. rfcs/ eller research/) — icke-normativt
+r repots egna flaggor. Inga skrivningar dit nu.
+Syntesen skapar inga ändringar i nortropic-system; baseline är ett eget,
+arinitierat steg efteråt.
+
+itiska filer
+
+Skapas: ~/nortropic/intake-campaigns/improvements-20208/{README.md, manifest.json, staging/, baseline/}
+Ändras (git-state, auktoriserat): nortropic/innovation-intake/.git (fetch + rebase av 9236c)
+Läses/röros ej: ~/nortropic/nortropic-system/**, nortropic/worktrees/**,
+.claude/skills/nortropic-intake/** (skillen ändras te), ~/nortropic/nortropic-knowledge/**
+
+rifiering
+
+ Rebase: git -C ~/nortropic/innovation-intake log oneline -3 visar
+rpus-committen ovanpå 32e7674; status rent; ny SHA pporterad; ingen push
+it status visar "ahead of origin/main by 1").
+ Manifest: python3 -c "import json; on.load(open('manifest.json'))" + fältkontroll
+t schemat; antal poster = antal chattar i provements-projektet.
+ Separationsbevis: diff before/after-baseline tom → RTROPIC_SYSTEM_MODIFIED=NO.
+ Slutrapport med alla 8 punkter Johnny begärde orpus-state, gap, preparationer,
+nifest-path, köstorlek, blockers, startkommando, parationsbevis).
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌                                                       ──────────────────────────────────────────────────────
+aude has written up a plan and is ready to execute. uld you like to proceed?                                                                                  1. Yes, and use auto mode                              2. Yes, manually approve edits

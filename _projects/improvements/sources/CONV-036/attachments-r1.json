@@ -1,0 +1,79 @@
+{
+  "attachment_manifest_version": 2,
+  "source_id": "CONV-036",
+  "revision": 1,
+  "source_path": "_projects/improvements/sources/CONV-036/conversation.md",
+  "source_sha256": "7371b8014d44cd20cf0bf7c77883ed8c1095199a08d103bb8f6c09408f5f1f6c",
+  "declared_count": 3,
+  "declared_phrase": "ginaltexten och har bevarats ordagrant. 3 bilagor inventerade (data-layer: distinkta plattforms-fil-id ur metadata.attachments + icke-textdelar; en bild som adaptern listar två gånger räknas en gång); bytes re",
+  "observed_lower_bound": 1,
+  "observed_signals": {
+    "filecite_sites": 43,
+    "filecite_turns": 19,
+    "upload_phrases": 3,
+    "named_upload_identities": [],
+    "mentioned_paths": 0,
+    "cite_kinds": {
+      "academia": 1,
+      "file": 43,
+      "search": 1,
+      "view": 65
+    }
+  },
+  "reconciliation": "AGREE",
+  "full_source_capture": "YES",
+  "provenance_note": "written by project_contract.py register-attachment; declared/observed are measured from the transcript bytes",
+  "attachments": [
+    {
+      "attachment_id": "ATT-036-001",
+      "ordinal": 1,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "b14cfd62dc9f857f98b491ab4b655067a5a927ff2d9773eb7c789b825d9f561d",
+      "artifact_path": "_projects/improvements/sources/CONV-036/attachments/ATT-036-001-b14cfd62dc9f.pdf",
+      "byte_length": 257481,
+      "registered_at": "2026-09-11",
+      "original_filename": "eBook-DevOpsKubernetes.pdf",
+      "declared_kind": "uploaded_file",
+      "media_type": "application/pdf",
+      "message_binding": "Meddelande 1",
+      "platform_file_id": "file_00000000b9808243ab6c69fca2c1b387",
+      "platform_declared_size_bytes": 257481,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000b9808243ab6c69fca2c1b387, which the data-layer export of conversation 6aa067d0-1e88-83eb-987b-e8c6d2d41549 lists in message(s) 1; sha256 b14cfd62dc9f857f98b491ab4b655067a5a927ff2d9773eb7c789b825d9f561d computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'eBook-DevOpsKubernetes.pdf', content-type 'application/pdf'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    },
+    {
+      "attachment_id": "ATT-036-002",
+      "ordinal": 2,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "9c16c7ea948b0d5fa9f00b8861ace752097d71f546987e43d56f3b1bbe7874c1",
+      "artifact_path": "_projects/improvements/sources/CONV-036/attachments/ATT-036-002-9c16c7ea948b.pdf",
+      "byte_length": 15099859,
+      "registered_at": "2026-09-11",
+      "original_filename": "Observability Engineering_2ndEd.pdf",
+      "declared_kind": "uploaded_file",
+      "media_type": "application/pdf",
+      "message_binding": "Meddelande 12",
+      "platform_file_id": "file_000000002b7c81f4ad6e6cd54a92aeb0",
+      "platform_declared_size_bytes": 15099859,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_000000002b7c81f4ad6e6cd54a92aeb0, which the data-layer export of conversation 6aa067d0-1e88-83eb-987b-e8c6d2d41549 lists in message(s) 12; sha256 9c16c7ea948b0d5fa9f00b8861ace752097d71f546987e43d56f3b1bbe7874c1 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'Observability Engineering_2ndEd.pdf', content-type 'application/pdf'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    },
+    {
+      "attachment_id": "ATT-036-003",
+      "ordinal": 3,
+      "capture_status": "CAPTURED_CONTENT",
+      "materiality": "UNKNOWN",
+      "content_sha256": "d757033e2f5fe04859e139f46f3518489f2127b1359149bfeec960f22c5b3562",
+      "artifact_path": "_projects/improvements/sources/CONV-036/attachments/ATT-036-003-d757033e2f5f.pdf",
+      "byte_length": 691702,
+      "registered_at": "2026-09-11",
+      "original_filename": "intro.pdf",
+      "declared_kind": "uploaded_file",
+      "media_type": "application/pdf",
+      "message_binding": "Meddelande 21",
+      "platform_file_id": "file_00000000926882469c4be556c3176685",
+      "platform_declared_size_bytes": 691702,
+      "capture_provenance": "R39 2026-09-11: bytes fetched from chatgpt.com by platform file id file_00000000926882469c4be556c3176685, which the data-layer export of conversation 6aa067d0-1e88-83eb-987b-e8c6d2d41549 lists in message(s) 21; sha256 d757033e2f5fe04859e139f46f3518489f2127b1359149bfeec960f22c5b3562 computed in-page (crypto.subtle) and re-verified on disk after clipboard relay (r39/attachments/ledger.jsonl); platform file_name 'intro.pdf', content-type 'application/pdf'; evidence record _projects/improvements/evidence/r39/att-probe-r39.json"
+    }
+  ]
+}

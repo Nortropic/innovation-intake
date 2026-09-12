@@ -1,0 +1,197 @@
+Slutverifieringen är inarbetad och pushad. Medan grinden kör igen — här är läget rakt:
+
+Verifieraren bekräftade alla fjorton åtgärder, men hittade tre defekter som åtgärderna själva införde. Den viktigaste är obekväm och värd att säga rent ut: mitt vittne ställde fel fråga. Det avgjorde spårning med git ls-files, som testar indexet — medan varenda kontroll det påstod sig täcka läser HEAD. Ett git add utan commit uppfyllde det ena och inget av det andra. Så ett paket där en tidigare brainstorm skrivits om kunde få immutability witness PRESENT.
+
+Att tiga var illa. Att intyga ett skydd som inte finns är värre — jag gjorde alltså originalfyndet sämre innan jag gjorde det bättre. Nu ställer vittnet samma fråga som kontrollerna.
+
+Testet gav också en nyans som är värd att ha: identitetskontrollen är inte git-beroende, så just "skriv om en källa och hasha om den" fångas ändå. Den ocommittade luckan är smalare än den såg ut.
+
+De två andra: en falskpositiv som blockerade precis det validatorn själv uppmanar till (att köra auditen på ett legacy-paket), och sömmen vid pekar-pensioneringen som fortfarande åt nästa rads indrag — samma buggklass jag hade fixat en commit tidigare, i smalare form.
+
+Och den kvarvarande luckan som betydde mest: (← msg 12–9999) gav inget fynd. Bara talet direkt efter msg bands — men den dokumenterade formen är intervall, och korpusen använder dem överallt. Kontrollen missade alltså det mesta den fanns för. Nu kontrolleras varje ände.
+
+Sviter efter allt: 114/114 lint, 92/92 plan, 88/88 kontext v2, 112/112 levande kontext. Korpusen 17/17 på båda kontrakten.
+
+Jag skriver STOP-rapporten när grinden landat.
+
+✻ Worked for 2h 1m 36s
+
+⏺ Background command "Wait for CI on the updated skill PR" completed (exit code 0)
+
+  Ran 1 shell command
+
+  Ran 1 shell command
+
+Båda grindarna gröna på servern. Här är stopprapporten.
+
+NORTROPIC INTAKE v2.1 — LIVING CONTEXT CONTINUITY STOP REPORT
+
+1. AUTHORITATIVE_BASES
+
+Verifierade mot fjärren före arbetet, exakt som väntat:
+- nortropic-intake main = 81aa53c1599f97576b88d511bc827c71f9ad3dcf
+- innovation-intake main = 35733d1995b97e06fa5678cfe46e1cf3e1f42e41
+
+Båda trädena rena. Båda repona hade och behåller contract som obligatorisk check (strict, enforce_admins: false, inga obligatoriska granskare). Grenskyddet är orört.
+
+2. PRE_V21_STATE
+
+Baslinjen grön före första ändringen: 69/69 kontraktslint, 92/92 plankontrakt, 88/88 kontextkontinuitet, korpus 17/17 på båda kontrakten, tre capture-goldens oförändrade.
+
+3. CONTINUE_EXISTING_CONTRACT
+
+Förstklassigt utfall vid sidan av SUPERSEDES/RELATED/DISTINCT. Ny episod, egen fil, egen proveniens; gammalt råmaterial rörs aldrig och slås aldrig ihop. Ingen ny slug. Klassificering aldrig från lexikal likhet; vid genuin tvetydighet frågas ägaren. Vänder materialet settlade beslut krävs ett ägardelta (REVERSAL_WITHOUT_OWNER_DELTA) — annars är det en supersede i fortsättningens kläder.
+
+4. SOURCE_EPISODE_MODEL
+
+CHAT-002, WEB-001, GITHUB-001, FILE-003, RESEARCH-001, OWNER-001. Varje episod bär captured_at, origin, capture (full/partial/reference-only), load_bearing, introduced_at_revision. Episod 1 behåller <slug>-full-chat.md; senare blir <slug>-full-chat-<EPISOD>.md. Ingen EXECUTION-typ finns — exekveringslärdomar går in som ägardelta eller senare brainstorm.
+
+5. CONTEXT_REVISION_MODEL
+
+manifest_version: 2 + context_revision + append-only revision_history (1..N). manifest init lämnar revision 0 oförseglad — källorna man kompletterar för hand hörde till första captureN, och att försegla tidigt hade gjort färdigskrivning till en andra revision.
+
+6. SOURCE_SET_IDENTITY
+
+Sorterad kanonisk serialisering: EP <id> <kind> <origin>, SRC <id> <kind> <status> <trust> <authority> <identity> (bärande, icke-derivade), ODL <delta-id> (kontextbärande). Derivade artefakter uteslutna — annars blir identiteten cirkulär. Planverdikt uteslutna — annars blir en granskning inaktuell i samma stund den skrivs.
+
+7. DERIVED_ARTIFACT_REVISION_BINDING
+
+Brief, rationale, plankandidat och godkänd plan bär context_revision. Historiska artefakter skrivs aldrig om retroaktivt.
+
+8. INTELLECTUAL_DELTA
+
+<slug>-context-delta.md, ett ## REV-N-block per revision efter den första, elva fält i stabila id:n. Kontrollerat mot två oberoende vittnen: manifestet (DELTA_SOURCE_OMITTED) och git i båda riktningarna (DELTA_UNDERSTATED, DELTA_OMITTED_REMOVAL).
+
+9. STALE_PLAN_DETECTION
+
+PLAN_CONTEXT_STALE=YES mekaniskt. validate rapporterar WARN; resume stannar (rc 3) med full identitet utskriven. Inget kastas, inget skrivs om.
+
+10. PLAN_IMPACT_CLASSIFICATION
+
+impact visar deltat och vilka skivor som rör ändrade id:n. Ägarens verdikt: NO_PLAN_IMPACT / PLAN_REVIEW_REQUIRED / PLAN_REOPEN_REQUIRED. Tvetydigt ⇒ granskning, aldrig automatiskt omtag.
+
+11. OWNER_DELTA_GENERALIZATION
+
+Sju typer över alla faser. Otypad post = PRE_PLAN_CLARIFICATION, vilket allt före v2.1 var — inget redan skrivet flyttas. reviewed_context_revision kan inte påstå en revision paketet inte nått.
+
+12. PLAN_MODE_OWNER_DECISION_DURABILITY
+
+approve vägrar när ett plan-mode-ägardelta inte citeras (PLAN_OWNER_DELTA_UNCITED).
+
+13–15. EXTERNAL_WEB / GITHUB_SOURCE / SOURCE_FRESHNESS
+
+Bärande webbkälla kräver origin, title, accessed_at, source_class, supports. Bärande repo-källa kräver origin + commit (+ path_in_repo) — ett grennamn är ingen identitet. freshness skiljer HISTORISK PROVENIENS från NUVARANDE GILTIGHET och skriver aldrig om historien.
+
+16. DISTILLATION_AUDITOR
+
+Elva fyndkoder inklusive de två auktoritetskoderna. Append-only rundor: ett fynd stängs av en senare runda, aldrig av en redigering och aldrig av rundan som väckte det. Varje fynd kräver adresserbar evidens; materiella kräver citat. Bara ägaren avfärdar.
+
+17–20. PLANNING_CONTEXT / COVERAGE / BINDING / COHERENCE
+
+Grinden svarar för nuläget och skriver aldrig YES för att revision 2 en gång var komplett. Koherensrapporten visar KONTEXTREVISION ↔ PLAN ovanför BRIEF ↔ PLAN.
+
+21–22. TERMINAL_HANDOFF / CHATGPT_INDEPENDENCE
+
+handoff ger identiteter och pekare, aldrig en omskriven plan. Verifierat i en process med env -i, cwd=/, fyra episoder: hela paketet återfanns ur sluggen ensam.
+
+23. POINTER_RETIREMENT
+
+Nycklad på arbetsström+slug, kräver skäl, faller stängt vid tvetydighet, ingen bulkstädning. Rör en cache — aldrig historik.
+
+24. LEGACY_COMPATIBILITY
+
+manifest_version: 1 giltigt för alltid. Nedgradering ur revisionsspårning upptäcks från filerna på disk och från git.
+
+25–27. FILES_CHANGED / TEST_MATRIX / MUTATION_RESULTS
+
+17 filer (3 nya) i skill-repot, 1 i korpusen. Inga idépaket rörda.
+
+┌────────────────────────────────────────────────────────────┬────────────────┬─────────┐
+│                            Svit                            │     Lokalt     │  I CI   │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Kontraktslint                                              │ 114/114        │ 114/114 │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Plankontrakt                                               │ 92/92          │ 92/92   │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Kontextkontinuitet v2                                      │ 88/88          │ 88/88   │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Levande kontext (C1–C15, T1–T8, R1–R10, V1–V5, 19          │ 112/112        │ 112/112 │
+│ mutationer)                                                │                │         │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Riktig korpus                                              │ 17/17 · 17/17  │ —       │
+├────────────────────────────────────────────────────────────┼────────────────┼─────────┤
+│ Capture-goldens                                            │ 3/3            │ —       │
+│                                                            │ oförändrade    │         │
+└────────────────────────────────────────────────────────────┴────────────────┴─────────┘
+
+Mutationsgrinden faller för alla nio kombinationer plus två inerta fall.
+
+28. INDEPENDENT_REVIEW
+
+Tre färska granskare. Ingen blockerare. Fjorton reproducerbara defekter från de två första — alla åtgärdade, alla med regressionstest. Den tredje bekräftade fjorton av fjorton och hittade tre defekter som åtgärderna själva införde, varav en gjorde originalfyndet sämre: vittnet ställde git ls-files (index) medan kontrollerna läser HEAD, så ett git add gav PRESENT utan skydd. Åtgärdat.
+
+De sex trust-frågorna: 1 NEJ, 2 NEJ, 3 NEJ, 4 JA, 5 JA, 6 JA.
+
+29. RESIDUAL_RISKS
+
+- Anropet är inte mekaniskt. Ingenting tvingar en session att köra faserna alls. Grinden fångar tillståndet, inte en körning som aldrig når grinden.
+- Trohet är inte mekanisk. Kontraktet bevisar att en auditrunda finns, inte att en färsk granskare skrev den.
+- Ägardeltafilen är roten till ägarauktoritet och är en skrivbar markdownfil. Ingen signatur.
+- Klassificering påstås, mäts inte. Modellen fångar inkonsekventa påståenden, inte falska.
+- Ett komprometterat deklarerat målrepo får instruktionsauktoritet enligt design.
+- Korpusen är ett enda icke-replikerat arbetsträd.
+- Hela v2.1-mekaniken är oprövad på produktionsdata — inget av de 17 paketen har manifest än.
+
+30. CANDIDATE_SHAS_TREES
+
+- Skill: cdc264e52fcfc2bd4c7419314cb01518227e4116, träd 7b3163ede48cbea3ec07b6b82b074cbbb74373dc (5 commits)
+- Korpus: 2c427f6214002cd038fff3f8fea71d77ce8e0a53, träd 29fb88ebc8081244df331bc4236d4bccd7d7ce8c (1 commit)
+
+31. PRS
+
+- Nortropic/nortropic-intake#1 — contract pass
+- Nortropic/innovation-intake#5 — contract pass
+
+32. OWNER_ACTION_REQUIRED
+
+1. Merga #1 före #5. Korpusens workflow checkar ut skill-repot från main, så #5:s grind kör med de gamla validatorerna tills dess.
+2. Ingenting är mergat. Grenskydd och grindar orörda.
+
+---
+CONTINUE_EXISTING_READY=YES          LIVING_CONTEXT_REVISIONS=YES
+STALE_PLAN_DETECTION=YES             OWNER_DELTAS_DURABLE_ACROSS_PHASES=YES
+EXTERNAL_RESEARCH_PROVENANCE=YES     DISTILLATION_AUDIT=YES
+PLAN_MODE_HAS_COMPLETE_RELEVANT_CONTEXT=YES
+CHATGPT_REQUIRED_AFTER_HANDOFF=NO    COMPACTION_SAFE=YES
+FRESH_SESSION_SAFE=YES               MULTI_WORKSTREAM_SAFE=YES
+REMOTE_CONTRACT_CHECKS_PRESERVED=YES
+WEBBFORVALTNINGEN_TOUCHED=NO         BOOTSTRAP_TOUCHED=NO
+
+SOURCE_TRUST_BOUNDARY
+  SOURCE_TRUST_MODEL=OWNER_INPUT | CANONICAL_REPO_AUTHORITY | EXTERNAL_EVIDENCE
+                     | UNTRUSTED_EXTERNAL_CONTENT  ×  none | owner | canonical-repo
+  EXTERNAL_INSTRUCTION_AUTHORITY_DEFAULT=none (utelämnande läses aldrig som tillåtelse)
+  OWNER_APPROVAL_FROM_EXTERNAL_SOURCE_POSSIBLE=NO
+  FOREIGN_REPO_CAN_ISSUE_EXECUTION_INSTRUCTIONS=NO
+  CANONICAL_REPO_AUTHORITY_PRESERVED=YES
+  RAW_SOURCE_FIDELITY_PRESERVED=YES
+  DISTILLATION_AUTHORITY_ESCALATION_TEST=PASS
+  PROMPT_INJECTION_STRUCTURAL_TESTS=T1–T8 PASS
+  MUTATION_TESTS=19/19 faller för sin egen kod, kontroll passerar
+  INDEPENDENT_REVIEW_VERDICT=inga blockerare; 1–3 NEJ, 4–6 JA
+SOURCE_EVIDENCE_INSTRUCTION_BOUNDARY=PASS
+
+NORTROPIC_INTAKE_LIVING_CONTEXT_READY=YES
+
+Rekommendation: frys arkitekturen efter merge. Öppna den bara för observerade fel eller materiellt nya förmågor — inte för idéer.
+
+En sak jag vill vara tydlig med, eftersom den säger något om vad de här siffrorna är värda: jag införde tre defekter medan jag åtgärdade fjorton, och en av dem gjorde ett fynd sämre än det var. Det var den tredje granskningen som hittade det, inte jag. Grön svit är inte samma sak som korrekt — det som fångade mig var att någon fick i uppdrag att besegra just mina fixar.
+
+✻ Cooked for 1m 35s
+
+※ recap: Nortropic Intake v2.1 (levande kontext + källförtroende) är byggd, granskad av tre oberoende granskare, åtgärdad och publicerad. Båda PR:erna är gröna men omergade. Nästa steg: merga nortropic-intake#1 före innovation-intake#5.
+                                                         new task? /clear to save 634k tokens
+──────────────────────────────────────────────────────────────────────────────────────────────
+❯
+──────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← for agents · option+c

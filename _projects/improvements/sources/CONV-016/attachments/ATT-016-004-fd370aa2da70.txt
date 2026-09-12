@@ -1,0 +1,131 @@
+Ready to code?                                    Here is Claude's plan:                           ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ R112 Takeover — Handoff Assessment & Continuation Plan
+
+ Context
+
+ Codex's Nortropic bootstrap session was interrupted with R112 "statically complete but blocked" — Codex usage is exhausted until 2026-08-27 11:00. Claude Code takes over as engineering agent only; the trust model, frozen gates, and provider-identity requirements are untouched. Authority is Git/effect evidence, not chat state. This plan reconstructs R112 entirely from persisted evidence and proposes the minimum truthful continuation to keep the bootstrap moving toward the checkpoint (H032 GREEN → H031 GREEN → review → publication → supervisor-resume → first autonomous launch).
+
+ PHASE 1 RESULT — Reconciliation (verified read-only, 2026-08-22)
+
+ Identity block
+
+ R112_WORKTREE            = /Users/elinhaggstrom/nortropic/worktrees/owner-h032-pathless-family-r112-6bb20f68
+ R112_BRANCH              = owner/h032-pathless-family-r112
+ R112_BASE_SHA            = 6bb20f6817ab94ae4d84da9de2e3ed8fe2f7896f  (= origin/main, R110 merge PR #89)
+ R112_HEAD_SHA            = 6bb20f68… — NO COMMIT YET. All R112 work is UNCOMMITTED
+                            working-tree modifications. No untracked files, no stash.
+ R112_CHANGED_FILES       = docs/05-beslutslogg.md        (+1 decision row: R112)
+                            docs/loop/drift.md            (+27 lines: R112 rationale)
+                            specs/tasks.spec.json         (+1 entry: r112_complete_pathless_handoff_gate,
+                                                           text opens "R111 is superseded.")
+                            verify/bin/h-031-exit         (13 lines: 144/1 & 145/0 summaries,
+                                                           +J_R112 label, count 144→145, new H032 digest)
+                            verify/bin/h-032-exit         (+456/−24: J_R112_COMPLETE_PATHLESS_HANDOFF
+                                                           at line 8674; R109 helper-relay readmission;
+                                                           family-at-entry + fd-lineage predicates)
+ R112_GATE_IDENTITIES     = h-032-exit  SHA256 821e72ca4cf458e715f4d07d1d4db4dadbdafa800be118d9e52f8b0b39617966
+                            h-031-exit  SHA256 20580b0d491f40171a38a8afae4f217c61da57c30026ba2db029aad4f0e2d878
+                            h-031-exit F_H032_EXACT_PUBLISHED_DEPENDENCY binds 821e72ca… →
+                            BYTE-EXACT MATCH VERIFIED against the working-tree h-032-exit.
+ R112_STATIC_VERIFICATION = Digest binding verified by hashing the actual files (not from any log).
+                            bash -n passes on both gates. Diff is confined to the five allowed
+                            owner test-author surfaces. Branch is based exactly on origin/main.
+ R112_REVIEW_STATE        = NOT REVIEWED. No R112 evidence files exist. The newest supervisor
+                            evidence (07:09/07:15 today) is R111's owner evidence + independent
+                            review: VERDICT=BLOCKED, findings R111-REV-01/02/03. R112's drift/spec
+                            text answers exactly those three findings (complete private-family
+                            observation at consumer entry; R109 one-hop helper relay readmitted;
+                            original-fd lineage binding vs dup/close/reopen).
+ R112_HOST_RUN_COMMAND    = ./verify/bin/h-032-exit --skip-owner-live   (documented in R111 review:
+                            blocked with ODÖMBART K-RIGG — outer Codex sandbox denied nested
+                            sandbox-exec and /bin/ps; unsandboxed retry denied by usage limit)
+
+ Verdict: (A) complete and safely resumable
+
+ - The R112 diff is internally consistent (the hardest static invariant — H031's embedded byte-digest of H032 — matches the actual working-tree bytes).
+ - The worktree contains exactly the expected 5-file diff, nothing else; nothing to disambiguate.
+ - The block was purely environmental (sandbox + quota), never a product or gate failure.
+ - R111 forensic state is intact and preserved: commit 1849ef7e on branch owner/h032-nlink0-r111, clean worktree, evidence files on disk, never pushed. R112 supersedes it by design ("R111 is superseded"). No R111 cleanup — it stays as forensic history.
+ - Supervisor state.json is stale (Aug 14, autopilot=PAUSED) — the live protocol is the evidence-file trail, which is coherent through R111. Nothing auto-resumes; safe.
+
+ Work classification
+
+ Class: Local host execution only
+ Work: The owner gate suite (needs real macOS
+ sandbox-exec + /bin/ps, hence outside any nested
+ sandbox — Codex's or Claude's)
+ ────────────────────────────────────────
+ Class: Claude Code can continue
+ Work: Committing R112 per protocol, executing the
+ host suite, writing the owner-evidence file,
+ later PR preparation
+ ────────────────────────────────────────
+ Class: Genuinely requires Codex provider/live
+ identity
+ Work: Only the real owner-live H032 phase — which
+ stays skipped and is never claimed. (The future
+ product implementation of the structured-result
+ boundary is later builder work, provider-neutral
+ per the frozen contracts.)
+
+ PHASE 2 — Continuation plan (minimum truthful path)
+
+ Everything runs in the R112 worktree. No gate file is edited. No force/amend/reset/rebase. No push. No provider/model call. R111 and all Codex worktrees untouched.
+
+ Step 1 — Pre-run checks (read-only)
+
+ - Re-confirm worktree still shows exactly the 5-file diff and h-032-exit still hashes 821e72ca….
+ - Check /private/tmp for stale h032 gate roots and ps for leftover gate processes from the interrupted session; record (not clean) anything found that is pre-existing.
+
+ Step 2 — Host run of the frozen no-live suite (requires user approval to run outside the sandbox)
+
+ Exact commands, in order, each with sandbox disabled (justification below):
+
+ cd /Users/elinhaggstrom/nortropic/worktrees/owner-h032-pathless-family-r112-6bb20f68
+ ./verify/bin/h-032-exit --skip-owner-live 2>&1 | tee /private/tmp/r112-public-h032.log
+ ./verify/bin/h-031-exit --skip-owner-live 2>&1 | tee /private/tmp/r112-public-h031.log
+ ./verify/bin/h-034-exit                   2>&1 | tee /private/tmp/r112-h034.log
+ ./verify/bin/h-035-exit                   2>&1 | tee /private/tmp/r112-h035.log
+ /usr/bin/env node scripts/check-invariants.mjs 2>&1 | tee /private/tmp/r112-invariants.log
+
+ The six facts the user asked for:
+
+ 1. Exact command: above; primary authority is ./verify/bin/h-032-exit --skip-owner-live.
+ 2. Worktree/candidate: the R112 worktree at the 5-file diff on base 6bb20f68…; gate bytes 821e72ca… (h-032) / 20580b0d… (h-031). Post-commit SHA recorded in Step 3.
+ 3. Why it cannot invoke a provider/model: --skip-owner-live sets OWNER_LIVE_MODE=skip and the gate itself asserts OWNER_LIVE_START_DELTA=0; the sole expected RED is STRUCTURED_RESULT_DELIVERY_BOUNDARY_ABSENT — the product boundary does not exist, so there is nothing live to call; identical prior invocations (R110/R111 evidence) recorded LIVE_PROVIDER_OR_MODEL_CALL=NO; no other flags will be passed.
+ 4. Expected filesystem/process effects: gate creates and removes its own /private/tmp gate root; spawns sandbox-exec-confined child interpreters; observes processes via /bin/ps; tee writes the five r112-*.log files; no writes under the repo, evidence dirs, or authoritative state.
+ 5. Expected outcomes (any deviation → STOP, preserve logs, report; no remediation edits — that would be a new R113 round for the user to authorize):
+   - H032 skip: exit 1, SAMMANFATTNING 144 PASS / 1 FAIL, sole red STRUCTURED_RESULT_DELIVERY_BOUNDARY_ABSENT, OWNER_LIVE_EXECUTION=SKIPPED, J_R112_COMPLETE_PATHLESS_HANDOFF PASS
+   - H031 skip: exit 1, 132 PASS / 2 FAIL, exactly K_H032_FRESH_UPSTREAM + K_PRODUCT_EXECUTION
+   - H034 396/0 · H035 311/0 · invariants 8 PASS / 0 FAIL
+ 6. Cleanup guarantees: gates self-remove their /private/tmp roots (proven in R110/R111 evidence); after the run I verify zero gate-root/process residue and record it; logs are retained deliberately and their SHA256s go into the evidence file; the only git mutation in the whole plan is Step 3's single additive commit.
+
+ Sandbox justification: Claude Code's Bash sandbox is itself seatbelt-based; nested sandbox-exec is exactly what already produced ODÖMBART K-RIGG under Codex. Running the frozen gate's real effects requires host execution. This is the narrow exception the user pre-authorized, applied per-command.
+
+ Step 3 — Freeze the candidate (only if Step 2 matches expectations exactly)
+
+ - Single ordinary commit on owner/h032-pathless-family-r112:
+ test(h032): complete pathless retained-sink handoff
+ with the standard Claude Co-Authored-By trailer (truthful executor provenance). No push.
+ - Then exactly one post-commit ./verify/bin/h-017-exit (expect 24 PASS / 0 FAIL), log to /private/tmp/r112-h017.log.
+
+ Step 4 — Persist owner evidence (additive file, mirrors R111 format)
+
+ Write /Users/elinhaggstrom/nortropic/evidence/bootstrap-supervisor/evidence/h032-complete-pathless-handoff-r112-owner-evidence-<shortsha>.txt recording: identity block, R111-review input (path+SHA256), the three findings closed, every TEST/COMMAND/EXIT/RESULT with log SHA256s, cleanliness block, and explicitly:
+ EXECUTOR=CLAUDE_CODE (Codex quota exhausted) · OWNER_LIVE_EXECUTION=SKIPPED_NOT_CLAIMED · LIVE_PROVIDER_OR_MODEL_CALL=NO · PUSH=NO · MERGE=NO.
+
+ Step 5 — STOP. Decision point for the user (not executed in this plan)
+
+ Independent review of R112 must not be done by this session. Options: (a) a fresh, context-isolated Claude session in the reviewer role following the established reviewer template (defensible — this session only executed, it did not author R112), or (b) wait for Codex quota return 2026-08-27 for cross-provider independence. Publication, supervisor-resume, and anything beyond remain out of scope until the user decides.
+
+ Authority rules preserved
+
+ - Gates run byte-frozen; zero edits to gate files by Claude.
+ - No force/amend/reset/rebase/history rewrite; one additive commit only.
+ - R111 branch, worktree, and evidence preserved as forensic state.
+ - Provider-identity requirements unchanged; owner-live phase skipped and never claimed.
+ - Codex quota failure is not converted into PASS: every recorded result comes from a real gate execution on this host.
+
+ Verification
+
+ The plan is self-verifying: Step 2/3 outcomes are checked against the exact frozen expectations (144/1, 132/2, 396/0, 311/0, 8/0, 24/0) that R112's own gate constants and the R110/R111 evidence trail define. Any mismatch stops the takeover before commit/evidence.                   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌                                               ─────────────────────────────

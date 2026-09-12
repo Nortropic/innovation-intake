@@ -1,0 +1,44 @@
+{
+ "conversation_id": "6a9ee76a-db54-83eb-81d4-f6bcde7e4c6e",
+ "source_id": "CONV-043",
+ "captured_at": "2026-09-11",
+ "attachments": [
+  {
+   "msg": 0,
+   "label": "sediment://file_0000000071d081f48c39260b5526dc0b",
+   "asset_pointer": "sediment://file_0000000071d081f48c39260b5526dc0b",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 222047
+  },
+  {
+   "msg": 0,
+   "label": "sediment://file_000000004da08243a74ca88502f3b47d",
+   "asset_pointer": "sediment://file_000000004da08243a74ca88502f3b47d",
+   "content_type": "image_asset_pointer",
+   "size_bytes": 232474
+  },
+  {
+   "msg": 0,
+   "label": "IMG_1182(1).jpeg",
+   "file_id": "file_0000000071d081f48c39260b5526dc0b",
+   "name": "IMG_1182(1).jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 222047
+  },
+  {
+   "msg": 0,
+   "label": "IMG_1183.jpeg",
+   "file_id": "file_000000004da08243a74ca88502f3b47d",
+   "name": "IMG_1183.jpeg",
+   "mime_type": "image/png",
+   "size_bytes": 232474
+  }
+ ],
+ "distinct_file_ids": [
+  "file_0000000071d081f48c39260b5526dc0b",
+  "file_000000004da08243a74ca88502f3b47d"
+ ],
+ "declared_count": 2,
+ "exportLen": 23588,
+ "sha256": "9dea16436e295052eba1df517a6c8e2d3f7576fa95668eb14c54766b5b115d56"
+}
